@@ -1,8 +1,11 @@
 <template>
 <section class='home'>
   <section class='home-wrapper'>
-   <h1>JsLingo Home</h1>
-   <div class="next-question"><button>Next Question</button></div>
+    <h1>JsLingo Home</h1>
+    <div class="score">Your score: {{ $store.state.score }}</div>
+    <div class="next-question"><button @click="nextQuestion">Next Question</button></div>
+    
+    <component v-if="question" :is="question.type" :_question="question" @next-question="nextQuestion"/>
   </section>
 </section>
 </template>
@@ -24,7 +27,12 @@ export default {
     }
   },
 
-  methods: {},
+  methods: {
+    nextQuestion() {
+      console.log('nextQuestion executed')
+      this.question = this.$store.getters.randomQuestion
+    }
+  },
 
   created() {
     this.question = this.$store.getters.randomQuestion
