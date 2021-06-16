@@ -1,18 +1,41 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<section class='home'>
+  <section class='home-wrapper'>
+   <h1>JsLingo Home</h1>
+   <div class="next-question"><button>Next Question</button></div>
+  </section>
+</section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+// imports here
+ 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  name: '',
+  description: '',
+
+  components: {},
+
+  props: {},
+
+  data() {
+    return {
+      question: null,
+    }
+  },
+
+  methods: {},
+
+  created() {
+    this.question = this.$store.getters.randomQuestion
+  },
+
+ computed: {}
 }
 </script>
+
+<style scoped>
+section.home {
+  position: relative;
+}
+</style>
