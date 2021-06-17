@@ -10,7 +10,29 @@ export default createStore({
           type: 'ValidOrNot',
           question: "alert: 'Hello'",
           difficulty: 1,
-          answer: false
+          answer: false,
+          category: 'syntax'
+        },
+        {
+          type: 'MultipleChoice',
+          question: "Which one of these will print to the browser console?",
+          choices: ['print("hello")','console("hello")','console.log("hello")', 'log("hello")'],
+          displayAsCode: true,
+          difficulty: 1,
+          answer: 2
+        },
+        {
+          type: 'FillInBlanks',
+          question: 'Complete the Code',
+          template: [
+            'const colors = ["red", "green", "blue"]',
+            'colors.|_|(color => {',
+            `&nbsp;&nbsp;console.log(color)`,
+            '}'
+          ],
+          displayAsCode: true,
+          difficulty: 2,
+          answers: ['forEach']
         }
       ],
       overview: [
