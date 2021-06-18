@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import FillBlanksSingular from '../components/question-types/FillBlanksSingular'
+import FillBlank from '../components/question-types/FillBlank'
 
 const routes = [
   {
@@ -10,8 +10,8 @@ const routes = [
   },
   {
     path: '/test',
-    name: 'FillBlanksSingular',
-    component: FillBlanksSingular
+    name: 'FillBlank',
+    component: FillBlank
   },
 ]
 
