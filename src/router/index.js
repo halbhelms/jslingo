@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import FillBlank from '../components/question-types/FillBlank'
+import AllMixedUp from '../components/question-types/AllMixedUp'
 
 const routes = [
   {
@@ -10,8 +11,8 @@ const routes = [
   },
   {
     path: '/test',
-    name: 'FillBlank',
-    component: FillBlank
+    name: 'AllMixedUp',
+    component: AllMixedUp
   },
 ]
 
