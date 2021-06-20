@@ -1,34 +1,382 @@
 {
   "questions": [
     {
+      "id": 111,
       "type": "ValidOrNot",
-      "category": "syntax",
       "question": "alert: 'Hello'",
-      "difficulty": 1,
-      "answer": false
+      "answer": false,
+      "displayAsCode": ["question"]
     },
     {
+      "id": 811,
       "type": "MultipleChoice",
-      "category": "syntax",
       "question": "Which one of these will print to the browser console?",
       "choices": ["print('hello')","console('hello)","console.log('hello')", "log('hello')"],
-      "displayAsCode": true,
-      "difficulty": 1,
+      "displayAsCode": ["choices"],
       "answer": 2
     },
     {
+      "id": 112,
       "type": "TrueOrFalse",
-      "category": "basics",
       "question": "JavaScript is a strongly-typed language",
-      "difficulty": 1,
-      "answer": false
+      "answer": false,
+      "displayAsCode": []
     },
     {
+      "id": 113,
       "type": "TrueOrFalse",
-      "category": "basics",
       "question": "JavaScript is a case-sensitive language",
-      "difficulty": 1,
+      "answer": true,
+      "displayAsCode": []
+    },
+    {
+      "id": 114,
+      "type": "ValidOrNot",
+      "question": "let message //receive from API",
+      "answer": true,
+      "displayAsCode": ["question"],
+      "explanation": "Here the variable is declared but not given a value, making it undefined."
+    },
+    {
+      "id": 115,
+      "type": "ValidOrNot",
+      "question": "let learn,to,code",
+      "answer": true,
+      "displayAsCode": ["question"],
+      "explanation": "It looks odd, yes, but it's actually fine. Three separate varibles are declared but not given values."
+    },
+    {
+      "id": 116,
+      "type": "MultipleChoice",
+      "question": "Which one of these is not a JavaScript reserved word?",
+      "choices": ["const", "instance", "short", "with"],
+      "answer": 1,
+      "displayAsCode": ["choices"]
+    },
+    {
+      "id": 117,
+      "type": "ValidOrNot",
+      "question": "const address = {<br />&nbsp;&nbsp;street: '123 Rainbow',<br />&nbsp;&nbsp;city: 'Las Vegas'<br />&nbsp;&nbsp;state: 'NV'<br />}",
+      "answer": true,
+      "displayAsCode": ["question"],
+      "explanation": "This is just standard object literal notation."
+    },
+    {
+      "id": 118,
+      "type": "MultipleChoice",
+      "given": "const name = 'Mickey'<br />name='Minnie'<br /><br />console.log(name)",
+      "question": "Run the code and...",
+      "choices": ["Console prints \"Mickey\"", "Console prints \"Minnie\"", "Console prints \"MickeyMinnie\"", "Console displays an error"],
+      "answer": "3",
+      "displayAsCode": ["given"],
+      "explanation": "You're not allowed to change the value of a variabled declared with const. This statement is a little misleading, as you can change the properties of an object or the elements in an array, for example."
+    },
+    {
+      "id": 119,
+      "type": "ValidOrNot",
+      "question": "let team = \"New York Yankees\"<br />let team = \"San Diego Padres\"",
+      "answer": false,
+      "displayAsCode": ["question"],
+      "explanation": "A variable can be declared only once. Here, it's been declared twice, producing an error."
+    },
+    {
+      "id": 1120,
+      "type": "ValidOrNot",
+      "question": "let $ = 'Mickey'",
       "answer": true
+    },
+    {
+      "id": 1121,
+      "type": "TrueOrFalse",
+      "given": "const myName = \"Mickey\"<br />const MyName = \"Mickey\"<br />myName === Myname",
+      "question": "This code returns true",
+      "answer": true,
+      "displayAsCode": ["given"],
+      "explanation": "Even though JavaScript is case-sensitive, and the two variables are separate variables, their values are the same -- and so the code returns true."
+    },
+    {
+      "id": 1122,
+      "type": "FillBlank",
+      "q1": "Code written to provide an explanation or instruction, but which is not evaluated or displayed is called a ",
+      "q2": "",
+      "size": 8,
+      "answers": ["comment"],
+      "explanation": "A comment. There are both single- and multi-line versions of comments.",
+      "displayAsCode": [],
+      "moreInfo": "https://javascript.info/comments"
+    },
+    {
+      "id": 1123,
+      "type": "FillBlank",
+      "given": "/*<br />Make sure the turbo-blaster is loaded<br />before engaging the laser macrifier.<br />*/",
+      "q1": "The above code is a ",
+      "q2": " comment",
+      "answers": ["multi-line", "multiple-line", "multi line", "multiple line"],
+      "explanation": "Any of these would be correct: 'multi line, multi-line, multiple line, multiple-line'",
+      "displayAsCode": ["given"],
+      "size": 12,
+      "moreInfo": "https://javascript.info/comments"
+    },
+    {
+      "id": 1124,
+      "type": "FillBlank",
+      "given": "Multiply 5 times 7",
+      "q1": 5,
+      "q2": 7,
+      "answers": ["*"],
+      "explanation": "",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 1,
+      "displayAsCode": ["q1", "q2", "answer"]
+    },
+    {
+      "id": 1125,
+      "type": "MultipleChoice",
+      "question": "What operator will give you the <i>remainder</i> left from dividing one number by another?",
+      "choices": ["%", "~", "^", "#"],
+      "answer": "0",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/operators",
+      "displayAsCode": ["choices"]
+    },
+    {
+      "id": 1126,
+      "type": "FillBlank",
+      "given": "Raise 4 to the 3d power",
+      "q1": 4,
+      "q2": 3,
+      "answers": ["**"],
+      "explanation": "",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 1,
+      "displayAsCode": ["q1", "q2", "answer"]
+    },
+    {
+      "id": 1127,
+      "type": "FillBlank",
+      "given": "Join two strings together to form a longer string",
+      "q1": "\"Time flies like an arrow",
+      "q2": ";fruit flies like a banana\"",
+      "answers": ["+"],
+      "explanation": "The + operator is used both for addition and for joining strings -- a process known as <em>concatenation</em>",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 1,
+      "displayAsCode": ["answer"]
+    },
+    {
+      "id": 1128,
+      "type": "FillBlank",
+      "given": "Provide the operator that will <em>increment</em> a variable by 1 <em>after</em> that variable has been evaluated.",
+      "q1": "let x = 99; x",
+      "q2": "",
+      "answers": ["++"],
+      "explanation": "++ (when used in this position) adds 1 to a number after it's been evaluated. This is referred to as a <em>postfix</em> operator.",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 2,
+      "displayAsCode": ["q1","answer"]
+    },
+    {
+      "id": 1129,
+      "type": "FillBlank",
+      "given": "Provide the operator that will <em>increment</em> a variable by 1 <em>before</em> that variable has been evaluated.",
+      "q1": "let x = 99;",
+      "q2": "x",
+      "answers": ["++"],
+      "explanation": "++ (when used in this position) adds 1 to a number before it's been evaluated. This is referred to as a <em>prefix</em> operator.",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 2,
+      "displayAsCode": ["q1","q2","answer"]
+    },
+    {
+      "id": 1130,
+      "type": "FillBlank",
+      "given": "Provide the operator that will <em>decrement</em> a variable by 1 <em>after</em> that variable has been evaluated.",
+      "q1": "let x = 99; x",
+      "q2": "",
+      "answers": ["--"],
+      "explanation": "-- (when used in this position) subtracts 1 from a number after it's been evaluated. This is referred to as a <em>postfix</em> operator.",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 2,
+      "displayAsCode": ["q1","answer"]
+    },
+    {
+      "id": 1131,
+      "type": "FillBlank",
+      "given": "Provide the operator that will <em>decrement</em> a variable by 1 <em>before</em> that variable has been evaluated.",
+      "q1": "let x = 99;",
+      "q2": "x",
+      "answers": ["--"],
+      "explanation": "-- (when used in this position) adds 1 to a number before it's been evaluated. This is referred to as a <em>prefix</em> operator.",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 2,
+      "displayAsCode": ["q1","q2","answer"]
+    },
+    {
+      "id": 1132,
+      "type": "FillBlank",
+      "given": "Provide the <em>shortcut</em> operator that will add 7 to x",
+      "q1": "let x = 99; x",
+      "q2": "x",
+      "answers": ["+="],
+      "explanation": "I refer to it as a <em>shortcut</em> operator because it's a shorter version of </pre>x = x + 7</pre>",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 2,
+      "displayAsCode": ["q1","q2","answer"]
+    },
+    {
+      "id": 1133,
+      "type": "FillBlank",
+      "given": "Assume <b>addCustomer</b> returns either <b>true</b> or <b>false</b>. Use an operator that converts Boolean (true|false) values into numbers: 0 if false, 1 if true.",
+      "q1": "let customerAdded = addCustomer()<br />custmomers += ",
+      "q2": "customerAdded",
+      "answers": ["+"],
+      "explanation": "Another use for the plus operator: when used in this way, it automatically converts Boolean values into corresponding numeric ones.",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 1,
+      "displayAsCode": ["q1","q2","answer"]
+    },
+    {
+      "id": 1134,
+      "type": "ValidOrNot",
+      "question": "let a = b = c = 2 + 2",
+      "answer": true,
+      "displayAsCode": ["question"],
+      "moreInfo":"https://javascript.info/operators",
+      "explanation": "Evaluation begins at the farthest <b>right</b> and works backwards, so the first operation adds 2 plus 2 to arrive at 4. That value is then assigned to the variable, c. Moving backwards one operation, the value of c (which is 4) is assigned to b. Then once again, back up and assign the value of b (4) to the variable, a."
+    },
+    {
+      "id": 1135,
+      "type": "FillBlank",
+      "given": "Assume <b>addCustomer</b> returns either <b>true</b> or <b>false</b>. Use an operator that converts Boolean (true|false) values into numbers: 0 if false, 1 if true.",
+      "q1": "let customerAdded = addCustomer()<br />custmomers += ",
+      "q2": "customerAdded",
+      "answers": ["+"],
+      "explanation": "Another use for the plus operator: when used in this way, it automatically converts Boolean values into corresponding numeric ones.",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 1,
+      "displayAsCode": ["q1","q2","answer"]
+    },
+    {
+      "id": 1136,
+      "type": "TrueOrFalse",
+      "question": "Just as there is a <b>+=</b> operator, there are also <b>*=, -=</b>, and <b>/=</b> operators.",
+      "answer": true,
+      "displayAsCode": []
+    },
+    {
+      "id": 1137 ,
+      "type": "TrueOrFalse",
+      "question": "To test for strict equality (both value <em>and</em> type), use the <b>~=</b> operator.",
+      "answer": false,
+      "explanation": "For strict equality, use the 'triple-equals' operator: ==="
+    },
+    {
+      "id": 1138,
+      "type": "MultipleChoice",
+      "question": "Which one of these operators perform a <em>not-equality</em> check?",
+      "choices": ["~=", "-=", "!==", "^="],
+      "displayAsCode": ["choices"],
+      "answer": 2,
+      "explanation": "For non-equality, use the '!==' operator. The ! is pronounced 'bang'."
+    },
+    {
+      "id": 1139 ,
+      "type": "TrueOrFalse",
+      "question": "You should <em>always</em> end a statement with a semi-colon.",
+      "answer": false,
+      "explanation": "Most of the time, JavaScript can imply the semi-colon at a line break. There are rare exceptions to this, however -- especially in the case of functions that <b>return</b> a value.",
+      "moreInfo": "https://javascript.info/structure"
+    },
+    {
+      "id": 1140 ,
+      "type": "TrueOrFalse",
+      "question": "Statements are syntax constructs and commands that perform actions.",
+      "answer": true,
+      "explanation": "",
+      "moreInfo": "https://javascript.info/structure"
+    },
+    {
+      "id": 1141 ,
+      "type": "TrueOrFalse",
+      "question": "Multiple statements can be placed on the same line if separated with a semi-colon",
+      "answer": true,
+      "explanation": "",
+      "moreInfo": "https://javascript.info/structure"
+    },
+    {
+      "id": 1142,
+      "type": "ValidOrNot",
+      "question": "let customersAdded = 0 // total for this salesperson",
+      "answer": true,
+      "displayAsCode": ["question"],
+      "moreInfo": "https://javascript.info/structure"
+    },
+    {
+      "id": 1143,
+      "type": "TrueOrFalse",
+      "given": "let a = 5<br />let b = 10/5<br />console.assert(a === b)",
+      "question": "You can use <b>console.assert</b> to test the truth of assertions.",
+      "answer": true,
+      "explanation": "This is a little-used function of the console object. You can think of it as a poor-man's test. However, be aware that assertions that are true will print nothing to the console; only false assertions will be displayed."
+    },
+    {
+      "id": 1144,
+      "type": "MultipleChoice",
+      "question": "<b>console.table</b>...",
+      "choices": ["is invalid JavaScript", "counts the number of cells in an HTML table", "stashes code into localStorage", "displays data in a tabular format"],
+      "displayAsCode": [],
+      "answer": 3
+    },
+    {
+      "id": 1145,
+      "type": "TrueOrFalse",
+      "question": "In almost all cases, the use of <b>let</b> or <b>const</b> is preferable to <b>var</b> when declaring variables.",
+      "answer": true,
+      "explanation": "Unless you have a very specific need for the behavior <b>var</b> produces (and you'll know if you do), you're better off with either <b>let</b> or <b>const</b>."
+    },
+    {
+      "id": 1146,
+      "type": "TrueOrFalse",
+      "given": "let beginning = 42<br />let ending = \"24\"<br />console.log(beginning + ending)",
+      "question": "Prints 66 to the console",
+      "answer": false,
+      "explanation": "Since \"ending\" is a string, the plus operator will be used in concatenation mode: the console will print out \"4224\"",
+      "displayAsCode": ["given"]
+    },
+    {
+      "id": ,
+      "type": "",
+      "question": "",
+      "answer": "",
+      "explanation": ""
+    },
+    {
+      "id": ,
+      "type": "",
+      "question": "",
+      "answer": "",
+      "explanation": ""
+    },
+    {
+      "id": ,
+      "type": "",
+      "question": "",
+      "answer": "",
+      "explanation": ""
+    },
+    {
+      "id": ,
+      "type": "",
+      "question": "",
+      "answer": "",
+      "explanation": ""
+    },
+    {
+      "id": ,
+      "type": "",
+      "question": "",
+      "answer": "",
+      "explanation": ""
     }
   ]
 }
