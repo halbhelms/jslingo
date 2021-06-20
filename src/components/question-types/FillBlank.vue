@@ -1,7 +1,20 @@
 <template>
-<h2>{{ _question.question }}</h2>
+<h2>Fill in the blank</h2>
 <section class='fill-in-blanks'>
-   <div class="pre"><span v-html="_question.q1" /><input type="text" class="answer" :size="_question.size" v-on:keyup.enter="evaluateAnswer" v-model="answer" /><span v-html="_question.q2" /></div>
+  <h3 v-if="question.given">Given...</h3>
+  <div class="given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
+  <div>
+     <span v-html="question.q1" :class="question.displayAsCode.includes('q1') ? 'pre' : ''"/>
+     <input type="text" class="answer" :class="question.displayAsCode.includes('answer') ? 'pre' : ''" :size="question.size" v-on:keyup.enter="evaluateAnswer" v-model="answer" />
+     <span v-html="question.q2" :class="question.displayAsCode.includes('q2') ? 'pre' : ''" />
+  </div>
+
+   <div class="result" v-if="result=='correct'">Yes, you are correct!</div>
+   <div class="result" v-if="result=='incorrect'">Sorry, no</div>
+
+   <div class="explanation" v-html="explanation"></div>
+
+   <div class="more-info" v-if="question.moreInfo"><a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
 </section>
 
 </template>
@@ -27,33 +40,60 @@ export default {
   data() {
     return {
       answer: null,
+      result: null,
+      explanation: null,
+      question: {
+      "id": 1133,
+      "type": "FillBlank",
+      "given": "Assume <b>addCustomer</b> returns either <b>true</b> or <b>false</b>. Use an operator that converts Boolean (true|false) values into numbers: 0 if false, 1 if true.",
+      "q1": "let customerAdded = addCustomer()<br />custmomers += ",
+      "q2": "customerAdded",
+      "answers": ["+"],
+      "explanation": "Another use for the plus operator: when used in this way, it automatically converts Boolean values into corresponding numeric ones.",
+      "moreInfo": "https://javascript.info/operators",
+      "size": 1,
+      "displayAsCode": ["q1","q2","answer"]
+    }
     }
   },
 
   methods: {
     evaluateAnswer() {
-      this._question.answers.forEach( answer => {
+      let rightAnswer = false
+      this.question.answers.forEach( answer => {
         if (answer == this.answer) {
-          this.$state.dispatch('add_to_score', this._question.difficulty)
-        } else{
-          console.log('wrong')
-        }
-        this.$emit('next-question')
+          this.$store.dispatch('add_to_score', this.difficulty)
+          rightAnswer = true
+        } 
+        this.explanation = this.question.explanation
+        // this.$emit('next-question')
       })
-    },
+      if (rightAnswer) {
+        this.result = 'correct'
+      } else {
+        this.result = 'incorrect'
+      }
+    }
+    ,
   },
 
   mounted() {
 
   },
 
- computed: {}
+ computed: {
+   difficulty() {
+    //  get the second digit, indicating the difficulty level
+     return parseInt(this.question.id.toString().charAt(1))
+   },
+ }
 }
 </script>
 
 <style scoped>
 section.fill-in-blanks {
   position: relative;
+  font-size: 1.3rem;
 }
 
 .pre {
@@ -62,12 +102,17 @@ section.fill-in-blanks {
   line-height: 2.2rem;
 }
 
+.given {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
 .answer {
   /* width: 200px; */
   border: none;
-  border-bottom: 2px solid grey;
-  background-color: rgb(241,243,244);
-  font-family: 'Fira Code';
+  border-bottom: 2px dashed grey;
+  /* background-color: rgb(241,243,244); */
+  /* font-family: 'Fira Code'; */
   color: green;
   font-size: 1.3rem;
   font-weight: 600;
@@ -75,6 +120,11 @@ section.fill-in-blanks {
 
 .answer:active, .answer:focus {
   outline: 0;
+}
+
+pre {
+  font-family: 'Fira Code';
+  color: maroon;
 }
 
 </style>

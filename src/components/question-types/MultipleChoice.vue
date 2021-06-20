@@ -1,11 +1,26 @@
 <template>
 <section class='multiple-choice'>
-  <section class='multiple-choice-wrapper'>
-    <h2>{{ _question.question }}</h2>
-    <div class="choices">
-      <p class="choice" :class="_question.displayAsCode ? 'pre' : ''" v-for="(choice, i) in _question.choices" :key="choice" @click="evaluateAnswer(i)">{{ choice }}</p>
-    </div>
-  </section>
+  <h2>Choose the correct response</h2>
+  <!-- Display if question.given exists -->
+  <h3 class="given" v-if="question.given">Given...</h3>
+  <!-- Display question.given as HTML? :Yes -->
+  <div class="given pre" v-if="question.displayAsCode.includes('given') && question.given" v-html="question.given"></div>
+  <!-- Display question.given as HTML? :No -->
+  <div v-else class="given">{{ question.given }}</div>
+  
+  <div class="question" v-html="question.question"></div>
+
+  <div class="choices">
+    <p class="choice" :class="question.displayAsCode.includes('choices') ? 'pre' : ''" v-for="(choice, i) in question.choices" :key="choice" @click="evaluateAnswer(i)" v-html="choice"></p>
+  </div>
+
+  <div class="result" v-if="result=='correct'">Yes! You are correct</div>
+  <div class="result" v-if="result=='incorrect'">Sorry, no</div>
+
+  <div class="explanation" v-html="explanation"></div>
+
+  <div class="more-info" v-if="question.moreInfo"><a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
+
 </section>
 </template>
 
@@ -28,19 +43,44 @@ export default {
   emits: ['next-question'],
 
   data() {
-    return {}
+    return {
+      result: null,
+      explanation: null,
+      question: {
+      "id": 1144,
+      "type": "MultipleChoice",
+      "question": "<b>console.table</b>...",
+      "choices": ["is invalid JavaScript", "counts the number of cells in an HTML table", "stashes code into localStorage", "displays data in a tabular format"],
+      "displayAsCode": [],
+      "answer": 3,
+      "moreInfo": "https://www.poftut.com/javascript-console-object-and-functions-tutorial-with-examples/"
+    },
+    }
   },
 
   methods: {
     evaluateAnswer(answer) {
-      if (answer == this._question.answer) {
-        this.$store.dispatch('add_to_score', this._question.difficulty)
+      if (answer == this.question.answer) {
+        this.$store.dispatch('add_to_score', this.difficulty)
+        this.result = 'correct'
+      } else {
+        this.result = 'incorrect'
       }
-      this.$emit('next-question')
+      this.explanation = this.question.explanation
+      // this.$emit('next-question')
     },
   },
 
- computed: {}
+ computed: {
+   givenClass() {
+     if (this.displayAsCode.includes('given')) return "pre"
+   },
+
+   difficulty() {
+    //  get the second digit, indicating the difficulty level
+     return parseInt(this.question.id.toString().charAt(1))
+   },
+ }
 }
 </script>
 
@@ -51,10 +91,20 @@ section.multiple-choice {
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
 
+.choices {
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
 .choice {
   text-align: left;
   padding-left: 40px;
+}
+
+.choice:hover {
   cursor: pointer;
+  color: green;
+  font-weight: 600;
 }
 
 .pre {
@@ -65,4 +115,6 @@ section.multiple-choice {
   font-size: 1.3rem;
   margin-bottom: 12px;
 }
+
+
 </style>

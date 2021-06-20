@@ -1,13 +1,17 @@
 <template>
 <section class='valid-or-not'>
   <h2>Is this valid JavaScript?</h2>
-  <div class="pre">
-    {{ _question.question }}
+  <div :class="question.displayAsCode.includes('question') ? 'pre' : ''" v-html="question.question">
   </div>
   <div class="answer-buttons">
     <button class="true" @click="evaluateAnswer(true)">Yes</button>
     <button class="false" @click="evaluateAnswer(false)">No</button>
   </div>
+  <div class="result" v-if="result=='correct'">You're right!</div>
+  <div class="result" v-if="result=='incorrect'">Sorry, no</div>
+  <div class="explanation" v-html="explanation"></div>
+
+  <div class="more-info"> <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
 </section>
 </template>
 
@@ -30,19 +34,39 @@ export default {
   emits: ['next-question'],
 
   data() {
-    return {}
+    return {
+      result: null,
+      explanation: null,
+      question: {
+      "id": 1142,
+      "type": "ValidOrNot",
+      "question": "let customersAdded = 0 // total for this salesperson",
+      "answer": true,
+      "displayAsCode": ["question"],
+      "moreInfo": "https://javascript.info/structure"
+    },
+    }
   },
 
   methods: {
     evaluateAnswer(answer) {
-      if (answer == this._question.answer) {
-        this.$store.dispatch('add_to_score', this._question.difficulty)
+      if (answer == this.question.answer) {
+        this.result = 'correct'
+        this.$store.dispatch('add_to_score', this.difficulty)
+      } else {
+        this.result = "incorrect"
       }
-      this.$emit('next-question')
-    }
+      this.explanation = this.question.explanation
+      // this.$emit('next-question')
+    },
   },
 
- computed: {}
+ computed: {
+   difficulty() {
+    //  get the second digit, indicating the difficulty level
+     return parseInt(this.question.id.toString().charAt(1))
+   },
+ }
 }
 </script>
 
@@ -78,5 +102,9 @@ button.true {
 button.false {
   background-color: red;
   color: white;
+}
+
+.result {
+  margin-top: 20px;
 }
 </style>
