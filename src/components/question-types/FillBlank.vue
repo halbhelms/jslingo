@@ -10,9 +10,11 @@
   </div>
 
    <div class="result" v-if="result=='correct'">Yes, you are correct!</div>
-   <div class="result" v-if="result=='incorrect'">Sorry, no</div>
+  <div class="result" v-if="result=='incorrect'">Sorry, no</div>
 
-   <div class="explanation" v-html="explanation"></div>
+  <div class="correct-answer" v-if="showAnswer">The correct answer is <pre>{{ question.answers[0] }}</pre></div>
+
+  <div class="explanation" v-html="explanation"></div>
 
    <div class="more-info" v-if="question.moreInfo"><a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
 </section>
@@ -42,17 +44,21 @@ export default {
       answer: null,
       result: null,
       explanation: null,
+      showAnswer: false,
       question: {
-      "id": 2121,
-      "type": "FillBlank",
-      "given": "Comparisons of values always return a boolean value. Here, use an operator to see if <pre>x</pre> is greater than <pre>y</pre>.",
-      "q1": "x",
-      "q2": "y ",
-      "answers": [">"],
-      "explanation": "",
-      "displayAsCode": ["q1", "q2", "answer"],
-      "moreInfo": "https://javascript.info/logical-operators",
-      "size": 1
+      "id": 321,
+      "type": "",
+      "given": "let customerStatus = \"gold\"<br>let percentOff = customerStatus === \"gold\" ? 10 : 0",
+      "question": "",
+      "q1": "The <pre>percentOff</pre> number will be ",
+      "q2": "",
+      "choices": [],
+      "answer": "",
+      "answers": ["10", "10%"],
+      "explanation": "This <em>conditional operator</em> evaluates the first statement: <pre>customerStatus === \"gold\"</pre>. If this evaluates to <pre>true</pre> the value immediately after the <pre>?</pre> is returned. If it evaluates to <pre>false</pre>, the value after the <pre>:</pre> is returned.",
+      "displayAsCode": ["answer", "given"],
+      "moreInfo": "",
+      "size": 5
     },
     }
   },
@@ -61,10 +67,13 @@ export default {
     evaluateAnswer() {
       let rightAnswer = false
       this.question.answers.forEach( answer => {
-        if (answer == this.answer) {
+        console.log(answer.replace(/\s+/g, ''))
+        console.log(this.answer.replace(/\s+/g, ''))
+        if (answer.replace(/\s+/g, '') == this.answer.replace(/\s+/g, '')) {
           this.$store.dispatch('add_to_score', this.difficulty)
           rightAnswer = true
         } 
+        this.showAnswer = true;
         this.explanation = this.question.explanation
         // this.$emit('next-question')
       })

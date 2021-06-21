@@ -47,15 +47,19 @@ export default {
       result: null,
       explanation: null,
       question: {
-      "id": 2117,
+      "id": 2122,
       "type": "MultipleChoice",
       "given": "",
-      "question": "Which one of these is <em>not</em> a JavaScript data type?",
-      "choices": ["char", "object", "boolean", "symbol"],
-      "answer": 0,
-      "explanation": "Many languages have a <pre>char</pre> data type. JavaScript does not.",
+      "question": "Which of these is not a <em>primitive</em> data type?",
+      "q1": "",
+      "q2": "",
+      "choices": ["number", "object", "string", "boolean"],
+      "answer": 1,
+      "answers": [""],
+      "explanation": "",
       "displayAsCode": [],
-      "moreInfo": "https://javascript.info/types"
+      "moreInfo": "https://javascript.info/types",
+      "size": 0
     },
     }
   },

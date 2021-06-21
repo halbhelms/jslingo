@@ -52,6 +52,7 @@ pre {
   text-align: left;
   margin-top: 20px;
   font-size: 1.2rem;
+  line-height: 1rem;
 }
 
 .question {

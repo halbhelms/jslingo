@@ -38,14 +38,19 @@ export default {
       result: null,
       explanation: null,
       question: {
-      "id": 2113,
+      "id": 3110,
       "type": "ValidOrNot",
-      "question": "\"let guestList = 'Guests:'<br>* John<br>* Wolfgang<br>* Esmerelda<br>\"",
       "given": "",
-      "answer": false,
-      "explanation": "You can only split lines, as we're doing here, with string literals, not normal strings.",
-      "displayAsCode": ["question"],
-      "moreInfo": "https://javascript.info/string"
+      "question": "if (6 > 5) return true",
+      "q1": "",
+      "q2": "",
+      "choices": [],
+      "answer": true,
+      "answers": [""],
+      "explanation": "If you can fit the results of the if condition on the same line, you don't need to use <pre>{}</pre> to wrap the <pre>return true</pre>. That said, this is a bad idea likely to cause trouble down the line. Use curly braces with your if conditions.",
+      "displayAsCode": ["question", "answer"],
+      "moreInfo": "https://javascript.info/ifelse",
+      "size": 0
     },
     }
   },
