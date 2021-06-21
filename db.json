@@ -92,7 +92,7 @@
       "question": "This code returns true",
       "answer": true,
       "displayAsCode": ["given"],
-      "explanation": "Even though JavaScript is case-sensitive, and the two variables are separate variables, their values are the same -- and so the code returns true."
+      "explanation": "Even though JavaScript is case-sensitive, and the two variables are separate variables, their values are the same &mdash; and so the code returns true."
     },
     {
       "id": 1122,
@@ -158,7 +158,7 @@
       "q1": "\"Time flies like an arrow",
       "q2": ";fruit flies like a banana\"",
       "answers": ["+"],
-      "explanation": "The + operator is used both for addition and for joining strings -- a process known as <em>concatenation</em>",
+      "explanation": "The + operator is used both for addition and for joining strings &mdash; a process known as <em>concatenation</em>",
       "moreInfo": "https://javascript.info/operators",
       "size": 1,
       "displayAsCode": ["answer"]
@@ -226,7 +226,7 @@
     {
       "id": 1133,
       "type": "FillBlank",
-      "given": "Assume <b>addCustomer</b> returns either <b>true</b> or <b>false</b>. Use an operator that converts Boolean (true|false) values into numbers: 0 if false, 1 if true.",
+      "given": "Assume <pre>addCustomer</pre> returns either <pre>true</pre> or <pre>false</pre>. Use an operator that converts Boolean (true|false) values into numbers: 0 if false, 1 if true.",
       "q1": "let customerAdded = addCustomer()<br />custmomers += ",
       "q2": "customerAdded",
       "answers": ["+"],
@@ -247,7 +247,7 @@
     {
       "id": 1135,
       "type": "FillBlank",
-      "given": "Assume <b>addCustomer</b> returns either <b>true</b> or <b>false</b>. Use an operator that converts Boolean (true|false) values into numbers: 0 if false, 1 if true.",
+      "given": "Assume <pre>addCustomer</pre> returns either <pre>true</pre> or <pre>false</pre>. Use an operator that converts Boolean (true|false) values into numbers: 0 if false, 1 if true.",
       "q1": "let customerAdded = addCustomer()<br />custmomers += ",
       "q2": "customerAdded",
       "answers": ["+"],
@@ -259,14 +259,14 @@
     {
       "id": 1136,
       "type": "TrueOrFalse",
-      "question": "Just as there is a <b>+=</b> operator, there are also <b>*=, -=</b>, and <b>/=</b> operators.",
+      "question": "Just as there is a <pre>+=</pre> operator, there are also <pre>*=, -=</pre>, and <pre>/=</pre> operators.",
       "answer": true,
       "displayAsCode": []
     },
     {
       "id": 1137 ,
       "type": "TrueOrFalse",
-      "question": "To test for strict equality (both value <em>and</em> type), use the <b>~=</b> operator.",
+      "question": "To test for strict equality (both value <em>and</em> type), use the <pre>~=</pre> operator.",
       "answer": false,
       "explanation": "For strict equality, use the 'triple-equals' operator: ==="
     },
@@ -284,7 +284,7 @@
       "type": "TrueOrFalse",
       "question": "You should <em>always</em> end a statement with a semi-colon.",
       "answer": false,
-      "explanation": "Most of the time, JavaScript can imply the semi-colon at a line break. There are rare exceptions to this, however -- especially in the case of functions that <b>return</b> a value.",
+      "explanation": "Most of the time, JavaScript can imply the semi-colon at a line break. There are rare exceptions to this, however -- especially in the case of functions that <pre>return</pre> a value.",
       "moreInfo": "https://javascript.info/structure"
     },
     {
@@ -315,14 +315,14 @@
       "id": 1143,
       "type": "TrueOrFalse",
       "given": "let a = 5<br />let b = 10/5<br />console.assert(a === b)",
-      "question": "You can use <b>console.assert</b> to test the truth of assertions.",
+      "question": "You can use <pre>console.assert</pre> to test the truth of assertions.",
       "answer": true,
       "explanation": "This is a little-used function of the console object. You can think of it as a poor-man's test. However, be aware that assertions that are true will print nothing to the console; only false assertions will be displayed."
     },
     {
       "id": 1144,
       "type": "MultipleChoice",
-      "question": "<b>console.table</b>...",
+      "question": "<pre>console.table</pre>...",
       "choices": ["is invalid JavaScript", "counts the number of cells in an HTML table", "stashes code into localStorage", "displays data in a tabular format"],
       "displayAsCode": [],
       "answer": 3
@@ -330,9 +330,9 @@
     {
       "id": 1145,
       "type": "TrueOrFalse",
-      "question": "In almost all cases, the use of <b>let</b> or <b>const</b> is preferable to <b>var</b> when declaring variables.",
+      "question": "In almost all cases, the use of <pre>let</pre> or <pre>const</pre> is preferable to <pre>var</pre> when declaring variables.",
       "answer": true,
-      "explanation": "Unless you have a very specific need for the behavior <b>var</b> produces (and you'll know if you do), you're better off with either <b>let</b> or <b>const</b>."
+      "explanation": "Unless you have a very specific need for the behavior <pre>var</pre> produces (and you'll know if you do), you're better off with either <pre>let</pre> or <pre>const</pre>."
     },
     {
       "id": 1146,
@@ -344,39 +344,261 @@
       "displayAsCode": ["given"]
     },
     {
-      "id": ,
-      "type": "",
-      "question": "",
-      "answer": "",
-      "explanation": ""
+      "id": 1147,
+      "type": "ValidOrNot",
+      "question": "const 2dNotice = false",
+      "answer": false,
+      "explanation": "JavaScript variables can't begin with a number",
+      "displayAsCode": ["question"]
     },
     {
-      "id": ,
-      "type": "",
-      "question": "",
-      "answer": "",
-      "explanation": ""
+      "id": 1148,
+      "type": "ValidOrNot",
+      "question": "const second notice = false",
+      "answer": false,
+      "explanation": "JavaScript variables can't have a space in them",
+      "displayAsCode": ["question"]
     },
     {
-      "id": ,
-      "type": "",
-      "question": "",
-      "answer": "",
-      "explanation": ""
+      "id": 1149,
+      "type": "TrueOrNot",
+      "question": "The <pre>null</pre> value means \"nothing\" or \"value unknown\"",
+      "answer": true,
+      "explanation": "If you use <pre>null</pre>, make sure you don't surround it in quotes. Doing so would turn the value into a string.",
+      "displayAsCode": []
     },
     {
-      "id": ,
-      "type": "",
-      "question": "",
-      "answer": "",
-      "explanation": ""
+      "id": 1150,
+      "type": "TrueOrNot",
+      "question": "The <pre>undefined</pre> value means \"value has not been assigned\"",
+      "answer": true,
+      "explanation": "If you use <pre>undefined</pre>, make sure you don't surround it in quotes. Doing so would turn the value into a string.",
+      "displayAsCode": []
     },
     {
-      "id": ,
-      "type": "",
-      "question": "",
-      "answer": "",
-      "explanation": ""
-    }
+      "id": 121,
+      "type": "ValidOrNot",
+      "question": "let name = \"Mickey\"<br />let greeting = `Hello, ${name}`",
+      "answer": true,
+      "explanation": "Tick marks indicate a <em>template string</em>, in which JavaScript expressions can be interpreted when placed inside <pre>${</pre> and <pre>}</pre>",
+      "displayAsCode": ["question"]
+    },
+    {
+      "id": 211,
+      "type": "TrueOrFalse",
+      "question": "Because JavaScript is not a strongly-typed language, it has no concept of <em>data types</em>",
+      "answer": false,
+      "explanation": "Even though JavaScript is a weakly-typed language, it still has data types.",
+      "displayAsCode": []
+    },
+    {
+      "id": 212,
+      "type": "MultipleChoice",
+      "question": "Which one of these is <em>not</am> a JavaScript data type?",
+      "choices": ["string", "uri", "function", "map"],
+      "displayAsCode": [],
+      "answer": 1,
+      "explanation": "string, function, and map are all JavaScript data types. uri, on the other hand, is not."
+    },
+    {
+      "id": 213,
+      "type": "MultipleChoice",
+      "question": "Which one of these is <em>not</em> a JavaScript data type?",
+      "choices": ["set", "object", "number", "conditional"],
+      "displayAsCode": [],
+      "answer": 3,
+      "explanation": "set, object, and number are all JavaScript data types. conditional, on the other hand, is not."
+    },
+    {
+      "id": 214,
+      "type": "FillBlank",
+      "q1": "A data type that is a set of statements that performs a task or calculates a value is called a ",
+      "answers": ["function"],
+      "explanation": "",
+      "displayAsCode": ["answer"],
+      "size": 8
+    },
+    {
+      "id": 215,
+      "type": "MultipleChoice",
+      "given": "const catYears = 54/0",
+      "question": "This code will return what data type?",
+      "choices": ["NaN", "string", "Error", "number"],
+      "answer": "3",
+      "explanation": "This is an odd one. Dividing by 0 returns <pre>Infinity</pre>, which is actually a number.",
+      "displayAsCode": ["choices", "given"]
+    },
+    {
+      "id": 216,
+      "type": "ValidOrNot",
+      "given": "",
+      "question": "const x = NaN",
+      "answer": true,
+      "explanation": "<pre>NaN</pre>, short for <em>Not a Number</em>, is usually encountered as the result of a mathematical operation that goes awry, but we can, in fact, set a variable to <pre>NaN</pre>. Why someone would <em>want</em> to do this is a mystery.",
+      "displayAsCode": ["question"],
+      "moreInfo": ""
+    },
+    {
+      "id": 217,
+      "type": "FillBlank",
+      "given": "The largest value of a number data type is (2<sup>53</sup> - 1) which is 9007199254740991. To use an even larger value, append the value with...",
+      "q1": "let incrediblyBigNumber = 5487895612354778954562541",
+      "answers": ["n"],
+      "size": 1,
+      "explanation": "This is a new data type in JavaScript: <b>BigInt</b>. To use it, append <pre>n</pre> to the value.",
+      "displayAsCode": ["q1"],
+      "moreInfo": "https://javascript.info/bigint"
+    },
+    {
+      "id": 218,
+      "type": "FillBlank",
+      "given": "'Mickey' / 7",
+      "q1": "Running this code will return",
+      "answers": ["NaN"],
+      "size": 3,
+      "explanation": "You might think it would produce an error, but instead, we get <pre>NaN</pre> &mdash; short for <em>Not a Number</em>",
+      "displayAsCode": ["given"],
+      "moreInfo": "https://javascript.info/types"
+    },
+    {
+      "id": 219,
+      "type": "FillBlank",
+      "given": "You want to find the data type of a variable, <pre>x</pre>...",
+      "q1": "console.log(",
+      "q2": "x)",
+      "size": 6,
+      "answers": ["typeof"],
+      "explanation": "<pre>typeof</pre> is followed by its <em>operand</em>. This operator is unusual in that the operand can be wrapped in parentheses &mdash; or not.",
+      "displayAsCode": ["q1","answer","q2"],
+      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof"
+    },
+    {
+      "id": 2110,
+      "type": "TrueOrNot",
+      "given": "",
+      "question": "A <em>template literal</em> (also called a <em>template string</em> allows interpolation of JavaScript within a string.",
+      "answer": true,
+      "explanation": "Template literals are surrounded by tick marks &mdash; <pre>``</pre>",
+      "displayAsCode": [],
+      "moreInfo": "https://javascript.info/types"
+    },
+    {
+      "id": 2111,
+      "type": "ValidOrNot",
+      "given": "",
+      "question": "let msg = `Today is ${new Date()}`",
+      "answer": true,
+      "explanation": "Template strings allow JavaScript interpolation within the string.",
+      "displayAsCode": ["question"],
+      "moreInfo": "https://javascript.info/types"
+    },
+    {
+      "id": 2112,
+      "type": "ValidOrNot",
+      "question": "`let guestList = 'Guests:'<br>* John<br>* Wolfgang<br>* Esmerelda<br>`",
+      "given": "",
+      "answer": true,
+      "explanation": "Not only is this valid, but template literals have the advantage that they respect white space (such as line breaks).",
+      "displayAsCode": ["question"],
+      "moreInfo": "https://javascript.info/string"
+    },
+    {
+      "id": 2113,
+      "type": "ValidOrNot",
+      "question": "\"let guestList = 'Guests:'<br>* John<br>* Wolfgang<br>* Esmerelda<br>\"",
+      "given": "",
+      "answer": false,
+      "explanation": "You can only split lines, as we're doing here, with string literals, not normal strings.",
+      "displayAsCode": ["question"],
+      "moreInfo": "https://javascript.info/string"
+    },
+    {
+      "id": 2114,
+      "type": "FillBlank",
+      "given": "You want to split a string across multiple lines with a normal string (not a string literal)...",
+      "q1": "Four score and seven years ago",
+      "q2": "our fathers brought forth on this continent a new nation.",
+      "answers": ["\\n"],
+      "explanation": "Use the back slash (<pre>\\</pre>) when you want to use one of several <em>special</em> characters. This is known as <em>escaping</em> a character. In this case, the right answer is \\n",
+      "displayAsCode": [],
+      "moreInfo": "https://javascript.info/string",
+      "size": 2
+    },
+    {
+      "id": 2115,
+      "type": "TrueOrFalse",
+      "given": "You want to use double quotes within a string that has been created with double quotes &mdash; like this: \"<pre>Amadeus was referred to by his friends as \\\"Wolfie\\\"</pre>",
+      "answer": true,
+      "explanation": "Use the back slash (<pre>\\</pre>) when you want to use one of several <em>special</em> characters. This is known as <em>escaping</em> a character. In this case, the right answer is \\\"",
+      "displayAsCode": [],
+      "moreInfo": "https://javascript.info/string",
+      "size": 0
+    },
+    {
+      "id": 2116,
+      "type": "TrueOrFalse",
+      "question": "If you want to insert a tab character in a normal string (not a string template), you should use the escape code<pre>\\t</pre>",
+      "answer": true,
+      "explanation": "Use the back slash (<pre>\\</pre>) when you want to use one of several <em>special</em> characters. This is known as <em>escaping</em> a character. In this case, the right answer is \\t",
+      "displayAsCode": [],
+      "moreInfo": "https://javascript.info/string",
+      "size": 0
+    },
+    {
+      "id": 2117,
+      "type": "MultipleChoice",
+      "given": "",
+      "question": "Which one of these is <em>not</em> a JavaScript data type?",
+      "choices": ["char", "object", "boolean", "symbol"],
+      "answer": 0,
+      "explanation": "Many languages have a <pre>char</pre> data type. JavaScript does not.",
+      "displayAsCode": [],
+      "moreInfo": "https://javascript.info/types"
+    },
+    {
+      "id": 2118,
+      "type": "FillBlank",
+      "given": "",
+      "q1": "A data type that specifies whether something is <pre>true</pre> or <pre>false</pre> is a",
+      "answers": ["Boolean", "boolean"],
+      "explanation": "Note that <pre>boolean</pre> data type values can <em>only</em> be <pre>true</pre> or <pre>false</pre>. Also note the lack of quotes &mdash; these are <em>not</em> strings.",
+      "displayAsCode": ["answer"],
+      "moreInfo": "https://javascript.info/types",
+      "size": 7
+    },
+    {
+      "id": 2119,
+      "type": "TrueOrNot",
+      "given": "let invited = \"false\"",
+      "question": "<pre>invited</pre> has a value of type, <pre>boolean</pre>",
+      "answer": false,
+      "explanation": "Putting <pre>false</pre> in quotes makes this a <pre>string</pre> data type. Boolean values do not allow quotes.",
+      "displayAsCode": ["given"],
+      "moreInfo": "https://javascript.info/types"
+    },
+    {
+      "id": 2120,
+      "type": "FillBlank",
+      "given": "You want to \"flip\" the value of a boolean value &mdash; changing <pre>true</pre> to <pre>false</pre> or <i>vice versa</i>",
+      "q1": "let isInvited = ",
+      "q2": "isInvited = ",
+      "answers": ["!"],
+      "explanation": "Using the <i>bang</i> operator (<pre>!</pre>)in this way is a common idiom.",
+      "displayAsCode": ["q1", "q2", "answer"],
+      "moreInfo": "https://javascript.info/types",
+      "size": 1
+    },
+    {
+      "id": 2121,
+      "type": "FillBlank",
+      "given": "Comparisons of values always return a boolean value. Here, use an operator to see if <pre>x</pre> is greater than <pre>y</pre>.",
+      "q1": "x",
+      "q2": "y ",
+      "answers": [">"],
+      "explanation": "",
+      "displayAsCode": ["q1", "q2", "answer"],
+      "moreInfo": "https://javascript.info/logical-operators",
+      "size": 1
+    },
   ]
 }

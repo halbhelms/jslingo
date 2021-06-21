@@ -8,19 +8,29 @@
 
 .pre {
   font-family: 'Fira Code';
-  background-color: rgb(241,243,244);
+  /* background-color: rgb(241,243,244); */
   color: maroon;
   line-height: 2rem;
   font-size: 1.3rem;
   margin-bottom: 12px;
   text-align: left;
-  margin-left: 20px;
+  /* margin-left: 20px; */
+}
+
+em {
+  font-style: italic;
+  font-weight: 600;
 }
 
 .given {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-align: left;
   margin-left: 20px;
+}
+
+.if-given {
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 #app {
@@ -29,6 +39,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+pre {
+  display: inline-block;
+  color: maroon;
+  font-weight: 600;
+  font-family: 'Fira Code';
 }
 
 .explanation {

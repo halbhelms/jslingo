@@ -43,17 +43,17 @@ export default {
       result: null,
       explanation: null,
       question: {
-      "id": 1133,
+      "id": 2121,
       "type": "FillBlank",
-      "given": "Assume <b>addCustomer</b> returns either <b>true</b> or <b>false</b>. Use an operator that converts Boolean (true|false) values into numbers: 0 if false, 1 if true.",
-      "q1": "let customerAdded = addCustomer()<br />custmomers += ",
-      "q2": "customerAdded",
-      "answers": ["+"],
-      "explanation": "Another use for the plus operator: when used in this way, it automatically converts Boolean values into corresponding numeric ones.",
-      "moreInfo": "https://javascript.info/operators",
-      "size": 1,
-      "displayAsCode": ["q1","q2","answer"]
-    }
+      "given": "Comparisons of values always return a boolean value. Here, use an operator to see if <pre>x</pre> is greater than <pre>y</pre>.",
+      "q1": "x",
+      "q2": "y ",
+      "answers": [">"],
+      "explanation": "",
+      "displayAsCode": ["q1", "q2", "answer"],
+      "moreInfo": "https://javascript.info/logical-operators",
+      "size": 1
+    },
     }
   },
 
@@ -96,11 +96,7 @@ section.fill-in-blanks {
   font-size: 1.3rem;
 }
 
-.pre {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 2.2rem;
-}
+
 
 .given {
   font-size: 1.3rem;
@@ -110,12 +106,13 @@ section.fill-in-blanks {
 .answer {
   /* width: 200px; */
   border: none;
-  border-bottom: 2px dashed grey;
+  border-bottom: 2px dashed green;
   /* background-color: rgb(241,243,244); */
   /* font-family: 'Fira Code'; */
   color: green;
   font-size: 1.3rem;
   font-weight: 600;
+  margin-left: 2px;
 }
 
 .answer:active, .answer:focus {

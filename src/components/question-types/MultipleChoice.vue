@@ -47,13 +47,15 @@ export default {
       result: null,
       explanation: null,
       question: {
-      "id": 1144,
+      "id": 2117,
       "type": "MultipleChoice",
-      "question": "<b>console.table</b>...",
-      "choices": ["is invalid JavaScript", "counts the number of cells in an HTML table", "stashes code into localStorage", "displays data in a tabular format"],
+      "given": "",
+      "question": "Which one of these is <em>not</em> a JavaScript data type?",
+      "choices": ["char", "object", "boolean", "symbol"],
+      "answer": 0,
+      "explanation": "Many languages have a <pre>char</pre> data type. JavaScript does not.",
       "displayAsCode": [],
-      "answer": 3,
-      "moreInfo": "https://www.poftut.com/javascript-console-object-and-functions-tutorial-with-examples/"
+      "moreInfo": "https://javascript.info/types"
     },
     }
   },
@@ -107,14 +109,6 @@ section.multiple-choice {
   font-weight: 600;
 }
 
-.pre {
-  font-family: 'Fira Code';
-  background-color: rgb(241,243,244);
-  color: maroon;
-  line-height: 2rem;
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-}
 
 
 </style>

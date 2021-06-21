@@ -1,7 +1,7 @@
 <template>
   <section class='true-or-false'>
     <h2>True or False</h2>
-    <h3 v-if="question.given">Given...</h3>
+    <h3 v-if="question.given" class="if-given">Given...</h3>
     <div class="given" v-if="question.given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
     <div class="question" v-html="question.question"></div>
     <div class="answer-buttons">
@@ -38,14 +38,13 @@ export default {
     return {
       answer: null,
       explanation: null,
-      question:     {
-      "id": 1146,
-      "type": "TrueOrFalse",
-      "given": "let beginning = 42<br />let ending = \"24\"<br />console.log(beginning + ending)",
-      "question": "Prints 66 to the console",
-      "answer": false,
-      "explanation": "Since \"ending\" is a string, the plus operator will be used in concatenation mode: the console will print out \"4224\"",
-      displayAsCode: ["given"]
+      question: {
+      "id": 1150,
+      "type": "TrueOrNot",
+      "question": "The <pre>undefined</pre> value means \"value has not been assigned\"",
+      "answer": true,
+      "explanation": "If you use <pre>undefined</pre>, make sure you don't surround it in quotes. Doing so would turn the value into a string.",
+      "displayAsCode": []
     },
     }
   },
@@ -75,6 +74,10 @@ export default {
 <style scoped>
 section.true-or-false {
   position: relative;
+}
+
+.answer-buttons {
+  margin-top: 20px;
 }
 
 button {

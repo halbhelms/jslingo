@@ -38,12 +38,14 @@ export default {
       result: null,
       explanation: null,
       question: {
-      "id": 1142,
+      "id": 2113,
       "type": "ValidOrNot",
-      "question": "let customersAdded = 0 // total for this salesperson",
-      "answer": true,
+      "question": "\"let guestList = 'Guests:'<br>* John<br>* Wolfgang<br>* Esmerelda<br>\"",
+      "given": "",
+      "answer": false,
+      "explanation": "You can only split lines, as we're doing here, with string literals, not normal strings.",
       "displayAsCode": ["question"],
-      "moreInfo": "https://javascript.info/structure"
+      "moreInfo": "https://javascript.info/string"
     },
     }
   },
@@ -77,14 +79,6 @@ section.valid-or-not {
   position: relative;
 }
 
-.pre {
-  font-family: 'Fira Code';
-  background-color: rgb(241,243,244);
-  color: maroon;
-  line-height: 2rem;
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-}
 
 button {
   width: 6rem;  
