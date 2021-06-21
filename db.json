@@ -360,7 +360,7 @@
       "displayAsCode": ["question"]
     },
     {
-      "id": 221,
+      "id": 211,
       "type": "TrueOrNot",
       "question": "The <pre>null</pre> value means \"nothing\" or \"value unknown\"",
       "answer": true,
@@ -368,7 +368,7 @@
       "displayAsCode": []
     },
     {
-      "id": 222,
+      "id": 212,
       "type": "TrueOrNot",
       "question": "The <pre>undefined</pre> value means \"value has not been assigned\"",
       "answer": true,
@@ -376,7 +376,7 @@
       "displayAsCode": []
     },
     {
-      "id": 223,
+      "id": 213,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -391,7 +391,7 @@
       "size": 6
     },
     {
-      "id": 224,
+      "id": 214,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -406,7 +406,7 @@
       "size": 6
     },
     {
-      "id": 225,
+      "id": 215,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -421,7 +421,7 @@
       "size": 6
     },
     {
-      "id": 226,
+      "id": 216,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -436,7 +436,7 @@
       "size": 6
     },
     {
-      "id": 227,
+      "id": 217,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -451,7 +451,7 @@
       "size": 8
     },
     {
-      "id": 228,
+      "id": 218,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -466,7 +466,7 @@
       "size": 6
     },
     {
-      "id": 229,
+      "id": 219,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -481,7 +481,7 @@
       "size": 9
     },
     {
-      "id": 2210,
+      "id": 2110,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -496,7 +496,7 @@
       "size": 7
     },
     {
-      "id": 2211,
+      "id": 2111,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -511,7 +511,7 @@
       "size": 7
     },
     {
-      "id": 2212,
+      "id": 2112,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -526,7 +526,7 @@
       "size": 6
     },
     {
-      "id": 2213,
+      "id": 2113,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -541,7 +541,7 @@
       "size": 6
     },
     {
-      "id": 2214,
+      "id": 2114,
       "type": "FillBlank",
       "given": "",
       "question": "",
@@ -556,7 +556,7 @@
       "size": 6
     },
     {
-      "id": 2215,
+      "id": 2115,
       "type": "FillBlank",
       "given": "const add = (a,b) => {return a + b}",
       "question": "",
@@ -571,7 +571,7 @@
       "size": 8
     },
     {
-      "id": 2216,
+      "id": 2116,
       "type": "FillBlank",
       "given": "const array = [true, 5, \"tree\", [], {}]",
       "question": "",
@@ -594,7 +594,7 @@
       "displayAsCode": ["question"]
     },
     {
-      "id": 211,
+      "id": 2117,
       "type": "TrueOrFalse",
       "question": "Because JavaScript is not a strongly-typed language, it has no concept of <em>data types</em>",
       "answer": false,
@@ -611,7 +611,7 @@
       "explanation": "string, function, and map are all JavaScript data types. uri, on the other hand, is not."
     },
     {
-      "id": 213,
+      "id": 2118,
       "type": "MultipleChoice",
       "question": "Which one of these is <em>not</em> a JavaScript data type?",
       "choices": ["set", "object", "number", "conditional"],
@@ -620,7 +620,7 @@
       "explanation": "set, object, and number are all JavaScript data types. conditional, on the other hand, is not."
     },
     {
-      "id": 214,
+      "id": 2119,
       "type": "FillBlank",
       "q1": "A data type that is a set of statements that performs a task or calculates a value is called a ",
       "answers": ["function"],
@@ -629,7 +629,7 @@
       "size": 8
     },
     {
-      "id": 215,
+      "id": 2120,
       "type": "MultipleChoice",
       "given": "const catYears = 54/0",
       "question": "This code will return what data type?",
@@ -639,7 +639,7 @@
       "displayAsCode": ["choices", "given"]
     },
     {
-      "id": 216,
+      "id": 2121,
       "type": "ValidOrNot",
       "given": "",
       "question": "const x = NaN",
@@ -649,7 +649,7 @@
       "moreInfo": ""
     },
     {
-      "id": 217,
+      "id": 2122,
       "type": "FillBlank",
       "given": "The largest value of a number data type is (2<sup>53</sup> - 1) which is 9007199254740991. To use an even larger value, append the value with...",
       "q1": "let incrediblyBigNumber = 5487895612354778954562541",
@@ -660,7 +660,7 @@
       "moreInfo": "https://javascript.info/bigint"
     },
     {
-      "id": 218,
+      "id": 2123,
       "type": "FillBlank",
       "given": "'Mickey' / 7",
       "q1": "Running this code will return",
@@ -671,7 +671,7 @@
       "moreInfo": "https://javascript.info/types"
     },
     {
-      "id": 219,
+      "id": 2124,
       "type": "FillBlank",
       "given": "You want to find the data type of a variable, <pre>x</pre>...",
       "q1": "console.log(",
@@ -683,7 +683,7 @@
       "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof"
     },
     {
-      "id": 2110,
+      "id": 2125,
       "type": "TrueOrNot",
       "given": "",
       "question": "A <em>template literal</em> (also called a <em>template string</em> allows interpolation of JavaScript within a string.",
@@ -693,7 +693,7 @@
       "moreInfo": "https://javascript.info/types"
     },
     {
-      "id": 2111,
+      "id": 2126,
       "type": "ValidOrNot",
       "given": "",
       "question": "let msg = `Today is ${new Date()}`",
@@ -703,7 +703,7 @@
       "moreInfo": "https://javascript.info/types"
     },
     {
-      "id": 2112,
+      "id": 2127,
       "type": "ValidOrNot",
       "question": "`let guestList = 'Guests:'<br>* John<br>* Wolfgang<br>* Esmerelda<br>`",
       "given": "",
@@ -713,7 +713,7 @@
       "moreInfo": "https://javascript.info/string"
     },
     {
-      "id": 2113,
+      "id": 2128,
       "type": "ValidOrNot",
       "question": "\"let guestList = 'Guests:'<br>* John<br>* Wolfgang<br>* Esmerelda<br>\"",
       "given": "",
@@ -723,7 +723,7 @@
       "moreInfo": "https://javascript.info/string"
     },
     {
-      "id": 2114,
+      "id": 2129,
       "type": "FillBlank",
       "given": "You want to split a string across multiple lines with a normal string (not a string literal)...",
       "q1": "Four score and seven years ago",
@@ -735,7 +735,7 @@
       "size": 2
     },
     {
-      "id": 2115,
+      "id": 2130,
       "type": "TrueOrFalse",
       "given": "You want to use double quotes within a string that has been created with double quotes &mdash; like this: \"<pre>Amadeus was referred to by his friends as \\\"Wolfie\\\"</pre>",
       "answer": true,
@@ -745,7 +745,7 @@
       "size": 0
     },
     {
-      "id": 2116,
+      "id": 2131,
       "type": "TrueOrFalse",
       "question": "If you want to insert a tab character in a normal string (not a string template), you should use the escape code<pre>\\t</pre>",
       "answer": true,
@@ -755,7 +755,7 @@
       "size": 0
     },
     {
-      "id": 2117,
+      "id": 2132,
       "type": "MultipleChoice",
       "given": "",
       "question": "Which one of these is <em>not</em> a JavaScript data type?",
@@ -766,7 +766,7 @@
       "moreInfo": "https://javascript.info/types"
     },
     {
-      "id": 2118,
+      "id": 2133,
       "type": "FillBlank",
       "given": "",
       "q1": "A data type that specifies whether something is <pre>true</pre> or <pre>false</pre> is a",
@@ -777,7 +777,7 @@
       "size": 7
     },
     {
-      "id": 2119,
+      "id": 2134,
       "type": "TrueOrNot",
       "given": "let invited = \"false\"",
       "question": "<pre>invited</pre> has a value of type, <pre>boolean</pre>",
@@ -787,7 +787,7 @@
       "moreInfo": "https://javascript.info/types"
     },
     {
-      "id": 2120,
+      "id": 2135,
       "type": "FillBlank",
       "given": "You want to \"flip\" the value of a boolean value &mdash; changing <pre>true</pre> to <pre>false</pre> or <i>vice versa</i>",
       "q1": "let isInvited = ",
@@ -799,7 +799,7 @@
       "size": 1
     },
     {
-      "id": 2121,
+      "id": 2136,
       "type": "FillBlank",
       "given": "Comparisons of values always return a boolean value. Here, use an operator to see if <pre>x</pre> is greater than <pre>y</pre>.",
       "q1": "x",
@@ -811,7 +811,7 @@
       "size": 1
     },
     {
-      "id": 2122,
+      "id": 2137,
       "type": "MultipleChoice",
       "given": "",
       "question": "Which of these is not a <em>primitive</em> data type?",
@@ -916,7 +916,7 @@
       "size": 8
     },
     {
-      "id": 316,
+      "id": 317,
       "type": "FillBlank",
       "given": "const x = true<br>const y = 1<br>\/\/Determine if <pre>x</pre> is equal to <pre>y</pre> (strict equality)",
       "question": "",
@@ -931,7 +931,7 @@
       "size": 8
     },
     {
-      "id": 317,
+      "id": 318,
       "type": "FillBlank",
       "given": "const x = null<br>const y = undefined<br>\/\/Determine if <pre>x</pre> is equal to <pre>y</pre> (regular, non-strict equality)",
       "question": "",
@@ -946,7 +946,7 @@
       "size": 8
     },
     {
-      "id": 317,
+      "id": 319,
       "type": "FillBlank",
       "given": "const x = null<br>const y = undefined<br>\/\/Determine if <pre>x</pre> is equal to <pre>y</pre> (strict equality)",
       "question": "",
@@ -961,7 +961,7 @@
       "size": 8
     },
     {
-      "id": 318,
+      "id": 3110,
       "type": "FillBlank",
       "given": "const x = null<br>const y = 0<br>\/\/Determine if <pre>x</pre> is greater than or equal to <pre>y</pre>.",
       "question": "",
@@ -976,7 +976,7 @@
       "size": 8
     },
     {
-      "id": 321,
+      "id": 3111,
       "type": "",
       "given": "let customerStatus = \"gold\"<br>let percentOff = customerStatus === \"gold\" ? 10 : 0",
       "question": "",
@@ -991,7 +991,7 @@
       "size": 5
     },
     {
-      "id": 319,
+      "id": 3112,
       "type": "ValidOrNot",
       "given": "",
       "question": "if 6 > 5 return true",
@@ -1006,7 +1006,7 @@
       "size": 0
     },
     {
-      "id": 3110,
+      "id": 3113,
       "type": "ValidOrNot",
       "given": "",
       "question": "if (6 > 5) return true",
@@ -1021,7 +1021,7 @@
       "size": 0
     },
     {
-      "id": 3111,
+      "id": 3114,
       "type": "ValidOrNot",
       "given": "",
       "question": "let registered = false<br>if (registered) {\/\/ do something }",
@@ -1036,7 +1036,7 @@
       "size": 0
     },
     {
-      "id": 3112,
+      "id": 3115,
       "type": "ValidOrNot",
       "given": "",
       "question": "let registered = true<br>registered = !registered",
@@ -1051,7 +1051,7 @@
       "size": 0
     },
     {
-      "id": 3113,
+      "id": 3116,
       "type": "FillBlank",
       "given": "let registered = true<br>let x = Math.random()<br>\/\/ if x greater than 0.5, flip the value of registered",
       "question": "",
@@ -1066,7 +1066,7 @@
       "size": 25
     },
     {
-      "id": 3114,
+      "id": 3117,
       "type": "ValidOrNot",
       "given": "",
       "question": "let confused = !!!true",
@@ -1081,7 +1081,7 @@
       "size": 0
     },
     {
-      "id": 3115,
+      "id": 3118,
       "type": "ValidOrNot",
       "given": "",
       "question": "if (Math.random() > 0.5) then {<br>&nbsp;&nbsp;\/\/ do something<br>}",
@@ -1096,7 +1096,7 @@
       "size": 0
     },
     {
-      "id": 3116,
+      "id": 3119,
       "type": "ValidOrNot",
       "given": "",
       "question": "if (Math.random() > 0.5) {<br>&nbsp;&nbsp;\/\/ do something<br>} else {<br>&nbsp;&nbsp;\/\/ do something else<br>}",
@@ -1111,7 +1111,7 @@
       "size": 0
     },
     {
-      "id": 3117,
+      "id": 3120,
       "type": "AllMixedUp",
       "given": "Arrange to test to see if registered is greater than unregistered",
       "question": "",
@@ -1128,7 +1128,7 @@
       "size": 0
     },
     {
-      "id": 3118,
+      "id": 3121,
       "type": "FillBlank",
       "given": "<pre>let a = 1, b = 2, winner</pre><br>If a is greater than b, assign \"a wins\" to <pre>winner</pre>, otherwise assign \"b wins\" to <pre>winner</pre> using the ternary conditional expression.",
       "question": "",
@@ -1143,7 +1143,7 @@
       "size": 40
     },
     {
-      "id": 3119,
+      "id": 3122,
       "type": "TrueOrNot",
       "given": "if (1) { console.log('I guess it is true')}",
       "question": "Does this print \"I guess it is true\" to the console?",
@@ -1158,7 +1158,7 @@
       "size": 0
     },
     {
-      "id": 3220,
+      "id": 331,
       "type": "FillBlank",
       "given": "<pre>let x = Math.random()</pre><br>If x is less than 0.33, log 'small'. <br>If x is greater than or equal to 0.33 but less than 0.66, log 'medium'. <br>If neither of these conditions are true, log 'large'. <br>Use curly braces <pre>{}</pre> within if conditions.",
       "question": "",
@@ -1173,17 +1173,17 @@
       "size": 60
     },
     {
-      "id": ,
-      "type": "",
-      "given": "",
-      "question": "",
+      "id": 3123,
+      "type": "TrueOrNot",
+      "given": "let x = a > b ? 'a' : 'b'",
+      "question": "The ternary operator uses non-strict evaluation (sometimes called 'truthy')",
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": "",
+      "answer": true,
       "answers": [""],
       "explanation": "",
-      "displayAsCode": [],
+      "displayAsCode": ["given"],
       "moreInfo": "",
       "size": 0
     },
