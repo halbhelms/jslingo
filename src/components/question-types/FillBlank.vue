@@ -3,7 +3,7 @@
 <section class='fill-in-blanks'>
   <h3 v-if="question.given">Given...</h3>
   <div class="given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
-  <div>
+  <div class="body">
      <span v-html="question.q1" :class="question.displayAsCode.includes('q1') ? 'pre' : ''"/>
      <input type="text" class="answer" :class="question.displayAsCode.includes('answer') ? 'pre' : ''" :size="question.size" v-on:keyup.enter="evaluateAnswer" v-model="answer" />
      <span v-html="question.q2" :class="question.displayAsCode.includes('q2') ? 'pre' : ''" />
@@ -46,19 +46,19 @@ export default {
       explanation: null,
       showAnswer: false,
       question: {
-      "id": 321,
-      "type": "",
-      "given": "let customerStatus = \"gold\"<br>let percentOff = customerStatus === \"gold\" ? 10 : 0",
+      "id": 3120,
+      "type": "FillBlank",
+      "given": "<pre>let x = Math.random()</pre><br>If x is less than 0.33, log 'small'. <br>If x is greater than or equal to 0.33 but less than 0.66, log 'medium'. <br>If neither of these conditions are true, log 'large'. <br>Use curly braces <pre>{}</pre> within if conditions.",
       "question": "",
-      "q1": "The <pre>percentOff</pre> number will be ",
-      "q2": "",
+      "q1": "let x = Math.random()<br>if (x < 0.33) { console.log('small')}<br>",
+      "q2": "<br>else {console.log('large')}",
       "choices": [],
       "answer": "",
-      "answers": ["10", "10%"],
-      "explanation": "This <em>conditional operator</em> evaluates the first statement: <pre>customerStatus === \"gold\"</pre>. If this evaluates to <pre>true</pre> the value immediately after the <pre>?</pre> is returned. If it evaluates to <pre>false</pre>, the value after the <pre>:</pre> is returned.",
-      "displayAsCode": ["answer", "given"],
+      "answers": ["else if (x >=0.33 && x < 0.66) {console.log('medium')}","else if (x >=0.33 && x < 0.66) {console.log(\"medium\")}"],
+      "explanation": "<pre>else if</pre> is your friend here.",
+      "displayAsCode": [ "answer", "q1", "q2"],
       "moreInfo": "",
-      "size": 5
+      "size": 60
     },
     }
   },
@@ -115,7 +115,7 @@ section.fill-in-blanks {
 .answer {
   /* width: 200px; */
   border: none;
-  border-bottom: 2px dashed green;
+  border-bottom: 1px dashed green;
   /* background-color: rgb(241,243,244); */
   /* font-family: 'Fira Code'; */
   color: green;

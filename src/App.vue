@@ -48,6 +48,11 @@ pre {
   font-family: 'Fira Code';
 }
 
+.body {
+  text-align: left;
+  margin-left: 60px;
+}
+
 .explanation {
   text-align: left;
   margin-top: 20px;

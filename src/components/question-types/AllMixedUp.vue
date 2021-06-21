@@ -7,7 +7,7 @@
       </div>
     </div>
     <div>
-      <div class="mixed" v-for="el in _question.mixed" :key="el" @click="selectEl(el)" v-html="el"></div>
+      <div class="mixed" v-for="el in question.mixed" :key="el" @click="selectEl(el)" v-html="el"></div>
     </div>
     <div class="results">{{ results }}</div>
   </section>
@@ -27,12 +27,25 @@ export default {
 
   data() {
     return {
-      results: null,
       answer: [],
-      _question: {
-        mixed: [']', '=', 'colors', '[', 'const', '"red", "green", "blue"'],
-        ordered: ['const', 'colors', '=', '[', '"red", "green", "blue"', ']']
-      }
+      results: null,
+      question: {
+      "id": 3117,
+      "type": "AllMixedUp",
+      "given": "Arrange to test to see if registered is greater than unregistered",
+      "question": "",
+      "q1": "",
+      "q2": "",
+      "mixed": ["unregistered",">", ")", "registered","if", "("],
+      "ordered": ["if", "(","registered", ">", "unregistered", ")"],
+      "choices": [],
+      "answer": "",
+      "answers": [""],
+      "explanation": "",
+      "displayAsCode": [],
+      "moreInfo": "",
+      "size": 0
+    }
     }
   },
 
@@ -41,9 +54,9 @@ export default {
       // push element into this.answer
       this.answer.push(el)
       // remove element from _question.mixed
-      this._question.mixed = this._question.mixed.filter(mixedEl => mixedEl != el )
+      this.question.mixed = this.question.mixed.filter(mixedEl => mixedEl != el )
       // check to see if the number of answers == number of _question.ordered
-      if (this._question.ordered.length == this.answer.length) {
+      if (this.question.ordered.length == this.answer.length) {
         this.evaluateAnswer()
       }
       // if so call evaluateAnswer
@@ -51,7 +64,7 @@ export default {
 
     evaluateAnswer() {
       const answers = this.answer.join('')
-      const ordered = this._question.ordered.join('')
+      const ordered = this.question.ordered.join('')
       if (answers == ordered) {
         this.results = "Correct"
       } else {

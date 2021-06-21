@@ -39,12 +39,19 @@ export default {
       answer: null,
       explanation: null,
       question: {
-      "id": 1150,
+      "id": 3119,
       "type": "TrueOrNot",
-      "question": "The <pre>undefined</pre> value means \"value has not been assigned\"",
+      "given": "if (1) { console.log('I guess it is true')}",
+      "question": "Does this print \"I guess it is true\" to the console?",
+      "q1": "",
+      "q2": "",
+      "choices": [],
       "answer": true,
-      "explanation": "If you use <pre>undefined</pre>, make sure you don't surround it in quotes. Doing so would turn the value into a string.",
-      "displayAsCode": []
+      "answers": [""],
+      "explanation": "The shorthand, <pre>if (1)</pre>, uses non-strict evaluation, converting any non-zero number to <pre>true</pre>. ",
+      "displayAsCode": ["given"],
+      "moreInfo": "",
+      "size": 0
     },
     }
   },
