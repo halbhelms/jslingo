@@ -1,7 +1,8 @@
 <template>
 <section class='fill-in-blanks'>
   <section class='fill-in-blanks-wrapper'>
-   <p class="pre" v-for="line in question.template" :key="line">{{ line }}</p>
+   <textarea v-model="attempt" placeholder="Enter code here..."></textarea>
+   <button @click="evaluateAnswer">Check</button>
   </section>
 </section>
 </template>
@@ -19,23 +20,23 @@ export default {
 
   data() {
     return {
+      attempt: null,
       question: {
-        type: 'FillInBlanks',
-        question: 'Complete the Code',
-        template: [
-          'const colors = ["red", "green", "blue"]',
-          'colors.|_|(color => {',
-          `  console.log(color)`,
-          '}'
-        ],
-        displayAsCode: true,
+        type: 'FullCode',
+        question: "Set <pre>x</pre> to 'Hello'",
+        displayAsCode: [],
         difficulty: 2,
-        answers: ['forEach']
+        answer: 'Hello'
       },
     }
   },
 
-  methods: {},
+  methods: {
+    evaluateAnswer() {
+      let _answer = eval(this.attempt)
+      console.log(_answer)
+    },
+  },
 
  computed: {}
 }

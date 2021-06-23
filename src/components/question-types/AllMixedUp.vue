@@ -1,9 +1,11 @@
 <template>
+<!-- <div class="temp pre" v-html="question.ordered.join(' ')"></div> -->
 <section class='all-mixed-up'>
   <section class='all-mixed-up-wrapper'>
+    <div class="question" v-html="question.question"></div>
     <div class="pre">
-      <div class="answer" v-for="portion in answer" :key="portion">
-        {{ portion }}
+      <div class="answer" v-for="portion in answer" :key="portion" v-html="portion">
+       
       </div>
     </div>
     <div>
@@ -30,14 +32,14 @@ export default {
       answer: [],
       results: null,
       question: {
-      "id": 3117,
+      "id": 8124,
       "type": "AllMixedUp",
-      "given": "Arrange to test to see if registered is greater than unregistered",
-      "question": "",
+      "given": "",
+      "question": "Create a for loop from jumble",
       "q1": "",
       "q2": "",
-      "mixed": ["unregistered",">", ")", "registered","if", "("],
-      "ordered": ["if", "(","registered", ">", "unregistered", ")"],
+      "mixed": [";",")","//loop body","i<100","}",";","let i=10","(", "{", "for", "i+=10",],
+      "ordered": ["for","(","let i=10",";","i<100",";","i+=10", ")","{","//loop body", "}"],
       "choices": [],
       "answer": "",
       "answers": [""],
@@ -54,7 +56,7 @@ export default {
       // push element into this.answer
       this.answer.push(el)
       // remove element from _question.mixed
-      this.question.mixed = this.question.mixed.filter(mixedEl => mixedEl != el )
+      // this.question.mixed = this.question.mixed.filter(mixedEl => mixedEl != el )
       // check to see if the number of answers == number of _question.ordered
       if (this.question.ordered.length == this.answer.length) {
         this.evaluateAnswer()
@@ -65,7 +67,7 @@ export default {
     evaluateAnswer() {
       const answers = this.answer.join('')
       const ordered = this.question.ordered.join('')
-      if (answers == ordered) {
+      if (answers.replace(/\s+/, '') == ordered.replace(/\s+/, '')) {
         this.results = "Correct"
       } else {
         this.results = "Incorrect"

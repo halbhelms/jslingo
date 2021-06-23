@@ -46,19 +46,19 @@ export default {
       explanation: null,
       showAnswer: false,
       question: {
-      "id": 3120,
+      "id": 837,
       "type": "FillBlank",
-      "given": "<pre>let x = Math.random()</pre><br>If x is less than 0.33, log 'small'. <br>If x is greater than or equal to 0.33 but less than 0.66, log 'medium'. <br>If neither of these conditions are true, log 'large'. <br>Use curly braces <pre>{}</pre> within if conditions.",
+      "given": "This code should exit from <em>both</em> loops when <pre>i*j == 42</pre>",
       "question": "",
-      "q1": "let x = Math.random()<br>if (x < 0.33) { console.log('small')}<br>",
-      "q2": "<br>else {console.log('large')}",
+      "q1": "outer: for (let i=0; i<20; i++) {<br>&nbsp;&nbsp;for (let j=10; j>0; j--) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(i*j)<br>&nbsp;&nbsp;&nbsp;&nbsp;if (i*j == 42) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ",
+      "q2": "<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
       "choices": [],
       "answer": "",
-      "answers": ["else if (x >=0.33 && x < 0.66) {console.log('medium')}","else if (x >=0.33 && x < 0.66) {console.log(\"medium\")}"],
-      "explanation": "<pre>else if</pre> is your friend here.",
-      "displayAsCode": [ "answer", "q1", "q2"],
+      "answers": ["outer", "outer;"],
+      "explanation": "",
+      "displayAsCode": ["answer","q1","q2"],
       "moreInfo": "",
-      "size": 60
+      "size": 6
     },
     }
   },

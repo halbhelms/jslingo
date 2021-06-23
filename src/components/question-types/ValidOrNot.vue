@@ -37,18 +37,18 @@ export default {
     return {
       result: null,
       explanation: null,
-      question: {
-      "id": 3119,
-      "type": "TrueOrNot",
-      "given": "if (1) { console.log('I guess it is true')}",
-      "question": "Does this print \"I guess it is true\" to the console?",
+      question:  {
+      "id": 612,
+      "type": "TrueOrFalse",
+      "given": "function currentDateTime() {<br>&nbsp;&nbsp;return new Date()<br>}",
+      "question": "This is a valid function",
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
-      "answers": [""],
-      "explanation": "The shorthand, <pre>if (1)</pre>, uses non-strict evaluation, converting any non-zero number to <pre>true</pre>. ",
-      "displayAsCode": ["question"],
+      "answers": [],
+      "explanation": "",
+      "displayAsCode": [],
       "moreInfo": "",
       "size": 0
     },
