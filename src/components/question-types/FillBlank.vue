@@ -46,19 +46,19 @@ export default {
       explanation: null,
       showAnswer: false,
       question: {
-      "id": 837,
+      "id": 618,
       "type": "FillBlank",
-      "given": "This code should exit from <em>both</em> loops when <pre>i*j == 42</pre>",
-      "question": "",
-      "q1": "outer: for (let i=0; i<20; i++) {<br>&nbsp;&nbsp;for (let j=10; j>0; j--) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(i*j)<br>&nbsp;&nbsp;&nbsp;&nbsp;if (i*j == 42) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ",
-      "q2": "<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
+      "given": "",
+      "question": "Provide a second parameter, <pre>discount</pre> with a default value of <pre>.02</pre>",
+      "q1": "function calculatePrice(price,",
+      "q2": ") {<br>&nbsp;&nbsp;return price * (1-discount)<br>}",
       "choices": [],
       "answer": "",
-      "answers": ["outer", "outer;"],
+      "answers": ["discount = .02", "discount=0.02"],
       "explanation": "",
       "displayAsCode": ["answer","q1","q2"],
       "moreInfo": "",
-      "size": 6
+      "size": 15
     },
     }
   },
@@ -67,8 +67,6 @@ export default {
     evaluateAnswer() {
       let rightAnswer = false
       this.question.answers.forEach( answer => {
-        console.log(answer.replace(/\s+/g, ''))
-        console.log(this.answer.replace(/\s+/g, ''))
         if (answer.replace(/\s+/g, '') == this.answer.replace(/\s+/g, '')) {
           this.$store.dispatch('add_to_score', this.difficulty)
           rightAnswer = true
