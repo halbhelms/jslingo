@@ -38,12 +38,13 @@ export default {
     return {
       answer: null,
       explanation: null,
+      
       question: {
-      "id": 6126,
+      "id": 1154,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "A function can, itelf, call a function.",
-      "displayAsCode": [],
+      "given": "globalThis.console.log(`Hi, ${name}`)<br>console.log(`Hi, ${name}`)",
+      "question": "In both cases, <pre>console</pre> is globally-scoped.",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],

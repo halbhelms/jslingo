@@ -45,20 +45,21 @@ export default {
       result: null,
       explanation: null,
       showAnswer: false,
+      
       question: {
-      "id": 618,
+      "id": 8135,
       "type": "FillBlank",
-      "given": "",
-      "question": "Provide a second parameter, <pre>discount</pre> with a default value of <pre>.02</pre>",
-      "q1": "function calculatePrice(price,",
-      "q2": ") {<br>&nbsp;&nbsp;return price * (1-discount)<br>}",
+      "given": "To display the name of a function...",
+      "question": "",
+      "displayAsCode": ["answer", "q1", "q2"],
+      "q1": "function greeting() {}<br>console.log(greeting.",
+      "q2": ")",
       "choices": [],
       "answer": "",
-      "answers": ["discount = .02", "discount=0.02"],
+      "answers": ["name"],
       "explanation": "",
-      "displayAsCode": ["answer","q1","q2"],
       "moreInfo": "",
-      "size": 15
+      "size": 4
     },
     }
   },

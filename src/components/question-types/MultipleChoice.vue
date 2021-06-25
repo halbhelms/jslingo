@@ -46,18 +46,19 @@ export default {
     return {
       result: null,
       explanation: null,
+      
       question: {
-      "id": 622,
+      "id": 8213,
       "type": "MultipleChoice",
-      "given": "let sayHello = (function sayHello(name) {<br>&nbsp;&nbsp;console.log(`Hello ${name}`)<br>})('Anna')",
+      "given": "let sayHi = function(who) {<br>&nbsp;&nbsp;if (who) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(`Hi, ${who}`)<br>&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;sayHi('Guest')<br>&nbsp;&nbsp;}<br>}<br><br>let greet = sayHi<br>sayHi = null<br>greet()",
       "question": "What will be logged to the console?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Hello Anna", "Hello", "nothing", "error"],
-      "answer": 0,
+      "choices": ["Hi, Guest", "Hi,", "nothing", "TypeError"],
+      "answer": 3,
       "answers": [],
-      "explanation": "This pattern is known as an <em>immediately-invoked function expression</em> or <em>IIFE</em>.",
+      "explanation": "Inside the function, we call <pre>sayHi</pre> &mdash; but <pre>sayHi</pre> has been set to <pre>null</pre>, so <pre>sayHi</pre> is no longer a function. To get around this possible problem, you might want to give the function a name &mdash; and then use that name within the function rather than <pre>sayHi</pre>",
       "moreInfo": "",
       "size": 0
     },
