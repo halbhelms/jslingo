@@ -31,20 +31,19 @@ export default {
     return {
       answer: [],
       results: null,
+
       question: {
-      "id": 8124,
+      "id": 8140,
       "type": "AllMixedUp",
       "given": "",
-      "question": "Create a for loop from jumble",
-      "q1": "",
-      "q2": "",
-      "mixed": [";",")","//loop body","i<100","}",";","let i=10","(", "{", "for", "i+=10",],
-      "ordered": ["for","(","let i=10",";","i<100",";","i+=10", ")","{","//loop body", "}"],
+      "question": "Rearrange the code to create a <pre>setTimeout</pre> function",
+      "displayAsCode": [],
+      "mixed": [")","setTimeout","let","(",",","5000","myFunc","=","myTimer"],
+      "ordered": ["let", "myTimer", "=", "setTimeout", "(", "myFunc", ",", "5000", ")"],
       "choices": [],
       "answer": "",
-      "answers": [""],
+      "answers": [],
       "explanation": "",
-      "displayAsCode": [],
       "moreInfo": "",
       "size": 0
     }

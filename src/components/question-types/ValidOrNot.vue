@@ -37,11 +37,12 @@ export default {
     return {
       result: null,
       explanation: null,
+
       question:  {
-      "id": 6132,
+      "id": 8139,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let fnc = arg => `You sent me ${arg}`",
+      "question": "let myTimer = setTimeout(() => console.log('Hi there'), 5000)<br>setTimeout(() => clearTimeout(myTimer), 2000)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -49,7 +50,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/settimeout-setinterval",
       "size": 0
     },
     }

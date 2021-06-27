@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 8213,
+      "id": 8137,
       "type": "MultipleChoice",
-      "given": "let sayHi = function(who) {<br>&nbsp;&nbsp;if (who) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(`Hi, ${who}`)<br>&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;sayHi('Guest')<br>&nbsp;&nbsp;}<br>}<br><br>let greet = sayHi<br>sayHi = null<br>greet()",
-      "question": "What will be logged to the console?",
+      "given": "function greet() {console.log('Hi there')}<br>setTimeout(greet, 1000)",
+      "question": "What will happen when this code is run?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Hi, Guest", "Hi,", "nothing", "TypeError"],
-      "answer": 3,
+      "choices": ["After a delay of 1 second, <em>Hi there</em> will be logged to the console", "Nothing &mdash; as <pre>greet</pre> is declared but never invoked", "After a delay of 1 second, <em>Hi there</em> will be logged to the console continuously", "An error will be thrown"],
+      "answer": 0,
       "answers": [],
-      "explanation": "Inside the function, we call <pre>sayHi</pre> &mdash; but <pre>sayHi</pre> has been set to <pre>null</pre>, so <pre>sayHi</pre> is no longer a function. To get around this possible problem, you might want to give the function a name &mdash; and then use that name within the function rather than <pre>sayHi</pre>",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/settimeout-setinterval",
       "size": 0
     },
     }

@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 8135,
+      "id": 8142,
       "type": "FillBlank",
-      "given": "To display the name of a function...",
+      "given": "Fill the blank to stop the recurring action of this code",
       "question": "",
-      "displayAsCode": ["answer", "q1", "q2"],
-      "q1": "function greeting() {}<br>console.log(greeting.",
-      "q2": ")",
+      "displayAsCode": ["q1", "q2", "answer"],
+      "q1": "let counter = 0<br>let myInterval = setInterval(() => {<br>&nbsp;&nbsp;console.log(++counter)<br>&nbsp;&nbsp;if (counter == 7) {<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+      "q2": "<br>&nbsp;&nbsp;}<br>}, 2000)",
       "choices": [],
       "answer": "",
-      "answers": ["name"],
+      "answers": ["clearInterval(myInterval)"],
       "explanation": "",
       "moreInfo": "",
-      "size": 4
+      "size": 26
     },
     }
   },
