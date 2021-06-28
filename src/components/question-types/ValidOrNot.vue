@@ -39,18 +39,18 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 8139,
+      "id": 6216,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let myTimer = setTimeout(() => console.log('Hi there'), 5000)<br>setTimeout(() => clearTimeout(myTimer), 2000)",
+      "question": "function multiplyBy(a,b) {<br>&nbsp;&nbsp;return a * b<br>}<br><br>let double = multiplyBy.bind(null, 2)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/settimeout-setinterval",
+      "explanation": "This is sometimes called a <em>partial function</em>",
+      "moreInfo": "https://javascript.info/bind",
       "size": 0
     },
     }

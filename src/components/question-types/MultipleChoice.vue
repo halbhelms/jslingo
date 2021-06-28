@@ -47,19 +47,19 @@ export default {
       result: null,
       explanation: null,
       
-      question: {
-      "id": 8137,
+      question:  {
+      "id": 6215,
       "type": "MultipleChoice",
-      "given": "function greet() {console.log('Hi there')}<br>setTimeout(greet, 1000)",
-      "question": "What will happen when this code is run?",
+      "given": "let user = {<br>&nbsp;&nbsp;firstName: 'John'<br>}<br><br>function func(greeting) {<br>&nbsp;&nbsp;return(`Hello, ${greeting}, ${this.firstName}!`)<br>}<br><br>console.log(func.bind(user)('Hi'))",
+      "question": "What will be logged to the console?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["After a delay of 1 second, <em>Hi there</em> will be logged to the console", "Nothing &mdash; as <pre>greet</pre> is declared but never invoked", "After a delay of 1 second, <em>Hi there</em> will be logged to the console continuously", "An error will be thrown"],
-      "answer": 0,
+      "choices": ["undefined, John", "Hello, undefined", "undefined, undefined", "Hello, John"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/settimeout-setinterval",
+      "moreInfo": "",
       "size": 0
     },
     }

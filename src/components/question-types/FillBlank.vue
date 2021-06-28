@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 8142,
+      "id": 6216,
       "type": "FillBlank",
-      "given": "Fill the blank to stop the recurring action of this code",
+      "given": "function multiplyBy(a,b) {<br>&nbsp;&nbsp;return a * b<br>}<br><br>let double = multiplyBy.bind(null, 2)<br><br>console.log(double(8)",
       "question": "",
-      "displayAsCode": ["q1", "q2", "answer"],
-      "q1": "let counter = 0<br>let myInterval = setInterval(() => {<br>&nbsp;&nbsp;console.log(++counter)<br>&nbsp;&nbsp;if (counter == 7) {<br>&nbsp;&nbsp;&nbsp;&nbsp;",
-      "q2": "<br>&nbsp;&nbsp;}<br>}, 2000)",
+      "displayAsCode": ["given"],
+      "q1": "The value printed to the console is ",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["clearInterval(myInterval)"],
-      "explanation": "",
-      "moreInfo": "",
-      "size": 26
+      "answers": ["16"],
+      "explanation": "This is sometimes called a <em>partial function</em>",
+      "moreInfo": "https://javascript.info/bind",
+      "size": 3
     },
     }
   },

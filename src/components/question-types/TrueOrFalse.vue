@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 1154,
+      "id": 637,
       "type": "TrueOrFalse",
-      "given": "globalThis.console.log(`Hi, ${name}`)<br>console.log(`Hi, ${name}`)",
-      "question": "In both cases, <pre>console</pre> is globally-scoped.",
+      "given": "let userUtils = {<br>&nbsp;&nbsp;addAddress: function(street, city, state) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.street = street<br>&nbsp;&nbsp;&nbsp;&nbsp;this.city = city<br>&nbsp;&nbsp;&nbsp;&nbsp;this.state = state<br>&nbsp;&nbsp;}<br>}<br><br>let user = {<br>&nbsp;&nbsp;firstName: 'Ignaz',<br>&nbsp;&nbsp;lastName: 'Semmelweiß'<br>}<br><br>userUtils.addAddress.bind(user)('123 Rainbow', 'Las Vegas', 'NV')",
+      "question": "Ignaz Semmelweiß has no address",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "",
+      "explanation": "You can add parameters when binding a function",
+      "moreInfo": "https://javascript.info/bind",
       "size": 0
     },
     }
