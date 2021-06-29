@@ -48,19 +48,19 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 6215,
+      "id": 422,
       "type": "MultipleChoice",
-      "given": "let user = {<br>&nbsp;&nbsp;firstName: 'John'<br>}<br><br>function func(greeting) {<br>&nbsp;&nbsp;return(`Hello, ${greeting}, ${this.firstName}!`)<br>}<br><br>console.log(func.bind(user)('Hi'))",
-      "question": "What will be logged to the console?",
+      "given": "let report = {<br>&nbsp;&nbsp;age: 0,<br>&nbsp;&nbsp;set age(age) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if ( age > 0 && age < 120 ) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = age<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}<br><br>report.age = 42",
+      "question": "What does this code do?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["undefined, John", "Hello, undefined", "undefined, undefined", "Hello, John"],
-      "answer": 3,
+      "choices": ["Sets <pre>report.age</pre> to 42", "Throws a run-time exception", "Does nothing as it violates the age check"],
+      "answer": 1,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "",
-      "size": 0
+      "explanation": "You cannot have the property name the same as your <pre>get</pre> property.",
+      "moreInfo": "https://javascript.info/property-accessors",
+      "size": 4
     },
     }
   },

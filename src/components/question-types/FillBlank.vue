@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 6216,
+      "id": 433,
       "type": "FillBlank",
-      "given": "function multiplyBy(a,b) {<br>&nbsp;&nbsp;return a * b<br>}<br><br>let double = multiplyBy.bind(null, 2)<br><br>console.log(double(8)",
+      "given": "let electricVehicle = {<br>&nbsp;&nbsp;motor: 'electric',<br>&nbsp;&nbsp;emissions: 'none'<br>}<br><br>let tesla = {<br>&nbsp;&nbsp;mark: 'Tesla',<br>&nbsp;&nbsp;range: '340 miles'<br>}<br>Object.setPrototypeOf(tesla, electricVehicle)<br><br>console.log(tesla.motor)",
       "question": "",
       "displayAsCode": ["given"],
-      "q1": "The value printed to the console is ",
+      "q1": "The value of <pre>tesla.motor</pre> is ",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["16"],
-      "explanation": "This is sometimes called a <em>partial function</em>",
-      "moreInfo": "https://javascript.info/bind",
-      "size": 3
+      "answers": ["electric"],
+      "explanation": "This syntax is preferred over the older <pre>__proto__</pre>.",
+      "moreInfo": "https://javascript.info/prototype-inheritance",
+      "size": 9
     },
     }
   },

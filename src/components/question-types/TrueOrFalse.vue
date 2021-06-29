@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 637,
+      "id": 6135,
       "type": "TrueOrFalse",
-      "given": "let userUtils = {<br>&nbsp;&nbsp;addAddress: function(street, city, state) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.street = street<br>&nbsp;&nbsp;&nbsp;&nbsp;this.city = city<br>&nbsp;&nbsp;&nbsp;&nbsp;this.state = state<br>&nbsp;&nbsp;}<br>}<br><br>let user = {<br>&nbsp;&nbsp;firstName: 'Ignaz',<br>&nbsp;&nbsp;lastName: 'Semmelweiß'<br>}<br><br>userUtils.addAddress.bind(user)('123 Rainbow', 'Las Vegas', 'NV')",
-      "question": "Ignaz Semmelweiß has no address",
+      "given": "let sayHi = () => 'Hello'<br>console.log(sayHi())",
+      "question": "This code will throw a run-time exception.",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "You can add parameters when binding a function",
-      "moreInfo": "https://javascript.info/bind",
+      "explanation": "",
+      "moreInfo": "",
       "size": 0
     },
     }
