@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 433,
+      "id": 321,
       "type": "FillBlank",
-      "given": "let electricVehicle = {<br>&nbsp;&nbsp;motor: 'electric',<br>&nbsp;&nbsp;emissions: 'none'<br>}<br><br>let tesla = {<br>&nbsp;&nbsp;mark: 'Tesla',<br>&nbsp;&nbsp;range: '340 miles'<br>}<br>Object.setPrototypeOf(tesla, electricVehicle)<br><br>console.log(tesla.motor)",
+      "given": "console.log(false || 'Hello')",
       "question": "",
       "displayAsCode": ["given"],
-      "q1": "The value of <pre>tesla.motor</pre> is ",
-      "q2": "",
+      "q1": "This code will print ",
+      "q2": " to the console",
       "choices": [],
       "answer": "",
-      "answers": ["electric"],
-      "explanation": "This syntax is preferred over the older <pre>__proto__</pre>.",
-      "moreInfo": "https://javascript.info/prototype-inheritance",
-      "size": 9
+      "answers": ["Hello", "'Hello'", "\"Hello\""],
+      "explanation": "",
+      "moreInfo": "",
+      "size": 7
     },
     }
   },
