@@ -1,12 +1,11 @@
 <template>
-<h2>Fill in the blank</h2>
+<h2>Fill in the blanks</h2>
 <section class='fill-in-blanks'>
   <h3 v-if="question.given">Given...</h3>
   <div class="given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
   <div class="body">
-     <span v-html="question.q1" :class="question.displayAsCode.includes('q1') ? 'pre' : ''"/>
-     <input type="text" class="answer" :class="question.displayAsCode.includes('answer') ? 'pre' : ''" :size="question.size" v-on:keyup.enter="evaluateAnswer" v-model="answer" />
-     <span v-html="question.q2" :class="question.displayAsCode.includes('q2') ? 'pre' : ''" />
+     <div class="question">
+     </div>
   </div>
 
    <div class="result" v-if="result=='correct'">Yes, you are correct!</div>
@@ -47,19 +46,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 8145,
+      "id": 419,
       "type": "FillBlank",
-      "given": "let myCat = {<br>&nbsp;&nbsp;name: 'Amadeus',<br>&nbsp;&nbsp;color: 'black'<br>}<br><br>let yourCat = myCat<br><br>console.log(myCat === yourCat)",
+      "given": "Remove the property <pre>age</pre>",
       "question": "",
-      "displayAsCode": ["given", "answer"],
-      "q1": "The value logged to the console is ",
+      "displayAsCode": ["answer", "q1", "q2"],
+      "q1": "let person = {<br>&nbsp;&nbsp;age: null,<br>&nbsp;&nbsp;name: null<br>}",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ['true'],
+      "answers": ["delete person.age", "delete person['age']"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/object-copy",
-      "size": 5
+      "moreInfo": "",
+      "size": 0
     },
     }
   },

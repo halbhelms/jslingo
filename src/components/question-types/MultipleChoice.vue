@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 2139,
+      "id": 8143,
       "type": "MultipleChoice",
-      "given": "console.log(typeof +true)",
-      "question": "What will be logged to the console?",
+      "given": "let msg = \"We're from the government and we're here to help.\"<br>let prevarication = msg<br>msg = \"We're just kidding. We're here to tax you.\"<br>console.log(prevarication)",
+      "question": "What will log to the console?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["number", "object", "boolean", "string"],
+      "choices": ["We're from the government and we're here to help", "We're just kiddinig. We're here to tax you.", "Nothing will be displayed", "Error: Duplicate variable assignment"],
       "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/object-copy",
       "size": 0
     },
     }

@@ -39,18 +39,18 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 6216,
+      "id": 434,
       "type": "ValidOrNot",
       "given": "",
-      "question": "function multiplyBy(a,b) {<br>&nbsp;&nbsp;return a * b<br>}<br><br>let double = multiplyBy.bind(null, 2)",
+      "question": "let explanations = {<br>&nbsp;&nbsp;[Math.pi]: 'The value of π',<br>&nbsp;&nbsp;[Math.ceil]: 'A decimal value rounded up to the next integer'<br>}<br><br>console.log(explanations[Math.ceil])",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "This is sometimes called a <em>partial function</em>",
-      "moreInfo": "https://javascript.info/bind",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/object#computed-properties",
       "size": 0
     },
     }
