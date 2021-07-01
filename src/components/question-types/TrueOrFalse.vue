@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 416,
+      "id": 8214,
       "type": "TrueOrFalse",
-      "given": "let obj = {}",
-      "question": "You may only use <em>object literal</em> notation if you also have stated: <pre>use strict</pre>",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "To force the garbage collector to sweep for unreferenced variables, use <pre>system.gc()</pre>",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/garbage-collection#internal-algorithms",
       "size": 0
     },
     }

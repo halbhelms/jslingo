@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 8143,
+      "id": 4216,
       "type": "MultipleChoice",
-      "given": "let msg = \"We're from the government and we're here to help.\"<br>let prevarication = msg<br>msg = \"We're just kidding. We're here to tax you.\"<br>console.log(prevarication)",
-      "question": "What will log to the console?",
+      "given": "const amadeus = {<br>&bnsp;&bnsp;name: 'Amadeus',<br>&bnsp;&bnsp;color: 'black',<br>&bnsp;&bnsp;tail: 'short',<br>}<br><br>let sayHi = function() {<br>&bnsp;&bnsp;return `Hi, I'm ${this.name} and I'm a ${this.color} cat`<br>}<br><br>amadeus.sayHi = sayHi<br><br>console.log(amadeus.sayHi())",
+      "question": "What will running this code produce?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["We're from the government and we're here to help", "We're just kiddinig. We're here to tax you.", "Nothing will be displayed", "Error: Duplicate variable assignment"],
+      "choices": ["Hi, I'm Amadeus and I'm a black cat", "Hi, I'm undefined and I'm a undefined cat", "Error, as <pre>amadeus</pre> is declared as a <pre>const</pre>","Nothing you can't assign a function to an object after it's been declared. It will be ignored."],
       "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/object-copy",
+      "moreInfo": "",
       "size": 0
     },
     }
