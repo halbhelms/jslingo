@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 8214,
+      "id": 6136,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "To force the garbage collector to sweep for unreferenced variables, use <pre>system.gc()</pre>",
-      "displayAsCode": [],
+      "given": "function introduceYourself() {<br>&nbsp;&nbsp;console.log(`Hi, I'm ${this.name}`)<br>}<br><br>introduceYourself()",
+      "question": "This code will throw a runtime exception",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/garbage-collection#internal-algorithms",
+      "explanation": "<pre>this.name</pre> will simply evaluate to <pre>undefined</pre> with no exception thrown",
+      "moreInfo": "https://javascript.info/object-methods#this-is-not-bound",
       "size": 0
     },
     }

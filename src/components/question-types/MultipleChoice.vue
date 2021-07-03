@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 4216,
+      "id": 4218,
       "type": "MultipleChoice",
-      "given": "const amadeus = {<br>&bnsp;&bnsp;name: 'Amadeus',<br>&bnsp;&bnsp;color: 'black',<br>&bnsp;&bnsp;tail: 'short',<br>}<br><br>let sayHi = function() {<br>&bnsp;&bnsp;return `Hi, I'm ${this.name} and I'm a ${this.color} cat`<br>}<br><br>amadeus.sayHi = sayHi<br><br>console.log(amadeus.sayHi())",
-      "question": "What will running this code produce?",
+      "given": "function introduceYourself() {<br>&nbsp;&nbsp;console.log(`Hi, I'm ${this.name}`)<br>}<br><br>let ana = {<br>&nbsp;&nbsp;name: 'Ana'<br>}<br><br>introduceYourself = function() {<br>&nbsp;&nbsp;console.log(`Hi, I'm a function`)<br>}<br><br>ana.hi = introduceYourself<br>ana.hi()",
+      "question": "What will happen when this code is run?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Hi, I'm Amadeus and I'm a black cat", "Hi, I'm undefined and I'm a undefined cat", "Error, as <pre>amadeus</pre> is declared as a <pre>const</pre>","Nothing you can't assign a function to an object after it's been declared. It will be ignored."],
-      "answer": 0,
+      "choices": ["<em>Hi, I'm Ana</em> will be logged to the console", "<em>Hi, I'm a function</em> will be logged to the console", "<em>Hi, I'm undefined</em> will be logged to the console", "An exception will be thrown"],
+      "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/object-methods#this-in-methods",
       "size": 0
     },
     }

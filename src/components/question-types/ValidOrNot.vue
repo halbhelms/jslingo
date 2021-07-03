@@ -39,18 +39,18 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 434,
+      "id": 4115,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let explanations = {<br>&nbsp;&nbsp;[Math.pi]: 'The value of π',<br>&nbsp;&nbsp;[Math.ceil]: 'A decimal value rounded up to the next integer'<br>}<br><br>console.log(explanations[Math.ceil])",
+      "question": "let myComputer = {<br>&nbsp;&nbsp;maker: 'Apple',<br>&nbsp;&nbsp;model: 'iMac Pro',<br>&nbsp;&nbsp;sayHi() {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(`I am an ${myComputer.maker} computer, specifically a ${myComputer.model}`)<br>&nbsp;&nbsp;}<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/object#computed-properties",
+      "explanation": "It is valid &mdash; but using the name of the object instead of <pre>this</pre> is a <em>bad</em> idea",
+      "moreInfo": "https://javascript.info/object-methods#this-in-methods",
       "size": 0
     },
     }
