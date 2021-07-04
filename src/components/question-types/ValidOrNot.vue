@@ -39,18 +39,18 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 4115,
+      "id": 223,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let myComputer = {<br>&nbsp;&nbsp;maker: 'Apple',<br>&nbsp;&nbsp;model: 'iMac Pro',<br>&nbsp;&nbsp;sayHi() {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(`I am an ${myComputer.maker} computer, specifically a ${myComputer.model}`)<br>&nbsp;&nbsp;}<br>}",
+      "question": "const BILLION = 1_000_000_000",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "It is valid &mdash; but using the name of the object instead of <pre>this</pre> is a <em>bad</em> idea",
-      "moreInfo": "https://javascript.info/object-methods#this-in-methods",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/number",
       "size": 0
     },
     }

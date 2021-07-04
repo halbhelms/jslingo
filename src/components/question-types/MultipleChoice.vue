@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 4218,
+      "id": 8315,
       "type": "MultipleChoice",
-      "given": "function introduceYourself() {<br>&nbsp;&nbsp;console.log(`Hi, I'm ${this.name}`)<br>}<br><br>let ana = {<br>&nbsp;&nbsp;name: 'Ana'<br>}<br><br>introduceYourself = function() {<br>&nbsp;&nbsp;console.log(`Hi, I'm a function`)<br>}<br><br>ana.hi = introduceYourself<br>ana.hi()",
-      "question": "What will happen when this code is run?",
+      "given": "let ana = {<br>&nbsp;&nbsp;name: 'Ana'<br>}<br><br>let company = {<br>&nbsp;&nbsp;jsCert: Symbol('JS'),<br>&nbsp;&nbsp;certify: function(person, testScore) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (testScore > 80) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;person[this.jsCert] = true<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;apply(person) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (person[this.jsCert]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return `You're hired`<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return `Sorry, you need JS skills`<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
+      "question": "Can Ana see if she's JS-certified before applying?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["<em>Hi, I'm Ana</em> will be logged to the console", "<em>Hi, I'm a function</em> will be logged to the console", "<em>Hi, I'm undefined</em> will be logged to the console", "An exception will be thrown"],
-      "answer": 1,
+      "choices": ["Yes, she can look to see if she has the <pre>jsCert</pre> property", "No, she has no access to this information", "We'll never know, since this code throws an exception"],
+      "answer": "1",
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/object-methods#this-in-methods",
+      "moreInfo": "https://javascript.info/symbol#hidden-properties",
       "size": 0
     },
     }

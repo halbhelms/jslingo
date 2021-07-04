@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 8145,
+      "id": 8148,
       "type": "FillBlank",
-      "given": "let myCat = {<br>&nbsp;&nbsp;name: 'Amadeus',<br>&nbsp;&nbsp;color: 'black'<br>}<br><br>let yourCat = myCat<br><br>console.log(myCat === yourCat)",
+      "given": "Round to nearest integer (up or down)",
       "question": "",
-      "displayAsCode": ["given", "answer"],
-      "q1": "The value logged to the console is ",
-      "q2": "",
+      "displayAsCode": ["answer", "q1", "q2"],
+      "q1": "let num = 3.62<br>",
+      "q2": "(num)",
       "choices": [],
       "answer": "",
-      "answers": ['true'],
+      "answers": ["Math.round"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/object-copy",
-      "size": 5
+      "moreInfo": "https://javascript.info/number#rounding",
+      "size": 11
     },
     }
   },

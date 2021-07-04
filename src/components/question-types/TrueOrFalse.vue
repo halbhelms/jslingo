@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 6136,
+      "id": 233,
       "type": "TrueOrFalse",
-      "given": "function introduceYourself() {<br>&nbsp;&nbsp;console.log(`Hi, I'm ${this.name}`)<br>}<br><br>introduceYourself()",
-      "question": "This code will throw a runtime exception",
+      "given": "let x = 0.10<br>let y = 0.20<br>let sum = x + y<br><br>sum.toFixed(2) === 0.30",
+      "question": "This returns true",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "<pre>this.name</pre> will simply evaluate to <pre>undefined</pre> with no exception thrown",
-      "moreInfo": "https://javascript.info/object-methods#this-is-not-bound",
+      "explanation": "<pre>toFixed()</pre> returns a <em>string</em> and the triple-equals checks for both value <em>and</em> type, causing the condition to return <pre>false</pre>",
+      "moreInfo": "https://javascript.info/number#imprecise-calculations",
       "size": 0
     },
     }
