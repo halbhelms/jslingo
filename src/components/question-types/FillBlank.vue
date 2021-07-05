@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 8148,
+      "id": 715,
       "type": "FillBlank",
-      "given": "Round to nearest integer (up or down)",
+      "given": "Fill in the blank to get the author's initial",
       "question": "",
-      "displayAsCode": ["answer", "q1", "q2"],
-      "q1": "let num = 3.62<br>",
-      "q2": "(num)",
+      "displayAsCode": ["answer", "q1","q2"],
+      "q1": "let author = 'Hal B Helms'<br>console.log(",
+      "q2": ")",
       "choices": [],
       "answer": "",
-      "answers": ["Math.round"],
+      "answers": ["author[4]"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/number#rounding",
-      "size": 11
+      "moreInfo": "https://javascript.info/string#string-length",
+      "size": 10
     },
     }
   },

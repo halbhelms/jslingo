@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 233,
+      "id": 227,
       "type": "TrueOrFalse",
-      "given": "let x = 0.10<br>let y = 0.20<br>let sum = x + y<br><br>sum.toFixed(2) === 0.30",
-      "question": "This returns true",
+      "given": "let author = 'Hal H Helms'<br>author[4] = 'B'",
+      "question": "This code will change the author's initial from 'H' to 'B'",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "<pre>toFixed()</pre> returns a <em>string</em> and the triple-equals checks for both value <em>and</em> type, causing the condition to return <pre>false</pre>",
-      "moreInfo": "https://javascript.info/number#imprecise-calculations",
+      "explanation": "Strings are <em>immutable</em> &mdash; can't be changed",
+      "moreInfo": "https://javascript.info/string#strings-are-immutable",
       "size": 0
     },
     }
