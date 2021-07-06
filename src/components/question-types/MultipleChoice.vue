@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 7113,
+      "id": 725,
       "type": "MultipleChoice",
-      "given": "let title = 'Journal of Research'<br>title = title.???(22, '.')",
-      "question": "In order to add spaces to the beginning to reach a desired length, the <pre>???</pre> should be replaced with...",
+      "given": "let quip = 'Mae West: When I'm good, I'm very, very good. But when I'm bad, I'm even better.'<br>let results = quip.???('Mae West')",
+      "question": "What should we replace <em>???</em> with in order to find out if the quip begins with <em>Mae West</em>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["startsWith", "padStart", "startWith", "fill"],
-      "answer": 1,
+      "choices": ["startsWith", "begins", "charAt(0)", "[0-8]"],
+      "answer": "0",
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart",
+      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith",
       "size": 0
     },
     }

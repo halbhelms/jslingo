@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 7115,
+      "id":723,
       "type": "FillBlank",
-      "given": "The Brits want to use <pre>american</pre> but want the word, <em>colors</em> replaced with the word, <em>colours</em>",
-      "question": "",
-      "displayAsCode": ["q1","q2","answer"],
-      "q1": "let american = 'The colors of the flag are red, white, and blue'<br>let british = american.",
-      "q2": "",
+      "given": "let quip = 'I generally avoid temptation unless I can\'t resist it'",
+      "question": "Fill in the blank to return <em>avoid temptation</em>",
+      "displayAsCode": ["given", "q1", "q2", "answer"],
+      "q1": "console.log(quip.slice",
+      "q2": ")",
       "choices": [],
       "answer": "",
-      "answers": ["replace('colors', 'colours')", "replace(\"colors\", \"colours\")"],
+      "answers": ["(12, 28)"],
       "explanation": "",
-      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace",
-      "size": 30
+      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice",
+      "size": 9
     },
     }
   },

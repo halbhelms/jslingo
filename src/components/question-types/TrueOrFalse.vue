@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 7111,
+      "id": 724,
       "type": "TrueOrFalse",
-      "given": "let title = 'Journal of Research'<br>let match = title.match(/[A-Z]/g)<br>Array.isArray(match)",
-      "question": "This code returns <pre>false</pre>",
+      "given": "let quip = 'I used to be Snow White but I drifted'<br>let results = quip.split(' ')",
+      "question": "<pre>results</pre> is an array",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match",
+      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split",
       "size": 0
     },
     }
