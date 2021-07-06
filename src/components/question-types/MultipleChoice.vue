@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 8315,
+      "id": 7113,
       "type": "MultipleChoice",
-      "given": "let ana = {<br>&nbsp;&nbsp;name: 'Ana'<br>}<br><br>let company = {<br>&nbsp;&nbsp;jsCert: Symbol('JS'),<br>&nbsp;&nbsp;certify: function(person, testScore) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (testScore > 80) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;person[this.jsCert] = true<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;apply(person) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (person[this.jsCert]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return `You're hired`<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return `Sorry, you need JS skills`<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
-      "question": "Can Ana see if she's JS-certified before applying?",
+      "given": "let title = 'Journal of Research'<br>title = title.???(22, '.')",
+      "question": "In order to add spaces to the beginning to reach a desired length, the <pre>???</pre> should be replaced with...",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Yes, she can look to see if she has the <pre>jsCert</pre> property", "No, she has no access to this information", "We'll never know, since this code throws an exception"],
-      "answer": "1",
+      "choices": ["startsWith", "padStart", "startWith", "fill"],
+      "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/symbol#hidden-properties",
+      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart",
       "size": 0
     },
     }

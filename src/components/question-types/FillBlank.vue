@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 715,
+      "id": 7115,
       "type": "FillBlank",
-      "given": "Fill in the blank to get the author's initial",
+      "given": "The Brits want to use <pre>american</pre> but want the word, <em>colors</em> replaced with the word, <em>colours</em>",
       "question": "",
-      "displayAsCode": ["answer", "q1","q2"],
-      "q1": "let author = 'Hal B Helms'<br>console.log(",
-      "q2": ")",
+      "displayAsCode": ["q1","q2","answer"],
+      "q1": "let american = 'The colors of the flag are red, white, and blue'<br>let british = american.",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["author[4]"],
+      "answers": ["replace('colors', 'colours')", "replace(\"colors\", \"colours\")"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/string#string-length",
-      "size": 10
+      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace",
+      "size": 30
     },
     }
   },

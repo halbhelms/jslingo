@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 227,
+      "id": 7111,
       "type": "TrueOrFalse",
-      "given": "let author = 'Hal H Helms'<br>author[4] = 'B'",
-      "question": "This code will change the author's initial from 'H' to 'B'",
+      "given": "let title = 'Journal of Research'<br>let match = title.match(/[A-Z]/g)<br>Array.isArray(match)",
+      "question": "This code returns <pre>false</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "Strings are <em>immutable</em> &mdash; can't be changed",
-      "moreInfo": "https://javascript.info/string#strings-are-immutable",
+      "explanation": "",
+      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match",
       "size": 0
     },
     }
