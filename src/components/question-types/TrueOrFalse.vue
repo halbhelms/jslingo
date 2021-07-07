@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 516,
+      "id": 528,
       "type": "TrueOrFalse",
-      "given": "const arr = [true, 42, 'How are you', {firstName: 'Hal', lastName: 'Helms'}]",
-      "question": "This code is invalid as arrays cannot have mixed data types",
+      "given": "let arr = new Array(2)",
+      "question": "<pre>arr</pre> is a new array with the number <em>2</em> in it",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "",
+      "explanation": "Another weird one! No, it returns an empty array with a <pre>length</pre> of 2! Best to use the simpler, square bracket notation when creating arrays.",
+      "moreInfo": "https://javascript.info/array#new-array",
       "size": 0
     },
     }

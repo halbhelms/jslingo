@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 513,
+      "id": 527,
       "type": "FillBlank",
-      "given": "Fill in the blank to create an array with the numbers: 0,1,1,2,3,5,8",
+      "given": "const numbers = []<br>numbers[0] = 1<br>numbers[99] = 100<br><br>console.log(numbers.length)",
       "question": "",
-      "displayAsCode": ["q1", "q2", "answer"],
-      "q1": "const x = [",
-      "q2": "]",
+      "displayAsCode": ["given"],
+      "q1": "The value of <pre>numbers.length</pre> is ",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["0,1,1,2,3,5,8"],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/array",
-      "size": 13
+      "answers": ["100"],
+      "explanation": "Weird, right? The <pre>length</pre> property returns the largest <em>index</em> + 1",
+      "moreInfo": "https://javascript.info/array#a-word-about-length",
+      "size": 4
     },
     }
   },

@@ -39,18 +39,18 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 5113,
+      "id": 525,
       "type": "ValidOrNot",
       "given": "",
-      "question": "const numbers = [1,2,3,4,]<br>numbers.unshift(5,6)",
-      "displayAsCode": ["question", "choices"],
+      "question": "const numbers = [92,81,88,90]<br><br>for (let number of numbers) {<br>&nbsp;&nbsp;console.log(number)<br>}",
+      "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
-      "choices": ["1,2,3,4,5,6", "5,6,4,3,2,1", "5,6,1,2,3,4", "1,2,3,5,6"],
+      "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/array",
+      "explanation": "The <em>for..of</em> construct is preferable to the older <em>for loop</em>",
+      "moreInfo": "https://javascript.info/array#loops",
       "size": 0
     },
     }

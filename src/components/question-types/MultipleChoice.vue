@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 5112,
+      "id": 1155,
       "type": "MultipleChoice",
-      "given": "const numbers = [1,2,3,4,]<br>authors.unshift(5)",
-      "question": "What will be the contents of <pre>numbers</pre> after this code is run?",
-      "displayAsCode": ["given", "choices"],
+      "given": "",
+      "question": "Primitives are copied by...",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["1,2,3,4,5", "5,4,3,2,1", "5,1,2,3,4", "1,2,3,5"],
-      "answer": 2,
+      "choices": ["value", "reference"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array",
+      "moreInfo": "",
       "size": 0
     },
     }
