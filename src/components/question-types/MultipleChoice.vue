@@ -52,7 +52,7 @@ export default {
       "type": "MultipleChoice",
       "given": "let quip = 'Mae West: When I'm good, I'm very, very good. But when I'm bad, I'm even better.'<br>let results = quip.???('Mae West')",
       "question": "What should we replace <em>???</em> with in order to find out if the quip begins with <em>Mae West</em>",
-      "displayAsCode": ["given"],
+      "displayAsCode": ["given", "choices"],
       "q1": "",
       "q2": "",
       "choices": ["startsWith", "begins", "charAt(0)", "[0-8]"],
@@ -112,6 +112,11 @@ section.multiple-choice {
   cursor: pointer;
   color: green;
   font-weight: 600;
+}
+
+pre {
+  font-family: 'Fira Code';
+  color: maroon;
 }
 
 

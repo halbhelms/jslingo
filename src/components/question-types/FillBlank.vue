@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id":723,
+      "id": 7119,
       "type": "FillBlank",
-      "given": "let quip = 'I generally avoid temptation unless I can\'t resist it'",
-      "question": "Fill in the blank to return <em>avoid temptation</em>",
-      "displayAsCode": ["given", "q1", "q2", "answer"],
-      "q1": "console.log(quip.slice",
-      "q2": ")",
+      "given": "Fill in the blank to remove leading white space",
+      "question": "",
+      "displayAsCode": ["q1","q2","answer"],
+      "q1": "let quip = '    If I asked for a cup of coffee, someone would search for a double meaning     '<br>quip.",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["(12, 28)"],
+      "answers": ["trimStart()"],
       "explanation": "",
-      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice",
-      "size": 9
+      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd",
+      "size": 12,
     },
     }
   },

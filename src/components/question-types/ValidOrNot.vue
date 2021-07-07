@@ -39,18 +39,18 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 223,
+      "id": 435,
       "type": "ValidOrNot",
       "given": "",
-      "question": "const BILLION = 1_000_000_000",
+      "question": "Object.prototype.toString = function() {<br>&nbsp;&nbsp;for (key in this) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(`${key}: ${this[key]}`)<br>&nbsp;&nbsp;}<br>}<br><br>let programmer = {<br>&nbsp;&nbsp;firstName: 'Hal',<br>&nbsp;&nbsp;lastName: 'Helms'<br>}<br><br>programmer.toString()",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/number",
+      "explanation": "Adding properties to <pre>prototype</pre> is sometimes known as <em>monkey-patching</em>",
+      "moreInfo": "",
       "size": 0
     },
     }
