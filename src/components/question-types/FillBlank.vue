@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 7119,
+      "id": 513,
       "type": "FillBlank",
-      "given": "Fill in the blank to remove leading white space",
+      "given": "Fill in the blank to create an array with the numbers: 0,1,1,2,3,5,8",
       "question": "",
-      "displayAsCode": ["q1","q2","answer"],
-      "q1": "let quip = '    If I asked for a cup of coffee, someone would search for a double meaning     '<br>quip.",
-      "q2": "",
+      "displayAsCode": ["q1", "q2", "answer"],
+      "q1": "const x = [",
+      "q2": "]",
       "choices": [],
       "answer": "",
-      "answers": ["trimStart()"],
+      "answers": ["0,1,1,2,3,5,8"],
       "explanation": "",
-      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd",
-      "size": 12,
+      "moreInfo": "https://javascript.info/array",
+      "size": 13
     },
     }
   },

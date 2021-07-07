@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 725,
+      "id": 5112,
       "type": "MultipleChoice",
-      "given": "let quip = 'Mae West: When I'm good, I'm very, very good. But when I'm bad, I'm even better.'<br>let results = quip.???('Mae West')",
-      "question": "What should we replace <em>???</em> with in order to find out if the quip begins with <em>Mae West</em>",
+      "given": "const numbers = [1,2,3,4,]<br>authors.unshift(5)",
+      "question": "What will be the contents of <pre>numbers</pre> after this code is run?",
       "displayAsCode": ["given", "choices"],
       "q1": "",
       "q2": "",
-      "choices": ["startsWith", "begins", "charAt(0)", "[0-8]"],
-      "answer": "0",
+      "choices": ["1,2,3,4,5", "5,4,3,2,1", "5,1,2,3,4", "1,2,3,5"],
+      "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith",
+      "moreInfo": "https://javascript.info/array",
       "size": 0
     },
     }

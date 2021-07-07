@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 724,
+      "id": 516,
       "type": "TrueOrFalse",
-      "given": "let quip = 'I used to be Snow White but I drifted'<br>let results = quip.split(' ')",
-      "question": "<pre>results</pre> is an array",
+      "given": "const arr = [true, 42, 'How are you', {firstName: 'Hal', lastName: 'Helms'}]",
+      "question": "This code is invalid as arrays cannot have mixed data types",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split",
+      "moreInfo": "",
       "size": 0
     },
     }
