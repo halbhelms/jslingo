@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 1155,
+      "id": 5115,
       "type": "MultipleChoice",
       "given": "",
-      "question": "Primitives are copied by...",
-      "displayAsCode": [],
+      "question": "Which array function is called the <em>Swiss army knife</em> of functions?",
+      "displayAsCode": ["choices"],
       "q1": "",
       "q2": "",
-      "choices": ["value", "reference"],
-      "answer": 0,
+      "choices": ["commit", "splice", "slice", "transform"],
+      "answer": "1",
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/array-methods#splice",
       "size": 0
     },
     }
