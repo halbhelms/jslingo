@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 5216,
+      "id": 727,
       "type": "FillBlank",
-      "given": "let colors = ['red', 'white', 'purple', 'green']<br>colors.splice(0, colors.length)",
+      "given": "",
       "question": "",
-      "displayAsCode": ["given"],
-      "q1": "The array will contain ",
-      "q2": " elements when this code is run",
+      "displayAsCode": ["q1","q2","answer"],
+      "q1": "// Convert JSON into an object<br>let json = '{\"make\":\"Tesla\",\"price\":\"$$\"}'<br><br>let obj = ",
+      "q2": "(json)",
       "choices": [],
       "answer": "",
-      "answers": ["0"],
+      "answers": ["JSON.parse"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#splice",
-      "size": 1
+      "moreInfo": "",
+      "size": 10
     },
     }
   },

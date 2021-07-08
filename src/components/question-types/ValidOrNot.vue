@@ -39,18 +39,18 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 525,
+      "id": 436,
       "type": "ValidOrNot",
       "given": "",
-      "question": "const numbers = [92,81,88,90]<br><br>for (let number of numbers) {<br>&nbsp;&nbsp;console.log(number)<br>}",
+      "question": "let machine = {<br>&nbsp;&nbsp;requiresLubrication: true<br>}<br><br>let ssd = Object.create(machine)<br>ssd.requiresLubrication = false",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "The <em>for..of</em> construct is preferable to the older <em>for loop</em>",
-      "moreInfo": "https://javascript.info/array#loops",
+      "explanation": "<pre>Object.create</pre> creates a new object. When passed an object as an argument, it uses the object as the prototype for the object being created.",
+      "moreInfo": "",
       "size": 0
     },
     }

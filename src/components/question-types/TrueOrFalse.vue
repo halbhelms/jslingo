@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 5215,
+      "id": 6224,
       "type": "TrueOrFalse",
-      "given": "let colors = ['red', 'white', 'purple', 'green']<br>colors.splice(2, 'yellow', 'black')",
-      "question": "<pre>colors</pre> will contain <em>red, white, purple, yellow, and black",
+      "given": "let tesla = {<br>&nbsp;&nbsp;make: 'Tesla',<br>&nbsp;&nbsp;price: '$$'<br>}<br>let question = function(name) {<br>&nbsp;&nbsp;console.log(`So, ${name}, you're thinking of buying a ${this.make}, eh?`)<br>}<br><br>let fnc1 = question<br>let fnc2 = question.bind(tesla)<br><br>fnc1('Ana')<br>fnc2('Ana')",
+      "question": "The same string will be logged to the console twice after executing this code",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#splice",
+      "explanation": "The use of <pre>bind</pre>, when passed an object, causes the passed argument to function as <pre>this</pre>",
+      "moreInfo": "",
       "size": 0
     },
     }
