@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 5222,
+      "id": 533,
       "type": "FillBlank",
-      "given": "Fill in the blank to return the number of scores that are 90 or higher",
+      "given": "Fill in the blank to sort <pre>numbers</pre> using the <pre>compare</pre> function",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let scores = [92, 88, 89, 64, 81, 94, 98, 90]<br><br>let numberOfAs = scores.",
-      "q2": "( score => score > 89 ).length",
+      "q1": "function compare(a, b) {<br>&nbsp;&nbsp;if (a > b) return 1<br>&nbsp;&nbsp;if (a == b) return 0<br>&nbsp;&nbsp;if (a < b) return -1<br>}<br><br>let numbers = [1, 35, 5, 25, 15]<br>",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["filter"],
+      "answers": ["numbers.sort(compare)"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#filter",
-      "size": 6
+      "moreInfo": "https://javascript.info/array-methods#sort-fn",
+      "size": 22
     },
     }
   },

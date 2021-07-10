@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 5124,
-      "type": "TrueOrNot",
-      "given": "let scores = [92, 88, 89, 64, 81, 94, 98, 90]<br><br>let sum = scores.sum()",
-      "question": "The data type of <pre>sum</pre> will be a number after this code is run",
+      "id": 534,
+      "type": "TrueOrFalse",
+      "given": "function compare(a, b) {<br>&nbsp;&nbsp;if (a > b) return Math.PI<br>&nbsp;&nbsp;if (a == b) return 0<br>&nbsp;&nbsp;if (a < b) return -Math.PI<br>}",
+      "question": "If we want a compare function that can be used by the array's <pre>sort</pre> function, this <pre>compare</pre> code will work",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
-      "explanation": "There is no built-in <pre>sum</pre> function for arrays",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/array-methods#sort-fn",
       "size": 0
     },
     }

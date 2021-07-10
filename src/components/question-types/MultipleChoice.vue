@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 5122,
+      "id": 5223,
       "type": "MultipleChoice",
-      "given": "",
-      "question": "To find <em>all</em> matching items in an array, you should use...",
-      "displayAsCode": ["choices"],
+      "given": "let studentGrades = [<br>&nbsp;&nbsp;{name: 'Ana', grade: 96},<br>&nbsp;&nbsp;{name: 'Bob', grade: 92},<br>&nbsp;&nbsp;{name: 'Cal', grade: 84},<br>&nbsp;&nbsp;{name: 'Dan', grade: 89},<br>&nbsp;&nbsp;{name: 'Ell', grade: 78},<br>&nbsp;&nbsp;{name: 'Fay', grade: 88},<br>&nbsp;&nbsp;{name: 'Gen', grade: 91},<br>]<br><br>function convertNumberToGrade(studentGrade) {<br>&nbsp;&nbsp;let slg = studentGrade<br>&nbsp;&nbsp;slg.letterGrade = 'F'<br>&nbsp;&nbsp;if (studentGrade.grade > 59) slg.letterGrade ='D'<br>&nbsp;&nbsp;if (studentGrade.grade > 69) slg.letterGrade = 'C'<br>&nbsp;&nbsp;if (studentGrade.grade > 79) slg.letterGrade = 'B'<br>&nbsp;&nbsp;if (studentGrade.grade > 89) slg.letterGrade = 'A'<br>&nbsp;&nbsp;return slg<br>}<br><br>let studentLetterGrades = studentGrades.???(convertNumberToGrade)",
+      "question": "What should we replace <em>???</em> with in order to create a new array derived from apply the <pre>convertNumberToGrade</pre> function to <pre>studentGrades</pre>?",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["find", "findAll", "where", "filter"],
+      "choices": ["filter", "forEach", "where", "map"],
       "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#filter",
+      "moreInfo": "",
       "size": 0
     },
     }
