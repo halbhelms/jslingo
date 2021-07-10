@@ -47,13 +47,13 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 5221,
+      "id": 5222,
       "type": "FillBlank",
-      "given": "Fill in the blank to return all members that match the criterion",
+      "given": "Fill in the blank to return the number of scores that are 90 or higher",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let members = [<br>&nbsp;&nbsp;{name: 'Ana', status: 'gold'},<br>&nbsp;&nbsp;{name: 'Ray', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Hal', status: 'bronze'},<br>&nbsp;&nbsp;{name: 'Gen', status: 'bronze'},<br>&nbsp;&nbsp;{name: 'Sam', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Fay', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Gal', status: 'bronze'},<br>]<br><br>let goldMembers = members.",
-      "q2": "( member => member.status === 'gold' )",
+      "q1": "let scores = [92, 88, 89, 64, 81, 94, 98, 90]<br><br>let numberOfAs = scores.",
+      "q2": "( score => score > 89 ).length",
       "choices": [],
       "answer": "",
       "answers": ["filter"],

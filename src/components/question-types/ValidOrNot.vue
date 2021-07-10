@@ -39,10 +39,10 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 5116,
+      "id": 6138,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let shapes = ['triangle', 'circle', 'square']<br>shapes.forEach(property => console.log(property))",
+      "question": "function myFnc(x) {x()}<br>myFnc(()=>console.log('Will this work?'))",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -50,7 +50,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#iterate-foreach",
+      "moreInfo": "",
       "size": 0
     },
     }

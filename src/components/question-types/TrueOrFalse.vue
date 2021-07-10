@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 5123,
-      "type": "TrueOrFalse",
-      "given": "let members = [<br>&nbsp;&nbsp;{name: 'Ana', status: 'gold'},<br>&nbsp;&nbsp;{name: 'Ray', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Hal', status: 'bronze'},<br>&nbsp;&nbsp;{name: 'Gen', status: 'bronze'},<br>&nbsp;&nbsp;{name: 'Sam', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Fay', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Gal', status: 'bronze'},<br>]<br><br>let goldMembers = members.filter( member => member.status === 'gold')",
-      "question": "<pre>goldMembers</pre> is an object",
+      "id": 5124,
+      "type": "TrueOrNot",
+      "given": "let scores = [92, 88, 89, 64, 81, 94, 98, 90]<br><br>let sum = scores.sum()",
+      "question": "The data type of <pre>sum</pre> will be a number after this code is run",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#filter",
+      "explanation": "There is no built-in <pre>sum</pre> function for arrays",
+      "moreInfo": "",
       "size": 0
     },
     }
