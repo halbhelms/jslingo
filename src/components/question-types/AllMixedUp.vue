@@ -2,6 +2,7 @@
 <!-- <div class="temp pre" v-html="question.ordered.join(' ')"></div> -->
 <section class='all-mixed-up'>
   <section class='all-mixed-up-wrapper'>
+    <div class="given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
     <div class="question" v-html="question.question"></div>
     <div class="pre">
       <div class="answer" v-for="portion in answer" :key="portion" v-html="portion">
@@ -12,6 +13,7 @@
       <div class="mixed" v-for="el in question.mixed" :key="el" @click="selectEl(el)" v-html="el"></div>
     </div>
     <div class="results">{{ results }}</div>
+    <div class="more-info" v-html="question.moreInfo"></div>
   </section>
 </section>
 </template>
@@ -33,18 +35,18 @@ export default {
       results: null,
 
       question: {
-      "id": 8140,
+      "id": 5217,
       "type": "AllMixedUp",
-      "given": "",
-      "question": "Rearrange the code to create a <pre>setTimeout</pre> function",
-      "displayAsCode": [],
-      "mixed": [")","setTimeout","let","(",",","5000","myFunc","=","myTimer"],
-      "ordered": ["let", "myTimer", "=", "setTimeout", "(", "myFunc", ",", "5000", ")"],
+      "given": "let flowers = ['roses', 'petunias', 'daffodils']<br>flowers.splice(-1, 0, 'irises', 'orchids')",
+      "question": "Arrange the flowers to be in the same order they will be in <pre>flowers</pre> after this code is run",
+      "displayAsCode": ["given"],
+      "mixed": ["petunias", "orchids", "roses", "irises", "daffodils"],
+      "ordered": ["roses", "petunias", "irises", "orchids", "daffodils"],
       "choices": [],
       "answer": "",
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/array-methods#splice",
       "size": 0
     }
     }

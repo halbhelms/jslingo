@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 6224,
+      "id": 5218,
       "type": "TrueOrFalse",
-      "given": "let tesla = {<br>&nbsp;&nbsp;make: 'Tesla',<br>&nbsp;&nbsp;price: '$$'<br>}<br>let question = function(name) {<br>&nbsp;&nbsp;console.log(`So, ${name}, you're thinking of buying a ${this.make}, eh?`)<br>}<br><br>let fnc1 = question<br>let fnc2 = question.bind(tesla)<br><br>fnc1('Ana')<br>fnc2('Ana')",
-      "question": "The same string will be logged to the console twice after executing this code",
+      "given": "let flowers = ['roses', 'petunias', 'daffodils']<br>let blumen = flowers.concat('orchids')",
+      "question": "<pre>concat</pre> when applied to arrays, creates a new array with any arguments appended to the existing array",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
-      "explanation": "The use of <pre>bind</pre>, when passed an object, causes the passed argument to function as <pre>this</pre>",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/array-methods#concat",
       "size": 0
     },
     }

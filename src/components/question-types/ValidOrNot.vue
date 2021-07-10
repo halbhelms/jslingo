@@ -39,18 +39,18 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 436,
+      "id": 5116,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let machine = {<br>&nbsp;&nbsp;requiresLubrication: true<br>}<br><br>let ssd = Object.create(machine)<br>ssd.requiresLubrication = false",
+      "question": "let shapes = ['triangle', 'circle', 'square']<br>shapes.forEach(property => console.log(property))",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "<pre>Object.create</pre> creates a new object. When passed an object as an argument, it uses the object as the prototype for the object being created.",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/array-methods#iterate-foreach",
       "size": 0
     },
     }

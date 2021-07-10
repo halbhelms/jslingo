@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 5115,
+      "id": 5119,
       "type": "MultipleChoice",
-      "given": "",
-      "question": "Which array function is called the <em>Swiss army knife</em> of functions?",
-      "displayAsCode": ["choices"],
+      "given": "let pets = [<br>&nbsp;&nbsp;{name: 'Amadeus', species: 'Cat'},<br>&nbsp;&nbsp;{name: 'Beethoven', species: 'Dog'},<br>&nbsp;&nbsp;{name: 'Polly', species: 'Parrot'},<br>&nbsp;&nbsp;{name: 'George', species: 'Gerbil'},<br>&nbsp;&nbsp;{name: 'Grendel', species: 'Parrot'},<br>]<br><br>let found = pets.find( pet => pet.species === 'Parrot')",
+      "question": "What data type will <pre>found</pre> be after this code is run?",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["commit", "splice", "slice", "transform"],
-      "answer": "1",
+      "choices": ["string", "array", "object", "number"],
+      "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#splice",
+      "moreInfo": "https://javascript.info/array-methods#find-and-findindex",
       "size": 0
     },
     }

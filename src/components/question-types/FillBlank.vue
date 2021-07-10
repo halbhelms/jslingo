@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 727,
+      "id": 5118,
       "type": "FillBlank",
-      "given": "",
+      "given": "let shapes = ['triangle', 'circle', 'square', 'rectangle', 'circle']<br>let index = shapes.lastIndexOf('circle')",
       "question": "",
-      "displayAsCode": ["q1","q2","answer"],
-      "q1": "// Convert JSON into an object<br>let json = '{\"make\":\"Tesla\",\"price\":\"$$\"}'<br><br>let obj = ",
-      "q2": "(json)",
+      "displayAsCode": ["given"],
+      "q1": "The value of <pre>index</pre> will be ",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["JSON.parse"],
+      "answers": ["4"],
       "explanation": "",
-      "moreInfo": "",
-      "size": 10
+      "moreInfo": "https://javascript.info/array-methods#indexof-lastindexof-and-includes",
+      "size": 1
     },
     }
   },
