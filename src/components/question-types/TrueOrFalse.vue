@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 5218,
+      "id": 5123,
       "type": "TrueOrFalse",
-      "given": "let flowers = ['roses', 'petunias', 'daffodils']<br>let blumen = flowers.concat('orchids')",
-      "question": "<pre>concat</pre> when applied to arrays, creates a new array with any arguments appended to the existing array",
+      "given": "let members = [<br>&nbsp;&nbsp;{name: 'Ana', status: 'gold'},<br>&nbsp;&nbsp;{name: 'Ray', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Hal', status: 'bronze'},<br>&nbsp;&nbsp;{name: 'Gen', status: 'bronze'},<br>&nbsp;&nbsp;{name: 'Sam', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Fay', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Gal', status: 'bronze'},<br>]<br><br>let goldMembers = members.filter( member => member.status === 'gold')",
+      "question": "<pre>goldMembers</pre> is an object",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#concat",
+      "moreInfo": "https://javascript.info/array-methods#filter",
       "size": 0
     },
     }

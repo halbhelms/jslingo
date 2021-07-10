@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 5118,
+      "id": 5221,
       "type": "FillBlank",
-      "given": "let shapes = ['triangle', 'circle', 'square', 'rectangle', 'circle']<br>let index = shapes.lastIndexOf('circle')",
+      "given": "Fill in the blank to return all members that match the criterion",
       "question": "",
-      "displayAsCode": ["given"],
-      "q1": "The value of <pre>index</pre> will be ",
-      "q2": "",
+      "displayAsCode": ["q1","q2","answer"],
+      "q1": "let members = [<br>&nbsp;&nbsp;{name: 'Ana', status: 'gold'},<br>&nbsp;&nbsp;{name: 'Ray', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Hal', status: 'bronze'},<br>&nbsp;&nbsp;{name: 'Gen', status: 'bronze'},<br>&nbsp;&nbsp;{name: 'Sam', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Fay', status: 'silver'},<br>&nbsp;&nbsp;{name: 'Gal', status: 'bronze'},<br>]<br><br>let goldMembers = members.",
+      "q2": "( member => member.status === 'gold' )",
       "choices": [],
       "answer": "",
-      "answers": ["4"],
+      "answers": ["filter"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#indexof-lastindexof-and-includes",
-      "size": 1
+      "moreInfo": "https://javascript.info/array-methods#filter",
+      "size": 6
     },
     }
   },

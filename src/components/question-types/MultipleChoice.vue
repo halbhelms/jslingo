@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 5119,
+      "id": 5122,
       "type": "MultipleChoice",
-      "given": "let pets = [<br>&nbsp;&nbsp;{name: 'Amadeus', species: 'Cat'},<br>&nbsp;&nbsp;{name: 'Beethoven', species: 'Dog'},<br>&nbsp;&nbsp;{name: 'Polly', species: 'Parrot'},<br>&nbsp;&nbsp;{name: 'George', species: 'Gerbil'},<br>&nbsp;&nbsp;{name: 'Grendel', species: 'Parrot'},<br>]<br><br>let found = pets.find( pet => pet.species === 'Parrot')",
-      "question": "What data type will <pre>found</pre> be after this code is run?",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "To find <em>all</em> matching items in an array, you should use...",
+      "displayAsCode": ["choices"],
       "q1": "",
       "q2": "",
-      "choices": ["string", "array", "object", "number"],
-      "answer": 2,
+      "choices": ["find", "findAll", "where", "filter"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#find-and-findindex",
+      "moreInfo": "https://javascript.info/array-methods#filter",
       "size": 0
     },
     }
