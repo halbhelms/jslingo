@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 534,
+      "id": 5226,
       "type": "TrueOrFalse",
-      "given": "function compare(a, b) {<br>&nbsp;&nbsp;if (a > b) return Math.PI<br>&nbsp;&nbsp;if (a == b) return 0<br>&nbsp;&nbsp;if (a < b) return -Math.PI<br>}",
-      "question": "If we want a compare function that can be used by the array's <pre>sort</pre> function, this <pre>compare</pre> code will work",
+      "given": "let friends = 'Ana, Bethany, Carl, Davis, Ellen '<br>let arr = Array(friends)",
+      "question": "When this code is run, <pre>arr</pre> will be an array with 5 items in it",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#sort-fn",
+      "moreInfo": "https://javascript.info/array-methods#split-and-join",
       "size": 0
     },
     }

@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 533,
+      "id": 5228,
       "type": "FillBlank",
-      "given": "Fill in the blank to sort <pre>numbers</pre> using the <pre>compare</pre> function",
+      "given": "Fill in the blank to turn <pre>arr</pre> into a string with spaces separating each word",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "function compare(a, b) {<br>&nbsp;&nbsp;if (a > b) return 1<br>&nbsp;&nbsp;if (a == b) return 0<br>&nbsp;&nbsp;if (a < b) return -1<br>}<br><br>let numbers = [1, 35, 5, 25, 15]<br>",
+      "q1": "let arr = [<br>&nbsp;&nbsp;'I',<br>&nbsp;&nbsp;'used',<br>&nbsp;&nbsp;'to',<br>&nbsp;&nbsp;'be',<br>&nbsp;&nbsp;'Snow',<br>&nbsp;&nbsp;'White',<br>&nbsp;&nbsp;'but',<br>&nbsp;&nbsp;'then',<br>&nbsp;&nbsp;'I',<br>&nbsp;&nbsp;'drifted'<br>]<br><br>let str = ",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["numbers.sort(compare)"],
+      "answers": ["arr.join(' ')", "arr.join(\" \")"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#sort-fn",
-      "size": 22
+      "moreInfo": "https://javascript.info/array-methods#split-and-join",
+      "size": 14
     },
     }
   },

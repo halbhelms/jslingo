@@ -39,10 +39,10 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 6138,
+      "id": 535,
       "type": "ValidOrNot",
       "given": "",
-      "question": "function myFnc(x) {x()}<br>myFnc(()=>console.log('Will this work?'))",
+      "question": "let numbers = [1, 35, 5, 25, 15]<br>numbers.sort((a,b) => {<br>&nbsp;&nbsp;if (a > b) return Math.PI<br>&nbsp;&nbsp;if (a == b) return 0<br>&nbsp;&nbsp;if (a < b) return -Math.PI<br>})",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -50,7 +50,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/array-methods#sort-fn",
       "size": 0
     },
     }
