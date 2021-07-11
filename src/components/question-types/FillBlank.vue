@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 537,
+      "id": 8320,
       "type": "FillBlank",
-      "given": "Fill in the blank such that the code will return the total of all payments",
+      "given": "Fill in the blank to see if the great Mickey Mantle is in the Map",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let payments = [2420, 864, 1102, 3139, 1423]<br>let total = payments.",
-      "q2": "((sum, current) => sum += current)",
+      "q1": "let allStars = new Map()<br>allStars.set('Tom Brady', 'football')<br>allStars.set('Tiger Woods', 'golf')<br>allStars.set('LeBron James', 'basketball')<br>allStars.set('Serena Williams', 'tennis')<br>allStars.set('Lindsey Vonn', 'skiing')<br>",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["reduce"],
+      "answers": ["allStars.has('Mickey Mantle')", "allStars.has(\"Mickey Mantle\")"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
-      "size": 6
+      "moreInfo": "https://javascript.info/map-set",
+      "size": 31
     },
     }
   },
