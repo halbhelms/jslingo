@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 8215,
+      "id": 4224,
       "type": "MultipleChoice",
-      "given": "let competitors = [<br>&nbsp;&nbsp;{name: 'Ana', score: 84},<br>&nbsp;&nbsp;{name: 'Fay', score: 88},<br>&nbsp;&nbsp;{name: 'Sam', score: 92},<br>]<br><br>let awards = new Map()<br>awards.set(competitors[2], 1000)<br>awards.set(competitors[1], 500)<br>awards.set(competitors[0], 250)<br><br>console.log(`Ana received ${awards.get(competitors[0])}`)",
-      "question": "After this code is run, what will be logged to the console?",
+      "given": "let product = {<br>&nbsp;&nbsp;name: 'Left-handed Widget',<br>&nbsp;&nbsp;origin: 'USA',<br>&nbsp;&nbsp;price: '21.99',<br>&nbsp;&nbsp;inStock: 61,<br>&nbsp;&nbsp;taxable: true<br>}<br><br>let {name, price} = product",
+      "question": "The last line of code shown is an example of...",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Ana received undefined", "Ana received 250", "Ana received ", "error &mdash; the code is complete nonsense!"],
-      "answer": 1,
+      "choices": ["object assignment", "object aliasing", "object identity", "object destructuring"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set",
+      "moreInfo": "https://javascript.info/destructuring-assignment#object-destructuring",
       "size": 0
     },
     }

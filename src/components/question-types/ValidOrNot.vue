@@ -39,10 +39,10 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 8316,
+      "id": 4229,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let functions = new Map()<br>functions.set(Math.PI, 'returns approximate value of pi')",
+      "question": "let product = {<br>&nbsp;&nbsp;name: 'Left-handed Widget',<br>&nbsp;&nbsp;origin: 'USA',<br>&nbsp;&nbsp;price: '21.99',<br>&nbsp;&nbsp;inStock: 61,<br>&nbsp;&nbsp;taxable: true<br>}<br><br>let calcSalePrice = price => price * .9<br><br>let {name, price, salePrice = calcSalePrice(price)} = product",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -50,7 +50,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set",
+      "moreInfo": "https://javascript.info/destructuring-assignment#object-destructuring",
       "size": 0
     },
     }

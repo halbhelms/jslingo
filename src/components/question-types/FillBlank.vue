@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 8320,
+      "id": 4230,
       "type": "FillBlank",
-      "given": "Fill in the blank to see if the great Mickey Mantle is in the Map",
+      "given": "Fill in the blank to add a default property, <pre>salePrice</pre> with a default value obtained by calling the function, <pre>calcSalePrice</pre>",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let allStars = new Map()<br>allStars.set('Tom Brady', 'football')<br>allStars.set('Tiger Woods', 'golf')<br>allStars.set('LeBron James', 'basketball')<br>allStars.set('Serena Williams', 'tennis')<br>allStars.set('Lindsey Vonn', 'skiing')<br>",
-      "q2": "",
+      "q1": "let product = {<br>&nbsp;&nbsp;name: 'Left-handed Widget',<br>&nbsp;&nbsp;origin: 'USA',<br>&nbsp;&nbsp;price: '21.99',<br>&nbsp;&nbsp;inStock: 61,<br>&nbsp;&nbsp;taxable: true<br>}<br><br>let calcSalePrice = price => price * .9<br><br>let {name, price,",
+      "q2": "} = product",
       "choices": [],
       "answer": "",
-      "answers": ["allStars.has('Mickey Mantle')", "allStars.has(\"Mickey Mantle\")"],
+      "answers": ["salePrice = calcSalePrice(price)"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set",
-      "size": 31
+      "moreInfo": "https://javascript.info/destructuring-assignment#object-destructuring",
+      "size": 33
     },
     }
   },
@@ -119,7 +119,6 @@ section.fill-in-blanks {
   /* font-family: 'Fira Code'; */
   color: green;
   font-size: 1.3rem;
-  font-weight: 600;
   margin-left: 2px;
 }
 
@@ -130,6 +129,7 @@ section.fill-in-blanks {
 pre {
   font-family: 'Fira Code';
   color: maroon;
+  font-size: 1.3rem;
 }
 
 </style>

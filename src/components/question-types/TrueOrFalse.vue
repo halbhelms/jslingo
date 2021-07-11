@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 235,
+      "id": 4231,
       "type": "TrueOrFalse",
-      "given": "let payments = [2420, 864, 1102, 3139, 1423]<br>console.log(typeof payments)",
-      "question": "Logs <pre>array</pre> to the console",
+      "given": "let person = {<br>&nbsp;&nbsp;name: 'Ana',<br>&nbsp;&nbsp;address: {<br>&nbsp;&nbsp;&nbsp;&nbsp;street: '3280 Tropicana Blvd',<br>&nbsp;&nbsp;&nbsp;&nbsp;city: 'Las Vegas',<br>&nbsp;&nbsp;&nbsp;&nbsp;state: 'NV'<br>&nbsp;&nbsp;}<br>}<br><br>let {name, address:{state}} = person<br><br>console.log(state)",
+      "question": "<em>NV</em> will be logged to the console",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
-      "explanation": "There is no specify array type. (It's an object.) To find if something is an array, use <pre>Array.isArray(value)</pre>",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/destructuring-assignment#object-destructuring",
       "size": 0
     },
     }
