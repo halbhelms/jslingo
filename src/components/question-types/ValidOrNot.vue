@@ -39,10 +39,10 @@ export default {
       explanation: null,
 
       question:  {
-      "id": 535,
+      "id": 8316,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let numbers = [1, 35, 5, 25, 15]<br>numbers.sort((a,b) => {<br>&nbsp;&nbsp;if (a > b) return Math.PI<br>&nbsp;&nbsp;if (a == b) return 0<br>&nbsp;&nbsp;if (a < b) return -Math.PI<br>})",
+      "question": "let functions = new Map()<br>functions.set(Math.PI, 'returns approximate value of pi')",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -50,7 +50,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#sort-fn",
+      "moreInfo": "https://javascript.info/map-set",
       "size": 0
     },
     }

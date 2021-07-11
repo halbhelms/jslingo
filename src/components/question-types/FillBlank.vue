@@ -47,19 +47,19 @@ export default {
       showAnswer: false,
       
       question: {
-      "id": 5228,
+      "id": 537,
       "type": "FillBlank",
-      "given": "Fill in the blank to turn <pre>arr</pre> into a string with spaces separating each word",
+      "given": "Fill in the blank such that the code will return the total of all payments",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let arr = [<br>&nbsp;&nbsp;'I',<br>&nbsp;&nbsp;'used',<br>&nbsp;&nbsp;'to',<br>&nbsp;&nbsp;'be',<br>&nbsp;&nbsp;'Snow',<br>&nbsp;&nbsp;'White',<br>&nbsp;&nbsp;'but',<br>&nbsp;&nbsp;'then',<br>&nbsp;&nbsp;'I',<br>&nbsp;&nbsp;'drifted'<br>]<br><br>let str = ",
-      "q2": "",
+      "q1": "let payments = [2420, 864, 1102, 3139, 1423]<br>let total = payments.",
+      "q2": "((sum, current) => sum += current)",
       "choices": [],
       "answer": "",
-      "answers": ["arr.join(' ')", "arr.join(\" \")"],
+      "answers": ["reduce"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#split-and-join",
-      "size": 14
+      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
+      "size": 6
     },
     }
   },

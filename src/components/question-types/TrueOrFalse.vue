@@ -40,18 +40,18 @@ export default {
       explanation: null,
       
       question: {
-      "id": 5226,
+      "id": 235,
       "type": "TrueOrFalse",
-      "given": "let friends = 'Ana, Bethany, Carl, Davis, Ellen '<br>let arr = Array(friends)",
-      "question": "When this code is run, <pre>arr</pre> will be an array with 5 items in it",
+      "given": "let payments = [2420, 864, 1102, 3139, 1423]<br>console.log(typeof payments)",
+      "question": "Logs <pre>array</pre> to the console",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#split-and-join",
+      "explanation": "There is no specify array type. (It's an object.) To find if something is an array, use <pre>Array.isArray(value)</pre>",
+      "moreInfo": "",
       "size": 0
     },
     }
