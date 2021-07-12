@@ -1,6 +1,6 @@
 <template>
 <section class='multiple-choice'>
-  <h2>Choose the correct response</h2>
+  <h2 class="title">Choose the correct response</h2>
   <!-- Display if question.given exists -->
   <h3 class="given" v-if="question.given">Given...</h3>
   <!-- Display question.given as HTML? :Yes -->
@@ -14,12 +14,12 @@
     <p class="choice" :class="question.displayAsCode.includes('choices') ? 'pre' : ''" v-for="(choice, i) in question.choices" :key="choice" @click="evaluateAnswer(i)" v-html="choice"></p>
   </div>
 
-  <div class="result" v-if="result=='correct'">Yes! You are correct</div>
+  <div class="result" v-if="result=='correct'">Yes! The correct answer is {{  }}</div>
   <div class="result" v-if="result=='incorrect'">Sorry, no</div>
 
   <div class="explanation" v-html="explanation"></div>
 
-  <div class="more-info" v-if="question.moreInfo"><a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
+  <div class="more-info" v-if="question.moreInfo">More info: <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
 
 </section>
 </template>
@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 4224,
+      "id": 6142,
       "type": "MultipleChoice",
-      "given": "let product = {<br>&nbsp;&nbsp;name: 'Left-handed Widget',<br>&nbsp;&nbsp;origin: 'USA',<br>&nbsp;&nbsp;price: '21.99',<br>&nbsp;&nbsp;inStock: 61,<br>&nbsp;&nbsp;taxable: true<br>}<br><br>let {name, price} = product",
-      "question": "The last line of code shown is an example of...",
+      "given": "function sum(a,b) {<br>&nbsp;&nbsp;return a + b<br>}<br><br>log(sum(1,2,3))",
+      "question": "What will be logged to the console?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["object assignment", "object aliasing", "object identity", "object destructuring"],
-      "answer": 3,
+      "choices": ["3","6","123","error &mdash; argument number mismatch with parameter number"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment#object-destructuring",
+      "moreInfo": "",
       "size": 0
     },
     }
@@ -119,6 +119,12 @@ pre {
   color: maroon;
 }
 
-
+.title {
+  background-color: black;
+  color: rgb(242, 133, 0);
+  margin: 0;
+  line-height: 4rem;
+  font-size: 2rem;
+}
 
 </style>

@@ -1,6 +1,6 @@
 <template>
 <section class='valid-or-not'>
-  <h2>Is this valid JavaScript?</h2>
+  <h2 class="title">Is this valid JavaScript?</h2>
   <div :class="question.displayAsCode.includes('question') ? 'pre' : ''" v-html="question.question">
   </div>
   <div class="answer-buttons">
@@ -11,7 +11,7 @@
   <div class="result" v-if="result=='incorrect'">Sorry, no</div>
   <div class="explanation" v-html="explanation"></div>
 
-  <div class="more-info"> <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
+  <div class="more-info" v-if="showMoreInfo">More info: <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
 </section>
 </template>
 
@@ -37,12 +37,13 @@ export default {
     return {
       result: null,
       explanation: null,
+      showMoreInfo: false,
 
       question:  {
-      "id": 4229,
+      "id": 4234,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let product = {<br>&nbsp;&nbsp;name: 'Left-handed Widget',<br>&nbsp;&nbsp;origin: 'USA',<br>&nbsp;&nbsp;price: '21.99',<br>&nbsp;&nbsp;inStock: 61,<br>&nbsp;&nbsp;taxable: true<br>}<br><br>let calcSalePrice = price => price * .9<br><br>let {name, price, salePrice = calcSalePrice(price)} = product",
+      "question": "let person = {<br>&nbsp;&nbsp;name: 'Ana',<br>&nbsp;&nbsp;address: {<br>&nbsp;&nbsp;&nbsp;&nbsp;street: '3280 Tropicana Blvd',<br>&nbsp;&nbsp;&nbsp;&nbsp;city: 'Las Vegas',<br>&nbsp;&nbsp;&nbsp;&nbsp;state: 'NV'<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;age: 29<br>}<br><br>let {state, ...rest} = person.address",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -50,7 +51,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment#object-destructuring",
+      "moreInfo": "https://javascript.info/destructuring-assignment#the-rest-pattern",
       "size": 0
     },
     }
@@ -58,6 +59,7 @@ export default {
 
   methods: {
     evaluateAnswer(answer) {
+      this.showMoreInfo = true
       if (answer == this.question.answer) {
         this.result = 'correct'
         this.$store.dispatch('add_to_score', this.difficulty)
@@ -106,5 +108,13 @@ button.false {
 
 .result {
   margin-top: 20px;
+}
+
+.title {
+  background-color: black;
+  color: rgb(242, 133, 0);
+  margin: 0;
+  line-height: 4rem;
+  font-size: 2rem;
 }
 </style>

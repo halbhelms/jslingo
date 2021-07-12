@@ -1,6 +1,6 @@
 <template>
   <section class='true-or-false'>
-    <h2>True or False</h2>
+    <h2 class="title">True or False</h2>
     <h3 v-if="question.given" class="if-given">Given...</h3>
     <div class="given" v-if="question.given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
     <div class="question" v-html="question.question"></div>
@@ -12,7 +12,7 @@
     <div class="result" v-if="answer=='no'">Sorry, no</div>
     <div class="explanation" v-html="explanation"></div>
 
-    <div class="more-info" v-if="question.moreInfo"><a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
+    <div class="more-info" v-if="showMoreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
   </section>
 </template>
 
@@ -38,6 +38,7 @@ export default {
     return {
       answer: null,
       explanation: null,
+      showMoreInfo: false,
       
       question: {
       "id": 4231,
@@ -59,6 +60,7 @@ export default {
 
   methods: {
     evaluateAnswer(answer) {
+      this.showMoreInfo = true
       if (answer == this.question.answer) {
         this.answer = 'yes'
         this.$store.dispatch('add_to_score', this.question.difficulty)
@@ -82,6 +84,11 @@ export default {
 <style scoped>
 section.true-or-false {
   position: relative;
+}
+
+.if-given {
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .answer-buttons {
@@ -113,4 +120,13 @@ button.false {
 .answer {
   margin-top: 20px;
 }
+
+.title {
+  background-color: black;
+  color: rgb(242, 133, 0);
+  margin: 0;
+  line-height: 4rem;
+  font-size: 2rem;
+}
+
 </style>

@@ -1,7 +1,7 @@
 <template>
-<h2>Fill in the blank</h2>
+<h2 class="title">Fill in the blank</h2>
 <section class='fill-in-blanks'>
-  <h3 v-if="question.given">Given...</h3>
+  <h3 v-if="question.given" class="if-given">Given...</h3>
   <div class="given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
   <div class="body">
      <span v-html="question.q1" :class="question.displayAsCode.includes('q1') ? 'pre' : ''"/>
@@ -16,7 +16,7 @@
 
   <div class="explanation" v-html="explanation"></div>
 
-   <div class="more-info" v-if="question.moreInfo"><a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
+   <div class="more-info" v-if="showMoreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
 </section>
 
 </template>
@@ -45,27 +45,29 @@ export default {
       result: null,
       explanation: null,
       showAnswer: false,
+      showMoreInfo: false,
       
       question: {
-      "id": 4230,
+      "id": 4233,
       "type": "FillBlank",
-      "given": "Fill in the blank to add a default property, <pre>salePrice</pre> with a default value obtained by calling the function, <pre>calcSalePrice</pre>",
+      "given": "Fill in the blank such that the non-specified properties are combined into a new object named <pre>rest</pre>",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let product = {<br>&nbsp;&nbsp;name: 'Left-handed Widget',<br>&nbsp;&nbsp;origin: 'USA',<br>&nbsp;&nbsp;price: '21.99',<br>&nbsp;&nbsp;inStock: 61,<br>&nbsp;&nbsp;taxable: true<br>}<br><br>let calcSalePrice = price => price * .9<br><br>let {name, price,",
+      "q1": "let product = {<br>&nbsp;&nbsp;name: 'Left-handed Widget',<br>&nbsp;&nbsp;origin: 'USA',<br>&nbsp;&nbsp;price: '21.99',<br>&nbsp;&nbsp;inStock: 61,<br>&nbsp;&nbsp;taxable: true<br>}<br><br>let {name, price, ",
       "q2": "} = product",
       "choices": [],
       "answer": "",
-      "answers": ["salePrice = calcSalePrice(price)"],
+      "answers": ["...rest"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment#object-destructuring",
-      "size": 33
+      "moreInfo": "https://javascript.info/destructuring-assignment#the-rest-pattern",
+      "size": 8
     },
     }
   },
 
   methods: {
     evaluateAnswer() {
+      this.showMoreInfo = true
       let rightAnswer = false
       this.question.answers.forEach( answer => {
         if (answer.replace(/\s+/g, '') == this.answer.replace(/\s+/g, '')) {
@@ -105,10 +107,18 @@ section.fill-in-blanks {
 }
 
 
+.title {
+  background-color: black;
+  color: rgb(242, 133, 0);
+  margin: 0;
+  line-height: 4rem;
+  font-size: 2rem;
+}
 
-.given {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
+
+.if-given {
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .answer {
