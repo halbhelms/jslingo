@@ -8,11 +8,11 @@
       <button class="true" @click="evaluateAnswer(true)">True</button>
       <button class="false" @click="evaluateAnswer(false)">False</button>
     </div>
-    <div class="result" v-if="answer=='yes'">YES! You are correct.</div>
-    <div class="result" v-if="answer=='no'">Sorry, no</div>
+    <div class="result" v-if="answer=='yes'">YES! You are correct. The answer is {{ question.answer }}</div>
+    <div class="result" v-if="answer=='no'">Sorry, no. The correct answer is {{ question.answer }}</div>
     <div class="explanation" v-html="explanation"></div>
 
-    <div class="more-info" v-if="showMoreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
+    <div class="more-info" v-if="showMoreInfo && moreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
   </section>
 </template>
 
@@ -41,18 +41,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4231,
+      "id": 8218,
       "type": "TrueOrFalse",
-      "given": "let person = {<br>&nbsp;&nbsp;name: 'Ana',<br>&nbsp;&nbsp;address: {<br>&nbsp;&nbsp;&nbsp;&nbsp;street: '3280 Tropicana Blvd',<br>&nbsp;&nbsp;&nbsp;&nbsp;city: 'Las Vegas',<br>&nbsp;&nbsp;&nbsp;&nbsp;state: 'NV'<br>&nbsp;&nbsp;}<br>}<br><br>let {name, address:{state}} = person<br><br>console.log(state)",
-      "question": "<em>NV</em> will be logged to the console",
+      "given": "let ana = {<br>&nbsp;&nbsp;name: 'Ana Quay',<br>&nbsp;&nbsp;age: 29<br>}<br><br>let company = {<br>&nbsp;&nbsp;name: 'Davis Tools',<br>&nbsp;&nbsp;ceo: ana<br>}<br><br>console.log(company.ceo.address?.state)",
+      "question": "The console will log an error, as <pre>ana</pre> has no <pre>address</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment#object-destructuring",
+      "moreInfo": "",
       "size": 0
     },
     }

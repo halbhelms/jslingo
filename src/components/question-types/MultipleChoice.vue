@@ -48,18 +48,18 @@ export default {
       explanation: null,
       
       question:  {
-      "id": 6142,
+      "id": 639,
       "type": "MultipleChoice",
-      "given": "function sum(a,b) {<br>&nbsp;&nbsp;return a + b<br>}<br><br>log(sum(1,2,3))",
-      "question": "What will be logged to the console?",
+      "given": "let options = {<br>&nbsp;&nbsp;shipping: 'overnight',<br>&nbsp;&nbsp;signature: 'required'<br>}<br><br>function shipment({shipping = '2d day', insurance = false, signature = 'optional'}) {<br>&nbsp;&nbsp;return `Package to be delivered ${shipping}. A signature is ${signature}. The package is ${insurance ? 'insured' : 'not insured'}`<br>}<br><br>console.log(shipment(options))",
+      "question": "When run, this code will log...",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["3","6","123","error &mdash; argument number mismatch with parameter number"],
+      "choices": ["a paragraph of text displaying the instructions with all relevant variables correctly filled in", "a paragraph of text displaying the instructions with <pre>undefined</pre> for all relevant variables", "nothing", "an error"],
       "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/destructuring-assignment#smart-function-parameters",
       "size": 0
     },
     }

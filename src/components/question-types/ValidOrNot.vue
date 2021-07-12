@@ -40,10 +40,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4234,
+      "id": 638,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let person = {<br>&nbsp;&nbsp;name: 'Ana',<br>&nbsp;&nbsp;address: {<br>&nbsp;&nbsp;&nbsp;&nbsp;street: '3280 Tropicana Blvd',<br>&nbsp;&nbsp;&nbsp;&nbsp;city: 'Las Vegas',<br>&nbsp;&nbsp;&nbsp;&nbsp;state: 'NV'<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;age: 29<br>}<br><br>let {state, ...rest} = person.address",
+      "question": "let options = {<br>&nbsp;&nbsp;shipping: 'overnight',<br>&nbsp;&nbsp;signature: 'required'<br>}<br><br>function shipment({shipping = '2d day', insurance = false, signature = 'optional'}) {<br>&nbsp;&nbsp;return `Package to be delivered ${shipping}. A signature is ${signature}. The package is ${insurance ? 'required' : 'not required'}`<br>}<br><br>console.log(shipment(options))",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -51,7 +51,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment#the-rest-pattern",
+      "moreInfo": "https://javascript.info/destructuring-assignment#smart-function-parameters",
       "size": 0
     },
     }
