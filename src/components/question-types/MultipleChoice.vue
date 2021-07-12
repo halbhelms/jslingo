@@ -14,12 +14,12 @@
     <p class="choice" :class="question.displayAsCode.includes('choices') ? 'pre' : ''" v-for="(choice, i) in question.choices" :key="choice" @click="evaluateAnswer(i)" v-html="choice"></p>
   </div>
 
-  <div class="result" v-if="result=='correct'">Yes! The correct answer is {{  }}</div>
-  <div class="result" v-if="result=='incorrect'">Sorry, no</div>
+  <div class="result" v-if="result=='correct'">Yes! {{ correctAnswer }}</div>
+  <div class="result" v-if="result=='incorrect'">Sorry, no {{ correctAnswer }}</div>
 
   <div class="explanation" v-html="explanation"></div>
 
-  <div class="more-info" v-if="question.moreInfo">More info: <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
+  <div class="more-info" v-if="question.moreInfo && showMoreInfo">More info: <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
 
 </section>
 </template>
@@ -46,20 +46,21 @@ export default {
     return {
       result: null,
       explanation: null,
+      showMoreInfo: false,
       
       question:  {
-      "id": 639,
+      "id": 8223,
       "type": "MultipleChoice",
-      "given": "let options = {<br>&nbsp;&nbsp;shipping: 'overnight',<br>&nbsp;&nbsp;signature: 'required'<br>}<br><br>function shipment({shipping = '2d day', insurance = false, signature = 'optional'}) {<br>&nbsp;&nbsp;return `Package to be delivered ${shipping}. A signature is ${signature}. The package is ${insurance ? 'insured' : 'not insured'}`<br>}<br><br>console.log(shipment(options))",
-      "question": "When run, this code will log...",
+      "given": "let ana = {<br>&nbsp;&nbsp;name: 'Ana Quay',<br>&nbsp;&nbsp;age: 29<br>}<br><br>function registerPerson(person) {<br>&nbsp;&nbsp;if (!person.hasOwnProperty('address')) {<br>&nbsp;&nbsp;&nbsp;&nbsp;throw new Error('Person must have an address')<br>&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;// do something<br>&nbsp;&nbsp;}<br>}<br><br>try {<br>&nbsp;&nbsp;registerPerson(ana)<br>catch(err) {<br>&nbsp;&nbsp;console.log(err.message)<br>}",
+      "question": "What will happen when this code is run?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["a paragraph of text displaying the instructions with all relevant variables correctly filled in", "a paragraph of text displaying the instructions with <pre>undefined</pre> for all relevant variables", "nothing", "an error"],
-      "answer": 0,
+      "choices": ["whatever is specified in // do something", "a raw exception is logged to the console", "<em>Person must have an address</em> is logged to the console"],
+      "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment#smart-function-parameters",
+      "moreInfo": "https://javascript.info/try-catch#throw-operator",
       "size": 0
     },
     }
@@ -67,6 +68,7 @@ export default {
 
   methods: {
     evaluateAnswer(answer) {
+      this.showMoreInfo = true
       if (answer == this.question.answer) {
         this.$store.dispatch('add_to_score', this.difficulty)
         this.result = 'correct'
@@ -80,7 +82,15 @@ export default {
 
  computed: {
    givenClass() {
-     if (this.displayAsCode.includes('given')) return "pre"
+     if (this.question.isplayAsCode.includes('given')) return "pre"
+   },
+
+   correctAnswer() {
+     if (this.question.displayAsCode.includes('choices')) {
+       return `${this.question.choices[this.question.answer]}`
+     } else {
+       return `${this.question.choices[this.question.answer]}`
+     }
    },
 
    difficulty() {

@@ -8,11 +8,11 @@
       <button class="true" @click="evaluateAnswer(true)">True</button>
       <button class="false" @click="evaluateAnswer(false)">False</button>
     </div>
-    <div class="result" v-if="answer=='yes'">YES! You are correct. The answer is {{ question.answer }}</div>
-    <div class="result" v-if="answer=='no'">Sorry, no. The correct answer is {{ question.answer }}</div>
+    <div class="result" v-if="answer=='yes'">&#x2705; YES! You are correct. The answer is {{ question.answer }}</div>
+    <div class="result" v-if="answer=='no'">💣 Sorry, no. The correct answer is {{ question.answer }}</div>
     <div class="explanation" v-html="explanation"></div>
 
-    <div class="more-info" v-if="showMoreInfo && moreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
+    <div class="more-info" v-if="showMoreInfo && question.moreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
   </section>
 </template>
 
@@ -41,10 +41,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8218,
+      "id": 8222,
       "type": "TrueOrFalse",
-      "given": "let ana = {<br>&nbsp;&nbsp;name: 'Ana Quay',<br>&nbsp;&nbsp;age: 29<br>}<br><br>let company = {<br>&nbsp;&nbsp;name: 'Davis Tools',<br>&nbsp;&nbsp;ceo: ana<br>}<br><br>console.log(company.ceo.address?.state)",
-      "question": "The console will log an error, as <pre>ana</pre> has no <pre>address</pre>",
+      "given": "try {<br>&nbsp;&nbsp;let obj = JSON.parse({name: 'Ana', age: 29})<br>} catch (err) {<br>&nbsp;&nbsp;console.log('Whoops!')<br>}",
+      "question": "This code will produce an object with two properties, <pre>name</pre> and <pre>age</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -52,7 +52,7 @@ export default {
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/try-catch#using-try-catch",
       "size": 0
     },
     }
