@@ -41,15 +41,15 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 6227,
+      "id": 6232,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let calculateDiscount = price => {<br>&nbsp;&nbsp;return price > 200 ? price * .9 : price<br>}",
+      "question": "let fnc = () => return 'Hello'",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
       "moreInfo": "https://javascript.info/arrow-functions-basics",
