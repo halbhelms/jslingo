@@ -14,8 +14,9 @@
     <p class="choice" :class="question.displayAsCode.includes('choices') ? 'pre' : ''" v-for="(choice, i) in question.choices" :key="choice" @click="evaluateAnswer(i)" v-html="choice"></p>
   </div>
 
-  <div class="result" v-if="result=='correct'">Yes! {{ correctAnswer }}</div>
-  <div class="result" v-if="result=='incorrect'">Sorry, no {{ correctAnswer }}</div>
+  <div class="result" v-if="result=='correct'">&#x2705; Yes! </div>
+  <div class="result" v-if="result=='incorrect'">💣 Sorry, no </div>
+  <div class="result" v-if="result" v-html="correctAnswer"></div>
 
   <div class="explanation" v-html="explanation"></div>
 
@@ -49,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8223,
+      "id": 6226,
       "type": "MultipleChoice",
-      "given": "let ana = {<br>&nbsp;&nbsp;name: 'Ana Quay',<br>&nbsp;&nbsp;age: 29<br>}<br><br>function registerPerson(person) {<br>&nbsp;&nbsp;if (!person.hasOwnProperty('address')) {<br>&nbsp;&nbsp;&nbsp;&nbsp;throw new Error('Person must have an address')<br>&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;// do something<br>&nbsp;&nbsp;}<br>}<br><br>try {<br>&nbsp;&nbsp;registerPerson(ana)<br>catch(err) {<br>&nbsp;&nbsp;console.log(err.message)<br>}",
-      "question": "What will happen when this code is run?",
+      "given": "let calculateDiscount = price => {<br>&nbsp;&nbsp;return price > 200 ? price * .9 : price<br>}",
+      "question": "This code is an example of...",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["whatever is specified in // do something", "a raw exception is logged to the console", "<em>Person must have an address</em> is logged to the console"],
-      "answer": 2,
+      "choices": ["an error", "a curried function", "a closure", "an arrow function"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/try-catch#throw-operator",
+      "moreInfo": "https://javascript.info/arrow-functions-basics",
       "size": 0
     },
     }

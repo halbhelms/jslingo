@@ -48,19 +48,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4233,
+      "id": 5229,
       "type": "FillBlank",
-      "given": "Fill in the blank such that the non-specified properties are combined into a new object named <pre>rest</pre>",
+      "given": "Fill in the blank to provide 2 parameters, <pre>price</pre> and <pre>status</pre> in that order to the <pre>calculateDiscount</pre> function",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let product = {<br>&nbsp;&nbsp;name: 'Left-handed Widget',<br>&nbsp;&nbsp;origin: 'USA',<br>&nbsp;&nbsp;price: '21.99',<br>&nbsp;&nbsp;inStock: 61,<br>&nbsp;&nbsp;taxable: true<br>}<br><br>let {name, price, ",
-      "q2": "} = product",
+      "q1": "let calculateDiscount = ",
+      "q2": "=> {<br>&nbsp;&nbsp;let discountedPrice = 0<br>&nbsp;&nbsp;// calculations here<br>&nbsp;&nbsp;return discountedPrice<br>}",
       "choices": [],
       "answer": "",
-      "answers": ["...rest"],
+      "answers": ["(price, status)"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment#the-rest-pattern",
-      "size": 8
+      "moreInfo": "https://javascript.info/arrow-functions-basics",
+      "size": 15
     },
     }
   },

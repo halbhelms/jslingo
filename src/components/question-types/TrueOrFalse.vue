@@ -3,6 +3,7 @@
     <h2 class="title">True or False</h2>
     <h3 v-if="question.given" class="if-given">Given...</h3>
     <div class="given" v-if="question.given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
+    <div class="asserted">Asserted:</div>
     <div class="question" v-html="question.question"></div>
     <div class="answer-buttons">
       <button class="true" @click="evaluateAnswer(true)">True</button>
@@ -41,18 +42,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8222,
+      "id": 8224,
       "type": "TrueOrFalse",
-      "given": "try {<br>&nbsp;&nbsp;let obj = JSON.parse({name: 'Ana', age: 29})<br>} catch (err) {<br>&nbsp;&nbsp;console.log('Whoops!')<br>}",
-      "question": "This code will produce an object with two properties, <pre>name</pre> and <pre>age</pre>",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "In a <em>try/catch/finally</em> construct, the <pre>finally</pre> clause executes whether the code executed as expected or whether an exception was encountered.",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/try-catch#using-try-catch",
+      "moreInfo": "https://javascript.info/try-catch#try-catch-finally",
       "size": 0
     },
     }
@@ -84,6 +85,20 @@ export default {
 <style scoped>
 section.true-or-false {
   position: relative;
+}
+
+.asserted {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.question {
+  text-align: left;
+  margin-left: 20px;
+  line-height: 1rem;
 }
 
 .if-given {
