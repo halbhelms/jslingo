@@ -41,18 +41,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 6232,
+      "id": 6233,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let fnc = () => return 'Hello'",
+      "question": "let outerFnc = () => {<br>&nbsp;&nbsp;return () => console.log('inner function')<br>&nbsp;&nbsp;console.log('outer function')<br>}<br><br>let innerFnc = outerFnc()<br>innerFnc()",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/arrow-functions-basics",
+      "moreInfo": "https://javascript.info/closure#nested-functions",
       "size": 0
     },
     }

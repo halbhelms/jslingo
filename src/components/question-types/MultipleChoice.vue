@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 6231,
+      "id": 640,
       "type": "MultipleChoice",
-      "given": "let fncA = fnc => {<br>&nbsp;&nbsp;fnc()<br>&nbsp;&nbsp;return 'done'<br>}<br><br>let fncB = (fnc) => {<br>&nbsp;&nbsp;fnc()<br>&nbsp;&nbsp;return 'done'<br>}",
-      "question": "Which of these functions is valid?",
+      "given": "let auction = () => {<br>&nbsp;&nbsp;let acceptablePrice = 5000<br>&nbsp;&nbsp;let startingPrice = 2000<br>&nbsp;&nbsp;let currentPrice = startingPrice<br>&nbsp;&nbsp;return (amount) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Too late, loser'<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentPrice = amount<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'You won'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Bid too low. Try again.'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
+      "question": "This code is an example of...",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["fncA", "fncB", "both", "neither"],
+      "choices": ["an ES6 <pre>class</pre>", "a curried function", "a closure", "a higher order invariant (HOI)"],
       "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/arrow-functions-basics",
+      "moreInfo": "",
       "size": 0
     },
     }
