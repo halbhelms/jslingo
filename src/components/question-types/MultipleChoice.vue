@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 640,
+      "id": 7124,
       "type": "MultipleChoice",
-      "given": "let auction = () => {<br>&nbsp;&nbsp;let acceptablePrice = 5000<br>&nbsp;&nbsp;let startingPrice = 2000<br>&nbsp;&nbsp;let currentPrice = startingPrice<br>&nbsp;&nbsp;return (amount) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Too late, loser'<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentPrice = amount<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'You won'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Bid too low. Try again.'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
-      "question": "This code is an example of...",
+      "given": "function sayHi(name) {<br>&nbsp;&nbsp;console.log('Hello ' + name)<br>}<br><br>setInterval(sayHi, 1500, 'Ana')",
+      "question": "What will happen when this code is run?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["an ES6 <pre>class</pre>", "a curried function", "a closure", "a higher order invariant (HOI)"],
+      "choices": ["nothing", "After 3 seconds, <em>Here in myFnc</em> is logged", "Every 3 seconds, <em>Here in myFnc</em> is logged", "a runtime exception is thrown"],
       "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/settimeout-setinterval",
       "size": 0
     },
     }

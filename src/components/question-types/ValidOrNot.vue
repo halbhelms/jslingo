@@ -41,10 +41,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 6233,
+      "id": 7123,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let outerFnc = () => {<br>&nbsp;&nbsp;return () => console.log('inner function')<br>&nbsp;&nbsp;console.log('outer function')<br>}<br><br>let innerFnc = outerFnc()<br>innerFnc()",
+      "question": "function sayHi(name) {<br>&nbsp;&nbsp;console.log('Hello ' + name)<br>}<br><br>setInterval(sayHi, 1500, 'Ana')",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -52,7 +52,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/closure#nested-functions",
+      "moreInfo": "https://javascript.info/settimeout-setinterval",
       "size": 0
     },
     }

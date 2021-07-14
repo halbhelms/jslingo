@@ -48,19 +48,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5229,
+      "id": 7122,
       "type": "FillBlank",
-      "given": "Fill in the blank to provide 2 parameters, <pre>price</pre> and <pre>status</pre> in that order to the <pre>calculateDiscount</pre> function",
+      "given": "Fill in the blank so that <pre>myFnc</pre> runs after 3 seconds",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let calculateDiscount = ",
-      "q2": "=> {<br>&nbsp;&nbsp;let discountedPrice = 0<br>&nbsp;&nbsp;// calculations here<br>&nbsp;&nbsp;return discountedPrice<br>}",
+      "q1": "function myFnc() {<br>&nbsp;&nbsp;console.log('Here in myFnc')<br>}<br><br>",
+      "q2": "(myFnc, 3000)",
       "choices": [],
       "answer": "",
-      "answers": ["(price, status)"],
+      "answers": ["setTimeout"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/arrow-functions-basics",
-      "size": 15
+      "moreInfo": "",
+      "size": 10
     },
     }
   },
