@@ -42,18 +42,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 641,
+      "id": 6144,
       "type": "TrueOrFalse",
-      "given": "let auction = () => {<br>&nbsp;&nbsp;let acceptablePrice = 5000<br>&nbsp;&nbsp;let startingPrice = 2000<br>&nbsp;&nbsp;let currentPrice = startingPrice<br>&nbsp;&nbsp;return (amount) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Too late, loser'<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentPrice = amount<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'You won'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Bid too low. Try again.'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
-      "question": "This code will fail as the nested inner function has no access to the outer function's variables",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "Variables declared with <pre>var</pre> inside a function are <em>hoisted</em> to the top of the function before the function body is run",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/closure#nested-functions",
+      "moreInfo": "",
       "size": 0
     },
     }

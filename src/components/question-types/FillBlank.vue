@@ -48,19 +48,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 7122,
+      "id": 731,
       "type": "FillBlank",
-      "given": "Fill in the blank so that <pre>myFnc</pre> runs after 3 seconds",
+      "given": "Fill in the blank so that <pre>interval</pre> is cancelled after 6 seconds",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "function myFnc() {<br>&nbsp;&nbsp;console.log('Here in myFnc')<br>}<br><br>",
-      "q2": "(myFnc, 3000)",
+      "q1": "function sayHiAll([first, second]) {<br>&nbsp;&nbsp;console.log(`Hello, ${first} and ${second}`)<br>}<br><br>let interval = setInterval(sayHiAll, 1500, ['Ana', 'Jay'])<br><br>setTimeout(",
+      "q2": ")",
       "choices": [],
       "answer": "",
-      "answers": ["setTimeout"],
+      "answers": ["clearTimeout, 6000, interval"],
       "explanation": "",
       "moreInfo": "",
-      "size": 10
+      "size": 29
     },
     }
   },

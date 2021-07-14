@@ -12,7 +12,7 @@
   <div class="correct-answer" v-if="result">The correct answer is <pre>{{ correctAnswer}}</pre></div>
   <div class="explanation" v-html="explanation"></div>
 
-  <div class="more-info" v-if="showMoreInfo">More info: <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
+  <div class="more-info" v-if="showMoreInfo && moreInfo">More info: <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
 </section>
 </template>
 
@@ -41,10 +41,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 7123,
+      "id": 732,
       "type": "ValidOrNot",
       "given": "",
-      "question": "function sayHi(name) {<br>&nbsp;&nbsp;console.log('Hello ' + name)<br>}<br><br>setInterval(sayHi, 1500, 'Ana')",
+      "question": "function sayHiAll([first, second]) {<br>&nbsp;&nbsp;console.log(`Hello, ${first} and ${second}`)<br>}<br><br>let interval = setInterval(sayHiAll, 1500, ['Ana', 'Jay'])<br><br>setTimeout(clearTimeout, 6000, interval)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -52,7 +52,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/settimeout-setinterval",
+      "moreInfo": "",
       "size": 0
     },
     }
