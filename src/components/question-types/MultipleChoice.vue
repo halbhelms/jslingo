@@ -7,8 +7,8 @@
   <div class="given pre" v-if="question.displayAsCode.includes('given') && question.given" v-html="question.given"></div>
   <!-- Display question.given as HTML? :No -->
   <div v-else class="given">{{ question.given }}</div>
-  
-  <div class="question" v-html="question.question"></div>
+  <!-- Display question.question -->
+    <div class="question"><img class="question-mark" src="./question-mark.png" alt="" height="48"/>{{ question.question }}</div>
 
   <div class="choices">
     <p class="choice" :class="question.displayAsCode.includes('choices') ? 'pre' : ''" v-for="(choice, i) in question.choices" :key="choice" @click="evaluateAnswer(i)" v-html="choice"></p>
@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8231,
+      "id": 8156,
       "type": "MultipleChoice",
-      "given": "",
-      "question": "The <pre>??</pre> operator is known as...",
-      "displayAsCode": [],
+      "given": "let still = 10<br>while (still) {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;still = 0<br>&nbsp;&nbsp;}<br>}",
+      "question": "How many times will the loop run?",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["spread operator", "destructuring", "logical XOR", "nullish coallescing"],
+      "choices": [0, 1, 10, 'indeterminable'],
       "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/nullish-coalescing-operator",
+      "moreInfo": "https://javascript.info/while-for",
       "size": 0
     },
     }
@@ -92,6 +92,10 @@ export default {
      } else {
        return `The correct answer is ${this.question.choices[this.question.answer]}`
      }
+   },
+
+   styledQuestion() {
+     return `${this.question.question}`
    },
 
    difficulty() {
@@ -128,6 +132,11 @@ section.multiple-choice {
 pre {
   font-family: 'Fira Code';
   color: maroon;
+}
+
+.question-mark {
+  position: relative;
+  top: 18px;
 }
 
 .title {

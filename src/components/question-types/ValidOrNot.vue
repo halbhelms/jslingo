@@ -41,17 +41,17 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 7126,
+      "id": 8155,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let price = 120.75<br>let discountedPrice = (price > 100 ? price *.95 : price).toFixed(2)",
+      "question": "let still = 10<br>while (still) {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;still = 0<br>&nbsp;&nbsp;}<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "",
+      "explanation": "It is valid, but...using booleans would be smarter than using numbers and relying on JavaScript to cast those to booleans.",
       "moreInfo": "",
       "size": 0
     },

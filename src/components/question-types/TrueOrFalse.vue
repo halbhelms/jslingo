@@ -1,10 +1,12 @@
 <template>
   <section class='true-or-false'>
     <h2 class="title">True or False</h2>
+    <!-- Given -->
     <h3 v-if="question.given" class="if-given">Given...</h3>
     <div class="given" v-if="question.given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
-    <div class="asserted">Asserted:</div>
-    <div class="question" v-html="question.question"></div>
+    <!-- Question -->
+    <section class="question"><img class="question-mark" src="./scales.png" alt="" height="64"><div v-html="question.question"></div></section>
+    <!-- Answer buttons -->
     <div class="answer-buttons">
       <button class="true" @click="evaluateAnswer(true)">True</button>
       <button class="false" @click="evaluateAnswer(false)">False</button>
@@ -42,15 +44,15 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8153,
+      "id": 8158,
       "type": "TrueOrFalse",
-      "given": "let still = true<br>while (still) {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;still = false<br>&nbsp;&nbsp;}<br>}",
-      "question": "This code will loop repeatedly until the value of <pre>random</pre> is less than or equal to 0.5",
+      "given": "let still = false<br>do {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;still = true<br>&nbsp;&nbsp;}<br>} while (still)",
+      "question": "This code will not execute as the <pre>while</pre> condition is <pre>false</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
       "moreInfo": "https://javascript.info/while-for",
@@ -96,9 +98,16 @@ section.true-or-false {
 }
 
 .question {
+  display: grid;
+  grid-template-columns: 60px auto;
+  gap: 12px;
   text-align: left;
-  margin-left: 20px;
-  line-height: 1rem;
+  margin-top: 24px;
+}
+
+.question-mark {
+  position: relative;
+  top: -6px;
 }
 
 .if-given {

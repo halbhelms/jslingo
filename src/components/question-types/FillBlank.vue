@@ -1,8 +1,10 @@
 <template>
 <h2 class="title">Fill in the blank</h2>
 <section class='fill-in-blanks'>
-  <h3 v-if="question.given" class="if-given">Given...</h3>
-  <div class="given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
+  <section class="explain">
+    <img src="./fill-blank.png" alt="">
+    <div class="given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
+  </section>
   <div class="body">
      <span v-html="question.q1" :class="question.displayAsCode.includes('q1') ? 'pre' : ''"/>
      <input type="text" class="answer" :class="question.displayAsCode.includes('answer') ? 'pre' : ''" :size="question.size" v-on:keyup.enter="evaluateAnswer" v-model="answer" />
@@ -48,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8154,
+      "id": 8159,
       "type": "FillBlank",
-      "given": "Fill in the blank so that it creates a loop that will run so long as <pre>still</pre> is and remains <pre>true</pre>",
+      "given": "Someone deleted the <pre>while</pre> clause. Fill in the blank to restore it",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let still = true<br><br>",
-      "q2": "(still) {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;still = false<br>&nbsp;&nbsp;}<br>}",
+      "q1": "let still = false<br><br>do {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;still = true<br>&nbsp;&nbsp;}<br>}&nbsp;",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["while"],
+      "answers": ["while(still)", "while(still == true)", "while(still === true)"],
       "explanation": "",
       "moreInfo": "https://javascript.info/while-for",
-      "size": 5
+      "size": 21 
     },
     }
   },
@@ -104,6 +106,19 @@ export default {
 section.fill-in-blanks {
   position: relative;
   font-size: 1.3rem;
+  top: 12px;
+}
+
+section.explain {
+  display: grid;
+  grid-template-columns: 60px auto;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.given {
+  position: relative;
+  top: 16px;
 }
 
 
