@@ -42,18 +42,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8235,
+      "id": 8153,
       "type": "TrueOrFalse",
-      "given": "let parsimonious = false<br>let effulgent = 'Calm down'<br><br>log(parsimonious ?? effulgent)<br>log(parsimonious || effulgent)",
-      "question": "Both <pre>log</pre> statements produce the same results",
+      "given": "let still = true<br>while (still) {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;still = false<br>&nbsp;&nbsp;}<br>}",
+      "question": "This code will loop repeatedly until the value of <pre>random</pre> is less than or equal to 0.5",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/nullish-coalescing-operator",
+      "moreInfo": "https://javascript.info/while-for",
       "size": 0
     },
     }
