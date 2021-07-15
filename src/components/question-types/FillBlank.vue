@@ -48,19 +48,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 731,
+      "id": 8227,
       "type": "FillBlank",
-      "given": "Fill in the blank so that <pre>interval</pre> is cancelled after 6 seconds",
+      "given": "Fill in the blank so that execution does not \"fall though\" to the <pre>default</pre> block",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "function sayHiAll([first, second]) {<br>&nbsp;&nbsp;console.log(`Hello, ${first} and ${second}`)<br>}<br><br>let interval = setInterval(sayHiAll, 1500, ['Ana', 'Jay'])<br><br>setTimeout(",
-      "q2": ")",
+      "q1": "let status = 'gold'<br>let discount = 0<br><br>switch(status) {<br>&nbsp;&nbsp;case 'gold':<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .20<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+      "q2": "<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .10<br>}",
       "choices": [],
       "answer": "",
-      "answers": ["clearTimeout, 6000, interval"],
+      "answers": ["break"],
       "explanation": "",
-      "moreInfo": "",
-      "size": 29
+      "moreInfo": "https://javascript.info/switch",
+      "size": 5
     },
     }
   },

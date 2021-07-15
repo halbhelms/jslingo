@@ -41,10 +41,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 732,
+      "id": 8229,
       "type": "ValidOrNot",
       "given": "",
-      "question": "function sayHiAll([first, second]) {<br>&nbsp;&nbsp;console.log(`Hello, ${first} and ${second}`)<br>}<br><br>let interval = setInterval(sayHiAll, 1500, ['Ana', 'Jay'])<br><br>setTimeout(clearTimeout, 6000, interval)",
+      "question": "let status = 'silver'<br>let discountPercent = 0<br><br>switch(status) {<br>&nbsp;&nbsp;case 'gold':<br>&nbsp;&nbsp;&nbsp;&nbsp;discountPercent += 5<br>&nbsp;&nbsp;case 'silver':<br>&nbsp;&nbsp;&nbsp;&nbsp;discountPercent += 5<br>&nbsp;&nbsp;case 'bronze':<br>&nbsp;&nbsp;&nbsp;&nbsp;discountPercent += 5<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -52,7 +52,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/switch",
       "size": 0
     },
     }

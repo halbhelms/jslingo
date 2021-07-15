@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 7124,
+      "id": 8225,
       "type": "MultipleChoice",
-      "given": "function sayHi(name) {<br>&nbsp;&nbsp;console.log('Hello ' + name)<br>}<br><br>setInterval(sayHi, 1500, 'Ana')",
-      "question": "What will happen when this code is run?",
+      "given": "let status = 'gold'<br>let discount = 0<br><br>switch(status) {<br>&nbsp;&nbsp;case 'gold':<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .15<br>&nbsp;&nbsp;case 'silver':<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .10<br>&nbsp;&nbsp;case 'bronze':<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .05<br>}",
+      "question": "What is the value of <pre>discount</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["nothing", "After 3 seconds, <em>Here in myFnc</em> is logged", "Every 3 seconds, <em>Here in myFnc</em> is logged", "a runtime exception is thrown"],
-      "answer": 2,
+      "choices": ["0", ".05", ".10", ".15"],
+      "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/settimeout-setinterval",
+      "moreInfo": "https://javascript.info/switch",
       "size": 0
     },
     }
