@@ -1,8 +1,12 @@
 <template>
 <section class='valid-or-not'>
   <h2 class="title">Is this valid JavaScript?</h2>
-  <div class="question" :class="question.displayAsCode.includes('question') ? 'pre' : ''" v-html="question.question">
-  </div>
+  <!-- Code -->
+  <section class="is-valid">
+    <img class="is-valid" src="./yes-no.png" height="64" alt="" />
+    <div class="question" :class="question.displayAsCode.includes('question') ? 'pre' : ''" v-html="question.question"></div>
+  </section>
+  <!-- Yes/No buttons -->
   <div class="answer-buttons">
     <button class="true" @click="evaluateAnswer(true)">Yes</button>
     <button class="false" @click="evaluateAnswer(false)">No</button>
@@ -41,18 +45,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 8155,
+      "id": 5231,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let still = 10<br>while (still) {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;still = 0<br>&nbsp;&nbsp;}<br>}",
+      "question": "let printOut = item => console.log(item)<br><br>let flowers = ['rose', 'begonia', 'iris', 'orchid']<br>flowers.forEach(printOut)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "It is valid, but...using booleans would be smarter than using numbers and relying on JavaScript to cast those to booleans.",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/array-methods#iterate-foreach",
       "size": 0
     },
     }
@@ -101,6 +105,10 @@ button {
   border-radius: 1rem;
 }
 
+.answer-buttons {
+  margin-top: 24px;
+}
+
 button.true {
   background-color: green;
   color: white;
@@ -113,6 +121,17 @@ button.false {
 
 .correct-answer {
   font-size: 1.3rem;
+}
+
+.is-valid {
+  display: grid;
+  grid-template-columns: 60px auto;
+  gap: 12px;
+}
+
+img.is-valid {
+  position: relative;
+  top: 16px;
 }
 
 .question {

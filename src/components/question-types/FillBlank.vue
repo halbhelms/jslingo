@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8159,
+      "id": 5230,
       "type": "FillBlank",
-      "given": "Someone deleted the <pre>while</pre> clause. Fill in the blank to restore it",
+      "given": "Fill in the blank to loop over the flower array using <pre>forEach</pre> and the <pre>printOut</pre> function",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let still = false<br><br>do {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;still = true<br>&nbsp;&nbsp;}<br>}&nbsp;",
+      "q1": "function printOut (item) {<br>&nbsp;&nbsp;console.log(item)<br>}<br><br>let flowers = ['rose', 'begonia', 'iris', 'orchid']<br><br>",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["while(still)", "while(still == true)", "while(still === true)"],
+      "answers": ["flowers.forEach(printOut)"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/while-for",
-      "size": 21 
+      "moreInfo": "https://javascript.info/array-methods#iterate-foreach",
+      "size": 27
     },
     }
   },

@@ -44,10 +44,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8158,
+      "id": 5232,
       "type": "TrueOrFalse",
-      "given": "let still = false<br>do {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;still = true<br>&nbsp;&nbsp;}<br>} while (still)",
-      "question": "This code will not execute as the <pre>while</pre> condition is <pre>false</pre>",
+      "given": "let flowers = [<br>&nbsp;&nbsp;{name: 'rose', color: 'red', price: 15.89},<br>&nbsp;&nbsp;{name: 'begonia', color: 'pink', price: 17.24},<br>&nbsp;&nbsp;{name: 'iris', color: 'blue', price: 12.64},<br>&nbsp;&nbsp;{name: 'orchid', color: 'purple', price: 24.64},<br>]<br><br>flowers.forEach( flower => {<br>&nbsp;&nbsp;console.log(`${flower.name}: ${flower.price}`)<br>})",
+      "question": "This code will sort the flowers by price and log each one to the console",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -55,7 +55,7 @@ export default {
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/while-for",
+      "moreInfo": "https://javascript.info/array-methods#iterate-foreach",
       "size": 0
     },
     }
