@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8225,
+      "id": 8150,
       "type": "MultipleChoice",
-      "given": "let status = 'gold'<br>let discount = 0<br><br>switch(status) {<br>&nbsp;&nbsp;case 'gold':<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .15<br>&nbsp;&nbsp;case 'silver':<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .10<br>&nbsp;&nbsp;case 'bronze':<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .05<br>}",
-      "question": "What is the value of <pre>discount</pre>",
+      "given": "let subscribe = false<br><br>function toggle() {subscribe = !subscribe}<br><br>toggle()",
+      "question": "What is the value of <pre>subscribe</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["0", ".05", ".10", ".15"],
-      "answer": 1,
+      "choices": ["<pre>true</pre>","<pre>false</pre>"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/switch",
+      "moreInfo": "",
       "size": 0
     },
     }
@@ -88,9 +88,9 @@ export default {
 
    correctAnswer() {
      if (this.question.displayAsCode.includes('choices')) {
-       return `${this.question.choices[this.question.answer]}`
+       return `The correct answer is ${this.question.choices[this.question.answer]}`
      } else {
-       return `${this.question.choices[this.question.answer]}`
+       return `The correct answer is ${this.question.choices[this.question.answer]}`
      }
    },
 

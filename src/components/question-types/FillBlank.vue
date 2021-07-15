@@ -16,7 +16,7 @@
 
   <div class="explanation" v-html="explanation"></div>
 
-   <div class="more-info" v-if="showMoreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
+   <div class="more-info" v-if="showMoreInfo && moreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
 </section>
 
 </template>
@@ -48,19 +48,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8227,
+      "id": 8151,
       "type": "FillBlank",
-      "given": "Fill in the blank so that execution does not \"fall though\" to the <pre>default</pre> block",
+      "given": "Fill in the blank so that <pre>toggle</pre> flips the value of <pre>subscribe</pre>",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let status = 'gold'<br>let discount = 0<br><br>switch(status) {<br>&nbsp;&nbsp;case 'gold':<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .20<br>&nbsp;&nbsp;&nbsp;&nbsp;",
-      "q2": "<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;discount = .10<br>}",
+      "q1": "let subscribe = false<br><br>function toggle() {<br>&nbsp;&nbsp;",
+      "q2": "<br>}",
       "choices": [],
       "answer": "",
-      "answers": ["break"],
+      "answers": ["subscribe != subscribe"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/switch",
-      "size": 5
+      "moreInfo": "",
+      "size": 22
     },
     }
   },

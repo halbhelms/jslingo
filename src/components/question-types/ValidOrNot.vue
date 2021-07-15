@@ -41,10 +41,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 8229,
+      "id": 7126,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let status = 'silver'<br>let discountPercent = 0<br><br>switch(status) {<br>&nbsp;&nbsp;case 'gold':<br>&nbsp;&nbsp;&nbsp;&nbsp;discountPercent += 5<br>&nbsp;&nbsp;case 'silver':<br>&nbsp;&nbsp;&nbsp;&nbsp;discountPercent += 5<br>&nbsp;&nbsp;case 'bronze':<br>&nbsp;&nbsp;&nbsp;&nbsp;discountPercent += 5<br>}",
+      "question": "let price = 120.75<br>let discountedPrice = (price > 100 ? price *.95 : price).toFixed(2)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -52,7 +52,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/switch",
+      "moreInfo": "",
       "size": 0
     },
     }
