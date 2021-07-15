@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8150,
+      "id": 8231,
       "type": "MultipleChoice",
-      "given": "let subscribe = false<br><br>function toggle() {subscribe = !subscribe}<br><br>toggle()",
-      "question": "What is the value of <pre>subscribe</pre>",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "The <pre>??</pre> operator is known as...",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["<pre>true</pre>","<pre>false</pre>"],
-      "answer": 0,
+      "choices": ["spread operator", "destructuring", "logical XOR", "nullish coallescing"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/nullish-coalescing-operator",
       "size": 0
     },
     }

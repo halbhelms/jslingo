@@ -9,8 +9,8 @@
      <span v-html="question.q2" :class="question.displayAsCode.includes('q2') ? 'pre' : ''" />
   </div>
 
-   <div class="result" v-if="result=='correct'">Yes, you are correct!</div>
-  <div class="result" v-if="result=='incorrect'">Sorry, no</div>
+   <div class="result" v-if="result=='correct'">&#x2705; Yes, you are correct!</div>
+  <div class="result" v-if="result=='incorrect'">💣 Sorry, no</div>
 
   <div class="correct-answer" v-if="showAnswer">The correct answer is <pre>{{ question.answers[0] }}</pre></div>
 

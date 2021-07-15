@@ -42,18 +42,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 6144,
+      "id": 8235,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "Variables declared with <pre>var</pre> inside a function are <em>hoisted</em> to the top of the function before the function body is run",
-      "displayAsCode": [],
+      "given": "let parsimonious = false<br>let effulgent = 'Calm down'<br><br>log(parsimonious ?? effulgent)<br>log(parsimonious || effulgent)",
+      "question": "Both <pre>log</pre> statements produce the same results",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/nullish-coalescing-operator",
       "size": 0
     },
     }
