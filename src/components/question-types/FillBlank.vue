@@ -2,7 +2,7 @@
 <h2 class="title">Fill in the blank</h2>
 <section class='fill-in-blanks'>
   <section class="explain">
-    <img src="./fill-blank.png" alt="">
+    <img class="fill-blank-icon" src="./fill-blank.png" alt="">
     <div class="given" :class="question.displayAsCode.includes('given') ? 'pre' : ''" v-html="question.given"></div>
   </section>
   <div class="body">
@@ -15,10 +15,10 @@
   <div class="result" v-if="result=='incorrect'">💣 Sorry, no</div>
 
   <div class="correct-answer" v-if="showAnswer">The correct answer is <pre>{{ question.answers[0] }}</pre></div>
-
-  <div class="explanation" v-html="explanation"></div>
-
-   <div class="more-info" v-if="showMoreInfo && moreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
+  <!-- Explanation -->
+  <div class="explanation" v-if="question.explanation" v-html="explanation"></div>
+  <!-- More info -->
+  <div class="more-info" v-if="showMoreInfo && question.moreInfo"> <a :href="question.moreInfo" target="new-window"><img src="./more-info.png" class="more-info-icon" height="64" alt="">{{ question.moreInfo }}</a></div>
 </section>
 
 </template>
@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5230,
+      "id": 5237,
       "type": "FillBlank",
-      "given": "Fill in the blank to loop over the flower array using <pre>forEach</pre> and the <pre>printOut</pre> function",
+      "given": "Fill in the blank so that the inital value of the accumulator is the base room rate",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "function printOut (item) {<br>&nbsp;&nbsp;console.log(item)<br>}<br><br>let flowers = ['rose', 'begonia', 'iris', 'orchid']<br><br>",
-      "q2": "",
+      "q1": "let baseRoomRate = 319<br>let options = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Strip view',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 29<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Spa',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 79<br>&nbsp;&nbsp;}<br>]<br><br>let roomPrice = options.reduce( (total, option ) => total += option.addOnPrice,",
+      "q2": ")",
       "choices": [],
       "answer": "",
-      "answers": ["flowers.forEach(printOut)"],
+      "answers": ["baseRoomRate"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#iterate-foreach",
-      "size": 27
+      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
+      "size": 12
     },
     }
   },
@@ -119,6 +119,16 @@ section.explain {
 .given {
   position: relative;
   top: 16px;
+}
+
+img.fill-blank-icon {
+  position: relative;
+  top: -24px;
+}
+
+img.more-info-icon {
+  position: relative;
+  top: 30px;
 }
 
 

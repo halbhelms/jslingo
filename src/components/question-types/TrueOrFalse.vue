@@ -44,10 +44,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5232,
+      "id": 5235,
       "type": "TrueOrFalse",
-      "given": "let flowers = [<br>&nbsp;&nbsp;{name: 'rose', color: 'red', price: 15.89},<br>&nbsp;&nbsp;{name: 'begonia', color: 'pink', price: 17.24},<br>&nbsp;&nbsp;{name: 'iris', color: 'blue', price: 12.64},<br>&nbsp;&nbsp;{name: 'orchid', color: 'purple', price: 24.64},<br>]<br><br>flowers.forEach( flower => {<br>&nbsp;&nbsp;console.log(`${flower.name}: ${flower.price}`)<br>})",
-      "question": "This code will sort the flowers by price and log each one to the console",
+      "given": "let cart = [<br>&nbsp;&nbsp;{name: 'rose', color: 'red', price: 15.89},<br>&nbsp;&nbsp;{name: 'begonia', color: 'pink', price: 17.24},<br>&nbsp;&nbsp;{name: 'iris', color: 'blue', price: 12.64},<br>&nbsp;&nbsp;{name: 'orchid', color: 'purple', price: 24.64},<br>]<br><br>let cartTotal = cart.reduce( (sum, flower) => sum += flower.price, 0)",
+      "question": "This code creates a new array, <pre>cartTotal</pre> as a result of the <pre>map</pre> function",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -55,7 +55,7 @@ export default {
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#iterate-foreach",
+      "moreInfo": "https://javascript.info/array-methods#map",
       "size": 0
     },
     }

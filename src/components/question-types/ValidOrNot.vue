@@ -1,4 +1,5 @@
 <template>
+
 <section class='valid-or-not'>
   <h2 class="title">Is this valid JavaScript?</h2>
   <!-- Code -->
@@ -14,9 +15,10 @@
   <div class="result" v-if="result=='correct'">You're right!</div>
   <div class="result" v-if="result=='incorrect'">Sorry, no</div>
   <div class="correct-answer" v-if="result">The correct answer is <pre>{{ correctAnswer}}</pre></div>
-  <div class="explanation" v-html="explanation"></div>
-
-  <div class="more-info" v-if="showMoreInfo && moreInfo">More info: <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
+  <!-- Explanation -->
+  <div class="explanation" v-if="question.explanation" v-html="explanation"></div>
+  <!-- More info -->
+  <div class="more-info" v-if="showMoreInfo && question.moreInfo"><img src="./more-info.png" height="64" alt="" class="more-info-icon"> <a :href="question.moreInfo" target="new-win">{{ question.moreInfo }}</a></div>
 </section>
 </template>
 
@@ -45,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 5231,
+      "id": 5236,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let printOut = item => console.log(item)<br><br>let flowers = ['rose', 'begonia', 'iris', 'orchid']<br>flowers.forEach(printOut)",
+      "question": "let baseRoomRate = 319<br>let options = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Strip view',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 29<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Spa',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 79<br>&nbsp;&nbsp;}<br>]<br><br>let roomPrice = options.reduce( (total, option ) => total += option.addOnPrice, baseRoomRate)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -56,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#iterate-foreach",
+      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
       "size": 0
     },
     }
@@ -132,6 +134,15 @@ button.false {
 img.is-valid {
   position: relative;
   top: 16px;
+}
+
+img.more-info-icon {
+  position: relative;
+  top: 28px;
+}
+
+.more-info {
+  margin-top: -30px;
 }
 
 .question {
