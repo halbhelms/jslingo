@@ -11,11 +11,13 @@
       <button class="true" @click="evaluateAnswer(true)">True</button>
       <button class="false" @click="evaluateAnswer(false)">False</button>
     </div>
+    <!-- Scoring -->
     <div class="result" v-if="answer=='yes'">&#x2705; YES! You are correct. The answer is {{ question.answer }}</div>
     <div class="result" v-if="answer=='no'">💣 Sorry, no. The correct answer is {{ question.answer }}</div>
-    <div class="explanation" v-html="explanation"></div>
-
-    <div class="more-info" v-if="showMoreInfo && question.moreInfo">More info: <a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
+    <!-- Explanation -->
+    <div class="explanation" v-html="explanation" v-if="question.explanation"></div>
+    <!-- More Info -->
+    <div class="more-info" v-if="showMoreInfo && question.moreInfo"><img src="./more-info.png" height="64" alt="" class="more-info"><a :href="question.moreInfo" target="new-window">{{ question.moreInfo }}</a></div>
   </section>
 </template>
 
@@ -44,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5238,
+      "id": 5244,
       "type": "TrueOrFalse",
-      "given": "let baseRoomRate = 319<br>let options = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Strip view',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 29,<br>&nbsp;&nbsp;&nbsp;&nbsp;chosen: true<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Spa',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 79,<br>&nbsp;&nbsp;&nbsp;&nbsp;chosen: false<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Buffet',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 59,<br>&nbsp;&nbsp;&nbsp;&nbsp;chosen: true<br>&nbsp;&nbsp;}<br>]<br><br>let roomPrice = options.reduce(( total, option) => {<br>&nbsp;&nbsp;return option.chosen ? total += option.addOnPrice : total<br>}, baseRoomRate)",
-      "question": "This code fails because you cannot use the <em>ternary</em> operator inside the <em>reduce</em> function of an array",
+      "given": "let MRassays = [<br>&nbsp;&nbsp;0.276,<br>&nbsp;&nbsp;0.149,<br>&nbsp;&nbsp;0.475,<br>&nbsp;&nbsp;0.294,<br>&nbsp;&nbsp;0.092,<br>&nbsp;&nbsp;0.410,<br>&nbsp;&nbsp;0.096,<br>&nbsp;&nbsp;0.413,<br>&nbsp;&nbsp;0.176<br>]<br><br>function compare(a, b) {<br>&nbsp;&nbsp;if (a > b) return 1<br>&nbsp;&nbsp;if (a < b) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let sortedArray = MRassays.sort(compare)",
+      "question": "<pre>sortedArray</pre> is a sorted array of the elements within <pre>MRassays</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
+      "moreInfo": "https://javascript.info/array-methods#sort-fn",
       "size": 0
     },
     }
@@ -113,6 +115,11 @@ section.true-or-false {
 .if-given {
   text-align: left;
   margin-left: 1rem;
+}
+
+img.more-info {
+  position: relative;
+  top: 26px;
 }
 
 .answer-buttons {

@@ -3,24 +3,24 @@
   <h2 class="title">Choose the correct response</h2>
   <!-- Display if question.given exists -->
   <h3 class="given" v-if="question.given">Given...</h3>
-  <!-- Display question.given as HTML? :Yes -->
+  <!-- Display given as HTML? :Yes -->
   <div class="given pre" v-if="question.displayAsCode.includes('given') && question.given" v-html="question.given"></div>
-  <!-- Display question.given as HTML? :No -->
+  <!-- Display given as HTML? :No -->
   <div v-else class="given">{{ question.given }}</div>
-  <!-- Display question.question -->
-    <div class="question"><img class="question-mark" src="./question-mark.png" alt="" height="48"/>{{ question.question }}</div>
-
+  <!-- Question -->
+    <div class="question"><img src="./multiple-choice.png" class="question-icon" height="64" alt=""><span v-html="question.question"></span></div>
+  <!-- Choices -->
   <div class="choices">
     <p class="choice" :class="question.displayAsCode.includes('choices') ? 'pre' : ''" v-for="(choice, i) in question.choices" :key="choice" @click="evaluateAnswer(i)" v-html="choice"></p>
   </div>
-
+  <!-- Scoring -->
   <div class="result" v-if="result=='correct'">&#x2705; Yes! </div>
   <div class="result" v-if="result=='incorrect'">💣 Sorry, no </div>
   <div class="result" v-if="result" v-html="correctAnswer"></div>
-
-  <div class="explanation" v-html="explanation"></div>
-
-  <div class="more-info" v-if="question.moreInfo && showMoreInfo">More info: <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
+  <!-- Explanation -->
+  <div class="explanation" v-if="question.explanation" v-html="explanation"></div>
+  <!-- More info -->
+  <div class="more-info" v-if="question.moreInfo && showMoreInfo"><img src="./more-info.png" class="more-info-icon" height="64" alt=""> <a :href="question.moreInfo">{{ question.moreInfo }}</a></div>
 
 </section>
 </template>
@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8156,
+      "id": 5243,
       "type": "MultipleChoice",
-      "given": "let still = 10<br>while (still) {<br>&nbsp;&nbsp;let random = Math.random()<br>&nbsp;&nbsp;log(random)<br>&nbsp;&nbsp;if (random > 0.5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;still = 0<br>&nbsp;&nbsp;}<br>}",
-      "question": "How many times will the loop run?",
+      "given": "function compare(a, b) {<br>&nbsp;&nbsp;if (a > b) return 1<br>&nbsp;&nbsp;if (a < b) return -1<br>&nbsp;&nbsp;return 0<br>}",
+      "question": "Will the <pre>compare</pre> function work to sort numbers properly when passed into an array's <pre>sort</pre> function?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": [0, 1, 10, 'indeterminable'],
-      "answer": 3,
+      "choices": ["Yes", "No"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/while-for",
+      "moreInfo": "https://javascript.info/array-methods#sort-fn",
       "size": 0
     },
     }
@@ -95,7 +95,7 @@ export default {
    },
 
    styledQuestion() {
-     return `${this.question.question}`
+     return `<img class="question" src="./multiple-choice.png" height="64" /> ${this.question.question}`
    },
 
    difficulty() {
@@ -132,6 +132,17 @@ section.multiple-choice {
 pre {
   font-family: 'Fira Code';
   color: maroon;
+}
+
+img.more-info-icon {
+  position: relative;
+  top: 30px;
+}
+
+img.question-icon {
+  position: relative;
+  top: 24px;
+  padding-right: 6px;
 }
 
 .question-mark {
