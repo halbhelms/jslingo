@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5240,
+      "id": 5312,
       "type": "FillBlank",
-      "given": "Fill in the blank so that <pre>avg</pre> is the simple average of the readings of <pre>GVassays</pre>",
+      "given": "Fill in the blank to sort <pre>players</pre> by their batting average",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let GVassays = [<br>&nbsp;&nbsp;{ reading: 0.27 },<br>&nbsp;&nbsp;{ reading: -0.018 },<br>&nbsp;&nbsp;{ reading: 0.24 },<br>&nbsp;&nbsp;{ reading: 0.01 },<br>&nbsp;&nbsp;{ reading: 0.22 },<br>&nbsp;&nbsp;{ reading: -0.26 },<br>]<br><br>let avg = reduce((GVassays, total, assay) => total += assay.reading, 0)",
+      "q1": "let players = [<br>&nbsp;&nbsp;{name: 'Adam Frazier', battingAvg: .330},<br>&nbsp;&nbsp;{name: 'Trea Turner', battingAvg: .319},<br>&nbsp;&nbsp;{name: 'Vladimir Guerrero, Jr', battingAvg: .335},<br>&nbsp;&nbsp;{name: 'Michael Brantley', battingAvg: .329},<br>&nbsp;&nbsp;{name: 'Nick Castellanos', battingAvg: .330},<br>]<br><br>function baComparison(playerA, playerB) {<br>&nbsp;&nbsp;if (playerA.battingAvg &lt; playerB.battingAvg) return 1<br>&nbsp;&nbsp;if (playerA.battingAvg &gt; playerB.battingAvg) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let sortedPlayers = ",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["/GVassays.length"],
+      "answers": ["players.sort(baComparison)"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
-      "size": 20
+      "moreInfo": "https://javascript.info/array-methods#sort-fn",
+      "size": 30
     },
     }
   },

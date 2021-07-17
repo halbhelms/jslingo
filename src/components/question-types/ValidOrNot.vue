@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 5239,
+      "id": 5311,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let GVassays = [<br>&nbsp;&nbsp;{ reading: 0.27 },<br>&nbsp;&nbsp;{ reading: -0.018 },<br>&nbsp;&nbsp;{ reading: 0.24 },<br>&nbsp;&nbsp;{ reading: 0.01 },<br>&nbsp;&nbsp;{ reading: 0.22 },<br>&nbsp;&nbsp;{ reading: -0.26 },<br>]<br><br>let avg = reduce((GVassays, total, assay) => total += assay.reading, 0)/GVassays.length",
+      "question": "let MRassays = [<br>&nbsp;&nbsp;0.276,<br>&nbsp;&nbsp;0.149,<br>&nbsp;&nbsp;0.475,<br>&nbsp;&nbsp;0.294,<br>&nbsp;&nbsp;0.092,<br>&nbsp;&nbsp;0.410,<br>&nbsp;&nbsp;0.096,<br>&nbsp;&nbsp;0.413,<br>&nbsp;&nbsp;0.176<br>]<br><br>function numericCompare(a, b) {<br>&nbsp;&nbsp;if (a > b) return 1<br>&nbsp;&nbsp;if (b > a) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let sortedAssays = MRassays.sort(numericCompare)<br>let trimmedAssays = []<br><br>for (let i=1; i&lt;sortedAssays.length-1; i++) {<br>&nbsp;&nbsp;trimmedAssays.push(sortedAssays[i])<br>}<br><br>let avg = trimmedAssays.reduce((total, assay) => total += assay)/trimmedAssays.length",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
+      "moreInfo": "https://javascript.info/array",
       "size": 0
     },
     }

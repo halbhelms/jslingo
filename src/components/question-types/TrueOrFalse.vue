@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5244,
+      "id": 5247,
       "type": "TrueOrFalse",
-      "given": "let MRassays = [<br>&nbsp;&nbsp;0.276,<br>&nbsp;&nbsp;0.149,<br>&nbsp;&nbsp;0.475,<br>&nbsp;&nbsp;0.294,<br>&nbsp;&nbsp;0.092,<br>&nbsp;&nbsp;0.410,<br>&nbsp;&nbsp;0.096,<br>&nbsp;&nbsp;0.413,<br>&nbsp;&nbsp;0.176<br>]<br><br>function compare(a, b) {<br>&nbsp;&nbsp;if (a > b) return 1<br>&nbsp;&nbsp;if (a < b) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let sortedArray = MRassays.sort(compare)",
-      "question": "<pre>sortedArray</pre> is a sorted array of the elements within <pre>MRassays</pre>",
+      "given": "let arr = [92, 94, 81, 76, 99, 94, 81, 88]<br>let deduped = new Set(arr)<br>let arr2= new Array(deduped)",
+      "question": "This code will 'de-dupe' an array and then create a new array in which each item is unique",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#sort-fn",
+      "moreInfo": "",
       "size": 0
     },
     }
