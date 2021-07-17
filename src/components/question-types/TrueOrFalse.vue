@@ -44,10 +44,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5235,
+      "id": 5238,
       "type": "TrueOrFalse",
-      "given": "let cart = [<br>&nbsp;&nbsp;{name: 'rose', color: 'red', price: 15.89},<br>&nbsp;&nbsp;{name: 'begonia', color: 'pink', price: 17.24},<br>&nbsp;&nbsp;{name: 'iris', color: 'blue', price: 12.64},<br>&nbsp;&nbsp;{name: 'orchid', color: 'purple', price: 24.64},<br>]<br><br>let cartTotal = cart.reduce( (sum, flower) => sum += flower.price, 0)",
-      "question": "This code creates a new array, <pre>cartTotal</pre> as a result of the <pre>map</pre> function",
+      "given": "let baseRoomRate = 319<br>let options = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Strip view',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 29,<br>&nbsp;&nbsp;&nbsp;&nbsp;chosen: true<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Spa',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 79,<br>&nbsp;&nbsp;&nbsp;&nbsp;chosen: false<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Buffet',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 59,<br>&nbsp;&nbsp;&nbsp;&nbsp;chosen: true<br>&nbsp;&nbsp;}<br>]<br><br>let roomPrice = options.reduce(( total, option) => {<br>&nbsp;&nbsp;return option.chosen ? total += option.addOnPrice : total<br>}, baseRoomRate)",
+      "question": "This code fails because you cannot use the <em>ternary</em> operator inside the <em>reduce</em> function of an array",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -55,7 +55,7 @@ export default {
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#map",
+      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
       "size": 0
     },
     }

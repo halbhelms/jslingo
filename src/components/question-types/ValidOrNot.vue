@@ -47,15 +47,15 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 5236,
+      "id": 5239,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let baseRoomRate = 319<br>let options = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Strip view',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 29<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;option: 'Spa',<br>&nbsp;&nbsp;&nbsp;&nbsp;addOnPrice: 79<br>&nbsp;&nbsp;}<br>]<br><br>let roomPrice = options.reduce( (total, option ) => total += option.addOnPrice, baseRoomRate)",
+      "question": "let GVassays = [<br>&nbsp;&nbsp;{ reading: 0.27 },<br>&nbsp;&nbsp;{ reading: -0.018 },<br>&nbsp;&nbsp;{ reading: 0.24 },<br>&nbsp;&nbsp;{ reading: 0.01 },<br>&nbsp;&nbsp;{ reading: 0.22 },<br>&nbsp;&nbsp;{ reading: -0.26 },<br>]<br><br>let avg = reduce((GVassays, total, assay) => total += assay.reading, 0)/GVassays.length",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
       "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
