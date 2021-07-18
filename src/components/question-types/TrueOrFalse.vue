@@ -46,10 +46,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5247,
+      "id": 6234,
       "type": "TrueOrFalse",
-      "given": "let arr = [92, 94, 81, 76, 99, 94, 81, 88]<br>let deduped = new Set(arr)<br>let arr2= new Array(deduped)",
-      "question": "This code will 'de-dupe' an array and then create a new array in which each item is unique",
+      "given": "let eroica = {<br>&nbsp;&nbsp;composer: 'Beethoven',<br>&nbsp;&nbsp;symphonyNo: 3,<br>&nbsp;&nbsp;brief: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log( `The Eroica symphony (number ${this.symphonyNo}) was written by ${this.composer}`)<br>&nbsp;&nbsp;}<br>}<br><br>function choice(fnc) {<br>&nbsp;&nbsp;fnc()<br>}<br><br>choice(eroica.brief)",
+      "question": "This code logs <em>The Eroica symphony (number 3) was written by Beethoven</em>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -57,7 +57,7 @@ export default {
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/bind#solution-1-a-wrapper",
       "size": 0
     },
     }
