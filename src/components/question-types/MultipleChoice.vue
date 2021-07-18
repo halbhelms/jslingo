@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5243,
+      "id": 131,
       "type": "MultipleChoice",
-      "given": "function compare(a, b) {<br>&nbsp;&nbsp;if (a > b) return 1<br>&nbsp;&nbsp;if (a < b) return -1<br>&nbsp;&nbsp;return 0<br>}",
-      "question": "Will the <pre>compare</pre> function work to sort numbers properly when passed into an array's <pre>sort</pre> function?",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "A good definition of <em>memoization<em> is...",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["Yes", "No"],
-      "answer": 0,
+      "choices": ["the process of creating comments that describe <em>what</em> the could does rather than <em>how<em> the intent is implemented", "the creation of an API <em>contract</em> that allows front- and back-end development to proceed separately", "the use of <em>symbols</em> rather than strings for object property names", "a technique that increases a function's performance by caching previously computed results"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#sort-fn",
+      "moreInfo": "",
       "size": 0
     },
     }

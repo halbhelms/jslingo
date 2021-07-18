@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5312,
+      "id": 6239,
       "type": "FillBlank",
-      "given": "Fill in the blank to sort <pre>players</pre> by their batting average",
+      "given": "Fill in the blank so that <pre>choice</pre> uses <pre>pastoral</pre> as its <pre>this</pre> context.",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let players = [<br>&nbsp;&nbsp;{name: 'Adam Frazier', battingAvg: .330},<br>&nbsp;&nbsp;{name: 'Trea Turner', battingAvg: .319},<br>&nbsp;&nbsp;{name: 'Vladimir Guerrero, Jr', battingAvg: .335},<br>&nbsp;&nbsp;{name: 'Michael Brantley', battingAvg: .329},<br>&nbsp;&nbsp;{name: 'Nick Castellanos', battingAvg: .330},<br>]<br><br>function baComparison(playerA, playerB) {<br>&nbsp;&nbsp;if (playerA.battingAvg &lt; playerB.battingAvg) return 1<br>&nbsp;&nbsp;if (playerA.battingAvg &gt; playerB.battingAvg) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let sortedPlayers = ",
-      "q2": "",
+      "q1": "let pastoral = {<br>&nbsp;&nbsp;composer: 'Beethoven',<br>&nbsp;&nbsp;symphonyNo: 6,<br>&nbsp;&nbsp;brief: function(name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log( `The ${name} (number ${this.symphonyNo}) was written by ${this.composer}`)<br>&nbsp;&nbsp;}<br>}<br><br>let choice = pastoral.brief.",
+      "q2": "<br><br>choice('Pastoral symphony')",
       "choices": [],
       "answer": "",
-      "answers": ["players.sort(baComparison)"],
+      "answers": ["bind(pastoral)"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#sort-fn",
-      "size": 30
+      "moreInfo": "https://javascript.info/bind#solution-2-bind",
+      "size": 17
     },
     }
   },

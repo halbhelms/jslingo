@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 6234,
+      "id": 643,
       "type": "TrueOrFalse",
-      "given": "let eroica = {<br>&nbsp;&nbsp;composer: 'Beethoven',<br>&nbsp;&nbsp;symphonyNo: 3,<br>&nbsp;&nbsp;brief: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log( `The Eroica symphony (number ${this.symphonyNo}) was written by ${this.composer}`)<br>&nbsp;&nbsp;}<br>}<br><br>function choice(fnc) {<br>&nbsp;&nbsp;fnc()<br>}<br><br>choice(eroica.brief)",
-      "question": "This code logs <em>The Eroica symphony (number 3) was written by Beethoven</em>",
+      "given": "let beethoven = {<br>&nbsp;&nbsp;name: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;symphonies: [<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 1, in C major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 2, in D major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 3, in E flat major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 4, in B flat major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 5, in C minor',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 6, in F major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 7, in A major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 8, in F major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 9, in D minor',<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;rundown: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.symphonies.forEach(function(symphony) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(this.name + ' wrote ' + symphony)<br>&nbsp;&nbsp;&nbsp;&nbsp;})<br>&nbsp;&nbsp;}<br>}<br><br>beethoven.rundown()",
+      "question": "This code has a problem &mdash; within the <pre>rundown</pre> function, <pre>this.name</pre> has no value! One good way to solve this problem is to rewrite the anonymous function sent to <pre>this.symphonies.forEach</pre> as an <em>arrow function</em>.",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/bind#solution-1-a-wrapper",
+      "moreInfo": "https://javascript.info/arrow-functions#arrow-functions-have-no-this",
       "size": 0
     },
     }
