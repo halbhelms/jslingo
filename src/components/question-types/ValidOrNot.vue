@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4238,
+      "id": 4242,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let book = {<br>&nbsp;&nbsp;_title: 'A Prayer for Owen Meany',<br>&nbsp;&nbsp;_author: 'John Irving',<br>&nbsp;&nbsp;_rating: '✭✭✭✭*',<br>&nbsp;&nbsp;get brief() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this._title + ' written by ' + this._author + ' received ' + this._rating.length + ' stars'<br>&nbsp;&nbsp;}<br>}",
+      "question": "let person = {<br>&nbsp;&nbsp;_name: null,<br>&nbsp;&nbsp;name (name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._name = name<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this._name<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}<br><br>person.name('Hal')<br>console.log(person.name())",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/property-accessors",
+      "moreInfo": "",
       "size": 0
     },
     }

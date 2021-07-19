@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 6150,
+      "id": 5313,
       "type": "MultipleChoice",
-      "given": "function fnc(a,b,c) {<br>&nbsp;&nbsp;console.log(Array.isArray(arguments))<br>}<br><br>fnc('Ludwig', 'van', 'Beethoven')",
-      "question": "What will be logged to the console?",
+      "given": "let prices = [ 1.92, 3.14, 10.76, 8.23]<br><br>// with initial accumulator value<br>let total = prices.reduce((total, price) => total + price, 0)<br><br>// without initial accumulator value<br>let total2 = prices.reduce((total, price) => total + price)",
+      "question": "What happens with <pre>total2</pre> where no initial accumulator value is given?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["true", "false"],
-      "answer": 1,
+      "choices": ["<pre>reduce</pre> uses the first item in the array as the initial accumulator value", "<pre>reduce</pre> uses <pre>0</pre> as the initial accumulator value", "a runtime exception occurs"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
       "size": 0
     },
     }

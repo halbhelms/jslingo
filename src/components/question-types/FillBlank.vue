@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 6151,
+      "id": 4240,
       "type": "FillBlank",
-      "given": "Fill in the blank to log an array-like display of values passed to the function",
+      "given": "Fill in the blank to create a setter for <pre>age</pre>",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "function fnc(a,b,c) { console.log(",
-      "q2": ")}",
+      "q1": "let employee = {<br>&nbsp;&nbsp;firstName: '',<br>&nbsp;&nbsp;lastName: '',<br>&nbsp;&nbsp;_age: null,<br>&nbsp;&nbsp;",
+      "q2": "(age) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (age > 15 && age < 100) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._age = age<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw new Error('Invalid age given')<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
       "choices": [],
       "answer": "",
-      "answers": ["arguments"],
+      "answers": ["set age"],
       "explanation": "",
-      "moreInfo": "",
-      "size": 9
+      "moreInfo": "https://javascript.info/property-accessors#getters-and-setters",
+      "size": 7
     },
     }
   },
