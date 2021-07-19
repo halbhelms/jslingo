@@ -46,10 +46,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 6149,
+      "id": 4237,
       "type": "TrueOrFalse",
-      "given": "function fnc(a,b,c) {<br>&nbsp;&nbsp;console.log(arguments[0])<br>}<br><br>fnc('Ludwig', 'van', 'Beethoven')",
-      "question": "<em>Ludwig</em> will be logged to the console",
+      "given": "let book = {<br>&nbsp;&nbsp;_title: 'A Prayer for Owen Meany',<br>&nbsp;&nbsp;_author: 'John Irving',<br>&nbsp;&nbsp;_rating: '✭✭✭✭*',<br>&nbsp;&nbsp;get rating() {return this._rating.length + ' stars'},<br>}<br><br>log(book.rating)",
+      "question": "This logs <em>5 stars</em> to the console",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -57,7 +57,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/property-accessors",
       "size": 0
     },
     }

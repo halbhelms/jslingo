@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 5311,
+      "id": 4238,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let MRassays = [<br>&nbsp;&nbsp;0.276,<br>&nbsp;&nbsp;0.149,<br>&nbsp;&nbsp;0.475,<br>&nbsp;&nbsp;0.294,<br>&nbsp;&nbsp;0.092,<br>&nbsp;&nbsp;0.410,<br>&nbsp;&nbsp;0.096,<br>&nbsp;&nbsp;0.413,<br>&nbsp;&nbsp;0.176<br>]<br><br>function numericCompare(a, b) {<br>&nbsp;&nbsp;if (a > b) return 1<br>&nbsp;&nbsp;if (b > a) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let sortedAssays = MRassays.sort(numericCompare)<br>let trimmedAssays = []<br><br>for (let i=1; i&lt;sortedAssays.length-1; i++) {<br>&nbsp;&nbsp;trimmedAssays.push(sortedAssays[i])<br>}<br><br>let avg = trimmedAssays.reduce((total, assay) => total += assay)/trimmedAssays.length",
+      "question": "let book = {<br>&nbsp;&nbsp;_title: 'A Prayer for Owen Meany',<br>&nbsp;&nbsp;_author: 'John Irving',<br>&nbsp;&nbsp;_rating: '✭✭✭✭*',<br>&nbsp;&nbsp;get brief() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this._title + ' written by ' + this._author + ' received ' + this._rating.length + ' stars'<br>&nbsp;&nbsp;}<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array",
+      "moreInfo": "https://javascript.info/property-accessors",
       "size": 0
     },
     }
