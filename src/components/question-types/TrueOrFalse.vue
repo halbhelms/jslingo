@@ -46,10 +46,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 643,
+      "id": 6149,
       "type": "TrueOrFalse",
-      "given": "let beethoven = {<br>&nbsp;&nbsp;name: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;symphonies: [<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 1, in C major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 2, in D major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 3, in E flat major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 4, in B flat major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 5, in C minor',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 6, in F major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 7, in A major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 8, in F major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 9, in D minor',<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;rundown: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.symphonies.forEach(function(symphony) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(this.name + ' wrote ' + symphony)<br>&nbsp;&nbsp;&nbsp;&nbsp;})<br>&nbsp;&nbsp;}<br>}<br><br>beethoven.rundown()",
-      "question": "This code has a problem &mdash; within the <pre>rundown</pre> function, <pre>this.name</pre> has no value! One good way to solve this problem is to rewrite the anonymous function sent to <pre>this.symphonies.forEach</pre> as an <em>arrow function</em>.",
+      "given": "function fnc(a,b,c) {<br>&nbsp;&nbsp;console.log(arguments[0])<br>}<br><br>fnc('Ludwig', 'van', 'Beethoven')",
+      "question": "<em>Ludwig</em> will be logged to the console",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -57,7 +57,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/arrow-functions#arrow-functions-have-no-this",
+      "moreInfo": "",
       "size": 0
     },
     }

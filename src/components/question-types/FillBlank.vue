@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 6239,
+      "id": 6151,
       "type": "FillBlank",
-      "given": "Fill in the blank so that <pre>choice</pre> uses <pre>pastoral</pre> as its <pre>this</pre> context.",
+      "given": "Fill in the blank to log an array-like display of values passed to the function",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let pastoral = {<br>&nbsp;&nbsp;composer: 'Beethoven',<br>&nbsp;&nbsp;symphonyNo: 6,<br>&nbsp;&nbsp;brief: function(name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log( `The ${name} (number ${this.symphonyNo}) was written by ${this.composer}`)<br>&nbsp;&nbsp;}<br>}<br><br>let choice = pastoral.brief.",
-      "q2": "<br><br>choice('Pastoral symphony')",
+      "q1": "function fnc(a,b,c) { console.log(",
+      "q2": ")}",
       "choices": [],
       "answer": "",
-      "answers": ["bind(pastoral)"],
+      "answers": ["arguments"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/bind#solution-2-bind",
-      "size": 17
+      "moreInfo": "",
+      "size": 9
     },
     }
   },
