@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4242,
+      "id": 4244,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let person = {<br>&nbsp;&nbsp;_name: null,<br>&nbsp;&nbsp;name (name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._name = name<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this._name<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}<br><br>person.name('Hal')<br>console.log(person.name())",
+      "question": "function Person(firstName, lastName) {<br>&nbsp;&nbsp;this.firstName = firstName,<br>&nbsp;&nbsp;this.lastName = lastName<br>}<br><br>let bob = Person()",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/constructor-new#constructor-function",
       "size": 0
     },
     }

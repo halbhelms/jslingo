@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4237,
+      "id": 8322,
       "type": "TrueOrFalse",
-      "given": "let book = {<br>&nbsp;&nbsp;_title: 'A Prayer for Owen Meany',<br>&nbsp;&nbsp;_author: 'John Irving',<br>&nbsp;&nbsp;_rating: '✭✭✭✭*',<br>&nbsp;&nbsp;get rating() {return this._rating.length + ' stars'},<br>}<br><br>log(book.rating)",
-      "question": "This logs <em>5 stars</em> to the console",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "Prototypal inheritance uses <em>dependency injection</em> to inject the prototype's properties and functions into the inheriting",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/property-accessors",
+      "moreInfo": "https://javascript.info/prototype-inheritance",
       "size": 0
     },
     }

@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5313,
+      "id": 437,
       "type": "MultipleChoice",
-      "given": "let prices = [ 1.92, 3.14, 10.76, 8.23]<br><br>// with initial accumulator value<br>let total = prices.reduce((total, price) => total + price, 0)<br><br>// without initial accumulator value<br>let total2 = prices.reduce((total, price) => total + price)",
-      "question": "What happens with <pre>total2</pre> where no initial accumulator value is given?",
+      "given": "let animal = {<br>&nbsp;&nbsp;eats: true,<br>&nbsp;&nbsp;breathes: true,<br>&nbsp;&nbsp;sleeps: true,<br>}<br><br>function Person(firstName, lastName) {<br>&nbsp;&nbsp;this.firstName = firstName,<br>&nbsp;&nbsp;this.lastName = lastName<br>}<br><br>let ana = new Person('Ana', 'Banana')<br><br>ana.__proto__ = animal<br><br>log(ana.sleeps)",
+      "question": "What will be logged to the console?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["<pre>reduce</pre> uses the first item in the array as the initial accumulator value", "<pre>reduce</pre> uses <pre>0</pre> as the initial accumulator value", "a runtime exception occurs"],
+      "choices": ["true", "false", "undefined", "error"],
       "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#reduce-reduceright",
+      "moreInfo": "https://javascript.info/prototype-inheritance",
       "size": 0
     },
     }
