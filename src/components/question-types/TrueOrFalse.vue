@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4312,
+      "id": 4316,
       "type": "TrueOrFalse",
-      "given": "let machine = {<br>&nbsp;&nbsp;playsMusic: false<br>}<br><br>let instrument = {<br>&nbsp;&nbsp;playsMusic: true,<br>&nbsp;&nbsp;automatic: false<br>}<br><br>let piano = {<br>&nbsp;&nbsp;keys: 88<br>}<br><br>let playerPiano = {<br>&nbsp;&nbsp;automatic: true<br>}<br><br>instrument.__proto__ = machine<br>piano.__proto__ = instrument<br>playerPiano.__proto__ = piano<br><br>log(piano.automatic)",
-      "question": "This code logs throws a runtime exception",
+      "given": "let arr = new Array()<br>let thing = {}<br>Object.setPrototypeOf(thing, arr)<br><br>thing.push('Hello')",
+      "question": "Using an array as a prototype of an object turns the object into an array",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/prototype-inheritance",
+      "explanation": "Although it does <em>something</em>, this is a <em>very bad idea</em>",
+      "moreInfo": "",
       "size": 0
     },
     }

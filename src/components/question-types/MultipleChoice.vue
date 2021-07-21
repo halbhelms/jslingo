@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4311,
+      "id": 4317,
       "type": "MultipleChoice",
-      "given": "let machine = {<br>&nbsp;&nbsp;playsMusic: false<br>}<br><br>let instrument = {<br>&nbsp;&nbsp;playsMusic: true,<br>&nbsp;&nbsp;automatic: false<br>}<br><br>let piano = {<br>&nbsp;&nbsp;keys: 88<br>}<br><br>let playerPiano = {<br>&nbsp;&nbsp;automatic: true<br>}<br><br>instrument.__proto__ = machine<br>piano.__proto__ = instrument<br>playerPiano.__proto__ = piano<br><br>log(playerPiano.playsMusic)",
-      "question": "What is logged to the console?",
+      "given": "let mother = {<br>&nbsp;&nbsp; firstName: 'Grace',<br>&nbsp;&nbsp; lastName: 'Lane'<br> }<br><br>&nbsp;&nbsp;// no firstName property<br> let daughter = {}<br><br> Object.setPrototypeOf(daughter, mother)<br><br> daughter.firstName = 'Gen'<br><br>log(mother.firstName)",
+      "question": "What will be logged to the console?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["piano", "instrument", "machine", "true"],
-      "answer": 3,
+      "choices": ["Grace", "Gen", "undefined", "runtime exception"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/prototype-inheritance",
+      "moreInfo": "https://javascript.info/prototype-inheritance#writing-doesn-t-use-prototype",
       "size": 0
     },
     }

@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4310,
+      "id": 4313,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let machine = {<br>&nbsp;&nbsp;playsMusic: false<br>}<br><br>let instrument = {<br>&nbsp;&nbsp;playsMusic: true,<br>&nbsp;&nbsp;automatic: false<br>}<br><br>let piano = {<br>&nbsp;&nbsp;keys: 88<br>}<br><br>let playerPiano = {<br>&nbsp;&nbsp;automatic: true<br>}<br><br>instrument.__proto__ = machine<br>piano.__proto__ = instrument<br>playerPiano.__proto__ = piano",
+      "question": "let machine = {<br>&nbsp;&nbsp;playsMusic: false<br>}<br><br>let instrument = {<br>&nbsp;&nbsp;playsMusic: true,<br>&nbsp;&nbsp;automatic: false<br>}<br><br>let piano = {<br>&nbsp;&nbsp;keys: 88<br>}<br><br>let playerPiano = {<br>&nbsp;&nbsp;automatic: true<br>}<br><br>Object.setPrototypeOf(instrument, machine)<br>Object.setPrototypeOf(piano, instrument)<br>Object.setPrototypeOf(playerPiano, piano)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
