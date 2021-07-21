@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4240,
+      "id": 468,
       "type": "FillBlank",
-      "given": "Fill in the blank to create a setter for <pre>age</pre>",
+      "given": "Fill in the blank to make <pre>ana</pre>'s prototype <pre>animal</pre>",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let employee = {<br>&nbsp;&nbsp;firstName: '',<br>&nbsp;&nbsp;lastName: '',<br>&nbsp;&nbsp;_age: null,<br>&nbsp;&nbsp;",
-      "q2": "(age) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (age > 15 && age < 100) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._age = age<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw new Error('Invalid age given')<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
+      "q1": "let animal = {<br>&nbsp;&nbsp;eats: true,<br>&nbsp;&nbsp;breathes: true,<br>&nbsp;&nbsp;sleeps: true,<br>}<br><br>let ana = {<br>&nbsp;&nbsp;name: 'Ana'<br>}<br><br>ana.",
+      "q2": " = animal",
       "choices": [],
       "answer": "",
-      "answers": ["set age"],
+      "answers": ["__proto__"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/property-accessors#getters-and-setters",
-      "size": 7
+      "moreInfo": "https://javascript.info/prototype-inheritance",
+      "size": 9
     },
     }
   },

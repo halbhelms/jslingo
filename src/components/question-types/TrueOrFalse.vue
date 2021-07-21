@@ -46,11 +46,11 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8322,
+      "id": 4312,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "Prototypal inheritance uses <em>dependency injection</em> to inject the prototype's properties and functions into the inheriting",
-      "displayAsCode": [],
+      "given": "let machine = {<br>&nbsp;&nbsp;playsMusic: false<br>}<br><br>let instrument = {<br>&nbsp;&nbsp;playsMusic: true,<br>&nbsp;&nbsp;automatic: false<br>}<br><br>let piano = {<br>&nbsp;&nbsp;keys: 88<br>}<br><br>let playerPiano = {<br>&nbsp;&nbsp;automatic: true<br>}<br><br>instrument.__proto__ = machine<br>piano.__proto__ = instrument<br>playerPiano.__proto__ = piano<br><br>log(piano.automatic)",
+      "question": "This code logs throws a runtime exception",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],

@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4244,
+      "id": 4310,
       "type": "ValidOrNot",
       "given": "",
-      "question": "function Person(firstName, lastName) {<br>&nbsp;&nbsp;this.firstName = firstName,<br>&nbsp;&nbsp;this.lastName = lastName<br>}<br><br>let bob = Person()",
+      "question": "let machine = {<br>&nbsp;&nbsp;playsMusic: false<br>}<br><br>let instrument = {<br>&nbsp;&nbsp;playsMusic: true,<br>&nbsp;&nbsp;automatic: false<br>}<br><br>let piano = {<br>&nbsp;&nbsp;keys: 88<br>}<br><br>let playerPiano = {<br>&nbsp;&nbsp;automatic: true<br>}<br><br>instrument.__proto__ = machine<br>piano.__proto__ = instrument<br>playerPiano.__proto__ = piano",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/constructor-new#constructor-function",
+      "moreInfo": "https://javascript.info/prototype-inheritance",
       "size": 0
     },
     }
