@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4317,
+      "id": 4321,
       "type": "MultipleChoice",
-      "given": "let mother = {<br>&nbsp;&nbsp; firstName: 'Grace',<br>&nbsp;&nbsp; lastName: 'Lane'<br> }<br><br>&nbsp;&nbsp;// no firstName property<br> let daughter = {}<br><br> Object.setPrototypeOf(daughter, mother)<br><br> daughter.firstName = 'Gen'<br><br>log(mother.firstName)",
-      "question": "What will be logged to the console?",
+      "given": "let mother = {<br>&nbsp;&nbsp; firstName: 'Grace',<br>&nbsp;&nbsp; lastName: 'Lane'<br> }<br><br>&nbsp;&nbsp;// no firstName property<br> let daughter = {<br>&nbsp;&nbsp; firstName: 'Gen',<br>&nbsp;&nbsp; mother: mother<br> }<br><br> Object.setPrototypeOf(daughter, mother)<br><br> for (let key in daughter) {<br>&nbsp;&nbsp; if (daughter.hasOwnProperty(key)) {<br>&nbsp;&nbsp;&nbsp;&nbsp; console.log(key)<br>&nbsp;&nbsp; }<br> }",
+      "question": "How many items will be logged?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Grace", "Gen", "undefined", "runtime exception"],
-      "answer": 0,
+      "choices": ["1","2","3","4"],
+      "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/prototype-inheritance#writing-doesn-t-use-prototype",
+      "moreInfo": "https://javascript.info/prototype-inheritance#for-in-loop",
       "size": 0
     },
     }

@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4313,
+      "id": 4222,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let machine = {<br>&nbsp;&nbsp;playsMusic: false<br>}<br><br>let instrument = {<br>&nbsp;&nbsp;playsMusic: true,<br>&nbsp;&nbsp;automatic: false<br>}<br><br>let piano = {<br>&nbsp;&nbsp;keys: 88<br>}<br><br>let playerPiano = {<br>&nbsp;&nbsp;automatic: true<br>}<br><br>Object.setPrototypeOf(instrument, machine)<br>Object.setPrototypeOf(piano, instrument)<br>Object.setPrototypeOf(playerPiano, piano)",
+      "question": "let mother = {<br>&nbsp;&nbsp; firstName: 'Grace',<br>&nbsp;&nbsp; lastName: 'Lane'<br> }<br><br> let daughter = {<br>&nbsp;&nbsp; firstName: 'Gen',<br>&nbsp;&nbsp; mother: mother,<br> }<br><br> mother.daughter = daughter<br><br> log(mother.daughter.mother.daughter.firstName)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/prototype-inheritance",
+      "moreInfo": "",
       "size": 0
     },
     }

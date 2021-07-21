@@ -46,17 +46,17 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4316,
+      "id": 4319,
       "type": "TrueOrFalse",
-      "given": "let arr = new Array()<br>let thing = {}<br>Object.setPrototypeOf(thing, arr)<br><br>thing.push('Hello')",
-      "question": "Using an array as a prototype of an object turns the object into an array",
+      "given": "Object.keys(daughter)",
+      "question": "Given that <pre>daughter</pre> is a valid object, <pre>Object.keys</pre> returns a hash of key/value pairs in <pre>daughter</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "Although it does <em>something</em>, this is a <em>very bad idea</em>",
+      "explanation": "",
       "moreInfo": "",
       "size": 0
     },
