@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4333,
+      "id": 4340,
       "type": "TrueOrFalse",
-      "given": "class Flower{<br>&nbsp;&nbsp;constructor() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.family = 'plant'<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;brief() {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('I am a member of the ' + this.family + ' family')<br>&nbsp;&nbsp;}<br>}<br><br>let rose = new Flower()<br><br>setTimeout(() => rose.brief(), 1500)",
-      "question": "This code logs <em>I am a member of the plant family</em> after 1.5 seconds",
+      "given": "class Machine {<br>&nbsp;&nbsp;constructor(type, manufacturer) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;&nbsp;&nbsp;this.manufacturer = manufacturer<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;render() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return 'I am a ' + this.type + ' made by ' + this.manufacturer<br>&nbsp;&nbsp;}<br>}<br><br>class PrintingPress extends Machine{<br>&nbsp;&nbsp;constructor(manufacturer, yearMade) {<br>&nbsp;&nbsp;&nbsp;&nbsp;super('printing press', manufacturer)<br>&nbsp;&nbsp;&nbsp;&nbsp;this.yearMade = yearMade<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;render() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return super.render() + ' I was made in ' + this.yearMade<br>&nbsp;&nbsp;}<br>}<br><br>let printingPress = new PrintingPress('Heidelberg', 2021)<br><br>log(printingPress.render())",
+      "question": "This code will break as <pre>super.render()</pre> is not valid",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/class-inheritance#overriding-a-method",
       "size": 0
     },
     }

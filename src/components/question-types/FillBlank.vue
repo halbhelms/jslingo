@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4335,
+      "id": 4339,
       "type": "FillBlank",
-      "given": "Something is missing. Fill in the blank to provide it.",
+      "given": "Fill in the blank so that <pre>PasswordInput</pre> sends the correct <pre>type</pre> to its parent (super)",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "class Plant{<br>&nbsp;&nbsp;constructor() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.organic = true<br>&nbsp;&nbsp;&nbsp;&nbsp;this.alive = true<br>&nbsp;&nbsp;}<br>}<br><br>class Vegetable extends Plant {<br>&nbsp;&nbsp;constructor(name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;",
-      "q2": "<br>&nbsp;&nbsp;&nbsp;&nbsp;this.name = name<br>&nbsp;&nbsp;}<br>}",
+      "q1": "class TextInput {<br>&nbsp;&nbsp;constructor(label, id, type=&quot;text&quot;) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.label = label<br>&nbsp;&nbsp;&nbsp;&nbsp;this.id = id<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;render() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `&lt;label for=&quot;${this.id}&quot;>${this.label}&lt;/label>&lt;input type=&quot;${this.type}&quot; id=&quot;${this.id}&quot; />`<br>&nbsp;&nbsp;}<br>}<br><br>class PasswordInput extends TextInput{<br>&nbsp;&nbsp;constructor(label, id) {<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+      "q2": "<br>&nbsp;&nbsp;}<br>}<br><br>let passwordInput = new PasswordInput('First name', 'first_name')",
       "choices": [],
       "answer": "",
-      "answers": ["super()", "super(name)"],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/class-inheritance",
-      "size": 8
+      "answers": ["super(label, id, 'password')", "super(label, id, \"password\""],
+      "explanation": "Do we actually need a subclass of <pre>PasswordInput</pre>? Not for this example, but the concept of calling <pre>super</pre> with any needed arguments holds true.",
+      "moreInfo": "",
+      "size": 34
     },
     }
   },
