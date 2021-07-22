@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4332,
+      "id": 4335,
       "type": "FillBlank",
-      "given": "class Flower{<br>&nbsp;&nbsp;constructor() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.family = 'plant'<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;brief() {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('I am a member of the ' + this.family + ' family')<br>&nbsp;&nbsp;}<br>}<br><br>let rose = new Flower()<br><br>setTimeout(rose.brief, 1500)",
-      "question": "Fill in the blank",
-      "displayAsCode": ["given"],
-      "q1": "When run, this code logs ",
-      "q2": "",
+      "given": "Something is missing. Fill in the blank to provide it.",
+      "question": "",
+      "displayAsCode": ["q1","q2","answer"],
+      "q1": "class Plant{<br>&nbsp;&nbsp;constructor() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.organic = true<br>&nbsp;&nbsp;&nbsp;&nbsp;this.alive = true<br>&nbsp;&nbsp;}<br>}<br><br>class Vegetable extends Plant {<br>&nbsp;&nbsp;constructor(name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+      "q2": "<br>&nbsp;&nbsp;&nbsp;&nbsp;this.name = name<br>&nbsp;&nbsp;}<br>}",
       "choices": [],
       "answer": "",
-      "answers": ["I am a member of the undefined family"],
-      "explanation": "It's the old problem with <pre>this</pre>. An easy way to fix it: <pre>setTimeout(() => rose.brief(), 1500)</pre>",
-      "moreInfo": "",
-      "size": 36
+      "answers": ["super()", "super(name)"],
+      "explanation": "",
+      "moreInfo": "https://javascript.info/class-inheritance",
+      "size": 8
     },
     }
   },

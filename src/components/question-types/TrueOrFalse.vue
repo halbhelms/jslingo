@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4330,
+      "id": 4333,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "Getters and setters are not allowed inside of class definitions",
-      "displayAsCode": [],
+      "given": "class Flower{<br>&nbsp;&nbsp;constructor() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.family = 'plant'<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;brief() {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('I am a member of the ' + this.family + ' family')<br>&nbsp;&nbsp;}<br>}<br><br>let rose = new Flower()<br><br>setTimeout(() => rose.brief(), 1500)",
+      "question": "This code logs <em>I am a member of the plant family</em> after 1.5 seconds",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/class#getters-setters",
+      "moreInfo": "",
       "size": 0
     },
     }
