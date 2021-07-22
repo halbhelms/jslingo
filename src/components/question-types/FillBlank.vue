@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 468,
+      "id": 4324,
       "type": "FillBlank",
-      "given": "Fill in the blank to make <pre>ana</pre>'s prototype <pre>animal</pre>",
+      "given": "Fill in the blank to make <pre>machine</pre> the prototype of <pre>Car</pre>",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let animal = {<br>&nbsp;&nbsp;eats: true,<br>&nbsp;&nbsp;breathes: true,<br>&nbsp;&nbsp;sleeps: true,<br>}<br><br>let ana = {<br>&nbsp;&nbsp;name: 'Ana'<br>}<br><br>ana.",
-      "q2": " = animal",
+      "q1": "let machine = {<br>&nbsp;&nbsp;manufactured: true<br>}<br><br>function Car(make, model) {<br>&nbsp;&nbsp;this.make = make<br>&nbsp;&nbsp;this.model = model<br>}<br><br>Car.",
+      "q2": "<br>let tesla = new Car('Tesla', 'Model S')<br><br>log(tesla.manufactured)",
       "choices": [],
       "answer": "",
-      "answers": ["__proto__"],
+      "answers": ["prototype = machine"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/prototype-inheritance",
-      "size": 9
+      "moreInfo": "https://javascript.info/function-prototype",
+      "size": 20
     },
     }
   },

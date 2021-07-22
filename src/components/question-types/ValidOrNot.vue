@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4222,
+      "id": 5323,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let mother = {<br>&nbsp;&nbsp; firstName: 'Grace',<br>&nbsp;&nbsp; lastName: 'Lane'<br> }<br><br> let daughter = {<br>&nbsp;&nbsp; firstName: 'Gen',<br>&nbsp;&nbsp; mother: mother,<br> }<br><br> mother.daughter = daughter<br><br> log(mother.daughter.mother.daughter.firstName)",
+      "question": "let machine = {<br>&nbsp;&nbsp;manufactured: true<br>}<br><br>function Car(make, model) {<br>&nbsp;&nbsp;this.make = make<br>&nbsp;&nbsp;this.model = model<br>}<br><br>Car.prototype = machine<br><br>let tesla = new Car('Tesla', 'Model S')<br><br>log(tesla.manufactured)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/function-prototype",
       "size": 0
     },
     }

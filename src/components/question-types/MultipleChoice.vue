@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4321,
+      "id": 4327,
       "type": "MultipleChoice",
-      "given": "let mother = {<br>&nbsp;&nbsp; firstName: 'Grace',<br>&nbsp;&nbsp; lastName: 'Lane'<br> }<br><br>&nbsp;&nbsp;// no firstName property<br> let daughter = {<br>&nbsp;&nbsp; firstName: 'Gen',<br>&nbsp;&nbsp; mother: mother<br> }<br><br> Object.setPrototypeOf(daughter, mother)<br><br> for (let key in daughter) {<br>&nbsp;&nbsp; if (daughter.hasOwnProperty(key)) {<br>&nbsp;&nbsp;&nbsp;&nbsp; console.log(key)<br>&nbsp;&nbsp; }<br> }",
-      "question": "How many items will be logged?",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "The process of creating an object from a class is known as...",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["1","2","3","4"],
-      "answer": 1,
+      "choices": ["Objectification", "Currying", "Instantiation"],
+      "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/prototype-inheritance#for-in-loop",
+      "moreInfo": "",
       "size": 0
     },
     }

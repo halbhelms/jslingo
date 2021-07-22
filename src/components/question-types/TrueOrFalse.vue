@@ -46,10 +46,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4319,
+      "id": 4326,
       "type": "TrueOrFalse",
-      "given": "Object.keys(daughter)",
-      "question": "Given that <pre>daughter</pre> is a valid object, <pre>Object.keys</pre> returns a hash of key/value pairs in <pre>daughter</pre>",
+      "given": "class Flower{<br>&nbsp;&nbsp;Flower(type, color) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;&nbsp;&nbsp;this.color = color<br>&nbsp;&nbsp;}<br>}<br><br>let iris = new Flower('Iris', 'purple')<br>let iris2 = new Flower('Iris', 'purple')<br><br>log(iris.type == 'Iris')",
+      "question": "This logs <em>true</em> to the console",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -57,7 +57,7 @@ export default {
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/class",
       "size": 0
     },
     }
