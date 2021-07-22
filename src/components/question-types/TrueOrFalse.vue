@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4326,
+      "id": 4330,
       "type": "TrueOrFalse",
-      "given": "class Flower{<br>&nbsp;&nbsp;Flower(type, color) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;&nbsp;&nbsp;this.color = color<br>&nbsp;&nbsp;}<br>}<br><br>let iris = new Flower('Iris', 'purple')<br>let iris2 = new Flower('Iris', 'purple')<br><br>log(iris.type == 'Iris')",
-      "question": "This logs <em>true</em> to the console",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "Getters and setters are not allowed inside of class definitions",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/class",
+      "moreInfo": "https://javascript.info/class#getters-setters",
       "size": 0
     },
     }

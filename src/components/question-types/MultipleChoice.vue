@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4327,
+      "id": 4328,
       "type": "MultipleChoice",
-      "given": "",
-      "question": "The process of creating an object from a class is known as...",
-      "displayAsCode": [],
+      "given": "class Flower{<br>&nbsp;&nbsp;Flower(type, color) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;&nbsp;&nbsp;this.color = color<br>&nbsp;&nbsp;}<br>}<br><br>log(typeof Flower)",
+      "question": "What is logged to the console?",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Objectification", "Currying", "Instantiation"],
-      "answer": 2,
+      "choices": ["class", "function", "Flower", "object"],
+      "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/class#what-is-a-class",
       "size": 0
     },
     }

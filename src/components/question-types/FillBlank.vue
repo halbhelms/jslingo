@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4324,
+      "id": 4332,
       "type": "FillBlank",
-      "given": "Fill in the blank to make <pre>machine</pre> the prototype of <pre>Car</pre>",
-      "question": "",
-      "displayAsCode": ["q1","q2","answer"],
-      "q1": "let machine = {<br>&nbsp;&nbsp;manufactured: true<br>}<br><br>function Car(make, model) {<br>&nbsp;&nbsp;this.make = make<br>&nbsp;&nbsp;this.model = model<br>}<br><br>Car.",
-      "q2": "<br>let tesla = new Car('Tesla', 'Model S')<br><br>log(tesla.manufactured)",
+      "given": "class Flower{<br>&nbsp;&nbsp;constructor() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.family = 'plant'<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;brief() {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('I am a member of the ' + this.family + ' family')<br>&nbsp;&nbsp;}<br>}<br><br>let rose = new Flower()<br><br>setTimeout(rose.brief, 1500)",
+      "question": "Fill in the blank",
+      "displayAsCode": ["given"],
+      "q1": "When run, this code logs ",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["prototype = machine"],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/function-prototype",
-      "size": 20
+      "answers": ["I am a member of the undefined family"],
+      "explanation": "It's the old problem with <pre>this</pre>. An easy way to fix it: <pre>setTimeout(() => rose.brief(), 1500)</pre>",
+      "moreInfo": "",
+      "size": 36
     },
     }
   },
