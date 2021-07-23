@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 8238,
+      "id": 7213,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let points = 25<br>let statuses = ['bronze', 'silver', 'gold']<br><br>let status = points < 10 ? statuses[0] : points < 20 ? statuses[1] : statuses[2]",
+      "question": "let myName = 'Hal Helms'<br>localStorage.setItem('myName', myName)<br><br>log(localStorage.getItem('myName')))",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "Yes &mdash; but wouldn't a <pre>switch</pre> be more readily understandable?",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/localstorage",
       "size": 0
     },
     }

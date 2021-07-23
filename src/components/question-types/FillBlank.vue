@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 6240,
+      "id": 7215,
       "type": "FillBlank",
-      "given": "Fill in the blank to check whether all specified parameters have been provided",
+      "given": "Fill in the blank to retrieve the local storage item, <pre>myName</pre>",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "function calculateRectVolume(height, width, depth) {<br>&nbsp;&nbsp;if (",
-      "q2": ") {<br>&nbsp;&nbsp;&nbsp;&nbsp;throw new Error('Must have height, width, and depth')<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;return height * width * depth<br>}",
+      "q1": "let myName = 'Hal Helms'<br>localStorage.setItem('myName', myName)<br><br>log(",
+      "q2": ")",
       "choices": [],
       "answer": "",
-      "answers": ["arguments.length !== 3", "arguments.length != 3"],
+      "answers": ["localStorage.getItem('myName')"],
       "explanation": "",
       "moreInfo": "",
-      "size":22 
+      "size": 30
     },
     }
   },

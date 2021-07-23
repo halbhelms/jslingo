@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4342,
+      "id": 8160,
       "type": "TrueOrFalse",
-      "given": "class Machine {<br>&nbsp;&nbsp;constructor(type, manufacturer) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;&nbsp;&nbsp;this.manufacturer = manufacturer<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;render() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return 'I am a ' + this.type + ' made by ' + this.manufacturer<br>&nbsp;&nbsp;}<br>}<br><br>class PrintingPress extends Machine{<br>&nbsp;&nbsp;constructor(type, manufacturer, yearMade) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.yearMade = yearMade<br>&nbsp;&nbsp;&nbsp;&nbsp;super(type, manufacturer)<br>&nbsp;&nbsp;}<br>}<br><br>let printingPress = new PrintingPress('Printing Press', 'Heidelberg')<br><br>log(printingPress.render())",
-      "question": "This logs <em>I am a Printing Press made by Heidelberg</em> to the console",
+      "given": "let points = 25<br><br>let goldStatus = points > 10 ? true : false<br><br>log(goldStatus)",
+      "question": "This code is an illustration of a <em>closure</em>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/class-inheritance#overriding-constructor",
+      "explanation": "<em>Ternary operator</em> would be more accurate",
+      "moreInfo": "",
       "size": 0
     },
     }

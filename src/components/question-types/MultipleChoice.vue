@@ -50,17 +50,17 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8239,
+      "id": 8161,
       "type": "MultipleChoice",
-      "given": "let points = 25<br>let statuses = ['bronze', 'silver', 'gold']<br><br>let status = points < 10 ? statuses[0] : points < 20 ? statuses[1] : statuses[2]",
-      "question": "What is the value of <pre>status</pre>",
+      "given": "let points = 25<br><br>let goldStatus = points  10 ✮ true ❂ false<br><br>log(goldStatus)",
+      "question": "To create a ternary operator, ✮ and ❂ should be replaced with",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["undefined", "bronze", "silver", "gold"],
-      "answer": 3,
+      "choices": [": and ?", "? and :", "... and rest", "arguments[0] and arguments[1]"],
+      "answer": 1,
       "answers": [],
-      "explanation": "There's a good argument to be made that a <pre>switch</pre> would be more readily understandable",
+      "explanation": "",
       "moreInfo": "",
       "size": 0
     },
