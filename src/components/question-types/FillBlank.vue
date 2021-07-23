@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4339,
+      "id": 4344,
       "type": "FillBlank",
-      "given": "Fill in the blank so that <pre>PasswordInput</pre> sends the correct <pre>type</pre> to its parent (super)",
+      "given": "Fill in the blank to create a variable, <pre>maxLicenses</pre>, assigned to the class itself",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "class TextInput {<br>&nbsp;&nbsp;constructor(label, id, type=&quot;text&quot;) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.label = label<br>&nbsp;&nbsp;&nbsp;&nbsp;this.id = id<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;render() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `&lt;label for=&quot;${this.id}&quot;>${this.label}&lt;/label>&lt;input type=&quot;${this.type}&quot; id=&quot;${this.id}&quot; />`<br>&nbsp;&nbsp;}<br>}<br><br>class PasswordInput extends TextInput{<br>&nbsp;&nbsp;constructor(label, id) {<br>&nbsp;&nbsp;&nbsp;&nbsp;",
-      "q2": "<br>&nbsp;&nbsp;}<br>}<br><br>let passwordInput = new PasswordInput('First name', 'first_name')",
+      "q1": "class License {<br>&nbsp;&nbsp;",
+      "q2": "<br>}<br><br>log(License.maxLicenses)",
       "choices": [],
       "answer": "",
-      "answers": ["super(label, id, 'password')", "super(label, id, \"password\""],
-      "explanation": "Do we actually need a subclass of <pre>PasswordInput</pre>? Not for this example, but the concept of calling <pre>super</pre> with any needed arguments holds true.",
-      "moreInfo": "",
-      "size": 34
+      "answers": ["static maxLicenses = 10"],
+      "explanation": "",
+      "moreInfo": "https://javascript.info/static-properties-methods",
+      "size": 0
     },
     }
   },

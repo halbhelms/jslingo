@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4337,
+      "id": 4343,
       "type": "ValidOrNot",
       "given": "",
-      "question": "class TextInput {<br>&nbsp;&nbsp;constructor(label, id) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.label = label<br>&nbsp;&nbsp;&nbsp;&nbsp;this.id = id<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;render() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `&lt;label for=&quot;${this.id}&quot;>${this.label}&lt;/label&gt;&lt;input type=&quot;text&quot; id=&quot;${this.id}&quot; />`<br>&nbsp;&nbsp;}<br>}<br><br>class PasswordInput extends TextInput{<br>&nbsp;&nbsp;constructor(label, id) {<br>&nbsp;&nbsp;&nbsp;&nbsp;super(label, id)<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;render() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `&lt;label for=&quot;${this.id}&quot;&gt;${this.label}&lt;/label&gt;&lt;input type=&quot;password&quot; id=&quot;${this.id}&quot; /&gt;`<br>&nbsp;&nbsp;}<br>}<br><br>let passwordInput = new PasswordInput('First name', 'first_name')",
+      "question": "class License {<br>&nbsp;&nbsp;static maxLicenses = 10<br>}<br><br>log(License.maxLicenses)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/static-properties-methods",
       "size": 0
     },
     }

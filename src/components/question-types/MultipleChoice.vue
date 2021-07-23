@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4328,
+      "id": 4347,
       "type": "MultipleChoice",
-      "given": "class Flower{<br>&nbsp;&nbsp;Flower(type, color) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;&nbsp;&nbsp;this.color = color<br>&nbsp;&nbsp;}<br>}<br><br>log(typeof Flower)",
-      "question": "What is logged to the console?",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "Are there language-implemented private properties/methods in JavaScript?",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["class", "function", "Flower", "object"],
+      "choices": ["Yes","No"],
       "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/class#what-is-a-class",
+      "moreInfo": "https://javascript.info/private-protected-properties-methods",
       "size": 0
     },
     }
