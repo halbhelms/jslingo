@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 7131,
+      "id": 6240,
       "type": "FillBlank",
-      "given": "Fill in the blank to <em>monkey-patch</em> the <pre>String</pre> class to have a <pre>log</pre> function",
+      "given": "Fill in the blank to check whether all specified parameters have been provided",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "String.",
-      "q2": " = function() {<br>&nbsp;&nbsp;console.log(this.toString())<br>}",
+      "q1": "function calculateRectVolume(height, width, depth) {<br>&nbsp;&nbsp;if (",
+      "q2": ") {<br>&nbsp;&nbsp;&nbsp;&nbsp;throw new Error('Must have height, width, and depth')<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;return height * width * depth<br>}",
       "choices": [],
       "answer": "",
-      "answers": ["prototype.log"],
+      "answers": ["arguments.length !== 3", "arguments.length != 3"],
       "explanation": "",
       "moreInfo": "",
-      "size": 13
+      "size":22 
     },
     }
   },

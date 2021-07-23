@@ -47,17 +47,17 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 7130,
+      "id": 8238,
       "type": "ValidOrNot",
       "given": "",
-      "question": "String.prototype.log = function() {<br>&nbsp;&nbsp;console.log(this.toString())<br>}<br><br>&quot;Hello&quot;.log()",
+      "question": "let points = 25<br>let statuses = ['bronze', 'silver', 'gold']<br><br>let status = points < 10 ? statuses[0] : points < 20 ? statuses[1] : statuses[2]",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "This technique is sometimes known an <em>monkey patching</em>. It's a controversial technique &mdash; particularly when others may be using code that you've monkey-patched without their being aware of the patch.",
+      "explanation": "Yes &mdash; but wouldn't a <pre>switch</pre> be more readily understandable?",
       "moreInfo": "",
       "size": 0
     },

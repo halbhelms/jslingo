@@ -50,17 +50,17 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 7132,
+      "id": 8239,
       "type": "MultipleChoice",
-      "given": "String.prototype.log = function() {<br>&nbsp;&nbsp;console.log(this.toString())<br>}",
-      "question": "This technique of adding a function to a built-in JavaScript class is often known as...",
+      "given": "let points = 25<br>let statuses = ['bronze', 'silver', 'gold']<br><br>let status = points < 10 ? statuses[0] : points < 20 ? statuses[1] : statuses[2]",
+      "question": "What is the value of <pre>status</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["currying", "prototyping", "reassignment", "monkey-patching"],
+      "choices": ["undefined", "bronze", "silver", "gold"],
       "answer": 3,
       "answers": [],
-      "explanation": "",
+      "explanation": "There's a good argument to be made that a <pre>switch</pre> would be more readily understandable",
       "moreInfo": "",
       "size": 0
     },
