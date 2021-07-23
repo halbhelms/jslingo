@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 7215,
+      "id": 7217,
       "type": "FillBlank",
-      "given": "Fill in the blank to retrieve the local storage item, <pre>myName</pre>",
+      "given": "Fill in the blank to remove <pre>myName</pre> from local storage",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let myName = 'Hal Helms'<br>localStorage.setItem('myName', myName)<br><br>log(",
-      "q2": ")",
+      "q1": "let myName = 'Hal Helms'<br>localStorage.setItem('myName', myName)<br>",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["localStorage.getItem('myName')"],
+      "answers": ["localStorage.removeItem('myName')"],
       "explanation": "",
-      "moreInfo": "",
-      "size": 30
+      "moreInfo": "https://javascript.info/localstorage",
+      "size": 33
     },
     }
   },

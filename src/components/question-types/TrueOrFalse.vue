@@ -46,17 +46,17 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8160,
+      "id": 7220,
       "type": "TrueOrFalse",
-      "given": "let points = 25<br><br>let goldStatus = points > 10 ? true : false<br><br>log(goldStatus)",
-      "question": "This code is an illustration of a <em>closure</em>",
+      "given": "let person = {<br>&nbsp;&nbsp;firstName: 'Hal',<br>&nbsp;&nbsp;lastName: 'Helms'<br>}<br><br>let json = JSON.stringify(person)<br>localStorage.setItem('me', json)<br><br>log(JSON.parse(localStorage.getItem('me')))",
+      "question": "This logs the <pre>person</pre> object to the console",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
-      "explanation": "<em>Ternary operator</em> would be more accurate",
+      "explanation": "",
       "moreInfo": "",
       "size": 0
     },

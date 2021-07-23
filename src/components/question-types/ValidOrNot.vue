@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 7213,
+      "id": 7219,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let myName = 'Hal Helms'<br>localStorage.setItem('myName', myName)<br><br>log(localStorage.getItem('myName')))",
+      "question": "let myName = 'Hal Helms'<br>localStorage['myName'] = myName<br><br>log(localStorage['myName'])",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
