@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4344,
+      "id": 7131,
       "type": "FillBlank",
-      "given": "Fill in the blank to create a variable, <pre>maxLicenses</pre>, assigned to the class itself",
+      "given": "Fill in the blank to <em>monkey-patch</em> the <pre>String</pre> class to have a <pre>log</pre> function",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "class License {<br>&nbsp;&nbsp;",
-      "q2": "<br>}<br><br>log(License.maxLicenses)",
+      "q1": "String.",
+      "q2": " = function() {<br>&nbsp;&nbsp;console.log(this.toString())<br>}",
       "choices": [],
       "answer": "",
-      "answers": ["static maxLicenses = 10"],
+      "answers": ["prototype.log"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/static-properties-methods",
-      "size": 0
+      "moreInfo": "",
+      "size": 13
     },
     }
   },

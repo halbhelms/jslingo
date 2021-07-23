@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4347,
+      "id": 7132,
       "type": "MultipleChoice",
-      "given": "",
-      "question": "Are there language-implemented private properties/methods in JavaScript?",
-      "displayAsCode": [],
+      "given": "String.prototype.log = function() {<br>&nbsp;&nbsp;console.log(this.toString())<br>}",
+      "question": "This technique of adding a function to a built-in JavaScript class is often known as...",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Yes","No"],
-      "answer": 1,
+      "choices": ["currying", "prototyping", "reassignment", "monkey-patching"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/private-protected-properties-methods",
+      "moreInfo": "",
       "size": 0
     },
     }

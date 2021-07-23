@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4343,
+      "id": 7130,
       "type": "ValidOrNot",
       "given": "",
-      "question": "class License {<br>&nbsp;&nbsp;static maxLicenses = 10<br>}<br><br>log(License.maxLicenses)",
+      "question": "String.prototype.log = function() {<br>&nbsp;&nbsp;console.log(this.toString())<br>}<br><br>&quot;Hello&quot;.log()",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/static-properties-methods",
+      "explanation": "This technique is sometimes known an <em>monkey patching</em>. It's a controversial technique &mdash; particularly when others may be using code that you've monkey-patched without their being aware of the patch.",
+      "moreInfo": "",
       "size": 0
     },
     }
