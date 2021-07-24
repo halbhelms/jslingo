@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 7220,
+      "id": 736,
       "type": "TrueOrFalse",
-      "given": "let person = {<br>&nbsp;&nbsp;firstName: 'Hal',<br>&nbsp;&nbsp;lastName: 'Helms'<br>}<br><br>let json = JSON.stringify(person)<br>localStorage.setItem('me', json)<br><br>log(JSON.parse(localStorage.getItem('me')))",
-      "question": "This logs the <pre>person</pre> object to the console",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "The DOM (Document Object Model) and BOM (Browser Object Model) are two names describing the same construct",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/browser-environment#dom-document-object-model",
       "size": 0
     },
     }
