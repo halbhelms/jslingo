@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 734,
+      "id": 911,
       "type": "MultipleChoice",
-      "given": "let fnc = () => {<br>&nbsp;&nbsp;console.log(this)<br>}",
-      "question": "What does <pre>this</pre> point to?",
+      "given": "document.body.style.backgroundColor = 'navy'<br>document.body.style.color = 'white'",
+      "question": "What will happen when this code runs?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["<pre>fnc</pre>", "the DOM", "the window object", "undefined"],
-      "answer": 2,
+      "choices": ["web page background becomes navy color, the text is white", "nothing &mdash; you need CSS for this", "runtime exception thrown"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/dom-nodes",
       "size": 0
     },
     }

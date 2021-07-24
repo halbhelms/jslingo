@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 736,
+      "id": 914,
       "type": "TrueOrFalse",
       "given": "",
-      "question": "The DOM (Document Object Model) and BOM (Browser Object Model) are two names describing the same construct",
+      "question": "There is no prescribed limit on the number of <pre>id</pre> and <pre>class</pre> properties that can appear on a single HTML page",
       "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/browser-environment#dom-document-object-model",
+      "explanation": "True for classes, but not for ids",
+      "moreInfo": "",
       "size": 0
     },
     }

@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 7219,
+      "id": 915,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let myName = 'Hal Helms'<br>localStorage['myName'] = myName<br><br>log(localStorage['myName'])",
+      "question": "document.getAllElementsById('title').style.fontSize = '2rem'",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/localstorage",
+      "moreInfo": "",
       "size": 0
     },
     }
