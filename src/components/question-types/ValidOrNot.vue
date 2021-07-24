@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 915,
+      "id": 919,
       "type": "ValidOrNot",
       "given": "",
-      "question": "document.getAllElementsById('title').style.fontSize = '2rem'",
+      "question": "document.querySelectorAll('ul > li:last-child')",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/searching-elements-dom#querySelectorAll",
       "size": 0
     },
     }

@@ -46,17 +46,17 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 914,
+      "id": 921,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "There is no prescribed limit on the number of <pre>id</pre> and <pre>class</pre> properties that can appear on a single HTML page",
-      "displayAsCode": [],
+      "given": "&lt;h2 id=&quot;title&quot;>Learn you some code for great good&lt;/h2><br>&lt;p class=&quot;simple&quot;>This&lt;/p><br>&lt;p class=&quot;simple&quot;>is&lt;/p><br>&lt;p class=&quot;simple&quot;>simple&lt;/p><br>&nbsp;&nbsp;<br><br>//<br><br>let elements = document.querySelectorAll('p')<br><br>for (element of elements) {<br>&nbsp;&nbsp;console.log(element.innerHTML)<br>}",
+      "question": "This code loops over all paragraph elements, logging their contents to the console",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
-      "explanation": "True for classes, but not for ids",
+      "explanation": "",
       "moreInfo": "",
       "size": 0
     },

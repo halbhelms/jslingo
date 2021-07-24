@@ -46,6 +46,7 @@ pre {
   color: maroon;
   font-weight: 600;
   font-family: 'Fira Code';
+  font-size: 80%;
 }
 
 .body {

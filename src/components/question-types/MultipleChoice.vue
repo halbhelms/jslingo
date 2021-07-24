@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 911,
+      "id": 918,
       "type": "MultipleChoice",
-      "given": "document.body.style.backgroundColor = 'navy'<br>document.body.style.color = 'white'",
-      "question": "What will happen when this code runs?",
+      "given": "document.querySelector(✍)",
+      "question": "✍ should be replaced by...",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["web page background becomes navy color, the text is white", "nothing &mdash; you need CSS for this", "runtime exception thrown"],
-      "answer": 0,
+      "choices": ["the <pre>id</pre> of an HTML element", "the <pre>nodeId</pre> of an HTML property", "any valid CSS selector"],
+      "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/dom-nodes",
+      "moreInfo": "",
       "size": 0
     },
     }
@@ -115,7 +115,8 @@ section.multiple-choice {
 
 .choices {
   margin-top: 40px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 
 .choice {
@@ -127,11 +128,6 @@ section.multiple-choice {
   cursor: pointer;
   color: green;
   font-weight: 600;
-}
-
-pre {
-  font-family: 'Fira Code';
-  color: maroon;
 }
 
 img.more-info-icon {
