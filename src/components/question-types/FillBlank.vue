@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 927,
+      "id": 5315,
       "type": "FillBlank",
-      "given": "Fill in the blank to provide an attribute, <em>checked</em>,  set to <em>true</em>",
+      "given": "Fill in the blank so that <pre>players</pre> are sorted based on the <pre>sortPlayers</pre> function",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "document.querySelector('#subscribe').",
+      "q1": "let players = [<br>&nbsp;&nbsp;{name: 'Alice', rank: 5},<br>&nbsp;&nbsp;{name: 'Angel', rank: 1},<br>&nbsp;&nbsp;{name: 'Adrian', rank: 3},<br>&nbsp;&nbsp;{name: 'Astor', rank: 4},<br>&nbsp;&nbsp;{name: 'Allen', rank: 7},<br>&nbsp;&nbsp;{name: 'Albricht', rank: 6},<br>&nbsp;&nbsp;{name: 'Adam', rank: 2},<br>]<br><br>function sortPlayers(p1, p2) {<br>&nbsp;&nbsp;if (p1.rank > p2.rank) return 1<br>&nbsp;&nbsp;if (p1.rank < p2.rank) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let rankedPlayers = ",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["setAttribute('checked', 'true')", "setAttribute(\"checked\", \"true\")"],
+      "answers": ["players.sort(sortPlayers)"],
       "explanation": "",
       "moreInfo": "",
-      "size": 32
+      "size": 26
     }
     ,
     }

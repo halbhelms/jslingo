@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 9210,
+      "id": 5316,
       "type": "MultipleChoice",
-      "given": "// HTML<br>&lt;h2 data-string-type=&quot;quote&quot;>Learn you some code for great good&lt;/h2><br><br>// JS<br>let type = document.querySelector('h2').dataset.stringType",
-      "question": "What value does <pre>type</pre> have?",
+      "given": "let players = [<br>&nbsp;&nbsp;{name: 'Alice', rank: 5},<br>&nbsp;&nbsp;{name: 'Angel', rank: 1},<br>&nbsp;&nbsp;{name: 'Adrian', rank: 3},<br>&nbsp;&nbsp;{name: 'Astor', rank: 4},<br>&nbsp;&nbsp;{name: 'Allen', rank: 7},<br>&nbsp;&nbsp;{name: 'Albricht', rank: 6},<br>&nbsp;&nbsp;{name: 'Adam', rank: 2},<br>]<br><br>function sortPlayers(p1, p2) {<br>&nbsp;&nbsp;if (p1.rank > p2.rank) return 1<br>&nbsp;&nbsp;if (p1.rank < p2.rank) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let rankedPlayers = players.sort(sortPlayers).map( player => player.name)",
+      "question": "What is wrong with this code?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["quote", "undefined", "empty string", "error &mdash; you cannot have hyphenated <pre>data-</pre> attributes"],
-      "answer": 0,
+      "choices": ["arrays of objects cannot be sorted with the <pre>sort</pre> function", "<pre>rankedPlayers</pre> is invalid","the <pre>sortPlayers</pre> function does not sort by rank", "nothing"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/dom-attributes-and-properties#non-standard-attributes-dataset",
+      "moreInfo": "",
       "size": 0
     }
     ,
