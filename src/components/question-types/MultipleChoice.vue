@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5251,
+      "id": 9210,
       "type": "MultipleChoice",
-      "given": "let arr = [<br>&nbsp;&nbsp;'Twas',<br>&nbsp;&nbsp;'brilling',<br>&nbsp;&nbsp;'and',<br>&nbsp;&nbsp;'the',<br>&nbsp;&nbsp;'slithy',<br>&nbsp;&nbsp;'toves',<br>&nbsp;&nbsp;'did',<br>&nbsp;&nbsp;'gyre',<br>&nbsp;&nbsp;'and',<br>&nbsp;&nbsp;'gimble',<br>&nbsp;&nbsp;'in',<br>&nbsp;&nbsp;'the',<br>&nbsp;&nbsp;'wabe'<br>]<br><br>let jabberwocky = arr.join(' ')",
-      "question": "What is wrong with this code?",
+      "given": "// HTML<br>&lt;h2 data-string-type=&quot;quote&quot;>Learn you some code for great good&lt;/h2><br><br>// JS<br>let type = document.querySelector('h2').dataset.stringType",
+      "question": "What value does <pre>type</pre> have?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["there is no <pre>join</pre> function in arrays","the code to join elements in an array is <pre>Array.join(arr, ' ')", "nothing"],
-      "answer": 2,
+      "choices": ["quote", "undefined", "empty string", "error &mdash; you cannot have hyphenated <pre>data-</pre> attributes"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/dom-attributes-and-properties#non-standard-attributes-dataset",
       "size": 0
     }
     ,
