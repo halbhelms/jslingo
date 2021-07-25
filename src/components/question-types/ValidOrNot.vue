@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 919,
+      "id": 924,
       "type": "ValidOrNot",
       "given": "",
-      "question": "document.querySelectorAll('ul > li:last-child')",
+      "question": "// HTML<br>&lt;h2 id=&quot;title&quot;>Learn you some code for great good&lt;/h2><br><br>// CSS<br>.smaller {<br>&nbsp;&nbsp;font-size: 0.7rem;<br>}<br><br>// JS<br>document.querySelector('h2').classList.add('smaller')",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/searching-elements-dom#querySelectorAll",
+      "moreInfo": "",
       "size": 0
     },
     }

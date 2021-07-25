@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 918,
+      "id": 923,
       "type": "MultipleChoice",
-      "given": "document.querySelector(✍)",
-      "question": "✍ should be replaced by...",
+      "given": "&lt;main><br>&nbsp;&nbsp;&lt;div class=&quot;foo&quot;>&lt;/div><br>&nbsp;&nbsp;&lt;div class=&quot;foo&quot;>&lt;/div><br>&nbsp;&nbsp;&lt;div class=&quot;bar&quot;>&lt;/div><br>&nbsp;&nbsp;&lt;div class=&quot;foo&quot;>&lt;/div><br>&lt;/main><br><br>//<br><br>let main = document.querySelector('main')<br><br>let foos = main.querySelectorAll('.foo')",
+      "question": "What is the value of <pre>foos.length</pre>?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["the <pre>id</pre> of an HTML element", "the <pre>nodeId</pre> of an HTML property", "any valid CSS selector"],
-      "answer": 2,
+      "choices": ["3","1","0","undefined"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/searching-elements-dom#summary",
       "size": 0
     },
     }

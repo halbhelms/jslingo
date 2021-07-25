@@ -46,10 +46,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 921,
+      "id": 925,
       "type": "TrueOrFalse",
-      "given": "&lt;h2 id=&quot;title&quot;>Learn you some code for great good&lt;/h2><br>&lt;p class=&quot;simple&quot;>This&lt;/p><br>&lt;p class=&quot;simple&quot;>is&lt;/p><br>&lt;p class=&quot;simple&quot;>simple&lt;/p><br>&nbsp;&nbsp;<br><br>//<br><br>let elements = document.querySelectorAll('p')<br><br>for (element of elements) {<br>&nbsp;&nbsp;console.log(element.innerHTML)<br>}",
-      "question": "This code loops over all paragraph elements, logging their contents to the console",
+      "given": "// HTML<br>&lt;h2 id=&quot;title&quot;>Learn you some code for great good&lt;/h2><br><br>// CSS<br>.smaller {<br>&nbsp;&nbsp;font-size: 0.7rem;<br>}<br><br>// JS<br>document.querySelector('h2').classList.add('smaller')",
+      "question": "This code sets the <pre>font-size</pre> of the &lt;h2> tag to 0.7rem",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -59,7 +59,8 @@ export default {
       "explanation": "",
       "moreInfo": "",
       "size": 0
-    },
+    }
+    ,
     }
   },
 
