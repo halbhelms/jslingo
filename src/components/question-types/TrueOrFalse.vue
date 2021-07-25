@@ -49,7 +49,7 @@ export default {
       "id": 925,
       "type": "TrueOrFalse",
       "given": "// HTML<br>&lt;h2 id=&quot;title&quot;>Learn you some code for great good&lt;/h2><br><br>// CSS<br>.smaller {<br>&nbsp;&nbsp;font-size: 0.7rem;<br>}<br><br>// JS<br>document.querySelector('h2').classList.add('smaller')",
-      "question": "This code sets the <pre>font-size</pre> of the &lt;h2> tag to 0.7rem",
+      "question": "This code sets the <pre>font-size</pre> of the <pre>&lt;h2></pre> tag to 0.7rem",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
