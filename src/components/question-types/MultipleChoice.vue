@@ -50,20 +50,21 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 923,
+      "id": 5251,
       "type": "MultipleChoice",
-      "given": "&lt;main><br>&nbsp;&nbsp;&lt;div class=&quot;foo&quot;>&lt;/div><br>&nbsp;&nbsp;&lt;div class=&quot;foo&quot;>&lt;/div><br>&nbsp;&nbsp;&lt;div class=&quot;bar&quot;>&lt;/div><br>&nbsp;&nbsp;&lt;div class=&quot;foo&quot;>&lt;/div><br>&lt;/main><br><br>//<br><br>let main = document.querySelector('main')<br><br>let foos = main.querySelectorAll('.foo')",
-      "question": "What is the value of <pre>foos.length</pre>?",
+      "given": "let arr = [<br>&nbsp;&nbsp;'Twas',<br>&nbsp;&nbsp;'brilling',<br>&nbsp;&nbsp;'and',<br>&nbsp;&nbsp;'the',<br>&nbsp;&nbsp;'slithy',<br>&nbsp;&nbsp;'toves',<br>&nbsp;&nbsp;'did',<br>&nbsp;&nbsp;'gyre',<br>&nbsp;&nbsp;'and',<br>&nbsp;&nbsp;'gimble',<br>&nbsp;&nbsp;'in',<br>&nbsp;&nbsp;'the',<br>&nbsp;&nbsp;'wabe'<br>]<br><br>let jabberwocky = arr.join(' ')",
+      "question": "What is wrong with this code?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["3","1","0","undefined"],
-      "answer": 0,
+      "choices": ["there is no <pre>join</pre> function in arrays","the code to join elements in an array is <pre>Array.join(arr, ' ')", "nothing"],
+      "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/searching-elements-dom#summary",
+      "moreInfo": "",
       "size": 0
-    },
+    }
+    ,
     }
   },
 

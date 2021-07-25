@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 924,
-      "type": "ValidOrNot",
+      "id": 5250,
+      "type": "ValidorNot",
       "given": "",
-      "question": "// HTML<br>&lt;h2 id=&quot;title&quot;>Learn you some code for great good&lt;/h2><br><br>// CSS<br>.smaller {<br>&nbsp;&nbsp;font-size: 0.7rem;<br>}<br><br>// JS<br>document.querySelector('h2').classList.add('smaller')",
+      "question": "let grades = '76,84,91,81,84,78,76,68,94,91'<br><br>let gradeArr = grades.split(',')<br>let gradeSet = new Set(gradeArr)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",

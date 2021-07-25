@@ -46,10 +46,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 925,
+      "id": 933,
       "type": "TrueOrFalse",
-      "given": "// HTML<br>&lt;h2 id=&quot;title&quot;>Learn you some code for great good&lt;/h2><br><br>// CSS<br>.smaller {<br>&nbsp;&nbsp;font-size: 0.7rem;<br>}<br><br>// JS<br>document.querySelector('h2').classList.add('smaller')",
-      "question": "This code sets the <pre>font-size</pre> of the <pre>&lt;h2></pre> tag to 0.7rem",
+      "given": "// HTML<br>&lt;main><br>&nbsp;&nbsp;&lt;!-- Foos and Bars --><br>&nbsp;&nbsp;&lt;div class=&quot;foo&quot;>I'm a foo</div><br>&nbsp;&nbsp;&lt;div class=&quot;foo&quot;>So am I</div><br>&nbsp;&nbsp;&lt;div class=&quot;bar&quot;>Not me</div><br>&nbsp;&nbsp;&lt;div class=&quot;foo&quot;>Loser</div><br>&lt;/main><br><br>//<br><br>// JS<br>function domWalk(node, fnc) {<br>&nbsp;&nbsp;fnc(node);<br>&nbsp;&nbsp;node = node.firstChild<br>&nbsp;&nbsp;while (node) {<br>&nbsp;&nbsp;&nbsp;&nbsp;domWalk(node, fnc)<br>&nbsp;&nbsp;&nbsp;&nbsp;node = node.nextSibling<br>&nbsp;&nbsp;}<br>}<br><br>let usedNodeTypes = {<br>&nbsp;&nbsp;'1': 0,<br>&nbsp;&nbsp;'2': 0,<br>&nbsp;&nbsp;'3': 0,<br>&nbsp;&nbsp;'8': 0,<br>}<br><br>let main = document.querySelector('main')<br><br>domWalk(main, node => {<br>&nbsp;&nbsp;usedNodeTypes[node.nodeType] += 1 <br>})",
+      "question": "This code produces an object with the <pre>nodeType</pre>s and the number of occurrences for each one",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",

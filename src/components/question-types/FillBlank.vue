@@ -50,20 +50,21 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 913,
+      "id": 927,
       "type": "FillBlank",
-      "given": "Fill in the blank to access the HTML element with an <pre>id</pre> of <pre>title</pre>",
+      "given": "Fill in the blank to provide an attribute, <em>checked</em>,  set to <em>true</em>",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "",
-      "q2": ".style.fontSize = '2rem'",
+      "q1": "document.querySelector('#subscribe').",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["document.getElementById('title')","document.getElementById(\"title\")"],
+      "answers": ["setAttribute('checked', 'true')", "setAttribute(\"checked\", \"true\")"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/searching-elements-dom#document-getelementbyid-or-just-id",
-      "size": 34
-    },
+      "moreInfo": "",
+      "size": 32
+    }
+    ,
     }
   },
 
