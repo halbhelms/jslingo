@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 935,
+      "id": 645,
       "type": "TrueOrFalse",
-      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let items = document.querySelectorAll('li')<br><br>for (let item of items) {<br>&nbsp;&nbsp;if (item.dataset.plantType == 'fruit') {<br>&nbsp;&nbsp;&nbsp;&nbsp;item.classList.add('fruit')<br>&nbsp;&nbsp;}<br>}<br><br>// CSS<br>.fruit {<br>&nbsp;&nbsp;color: red;<br>}",
-      "question": "This fails to add <em>fruit</em> to the elements since no <pre>class</pre> attribute is specified in the HTML",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "Any recursion can be rewritten as a loop",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "",
+      "explanation": "While the answer is <em>true</em>, recursion often makes the code simpler and easier to understand",
+      "moreInfo": "https://javascript.info/recursion",
       "size": 0
     }
     ,

@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5316,
+      "id": 646,
       "type": "MultipleChoice",
-      "given": "let players = [<br>&nbsp;&nbsp;{name: 'Alice', rank: 5},<br>&nbsp;&nbsp;{name: 'Angel', rank: 1},<br>&nbsp;&nbsp;{name: 'Adrian', rank: 3},<br>&nbsp;&nbsp;{name: 'Astor', rank: 4},<br>&nbsp;&nbsp;{name: 'Allen', rank: 7},<br>&nbsp;&nbsp;{name: 'Albricht', rank: 6},<br>&nbsp;&nbsp;{name: 'Adam', rank: 2},<br>]<br><br>function sortPlayers(p1, p2) {<br>&nbsp;&nbsp;if (p1.rank > p2.rank) return 1<br>&nbsp;&nbsp;if (p1.rank < p2.rank) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let rankedPlayers = players.sort(sortPlayers).map( player => player.name)",
-      "question": "What is wrong with this code?",
+      "given": "let superLog = (date, name, value) => {<br>&nbsp;&nbsp;console.log(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} : The value of ${name} is ${value}`)<br>}<br><br>function mystery(f) {<br>&nbsp;&nbsp;return function(a) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return function(b) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return function(c) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return f(a,b,c)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}<br><br>let author = 'Hal Helms'<br>superLog(new Date(), 'author', author)<br><br>let mysteryLog = mystery(superLog)<br>let logNow = mysteryLog(new Date())<br>logNow('author')(author)",
+      "question": "This code illustrates the concept known as...",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["arrays of objects cannot be sorted with the <pre>sort</pre> function", "<pre>rankedPlayers</pre> is invalid","the <pre>sortPlayers</pre> function does not sort by rank", "nothing"],
-      "answer": 3,
+      "choices": ["base streamlining", "currying", "episodic closures", "function chaining"],
+      "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/currying-partials",
       "size": 0
     }
     ,
