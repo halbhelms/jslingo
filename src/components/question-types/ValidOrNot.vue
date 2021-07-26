@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 5250,
-      "type": "ValidorNot",
+      "id": 938,
+      "type": "ValidOrNot",
       "given": "",
-      "question": "let grades = '76,84,91,81,84,78,76,68,94,91'<br><br>let gradeArr = grades.split(',')<br>let gradeSet = new Set(gradeArr)",
+      "question": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let ul = document.querySelector('ul')<br><br>ul.insertAdjacentHTML('beforebegin', '&lt;h2>Plants&lt;/h2>')",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,9 +58,10 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/modifying-document#insertion-methods",
       "size": 0
-    },
+    }
+    ,
     }
   },
 

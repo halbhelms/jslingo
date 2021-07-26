@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5315,
+      "id": 6318,
       "type": "FillBlank",
-      "given": "Fill in the blank so that <pre>players</pre> are sorted based on the <pre>sortPlayers</pre> function",
+      "given": "Fill in the blank to make <pre>getFakeUser</pre> an asynchronous function",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let players = [<br>&nbsp;&nbsp;{name: 'Alice', rank: 5},<br>&nbsp;&nbsp;{name: 'Angel', rank: 1},<br>&nbsp;&nbsp;{name: 'Adrian', rank: 3},<br>&nbsp;&nbsp;{name: 'Astor', rank: 4},<br>&nbsp;&nbsp;{name: 'Allen', rank: 7},<br>&nbsp;&nbsp;{name: 'Albricht', rank: 6},<br>&nbsp;&nbsp;{name: 'Adam', rank: 2},<br>]<br><br>function sortPlayers(p1, p2) {<br>&nbsp;&nbsp;if (p1.rank > p2.rank) return 1<br>&nbsp;&nbsp;if (p1.rank < p2.rank) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>let rankedPlayers = ",
-      "q2": "",
+      "q1": "",
+      "q2": " function getFakeUser() {<br>&nbsp;&nbsp;let response = await fetch('https://randomuser.me/api/')<br><br>&nbsp;&nbsp;let user = await response.json()<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;console.log(user.results[0].name.first + ' ' + user.results[0].name.last)<br>}<br><br>getFakeUser()",
       "choices": [],
       "answer": "",
-      "answers": ["players.sort(sortPlayers)"],
+      "answers": ["async"],
       "explanation": "",
-      "moreInfo": "",
-      "size": 26
+      "moreInfo": "https://javascript.info/async-await",
+      "size": 5
     }
     ,
     }

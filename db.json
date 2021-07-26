@@ -6320,7 +6320,7 @@
       "size": 0
     },
     {
-      "id": 640,
+      "id": 6310,
       "type": "MultipleChoice",
       "given": "let auction = () => {<br>&nbsp;&nbsp;let acceptablePrice = 5000<br>&nbsp;&nbsp;let startingPrice = 2000<br>&nbsp;&nbsp;let currentPrice = startingPrice<br>&nbsp;&nbsp;return (amount) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Too late, loser'<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentPrice = amount<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'You won'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Bid too low. Try again.'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
       "question": "This code is an example of...",
@@ -6335,7 +6335,7 @@
       "size": 0
     },
     {
-      "id": 641,
+      "id": 6311,
       "type": "TrueOrFalse",
       "given": "let auction = () => {<br>&nbsp;&nbsp;let acceptablePrice = 5000<br>&nbsp;&nbsp;let startingPrice = 2000<br>&nbsp;&nbsp;let currentPrice = startingPrice<br>&nbsp;&nbsp;return (amount) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Too late, loser'<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentPrice = amount<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (currentPrice >= acceptablePrice) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'You won'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Bid too low. Try again.'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
       "question": "This code will fail as the nested inner function has no access to the outer function's variables",
@@ -7445,7 +7445,7 @@
       "size": 0
     },
     {
-      "id": 642,
+      "id": 6312,
       "type": "MultipleChoice",
       "given": "let beethoven = {<br>&nbsp;&nbsp;name: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;symphonies: [<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 1, in C major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 2, in D major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 3, in E flat major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 4, in B flat major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 5, in C minor',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 6, in F major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 7, in A major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 8, in F major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 9, in D minor',<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;rundown: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.symphonies.forEach(function(symphony) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(this.name + ' wrote ' + symphony)<br>&nbsp;&nbsp;&nbsp;&nbsp;})<br>&nbsp;&nbsp;}<br>}<br><br>beethoven.rundown()",
       "question": "This code has a problem &mdash; within the <pre>rundown</pre> function, <pre>this.name</pre> has no value! Why is this?",
@@ -7460,7 +7460,7 @@
       "size": 0
     },
     {
-      "id": 643,
+      "id": 6313,
       "type": "TrueOrFalse",
       "given": "let beethoven = {<br>&nbsp;&nbsp;name: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;symphonies: [<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 1, in C major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 2, in D major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 3, in E flat major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 4, in B flat major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 5, in C minor',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 6, in F major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 7, in A major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 8, in F major',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Symphony No. 9, in D minor',<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;rundown: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.symphonies.forEach(function(symphony) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(this.name + ' wrote ' + symphony)<br>&nbsp;&nbsp;&nbsp;&nbsp;})<br>&nbsp;&nbsp;}<br>}<br><br>beethoven.rundown()",
       "question": "This code has a problem &mdash; within the <pre>rundown</pre> function, <pre>this.name</pre> has no value! One good way to solve this problem is to rewrite the anonymous function sent to <pre>this.symphonies.forEach</pre> as an <em>arrow function</em>.",
@@ -9320,7 +9320,7 @@
       "size": 0
     },
     {
-      "id": 644,
+      "id": 6314,
       "type": "TrueOrFalse",
       "given": "let factorial = num => {<br>&nbsp;&nbsp;if (num == 0) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return 1<br>&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;return num * factorial(num - 1) <br>&nbsp;&nbsp;}<br>}<br><br>log(factorial(6)",
       "question": "This code returns the <em>factorial</em> of 6 &mdash; 720",
@@ -9335,7 +9335,7 @@
       "size": 0
     },
     {
-      "id": 645,
+      "id": 6315,
       "type": "TrueOrFalse",
       "given": "",
       "question": "Any recursion can be rewritten as a loop",
@@ -9350,7 +9350,7 @@
       "size": 0
     },
     {
-      "id": 646,
+      "id": 6316,
       "type": "MultipleChoice",
       "given": "let superLog = (date, name, value) => {<br>&nbsp;&nbsp;console.log(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} : The value of ${name} is ${value}`)<br>}<br><br>function mystery(f) {<br>&nbsp;&nbsp;return function(a) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return function(b) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return function(c) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return f(a,b,c)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}<br><br>let author = 'Hal Helms'<br>superLog(new Date(), 'author', author)<br><br>let mysteryLog = mystery(superLog)<br>let logNow = mysteryLog(new Date())<br>logNow('author')(author)",
       "question": "This code illustrates the concept known as...",
@@ -9380,78 +9380,78 @@
       "size": 0
     },
     {
-      "id": ,
-      "type": "",
+      "id": 6317,
+      "type": "ValidOrNot",
       "given": "",
-      "question": "",
-      "displayAsCode": [],
+      "question": "async function getRandomJoke() {<br>&nbsp;&nbsp;let response = await fetch('https://official-joke-api.appspot.com/jokes/ten')<br><br>&nbsp;&nbsp;let jokes = await response.json()<br>&nbsp;&nbsp;console.log(jokes[0].setup)<br>&nbsp;&nbsp;console.log(jokes[0].punchline)<br>}<br><br>getRandomJoke()",
+      "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": "",
+      "answer": true,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "",
+      "explanation": "Feel free to run this. I can vouch for the code, not for the jokes.",
+      "moreInfo": "https://javascript.info/async-await",
       "size": 0
     },
     {
-      "id": ,
-      "type": "",
-      "given": "",
+      "id": 6318,
+      "type": "FillBlank",
+      "given": "Fill in the blank to make <pre>getFakeUser</pre> an asynchronous function",
       "question": "",
-      "displayAsCode": [],
+      "displayAsCode": ["q1","q2","answer"],
+      "q1": "",
+      "q2": " function getFakeUser() {<br>&nbsp;&nbsp;let response = await fetch('https://randomuser.me/api/')<br><br>&nbsp;&nbsp;let user = await response.json()<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;console.log(user.results[0].name.first + ' ' + user.results[0].name.last)<br>}<br><br>getFakeUser()",
+      "choices": [],
+      "answer": "",
+      "answers": ["async"],
+      "explanation": "Feel free to copy and run this code",
+      "moreInfo": "https://javascript.info/async-await",
+      "size": 5
+    },
+    {
+      "id": 936,
+      "type": "TrueOrFalse",
+      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let ul = document.querySelector('ul')<br><br>let newLi = document.createElement('li')<br>newLi.classList.add('fruit')<br>newLi.setAttribute('data-plant-type','fruit')<br>newLi.innerHTML = 'Peach'<br><br>ul.append(newLi)",
+      "question": "This will create a new <pre>li</pre> element",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": "",
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/modifying-document#creating-an-element",
       "size": 0
     },
     {
-      "id": ,
-      "type": "",
-      "given": "",
-      "question": "",
-      "displayAsCode": [],
+      "id": 937,
+      "type": "MultipleChoice",
+      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let ul = document.querySelector('ul')<br><br>let title = document.createElement('h2')<br>title.innerHTML = 'Plants'<br>ul.???(title)",
+      "question": "To insert this before the unordered list, you should replace <em>???</em> with...",
+      "displayAsCode": ["given", "choices"],
       "q1": "",
       "q2": "",
-      "choices": [],
-      "answer": "",
+      "choices": ["prepend", "insert", "top", "before"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/modifying-document#insertion-methods",
       "size": 0
     },
     {
-      "id": ,
-      "type": "",
+      "id": 938,
+      "type": "ValidOrNot",
       "given": "",
-      "question": "",
-      "displayAsCode": [],
+      "question": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let ul = document.querySelector('ul')<br><br>ul.insertAdjacentHTML('beforebegin', '&lt;h2>Plants&lt;/h2>')",
+      "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": "",
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
-      "size": 0
-    },
-    {
-      "id": ,
-      "type": "",
-      "given": "",
-      "question": "",
-      "displayAsCode": [],
-      "q1": "",
-      "q2": "",
-      "choices": [],
-      "answer": "",
-      "answers": [],
-      "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/modifying-document#insertion-methods",
       "size": 0
     },
     {

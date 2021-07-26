@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 645,
+      "id": 936,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "Any recursion can be rewritten as a loop",
-      "displayAsCode": [],
+      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let ul = document.querySelector('ul')<br><br>let newLi = document.createElement('li')<br>newLi.classList.add('fruit')<br>newLi.setAttribute('data-plant-type','fruit')<br>newLi.innerHTML = 'Peach'<br><br>ul.appendChild(newLi)",
+      "question": "This will create a new <pre>li</pre> element",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "While the answer is <em>true</em>, recursion often makes the code simpler and easier to understand",
-      "moreInfo": "https://javascript.info/recursion",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/modifying-document#creating-an-element",
       "size": 0
     }
     ,

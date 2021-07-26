@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 646,
+      "id": 937,
       "type": "MultipleChoice",
-      "given": "let superLog = (date, name, value) => {<br>&nbsp;&nbsp;console.log(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} : The value of ${name} is ${value}`)<br>}<br><br>function mystery(f) {<br>&nbsp;&nbsp;return function(a) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return function(b) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return function(c) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return f(a,b,c)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}<br><br>let author = 'Hal Helms'<br>superLog(new Date(), 'author', author)<br><br>let mysteryLog = mystery(superLog)<br>let logNow = mysteryLog(new Date())<br>logNow('author')(author)",
-      "question": "This code illustrates the concept known as...",
-      "displayAsCode": ["given"],
+      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let ul = document.querySelector('ul')<br><br>let title = document.createElement('h2')<br>title.innerHTML = 'Plants'<br>ul.???(title)",
+      "question": "To insert this before the unordered list, you should replace <em>???</em> with...",
+      "displayAsCode": ["given", "choices"],
       "q1": "",
       "q2": "",
-      "choices": ["base streamlining", "currying", "episodic closures", "function chaining"],
-      "answer": 1,
+      "choices": ["prepend", "insert", "top", "before"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/currying-partials",
+      "moreInfo": "https://javascript.info/modifying-document#insertion-methods",
       "size": 0
     }
     ,
