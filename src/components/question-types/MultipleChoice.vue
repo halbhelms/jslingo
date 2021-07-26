@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 937,
+      "id": 9211,
       "type": "MultipleChoice",
-      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let ul = document.querySelector('ul')<br><br>let title = document.createElement('h2')<br>title.innerHTML = 'Plants'<br>ul.???(title)",
-      "question": "To insert this before the unordered list, you should replace <em>???</em> with...",
-      "displayAsCode": ["given", "choices"],
+      "given": "",
+      "question": "What is the difference between <pre>className</pre> and <pre>classList</pre> when working with DOM elements?",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["prepend", "insert", "top", "before"],
-      "answer": 3,
+      "choices": ["Both the same &mdash; originally <pre>className</pre> was a reserved word, so <pre>classList</pre> was used. That limitation no longer exists.", "<pre>className</pre> can be set while <pre>classList</pre> can be added to or removed from", "<pre>className</pre> in this context doesn't exist &mdash; there's only <pre>classList</pre>"],
+      "answer": "1",
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/modifying-document#insertion-methods",
+      "moreInfo": "https://javascript.info/styles-and-classes#classname-and-classlist",
       "size": 0
     }
     ,

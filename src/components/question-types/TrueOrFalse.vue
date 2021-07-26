@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 936,
+      "id": 9111,
       "type": "TrueOrFalse",
-      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let ul = document.querySelector('ul')<br><br>let newLi = document.createElement('li')<br>newLi.classList.add('fruit')<br>newLi.setAttribute('data-plant-type','fruit')<br>newLi.innerHTML = 'Peach'<br><br>ul.appendChild(newLi)",
-      "question": "This will create a new <pre>li</pre> element",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "Browser events are spawned if <pre>spawn-events</pre> in <b>js.config</b> is set to <pre>true</pre>",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/modifying-document#creating-an-element",
+      "moreInfo": "https://javascript.info/introduction-browser-events",
       "size": 0
     }
     ,
