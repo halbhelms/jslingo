@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 9211,
+      "id": 9212,
       "type": "MultipleChoice",
-      "given": "",
-      "question": "What is the difference between <pre>className</pre> and <pre>classList</pre> when working with DOM elements?",
-      "displayAsCode": [],
+      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>document.querySelector('ul').addEventListener('click', (event)=> console.log('You clicked ' + event.target.innerHTML))",
+      "question": "This code is an example of...",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Both the same &mdash; originally <pre>className</pre> was a reserved word, so <pre>classList</pre> was used. That limitation no longer exists.", "<pre>className</pre> can be set while <pre>classList</pre> can be added to or removed from", "<pre>className</pre> in this context doesn't exist &mdash; there's only <pre>classList</pre>"],
-      "answer": "1",
+      "choices": ["a very confused developer", "event delegation", "event forwarding", "event instantiation"],
+      "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/styles-and-classes#classname-and-classlist",
+      "moreInfo": "",
       "size": 0
     }
     ,

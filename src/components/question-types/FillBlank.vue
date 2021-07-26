@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 6318,
+      "id": 5318,
       "type": "FillBlank",
-      "given": "Fill in the blank to make <pre>getFakeUser</pre> an asynchronous function",
+      "given": "Fill in the code to return the last item in the first nested array",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "",
-      "q2": " function getFakeUser() {<br>&nbsp;&nbsp;let response = await fetch('https://randomuser.me/api/')<br><br>&nbsp;&nbsp;let user = await response.json()<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;console.log(user.results[0].name.first + ' ' + user.results[0].name.last)<br>}<br><br>getFakeUser()",
+      "q1": "let arr2d = [[5,9,27,36],[64,19,11,22]]<br>log(",
+      "q2": ") // should be 36",
       "choices": [],
       "answer": "",
-      "answers": ["async"],
+      "answers": ["arr2d[0][3]"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/async-await",
-      "size": 5
+      "moreInfo": "",
+      "size": 13
     }
     ,
     }

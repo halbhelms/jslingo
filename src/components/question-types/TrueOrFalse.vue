@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 9111,
+      "id": 5319,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "Browser events are spawned if <pre>spawn-events</pre> in <b>js.config</b> is set to <pre>true</pre>",
-      "displayAsCode": [],
+      "given": "let unshuffledDeck = []<br><br>let suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']<br><br>let pips = [2,3,4,5,6,7,8,9,10,'Jack','Queen', 'King', 'Ace']<br><br>suits.forEach( suit => {<br>&nbsp;&nbsp;pips.forEach( pip => {<br>&nbsp;&nbsp;&nbsp;&nbsp;unshuffledDeck.push(pip + ' of ' + suit)<br>&nbsp;&nbsp;})<br>})",
+      "question": "At the end of running this code, <pre>unshuffledDeck</pre> will remain an empty array",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/introduction-browser-events",
+      "moreInfo": "",
       "size": 0
     }
     ,

@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 938,
+      "id": 8323,
       "type": "ValidOrNot",
       "given": "",
-      "question": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;flower&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;fruit&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li data-plant-type=&quot;vegetable&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let ul = document.querySelector('ul')<br><br>ul.insertAdjacentHTML('beforebegin', '&lt;h2>Plants&lt;/h2>')",
+      "question": "let largestOf2d = [<br>&nbsp;&nbsp;Number.NEGATIVE_INFINITY,<br>&nbsp;&nbsp;Number.NEGATIVE_INFINITY,<br>&nbsp;&nbsp;Number.NEGATIVE_INFINITY,<br>&nbsp;&nbsp;Number.NEGATIVE_INFINITY,<br>]",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/modifying-document#insertion-methods",
+      "moreInfo": "",
       "size": 0
     }
     ,
