@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 6241,
-      "type": "ValidOrNot",
-      "given": "",
-      "question": "let add = (a,b) => a+b",
-      "displayAsCode": ["question"],
+      "id": 9329,
+      "type": "TrueOrNot",
+      "given": "let newEvent = new Event('keydown', {bubbles: false})<br><br>document.addEventListener('keydown', event => console.log('Someone pressed a key?'))<br><br>document.querySelector('button').addEventListener('click', event => {<br>&nbsp;&nbsp;event.stopImmediatePropagation()<br>&nbsp;&nbsp;document.dispatchEvent(newEvent)<br>&nbsp;&nbsp;console.log('You clicked the button')<br>})",
+      "question": "When the button is clicked, the console will have both 'You clicked the button' and 'Someone pressed a key?'",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://kbarker.dev/blog/implicit-return-statements-in-javascript/",
+      "moreInfo": "https://www.javascripttutorial.net/javascript-dom/javascript-dispatchevent/",
       "size": 0
     }
     ,

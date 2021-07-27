@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8244,
+      "id":9328,
       "type": "TrueOrFalse",
-      "given": "log([null,null,null] instanceof Array)",
-      "question": "<pre>false</pre> is logged to the console",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "To stop a form from submitting (as it normally would), you should use <pre>event.stopPropagation()</pre> in an event listener",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/instanceof",
+      "moreInfo": "https://javascript.info/default-browser-action#preventing-browser-actions",
       "size": 0
     }
     ,

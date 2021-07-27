@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5323,
+      "id": 9327,
       "type": "MultipleChoice",
-      "given": "let classical = ['J.S. Bach', 'Franz Joseph Haydn']<br><br>let romantic = ['Ludwig van Beethoven', 'Hector Berlioz']<br><br>let composers = [...classical, ...romantic]",
-      "question": "What is the value of <pre>composers</pre>?",
+      "given": "// HTML<br>&lt;main><br>&nbsp;&nbsp;&lt;div id=&quot;top&quot;><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;button>Drink me&lt;/button><br>&nbsp;&nbsp;&lt;/div><br>&lt;/main><br><br>// JS<br>document.querySelector('main').addEventListener('click', event => console.log('You clicked the main tag'))<br><br>document.querySelector('#top').addEventListener('click', event => console.log('You clicked the top div'))<br><br>document.querySelector('button').addEventListener('click', event => {<br>&nbsp;&nbsp;event.preventDefault()<br>&nbsp;&nbsp;console.log('You clicked the button')<br>})",
+      "question": "How many lines are written to the console if the button is clicked?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["[ [ 'J.S. Bach', 'Franz Joseph Haydn' ], [ 'Ludwig van Beethoven', 'Hector Berlioz' ] ]", "[ J.S. Bach', 'Franz Joseph Haydn', 'Ludwig van Beethoven', 'Hector Berlioz'"],
-      "answer": "1",
+      "choices": ["0","1","2","3"],
+      "answer": 3,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment",
+      "explanation": "Not <pre>preventDefault()</pre> but <pre>stopPropagation()</pre>",
+      "moreInfo": "https://javascript.info/bubbling-and-capturing#stopping-bubbling",
       "size": 0
     }
     ,
