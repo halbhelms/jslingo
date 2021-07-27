@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5319,
+      "id": 9312,
       "type": "TrueOrFalse",
-      "given": "let unshuffledDeck = []<br><br>let suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']<br><br>let pips = [2,3,4,5,6,7,8,9,10,'Jack','Queen', 'King', 'Ace']<br><br>suits.forEach( suit => {<br>&nbsp;&nbsp;pips.forEach( pip => {<br>&nbsp;&nbsp;&nbsp;&nbsp;unshuffledDeck.push(pip + ' of ' + suit)<br>&nbsp;&nbsp;})<br>})",
-      "question": "At the end of running this code, <pre>unshuffledDeck</pre> will remain an empty array",
+      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>document.querySelector('ul>li:last-child').addEventListener('click', (event)=> console.log('You clicked ' + event.target.innerHTML))<br>",
+      "question": "This code sets an event listener on the last <pre>li</element> that, itself, is a direct descendent of <pre>ul</pre> elements",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/introduction-browser-events#addeventlistener",
       "size": 0
     }
     ,

@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 9212,
+      "id": 9216,
       "type": "MultipleChoice",
-      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>document.querySelector('ul').addEventListener('click', (event)=> console.log('You clicked ' + event.target.innerHTML))",
-      "question": "This code is an example of...",
+      "given": "document.querySelector('ul').addEventListener('click', (event)=> console.log('You clicked ' + event.target.innerHTML), {once: true})",
+      "question": "What does passing <pre>{once: true} do the event listener?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["a very confused developer", "event delegation", "event forwarding", "event instantiation"],
-      "answer": 1,
+      "choices": ["nothing &mdash; the object is ignored", "cause the event listener to fire only once"],
+      "answer": "1",
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/introduction-browser-events#addeventlistener",
       "size": 0
     }
     ,
