@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 6154,
+      "id": 8162,
       "type": "TrueOrFalse",
-      "given": "function add(num1, num2) {<br>&nbsp;&nbsp;return num1 + num2<br>}<br><br>add(5,6)",
-      "question": "The term, parameter, refers to the numbers 5 and 6",
+      "given": "function fnc(language) {<br>&nbsp;&nbsp;return<br>&nbsp;&nbsp;&nbsp;&nbsp;'So you want ' + language<br>}<br><br>log(fnc('English'))",
+      "question": "This logs <em>So you want English</em> to the console",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "These are, strictly speaking, <em>arguments</em> while <pre>num1</pre> and <pre>num2</pre> are <em>parameters</em>",
-      "moreInfo": "https://kbarker.dev/blog/the-difference-between-parameters-and-arguments-in-javascript-functions/",
+      "explanation": "<pre>return</pre> on a line with nothing after it does an immediate return (exit) from the function. If you need to do something like this wrap what you want returned in parentheses.",
+      "moreInfo": "",
       "size": 0
     }
     ,

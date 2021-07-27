@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 9316,
+      "id": 5129,
       "type": "MultipleChoice",
-      "given": "",
-      "question": "<pre>event.currentTarget</pre> is...",
-      "displayAsCode": [],
+      "given": "let arr = new Array(5)<br>log(arr.length)",
+      "question": "What is logged to the console?",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["the element on which the event listener was added", "the actual element that dispatched the event"],
+      "choices": ["5", "0"],
       "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://kbarker.dev/blog/the-difference-between-event-target-and-event-current-target",
+      "moreInfo": "https://kbarker.dev/blog/array-literals-vs-array-constructor/",
       "size": 0
     }
     ,

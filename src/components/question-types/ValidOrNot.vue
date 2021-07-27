@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 9317,
+      "id": 322,
       "type": "ValidOrNot",
       "given": "",
-      "question": "// HTML<br>&lt;ul id=&quot;plants&quot;><br>&nbsp;&nbsp;&lt;li id=&quot;tomato&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li id=&quot;potato&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li id=&quot;orchid&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li id=&quot;strawberry&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li id=&quot;asparagas&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let el = document.querySelector('ul')<br><br>let handler = {<br>&nbsp;&nbsp;handleEvent(event) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('event.target', event.target.id)<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('event.currentTarget', event.currentTarget.id)<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('You clicked on ', event.target.innerHTML)<br>&nbsp;&nbsp;}<br>}<br><br>el.addEventListener('click', handler)",
+      "question": "let expression1 = 10 > 20<br>let expression2 = console.log('hello')<br><br>if (expression1 || expression2) {<br>&nbsp;&nbsp;// did you expect this?<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/introduction-browser-events#object-handlers-handleevent",
+      "moreInfo": "https://kbarker.dev/blog/short-circuit-evaluation-in-javascript/",
       "size": 0
     }
     ,
