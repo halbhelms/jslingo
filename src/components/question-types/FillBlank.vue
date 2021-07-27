@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5318,
+      "id": 9324,
       "type": "FillBlank",
-      "given": "Fill in the code to return the last item in the first nested array",
+      "given": "Fill in the blank to keep the form from submitting",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let arr2d = [[5,9,27,36],[64,19,11,22]]<br>log(",
-      "q2": ") // should be 36",
+      "q1": "// HTML<br>&lt;form><br>&nbsp;&nbsp;&lt;label for=&quot;name&quot;>Name&lt;/label> &lt;input id=&quot;name&quot; /><br>&lt;/form><br><br>// JS<br>document.querySelector('form').addEventListener('submit', event => {<br>&nbsp;&nbsp;",
+      "q2": "<br>&nbsp;&nbsp;console.log('No, we will use JavaScript to submit this form, thank you')<br>})",
       "choices": [],
       "answer": "",
-      "answers": ["arr2d[0][3]"],
+      "answers": ["event.preventDefault()"],
       "explanation": "",
-      "moreInfo": "",
-      "size": 13
+      "moreInfo": "https://kbarker.dev/blog/the-event-prevent-default-method-in-javascript/",
+      "size": 24
     }
     ,
     }

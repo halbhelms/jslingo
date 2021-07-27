@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8162,
+      "id": 9221,
       "type": "TrueOrFalse",
-      "given": "function fnc(language) {<br>&nbsp;&nbsp;return<br>&nbsp;&nbsp;&nbsp;&nbsp;'So you want ' + language<br>}<br><br>log(fnc('English'))",
-      "question": "This logs <em>So you want English</em> to the console",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "<pre>console.table</pre> does a nicer job of formatting things like objects than does <pre>console.log</pre>",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
-      "explanation": "<pre>return</pre> on a line with nothing after it does an immediate return (exit) from the function. If you need to do something like this wrap what you want returned in parentheses.",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://kbarker.dev/blog/the-console-table-method-in-javascript/",
       "size": 0
     }
     ,

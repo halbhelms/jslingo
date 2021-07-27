@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 322,
+      "id": 9318,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let expression1 = 10 > 20<br>let expression2 = console.log('hello')<br><br>if (expression1 || expression2) {<br>&nbsp;&nbsp;// did you expect this?<br>}",
+      "question": "// HTML<br>&lt;h2>I'm not long for this world...&lt;/h2><br><br>// JS<br>document.querySelector('h2').outerHTML = '&lt;h4>I'm back &mdash; only smaller&lt;/h4>'",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://kbarker.dev/blog/short-circuit-evaluation-in-javascript/",
+      "explanation": "<pre>outerHTML</pre> replaces the entire element &mdash; who knew?",
+      "moreInfo": "https://kbarker.dev/blog/the-outerhtml-property-in-vanilla-js/",
       "size": 0
     }
     ,
