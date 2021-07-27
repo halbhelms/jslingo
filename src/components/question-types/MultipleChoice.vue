@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 9216,
+      "id": 9316,
       "type": "MultipleChoice",
-      "given": "document.querySelector('ul').addEventListener('click', (event)=> console.log('You clicked ' + event.target.innerHTML), {once: true})",
-      "question": "What does passing <pre>{once: true} do the event listener?",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "<pre>event.currentTarget</pre> is...",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["nothing &mdash; the object is ignored", "cause the event listener to fire only once"],
-      "answer": "1",
+      "choices": ["the element on which the event listener was added", "the actual element that dispatched the event"],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/introduction-browser-events#addeventlistener",
+      "moreInfo": "https://kbarker.dev/blog/the-difference-between-event-target-and-event-current-target",
       "size": 0
     }
     ,

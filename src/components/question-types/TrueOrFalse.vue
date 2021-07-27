@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 9312,
+      "id": 6154,
       "type": "TrueOrFalse",
-      "given": "// HTML<br>&lt;ul><br>&nbsp;&nbsp;&lt;li>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>document.querySelector('ul>li:last-child').addEventListener('click', (event)=> console.log('You clicked ' + event.target.innerHTML))<br>",
-      "question": "This code sets an event listener on the last <pre>li</element> that, itself, is a direct descendent of <pre>ul</pre> elements",
+      "given": "function add(num1, num2) {<br>&nbsp;&nbsp;return num1 + num2<br>}<br><br>add(5,6)",
+      "question": "The term, parameter, refers to the numbers 5 and 6",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/introduction-browser-events#addeventlistener",
+      "explanation": "These are, strictly speaking, <em>arguments</em> while <pre>num1</pre> and <pre>num2</pre> are <em>parameters</em>",
+      "moreInfo": "https://kbarker.dev/blog/the-difference-between-parameters-and-arguments-in-javascript-functions/",
       "size": 0
     }
     ,

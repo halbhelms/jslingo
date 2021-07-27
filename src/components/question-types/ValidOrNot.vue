@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 8323,
+      "id": 9317,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let largestOf2d = [<br>&nbsp;&nbsp;Number.NEGATIVE_INFINITY,<br>&nbsp;&nbsp;Number.NEGATIVE_INFINITY,<br>&nbsp;&nbsp;Number.NEGATIVE_INFINITY,<br>&nbsp;&nbsp;Number.NEGATIVE_INFINITY,<br>]",
+      "question": "// HTML<br>&lt;ul id=&quot;plants&quot;><br>&nbsp;&nbsp;&lt;li id=&quot;tomato&quot;>Tomato&lt;/li><br>&nbsp;&nbsp;&lt;li id=&quot;potato&quot;>Potato&lt;/li><br>&nbsp;&nbsp;&lt;li id=&quot;orchid&quot;>Orchid&lt;/li><br>&nbsp;&nbsp;&lt;li id=&quot;strawberry&quot;>Strawberry&lt;/li><br>&nbsp;&nbsp;&lt;li id=&quot;asparagas&quot;>Asparagas&lt;/li><br>&lt;/ul><br><br>// JS<br>let el = document.querySelector('ul')<br><br>let handler = {<br>&nbsp;&nbsp;handleEvent(event) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('event.target', event.target.id)<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('event.currentTarget', event.currentTarget.id)<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('You clicked on ', event.target.innerHTML)<br>&nbsp;&nbsp;}<br>}<br><br>el.addEventListener('click', handler)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/introduction-browser-events#object-handlers-handleevent",
       "size": 0
     }
     ,
