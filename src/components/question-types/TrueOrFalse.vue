@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 9221,
+      "id": 8244,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "<pre>console.table</pre> does a nicer job of formatting things like objects than does <pre>console.log</pre>",
-      "displayAsCode": [],
+      "given": "log([null,null,null] instanceof Array)",
+      "question": "<pre>false</pre> is logged to the console",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://kbarker.dev/blog/the-console-table-method-in-javascript/",
+      "moreInfo": "https://javascript.info/instanceof",
       "size": 0
     }
     ,

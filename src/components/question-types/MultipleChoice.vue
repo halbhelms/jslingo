@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 9323,
+      "id": 5323,
       "type": "MultipleChoice",
-      "given": "// HTML<br>&lt;div id=&quot;demo&quot;><br>&nbsp;&nbsp;&lt;button>Drink Me&lt;/button><br>&lt;/div><br><br>// JS<br>document.querySelector('#demo').addEventListener('click', event => console.log('You clicked the div.'))<br><br>document.querySelector('button').addEventListener('click', event => {<br>&nbsp;&nbsp;event.stopPropagation()<br>&nbsp;&nbsp;console.log('You clicked the button.')<br>})",
-      "question": "What is logged to the console when the button is clicked?",
+      "given": "let classical = ['J.S. Bach', 'Franz Joseph Haydn']<br><br>let romantic = ['Ludwig van Beethoven', 'Hector Berlioz']<br><br>let composers = [...classical, ...romantic]",
+      "question": "What is the value of <pre>composers</pre>?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["You clicked the button.", "You clicked the div.", "You clicked the button. You clicked the div.", "nothing &mdash; the two event handlers cancel each other out"],
-      "answer": 0,
+      "choices": ["[ [ 'J.S. Bach', 'Franz Joseph Haydn' ], [ 'Ludwig van Beethoven', 'Hector Berlioz' ] ]", "[ J.S. Bach', 'Franz Joseph Haydn', 'Ludwig van Beethoven', 'Hector Berlioz'"],
+      "answer": "1",
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/bubbling-and-capturing",
+      "moreInfo": "https://javascript.info/destructuring-assignment",
       "size": 0
     }
     ,

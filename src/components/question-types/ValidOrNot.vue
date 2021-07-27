@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 9318,
+      "id": 6241,
       "type": "ValidOrNot",
       "given": "",
-      "question": "// HTML<br>&lt;h2>I'm not long for this world...&lt;/h2><br><br>// JS<br>document.querySelector('h2').outerHTML = '&lt;h4>I'm back &mdash; only smaller&lt;/h4>'",
+      "question": "let add = (a,b) => a+b",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
-      "explanation": "<pre>outerHTML</pre> replaces the entire element &mdash; who knew?",
-      "moreInfo": "https://kbarker.dev/blog/the-outerhtml-property-in-vanilla-js/",
+      "explanation": "",
+      "moreInfo": "https://kbarker.dev/blog/implicit-return-statements-in-javascript/",
       "size": 0
     }
     ,

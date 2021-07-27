@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 9324,
+      "id": 5321,
       "type": "FillBlank",
-      "given": "Fill in the blank to keep the form from submitting",
+      "given": "Fill in the blank to create an array of all composers in the different musical genres",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "// HTML<br>&lt;form><br>&nbsp;&nbsp;&lt;label for=&quot;name&quot;>Name&lt;/label> &lt;input id=&quot;name&quot; /><br>&lt;/form><br><br>// JS<br>document.querySelector('form').addEventListener('submit', event => {<br>&nbsp;&nbsp;",
-      "q2": "<br>&nbsp;&nbsp;console.log('No, we will use JavaScript to submit this form, thank you')<br>})",
+      "q1": "const music = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;genre: 'classical',<br>&nbsp;&nbsp;&nbsp;&nbsp;composers: [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'J.S. Bach',<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Franz Joseph Haydn'<br>&nbsp;&nbsp;&nbsp;&nbsp;]<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;genre: 'romantic',<br>&nbsp;&nbsp;&nbsp;&nbsp;composers: [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Ludwig van Beethoven',<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Hector Berlioz'<br>&nbsp;&nbsp;&nbsp;&nbsp;]<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;genre: 'modern',<br>&nbsp;&nbsp;&nbsp;&nbsp;composers: [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Benjamin Britten',<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Charles Ives'<br>&nbsp;&nbsp;&nbsp;&nbsp;]<br>&nbsp;&nbsp;},<br>];<br><br>const composers = music.",
+      "q2": "( genre => genre.composers)",
       "choices": [],
       "answer": "",
-      "answers": ["event.preventDefault()"],
+      "answers": ["flatMap"],
       "explanation": "",
-      "moreInfo": "https://kbarker.dev/blog/the-event-prevent-default-method-in-javascript/",
-      "size": 24
+      "moreInfo": "https://kbarker.dev/blog/the-flatmap-method-in-vanilla-js/",
+      "size": 7
     }
     ,
     }
