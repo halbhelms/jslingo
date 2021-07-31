@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 9334,
+      "id": 9225,
       "type": "FillBlank",
-      "given": "Given an HTML <pre>ul</pre> element with an id of <pre>fish</pre>, fill in the blank to monitor changes to the <pre>ul</pre> children (<pre>li</pre>s)",
+      "given": "Fill in the blank to set a cookie",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let observer = new ",
-      "q2": "(mutationRecords => console.log('A new fish type was added'))<br><br>observer.observe(fish, {<br>&nbsp;&nbsp;childList: true<br>})<br><br>let li = document.createElement('li')<br>li.textContent = 'Tuna'<br>fish.appendChild(li)",
+      "q1": "",
+      "q2": " = 'author=Hal'",
       "choices": [],
       "answer": "",
-      "answers": ["MutationObserver"],
+      "answers": ["document.cookie"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/mutation-observer",
-      "size": 16
+      "moreInfo": "https://javascript.info/cookie",
+      "size": 15
     }
     ,
     }

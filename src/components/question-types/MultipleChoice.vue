@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 9331,
+      "id": 8325,
       "type": "MultipleChoice",
-      "given": "// HTML<br>&lt;form action=&quot;&quot; name=&quot;myForm&quot;><br>&nbsp;&nbsp;&lt;h3>And now for a form...&lt;/h3><br>&nbsp;&nbsp;&lt;input type=&quot;text&quot; id=&quot;hmmm&quot;> &lt;label for=&quot;hmmm&quot;> Paste away, fools!&lt;/label><br>&lt;/form><br><br>// JS<br>hmmm.placeholder = 'Paste away'",
-      "question": "What will this code do?",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "<pre>fetch</pre> returns what?",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["Nothing &mdash; it will be ignored", "cause an error", "Set <em>Paste away</em> as the placeholder"],
-      "answer": 2,
+      "choices": ["url", "promise", "JSON data", "depends on the URL"],
+      "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/events-change-input#events-cut-copy-paste",
+      "moreInfo": "https://javascript.info/fetch",
       "size": 0
     }
     ,
