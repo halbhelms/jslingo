@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5321,
+      "id": 9334,
       "type": "FillBlank",
-      "given": "Fill in the blank to create an array of all composers in the different musical genres",
+      "given": "Given an HTML <pre>ul</pre> element with an id of <pre>fish</pre>, fill in the blank to monitor changes to the <pre>ul</pre> children (<pre>li</pre>s)",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "const music = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;genre: 'classical',<br>&nbsp;&nbsp;&nbsp;&nbsp;composers: [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'J.S. Bach',<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Franz Joseph Haydn'<br>&nbsp;&nbsp;&nbsp;&nbsp;]<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;genre: 'romantic',<br>&nbsp;&nbsp;&nbsp;&nbsp;composers: [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Ludwig van Beethoven',<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Hector Berlioz'<br>&nbsp;&nbsp;&nbsp;&nbsp;]<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;genre: 'modern',<br>&nbsp;&nbsp;&nbsp;&nbsp;composers: [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Benjamin Britten',<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Charles Ives'<br>&nbsp;&nbsp;&nbsp;&nbsp;]<br>&nbsp;&nbsp;},<br>];<br><br>const composers = music.",
-      "q2": "( genre => genre.composers)",
+      "q1": "let observer = new ",
+      "q2": "(mutationRecords => console.log('A new fish type was added'))<br><br>observer.observe(fish, {<br>&nbsp;&nbsp;childList: true<br>})<br><br>let li = document.createElement('li')<br>li.textContent = 'Tuna'<br>fish.appendChild(li)",
       "choices": [],
       "answer": "",
-      "answers": ["flatMap"],
+      "answers": ["MutationObserver"],
       "explanation": "",
-      "moreInfo": "https://kbarker.dev/blog/the-flatmap-method-in-vanilla-js/",
-      "size": 7
+      "moreInfo": "https://javascript.info/mutation-observer",
+      "size": 16
     }
     ,
     }

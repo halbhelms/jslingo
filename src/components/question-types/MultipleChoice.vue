@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 9327,
+      "id": 9331,
       "type": "MultipleChoice",
-      "given": "// HTML<br>&lt;main><br>&nbsp;&nbsp;&lt;div id=&quot;top&quot;><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;button>Drink me&lt;/button><br>&nbsp;&nbsp;&lt;/div><br>&lt;/main><br><br>// JS<br>document.querySelector('main').addEventListener('click', event => console.log('You clicked the main tag'))<br><br>document.querySelector('#top').addEventListener('click', event => console.log('You clicked the top div'))<br><br>document.querySelector('button').addEventListener('click', event => {<br>&nbsp;&nbsp;event.preventDefault()<br>&nbsp;&nbsp;console.log('You clicked the button')<br>})",
-      "question": "How many lines are written to the console if the button is clicked?",
+      "given": "// HTML<br>&lt;form action=&quot;&quot; name=&quot;myForm&quot;><br>&nbsp;&nbsp;&lt;h3>And now for a form...&lt;/h3><br>&nbsp;&nbsp;&lt;input type=&quot;text&quot; id=&quot;hmmm&quot;> &lt;label for=&quot;hmmm&quot;> Paste away, fools!&lt;/label><br>&lt;/form><br><br>// JS<br>hmmm.placeholder = 'Paste away'",
+      "question": "What will this code do?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["0","1","2","3"],
-      "answer": 3,
+      "choices": ["Nothing &mdash; it will be ignored", "cause an error", "Set <em>Paste away</em> as the placeholder"],
+      "answer": 2,
       "answers": [],
-      "explanation": "Not <pre>preventDefault()</pre> but <pre>stopPropagation()</pre>",
-      "moreInfo": "https://javascript.info/bubbling-and-capturing#stopping-bubbling",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/events-change-input#events-cut-copy-paste",
       "size": 0
     }
     ,

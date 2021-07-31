@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 9329,
-      "type": "TrueOrNot",
-      "given": "let newEvent = new Event('keydown', {bubbles: false})<br><br>document.addEventListener('keydown', event => console.log('Someone pressed a key?'))<br><br>document.querySelector('button').addEventListener('click', event => {<br>&nbsp;&nbsp;event.stopImmediatePropagation()<br>&nbsp;&nbsp;document.dispatchEvent(newEvent)<br>&nbsp;&nbsp;console.log('You clicked the button')<br>})",
-      "question": "When the button is clicked, the console will have both 'You clicked the button' and 'Someone pressed a key?'",
-      "displayAsCode": ["given"],
+      "id": 4350,
+      "type": "ValidOrNot",
+      "given": "",
+      "question": "class TypedArray {<br>&nbsp;&nbsp;constructor(type) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;&nbsp;&nbsp;this.arr = []<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;push(item) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (typeof item == this.type) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.arr.push(item)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;get value() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.arr<br>&nbsp;&nbsp;}<br>}<br><br>let stringArr = new TypedArray('string')<br>stringArr.push('Hello')<br>stringArr.push('World')<br><br>console.log(stringArr.value)",
+      "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://www.javascripttutorial.net/javascript-dom/javascript-dispatchevent/",
+      "moreInfo": "",
       "size": 0
     }
     ,
