@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8325,
+      "id": 9338,
       "type": "MultipleChoice",
       "given": "",
-      "question": "<pre>fetch</pre> returns what?",
+      "question": "A more powerful alternative to <em>localStorage</em> is...",
       "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["url", "promise", "JSON data", "depends on the URL"],
-      "answer": 1,
+      "choices": ["cookies", "StringBuffer", "indexedDB", "local-postgres"],
+      "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/fetch",
+      "moreInfo": "https://javascript.info/indexeddb",
       "size": 0
     }
     ,

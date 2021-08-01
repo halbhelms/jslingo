@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 9337,
+      "id": 9228,
       "type": "TrueOrFalse",
-      "given": "",
-      "question": "<pre>fetch</pre> works only with a GET method",
-      "displayAsCode": [],
+      "given": "// set expiration 1 day from now<br>let date = new Date(Date.now() + 86400e3)<br>date = date.toUTCString()<br>document.cookie = &quot;author=Hal; expires=&quot; + date",
+      "question": "This code sets the expiration date of a cookie to be 24 hours from its creation.",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/fetch-api",
+      "moreInfo": "https://javascript.info/cookie#expires-max-age",
       "size": 0
     }
     ,
