@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4355,
+      "id": 4360,
       "type": "FillBlank",
-      "given": "Fill in the blank to remove the <pre>shastokovich</pre> entry",
+      "given": "Fill in the blank to create a new Map called <pre>places</pre>",
       "question": "",
       "displayAsCode": ["q1","q2","answers"],
-      "q1": "let beethoven = {<br>&nbsp;&nbsp;name: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;symphonies: 9<br>}<br><br>let brahms = {<br>&nbsp;&nbsp;name: 'Johannes Brahms',<br>&nbsp;&nbsp;symphonies: 4<br>}<br><br>let shastokovich = {<br>&nbsp;&nbsp;name: 'Dmitri Shastokovich',<br>&nbsp;&nbsp;symphonies: 15<br>}<br><br>let genres = new Map()<br><br>genres<br>&nbsp;&nbsp;.set(beethoven, 'transitional')<br>&nbsp;&nbsp;.set(brahms, 'romantic')<br>&nbsp;&nbsp;.set(shastokovich, 'Modern')<br><br>genres.",
+      "q1": "let ",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["delete(shastokovich)"],
+      "answers": ["places = new Map()"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set#map",
-      "size": 20
+      "moreInfo": "",
+      "size": 18
     }
     ,
     }

@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4354,
+      "id": 7135,
       "type": "MultipleChoice",
-      "given": "let beethoven = {<br>&nbsp;&nbsp;name: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;symphonies: 9<br>}<br><br>let brahms = {<br>&nbsp;&nbsp;name: 'Johannes Brahms',<br>&nbsp;&nbsp;symphonies: 4<br>}<br><br>let shastokovich = {<br>&nbsp;&nbsp;name: 'Dmitri Shastokovich',<br>&nbsp;&nbsp;symphonies: 15<br>}<br><br>let genres = new Map()<br><br>genres<br>&nbsp;&nbsp;.set(beethoven, 'transitional')<br>&nbsp;&nbsp;.set(brahms, 'romantic')<br>&nbsp;&nbsp;.set(shastokovich, 'Modern')",
-      "question": "Does this code fail due to the attempted function chaining of <pre>set</pre>?",
+      "given": "let firstPlace = 'Amadeus'<br>let secondPlace = 'Waffle'<br>let thirdPlace = 'Cody'<br><br>places = {<br>&nbsp;&nbsp;firstPlace: 'gold',<br>&nbsp;&nbsp;secondPlace: 'silver',<br>&nbsp;&nbsp;thirdPlace: 'bronze',<br>}<br><br>log(places[firstPlace])",
+      "question": "What is logged?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Yes", "No"],
-      "answer": 1,
+      "choices": ["Amadeus", "gold", "undefined", "error"],
+      "answer": 2,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set",
+      "moreInfo": "",
       "size": 0
     }
     ,

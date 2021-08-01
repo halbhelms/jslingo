@@ -46,17 +46,17 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4352,
+      "id": 7133,
       "type": "TrueOrFalse",
-      "given": "let beethoven = {<br>&nbsp;&nbsp;name: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;symphonies: 9<br>}<br><br>let brahms = {<br>&nbsp;&nbsp;name: 'Johannes Brahms',<br>&nbsp;&nbsp;symphonies: 4<br>}<br><br>let shastokovich = {<br>&nbsp;&nbsp;name: 'Dmitri Shastokovich',<br>&nbsp;&nbsp;symphonies: 15<br>}<br><br>let genres = new Map()<br><br>genres.set(beethoven, 'transitional')<br>genres.set(brahms, 'romantic')<br>genres.set(shastokovich, 'Modern')<br><br>log(genres.has(beethoven))",
-      "question": "This code produces an error as Map keys cannot be complex data types",
+      "given": "let places = {}<br>places[1] = 'Las Vegas'<br>places[2] = 'Miami'<br>places[3] = 'Dallas'<br><br>Object.keys(places).forEach( key => log(typeof key))",
+      "question": "This code identifies the data type of <pre>key</pre> as <pre>number</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [],
-      "explanation": "",
+      "explanation": "JavaScript automatically converts the number  into a string",
       "moreInfo": "",
       "size": 0
     }
