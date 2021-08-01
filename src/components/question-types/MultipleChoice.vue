@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 9338,
+      "id": 4354,
       "type": "MultipleChoice",
-      "given": "",
-      "question": "A more powerful alternative to <em>localStorage</em> is...",
-      "displayAsCode": [],
+      "given": "let beethoven = {<br>&nbsp;&nbsp;name: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;symphonies: 9<br>}<br><br>let brahms = {<br>&nbsp;&nbsp;name: 'Johannes Brahms',<br>&nbsp;&nbsp;symphonies: 4<br>}<br><br>let shastokovich = {<br>&nbsp;&nbsp;name: 'Dmitri Shastokovich',<br>&nbsp;&nbsp;symphonies: 15<br>}<br><br>let genres = new Map()<br><br>genres<br>&nbsp;&nbsp;.set(beethoven, 'transitional')<br>&nbsp;&nbsp;.set(brahms, 'romantic')<br>&nbsp;&nbsp;.set(shastokovich, 'Modern')",
+      "question": "Does this code fail due to the attempted function chaining of <pre>set</pre>?",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["cookies", "StringBuffer", "indexedDB", "local-postgres"],
-      "answer": 2,
+      "choices": ["Yes", "No"],
+      "answer": 1,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/indexeddb",
+      "moreInfo": "https://javascript.info/map-set",
       "size": 0
     }
     ,

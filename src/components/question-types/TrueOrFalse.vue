@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 9228,
+      "id": 4352,
       "type": "TrueOrFalse",
-      "given": "// set expiration 1 day from now<br>let date = new Date(Date.now() + 86400e3)<br>date = date.toUTCString()<br>document.cookie = &quot;author=Hal; expires=&quot; + date",
-      "question": "This code sets the expiration date of a cookie to be 24 hours from its creation.",
+      "given": "let beethoven = {<br>&nbsp;&nbsp;name: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;symphonies: 9<br>}<br><br>let brahms = {<br>&nbsp;&nbsp;name: 'Johannes Brahms',<br>&nbsp;&nbsp;symphonies: 4<br>}<br><br>let shastokovich = {<br>&nbsp;&nbsp;name: 'Dmitri Shastokovich',<br>&nbsp;&nbsp;symphonies: 15<br>}<br><br>let genres = new Map()<br><br>genres.set(beethoven, 'transitional')<br>genres.set(brahms, 'romantic')<br>genres.set(shastokovich, 'Modern')<br><br>log(genres.has(beethoven))",
+      "question": "This code produces an error as Map keys cannot be complex data types",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/cookie#expires-max-age",
+      "moreInfo": "",
       "size": 0
     }
     ,
