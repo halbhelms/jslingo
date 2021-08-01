@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 7135,
+      "id": 7140,
       "type": "MultipleChoice",
-      "given": "let firstPlace = 'Amadeus'<br>let secondPlace = 'Waffle'<br>let thirdPlace = 'Cody'<br><br>places = {<br>&nbsp;&nbsp;firstPlace: 'gold',<br>&nbsp;&nbsp;secondPlace: 'silver',<br>&nbsp;&nbsp;thirdPlace: 'bronze',<br>}<br><br>log(places[firstPlace])",
-      "question": "What is logged?",
+      "given": "let obj = {<br>&nbsp;&nbsp;composer: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;firstPerformance: '1824',<br>&nbsp;&nbsp;key: 'D minor',<br>&nbsp;&nbsp;opus: '125',<br>&nbsp;&nbsp;notes: 'First use of voices in a symphony',<br>&nbsp;&nbsp;period: 'Classical (transitional)',<br>&nbsp;&nbsp;duration: '70 minutes' <br>}<br><br>let map = new Map(???(obj))",
+      "question": "Replace <pre>???</pre> with the code needed to turn the key/value pairs of <pre>obj</pre> into entries in the new map",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Amadeus", "gold", "undefined", "error"],
-      "answer": 2,
+      "choices": ["obj", "Object", "Object.keys", "Object.entries"],
+      "answer": 3,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/map-set#object-entries-map-from-object",
       "size": 0
     }
     ,

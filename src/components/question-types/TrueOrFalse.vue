@@ -46,17 +46,17 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 7133,
+      "id": 7138,
       "type": "TrueOrFalse",
-      "given": "let places = {}<br>places[1] = 'Las Vegas'<br>places[2] = 'Miami'<br>places[3] = 'Dallas'<br><br>Object.keys(places).forEach( key => log(typeof key))",
-      "question": "This code identifies the data type of <pre>key</pre> as <pre>number</pre>",
+      "given": "let arr = {<br>&nbsp;&nbsp;composer: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;firstPerformance: '1824',<br>&nbsp;&nbsp;key: 'D minor',<br>&nbsp;&nbsp;opus: '125',<br>&nbsp;&nbsp;notes: 'First use of voices in a symphony',<br>&nbsp;&nbsp;period: 'Classical (transitional)',<br>&nbsp;&nbsp;duration: '70 minutes' <br>}<br><br>let map = new Map(Object.entries(arr))",
+      "question": "This code will produce a Map where object entries in <pre>arr</pre> are transformed into key/value pairs of the new Map.",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
-      "explanation": "JavaScript automatically converts the number  into a string",
+      "explanation": "",
       "moreInfo": "",
       "size": 0
     }

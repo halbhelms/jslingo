@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4360,
+      "id": 7139,
       "type": "FillBlank",
-      "given": "Fill in the blank to create a new Map called <pre>places</pre>",
+      "given": "Fill in the blank so that the key/value pairs of <pre>obj</pre> are brought into the new map",
       "question": "",
       "displayAsCode": ["q1","q2","answers"],
-      "q1": "let ",
-      "q2": "",
+      "q1": "let obj = {<br>&nbsp;&nbsp;composer: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;firstPerformance: '1824',<br>&nbsp;&nbsp;key: 'D minor',<br>&nbsp;&nbsp;opus: '125',<br>&nbsp;&nbsp;notes: 'First use of voices in a symphony',<br>&nbsp;&nbsp;period: 'Classical (transitional)',<br>&nbsp;&nbsp;duration: '70 minutes' <br>}<br><br>let map = new Map(",
+      "q2": "(obj))",
       "choices": [],
       "answer": "",
-      "answers": ["places = new Map()"],
+      "answers": ["Object.entries"],
       "explanation": "",
-      "moreInfo": "",
-      "size": 18
+      "moreInfo": "https://javascript.info/map-set#object-entries-map-from-object",
+      "size": 13
     }
     ,
     }
