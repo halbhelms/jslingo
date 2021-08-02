@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 5325,
+      "id": 4367,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let suitsArr = ['Clubs','Diamonds','Hearts','Hearts','Diamonds','Spades']<br><br>let suitsSet = new Set(suitsArr)'",
+      "question": "let team = new WeakSet()<br>team.add('Wes', 'Zach', 'Hal')",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
-      "answers": [],
+      "answer": false,
+      "answers": [""],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set#set",
+      "moreInfo": "https://javascript.info/weakmap-weakset#weakset",
       "size": 0
     }
     ,

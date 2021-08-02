@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4362,
+      "id": 4366,
       "type": "MultipleChoice",
       "given": "",
-      "question": "What is the main difference between a Map and a WeakMap?",
+      "question": "What is the main difference between a Set and a WeakSet?",
       "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["WeakMap accepts only objects as keys", "WeakMap is accessible using index numbers (like arrays)", "WeakMap can have only a single depth level (no nested elements", "WeakMap isn't a thing while Map is."],
+      "choices": ["WeakSet accepts only objects as members", "WeakSet is accessible using get/set", "WeakSet can have only a single depth level (no nested elements", "WeakSet isn't a thing while Set is."],
       "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/weakmap-weakset",
+      "moreInfo": "https://javascript.info/weakmap-weakset#weakset",
       "size": 0
     }
     ,

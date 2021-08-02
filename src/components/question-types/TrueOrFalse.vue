@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5261,
+      "id": 4364,
       "type": "TrueOrFalse",
-      "given": "let languages = new Set(['JavaScript', 'Python', 'Ruby', 'Rust'])<br><br>for (let language of languages) {<br>&nbsp;&nbsp;log(language)<br>}",
-      "question": "This code loops over the set, logging each member",
+      "given": "let wes = {<br>&nbsp;&nbsp;role: 'programmer',<br>&nbsp;&nbsp;level: 'expert'<br>}<br><br>let team = new WeakMap()<br>team.set(wes, 'lead')<br><br>for (let item of team) {<br>&nbsp;&nbsp;console.log(item.role)<br>}",
+      "question": "This code loops over the elements of the WeakMap, logging the role of each element",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
-      "answers": [],
+      "answer": false,
+      "answers": [""],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/weakmap-weakset#weakmap",
       "size": 0
     }
     ,

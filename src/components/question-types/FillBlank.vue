@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5260,
+      "id": 4365,
       "type": "FillBlank",
-      "given": "Fill in the blank to find the number of  members in the set",
+      "given": "Fill in the blank",
       "question": "",
-      "displayAsCode": ["q1","q2","answers"],
-      "q1": "let languages = new Set(['JavaScript', 'Python', 'Ruby', 'Rust'])<br>",
+      "displayAsCode": [],
+      "q1": "The data structure with keys/values that accepts only objects as keys is a ",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["languages.size()"],
+      "answers": ["WeakMap"],
       "explanation": "",
-      "moreInfo": "",
-      "size": 20
+      "moreInfo": "https://javascript.info/weakmap-weakset#weakmap",
+      "size": 7
     }
     ,
     }
