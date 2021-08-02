@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5327,
+      "id": 5260,
       "type": "FillBlank",
-      "given": "Fill in the blank to create a new set using <pre>suitsArr</pre> as the provided iterable",
+      "given": "Fill in the blank to find the number of  members in the set",
       "question": "",
       "displayAsCode": ["q1","q2","answers"],
-      "q1": "let suitsArr = ['Clubs','Diamonds','Hearts','Hearts','Diamonds','Spades']<br><br>let suitsSet = ",
+      "q1": "let languages = new Set(['JavaScript', 'Python', 'Ruby', 'Rust'])<br>",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["new Set(suitsArr)"],
+      "answers": ["languages.size()"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set#set",
+      "moreInfo": "",
       "size": 20
     }
     ,
