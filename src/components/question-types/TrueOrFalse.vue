@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5326,
+      "id": 5261,
       "type": "TrueOrFalse",
-      "given": "let suitsArr = ['Clubs','Diamonds','Hearts','Hearts','Diamonds','Spades']<br><br>let suitsSet = new Set(suitsArr)' ",
-      "question": "This code will create a new Set with 6 entries",
+      "given": "let languages = new Set(['JavaScript', 'Python', 'Ruby', 'Rust'])<br><br>for (let language of languages) {<br>&nbsp;&nbsp;log(language)<br>}",
+      "question": "This code loops over the set, logging each member",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set#set",
+      "moreInfo": "",
       "size": 0
     }
     ,

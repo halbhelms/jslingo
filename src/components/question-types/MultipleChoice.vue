@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 7140,
+      "id": 4362,
       "type": "MultipleChoice",
-      "given": "let obj = {<br>&nbsp;&nbsp;composer: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;firstPerformance: '1824',<br>&nbsp;&nbsp;key: 'D minor',<br>&nbsp;&nbsp;opus: '125',<br>&nbsp;&nbsp;notes: 'First use of voices in a symphony',<br>&nbsp;&nbsp;period: 'Classical (transitional)',<br>&nbsp;&nbsp;duration: '70 minutes' <br>}<br><br>let map = new Map(???(obj))",
-      "question": "Replace <pre>???</pre> with the code needed to turn the key/value pairs of <pre>obj</pre> into entries in the new map",
-      "displayAsCode": ["given"],
+      "given": "",
+      "question": "What is the main difference between a Map and a WeakMap?",
+      "displayAsCode": [],
       "q1": "",
       "q2": "",
-      "choices": ["obj", "Object", "Object.keys", "Object.entries"],
-      "answer": 3,
+      "choices": ["WeakMap accepts only objects as keys", "WeakMap is accessible using index numbers (like arrays)", "WeakMap can have only a single depth level (no nested elements", "WeakMap isn't a thing while Map is."],
+      "answer": 0,
       "answers": [],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set#object-entries-map-from-object",
+      "moreInfo": "https://javascript.info/weakmap-weakset",
       "size": 0
     }
     ,
