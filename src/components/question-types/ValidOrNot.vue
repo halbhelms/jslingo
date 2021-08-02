@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4350,
+      "id": 5325,
       "type": "ValidOrNot",
       "given": "",
-      "question": "class TypedArray {<br>&nbsp;&nbsp;constructor(type) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.type = type<br>&nbsp;&nbsp;&nbsp;&nbsp;this.arr = []<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;push(item) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (typeof item == this.type) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.arr.push(item)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;get value() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.arr<br>&nbsp;&nbsp;}<br>}<br><br>let stringArr = new TypedArray('string')<br>stringArr.push('Hello')<br>stringArr.push('World')<br><br>console.log(stringArr.value)",
+      "question": "let suitsArr = ['Clubs','Diamonds','Hearts','Hearts','Diamonds','Spades']<br><br>let suitsSet = new Set(suitsArr)'",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/map-set#set",
       "size": 0
     }
     ,

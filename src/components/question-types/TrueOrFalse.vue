@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 7138,
+      "id": 5326,
       "type": "TrueOrFalse",
-      "given": "let arr = {<br>&nbsp;&nbsp;composer: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;firstPerformance: '1824',<br>&nbsp;&nbsp;key: 'D minor',<br>&nbsp;&nbsp;opus: '125',<br>&nbsp;&nbsp;notes: 'First use of voices in a symphony',<br>&nbsp;&nbsp;period: 'Classical (transitional)',<br>&nbsp;&nbsp;duration: '70 minutes' <br>}<br><br>let map = new Map(Object.entries(arr))",
-      "question": "This code will produce a Map where object entries in <pre>arr</pre> are transformed into key/value pairs of the new Map.",
+      "given": "let suitsArr = ['Clubs','Diamonds','Hearts','Hearts','Diamonds','Spades']<br><br>let suitsSet = new Set(suitsArr)' ",
+      "question": "This code will create a new Set with 6 entries",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/map-set#set",
       "size": 0
     }
     ,

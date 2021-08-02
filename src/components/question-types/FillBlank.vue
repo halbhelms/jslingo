@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 7139,
+      "id": 5327,
       "type": "FillBlank",
-      "given": "Fill in the blank so that the key/value pairs of <pre>obj</pre> are brought into the new map",
+      "given": "Fill in the blank to create a new set using <pre>suitsArr</pre> as the provided iterable",
       "question": "",
       "displayAsCode": ["q1","q2","answers"],
-      "q1": "let obj = {<br>&nbsp;&nbsp;composer: 'Ludwig van Beethoven',<br>&nbsp;&nbsp;firstPerformance: '1824',<br>&nbsp;&nbsp;key: 'D minor',<br>&nbsp;&nbsp;opus: '125',<br>&nbsp;&nbsp;notes: 'First use of voices in a symphony',<br>&nbsp;&nbsp;period: 'Classical (transitional)',<br>&nbsp;&nbsp;duration: '70 minutes' <br>}<br><br>let map = new Map(",
-      "q2": "(obj))",
+      "q1": "let suitsArr = ['Clubs','Diamonds','Hearts','Hearts','Diamonds','Spades']<br><br>let suitsSet = ",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["Object.entries"],
+      "answers": ["new Set(suitsArr)"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/map-set#object-entries-map-from-object",
-      "size": 13
+      "moreInfo": "https://javascript.info/map-set#set",
+      "size": 20
     }
     ,
     }
