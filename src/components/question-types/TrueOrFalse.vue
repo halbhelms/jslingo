@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4364,
+      "id": 5264,
       "type": "TrueOrFalse",
-      "given": "let wes = {<br>&nbsp;&nbsp;role: 'programmer',<br>&nbsp;&nbsp;level: 'expert'<br>}<br><br>let team = new WeakMap()<br>team.set(wes, 'lead')<br><br>for (let item of team) {<br>&nbsp;&nbsp;console.log(item.role)<br>}",
-      "question": "This code loops over the elements of the WeakMap, logging the role of each element",
+      "given": "let sum = 0<br>let workers = [<br>&nbsp;&nbsp;{ name: 'Sarah', salary: 102000},<br>&nbsp;&nbsp;{ name: 'Sam', salary: 97000},<br>&nbsp;&nbsp;{ name: 'Sally', salary: 52000},<br>&nbsp;&nbsp;{ name: 'Sari', salary: 82000},<br>]<br><br>// sum salaries<br>workers.forEach( worker => {<br>&nbsp;&nbsp;let sum = 0<br>&nbsp;&nbsp;sum += worker.salary<br>})<br><br>log(sum)",
+      "question": "Logs sum of workers salaries",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [""],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/weakmap-weakset#weakmap",
+      "explanation": "<pre>sum</pre> inside the function overrides <pre>sum</pre> outside the function so <pre>sum</pre> logged is equal to 0",
+      "moreInfo": "",
       "size": 0
     }
     ,

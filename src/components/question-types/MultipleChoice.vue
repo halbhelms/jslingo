@@ -50,17 +50,17 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5328,
+      "id": 5332,
       "type": "MultipleChoice",
-      "given": "let pokerPlayers = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Phil Hellmuth',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 15,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 15050038<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Johnny Chan',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 10,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 4681324<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Daniel Negreanu',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 6,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 19550955<br>&nbsp;&nbsp;},<br>]<br><br>function bracelets(a,b) {<br>&nbsp;&nbsp;if (a.wsopBracelets > b.wsopBracelets) return 1<br>&nbsp;&nbsp;if (a.wsopBracelets < b.wsopBracelets) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>log(pokerPlayers.sort(bracelets).reverse())",
-      "question": "What order will the players be in?",
+      "given": "let workers = [<br>&nbsp;&nbsp;{ name: 'Sarah', salary: 102000},<br>&nbsp;&nbsp;{ name: 'Sam', salary: 97000},<br>&nbsp;&nbsp;{ name: 'Sally', salary: 52000},<br>&nbsp;&nbsp;{ name: 'Sari', salary: 82000},<br>]<br><br>let upgradedWorkers = workers.map( worker => {<br>&nbsp;&nbsp;worker.salary *= 1.1<br>&nbsp;&nbsp;return worker<br>})",
+      "question": "What does this code do?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Hellmuth, Negreanu, Chan", "Hellmuth, Chan, Negreanu", "Negreanu, Hellmuth, Chan", "Negreanu, Chan, Hellmuth","Chan, Hellmuth, Negreanu","Chan, Negreanu, Hellmuth"],
+      "choices": ["alters <pre>workers</pre> by raising their salaries by 10%", "creates a separate array with workers in <pre>workers</pre> having salaries raised by 10%","throws an exception &mdash; <pre>*=</pre> isn't a valid operator"],
       "answer": 1,
       "answers": [""],
-      "explanation": "",
+      "explanation": "Yay, workers!",
       "moreInfo": "",
       "size": 0
     }

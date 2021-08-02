@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4367,
+      "id": 5331,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let team = new WeakSet()<br>team.add('Wes', 'Zach', 'Hal')",
+      "question": "function sorter(a,b) {<br>&nbsp;&nbsp;if (a > b) return Infinity<br>&nbsp;&nbsp;if (a > b) return -Infinity<br>&nbsp;&nbsp;return 0<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [""],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/weakmap-weakset#weakset",
+      "explanation": "Who knew?",
+      "moreInfo": "",
       "size": 0
     }
     ,
