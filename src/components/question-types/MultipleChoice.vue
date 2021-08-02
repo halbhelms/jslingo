@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4366,
+      "id": 5328,
       "type": "MultipleChoice",
-      "given": "",
-      "question": "What is the main difference between a Set and a WeakSet?",
-      "displayAsCode": [],
+      "given": "let pokerPlayers = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Phil Hellmuth',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 15,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 15050038<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Johnny Chan',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 10,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 4681324<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Daniel Negreanu',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 6,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 19550955<br>&nbsp;&nbsp;},<br>]<br><br>function bracelets(a,b) {<br>&nbsp;&nbsp;if (a.wsopBracelets > b.wsopBracelets) return 1<br>&nbsp;&nbsp;if (a.wsopBracelets < b.wsopBracelets) return -1<br>&nbsp;&nbsp;return 0<br>}<br><br>log(pokerPlayers.sort(bracelets).reverse())",
+      "question": "What order will the players be in?",
+      "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["WeakSet accepts only objects as members", "WeakSet is accessible using get/set", "WeakSet can have only a single depth level (no nested elements", "WeakSet isn't a thing while Set is."],
-      "answer": 0,
-      "answers": [],
+      "choices": ["Hellmuth, Negreanu, Chan", "Hellmuth, Chan, Negreanu", "Negreanu, Hellmuth, Chan", "Negreanu, Chan, Hellmuth","Chan, Hellmuth, Negreanu","Chan, Negreanu, Hellmuth"],
+      "answer": 1,
+      "answers": [""],
       "explanation": "",
-      "moreInfo": "https://javascript.info/weakmap-weakset#weakset",
+      "moreInfo": "",
       "size": 0
     }
     ,

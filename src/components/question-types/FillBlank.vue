@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4365,
+      "id": 5329,
       "type": "FillBlank",
-      "given": "Fill in the blank",
+      "given": "Fill in the blank to sort the players in ascending order based on the number of bracelets they have won",
       "question": "",
-      "displayAsCode": [],
-      "q1": "The data structure with keys/values that accepts only objects as keys is a ",
+      "displayAsCode": ["q1","q2","answers"],
+      "q1": "let pokerPlayers = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Phil Hellmuth',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 15,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 15050038<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Johnny Chan',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 10,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 4681324<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Daniel Negreanu',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 6,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 19550955<br>&nbsp;&nbsp;},<br>]<br><br>function bracelets(a,b) {<br>&nbsp;&nbsp;if (a.wsopBracelets > b.wsopBracelets) return 1<br>&nbsp;&nbsp;if (a.wsopBracelets < b.wsopBracelets) return -1<br>&nbsp;&nbsp;return 0<br>}<br>",
       "q2": "",
       "choices": [],
-      "answer": "",
-      "answers": ["WeakMap"],
+      "answer": 0,
+      "answers": ["pokerPlayers.sort(bracelets)"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/weakmap-weakset#weakmap",
-      "size": 7
+      "moreInfo": "",
+      "size": 30
     }
     ,
     }
