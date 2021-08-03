@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5329,
+      "id": 5337,
       "type": "FillBlank",
-      "given": "Fill in the blank to sort the players in ascending order based on the number of bracelets they have won",
+      "given": "Fill inthe blank to destructure an array argument sent to the function. Assign <pre>first</pre>, <pre>second</pre>, and <pre>third</pre> to the first three names in the array argument.",
       "question": "",
-      "displayAsCode": ["q1","q2","answers"],
-      "q1": "let pokerPlayers = [<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Phil Hellmuth',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 15,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 15050038<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Johnny Chan',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 10,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 4681324<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Daniel Negreanu',<br>&nbsp;&nbsp;&nbsp;&nbsp;wsopBracelets: 6,<br>&nbsp;&nbsp;&nbsp;&nbsp;earnings: 19550955<br>&nbsp;&nbsp;},<br>]<br><br>function bracelets(a,b) {<br>&nbsp;&nbsp;if (a.wsopBracelets > b.wsopBracelets) return 1<br>&nbsp;&nbsp;if (a.wsopBracelets < b.wsopBracelets) return -1<br>&nbsp;&nbsp;return 0<br>}<br>",
-      "q2": "",
+      "displayAsCode": ["q1","q2","answer"],
+      "q1": "function assignAwards(",
+      "q2": ") {<br>&nbsp;&nbsp;return ([<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: first,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;award: 500<br>&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: second,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;award: 250<br>&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: third,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;award: 100<br>&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;])<br>}<br><br>let players = ['Linda', 'Larry', 'Lakshmi', 'Liam', 'Lily', 'Lourdes']",
       "choices": [],
-      "answer": 0,
-      "answers": ["pokerPlayers.sort(bracelets)"],
+      "answer": "",
+      "answers": ["[first, second, third]"],
       "explanation": "",
-      "moreInfo": "",
-      "size": 30
+      "moreInfo": "https://javascript.info/destructuring-assignment#array-destructuring",
+      "size": 23
     }
     ,
     }

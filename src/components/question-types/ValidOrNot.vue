@@ -47,17 +47,17 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 5267,
+      "id": 5335,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let high = -Infinity<br>let low = Infinity<br><br>let workers = [<br>&nbsp;&nbsp;{ name: 'Sarah', salary: 102000},<br>&nbsp;&nbsp;{ name: 'Sam', salary: 97000},<br>&nbsp;&nbsp;{ name: 'Sally', salary: 52000},<br>&nbsp;&nbsp;{ name: 'Sari', salary: 82000},<br>]<br><br>for (let worker of workers){<br>&nbsp;&nbsp;if (worker.salary < low) low = worker.salary<br>&nbsp;&nbsp;if (worker.salary > high) high = worker.salary<br>}",
+      "question": "let mm = {<br>&nbsp;&nbsp;name: 'Mickey Mantle',<br>&nbsp;&nbsp;hr: 536,<br>&nbsp;&nbsp;ba: .298,<br>&nbsp;&nbsp;obp: .421,<br>&nbsp;&nbsp;slg: .557,<br>&nbsp;&nbsp;ops: .977<br>}<br><br>for (let [key, value] of Object.entries(mm)) {<br>&nbsp;&nbsp;log(key + ':' + value)<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [""],
-      "explanation": "It would be equally valid to use a <pre>for/of</pre> loop",
+      "explanation": "Since <pre>Object.entries</pre> returns an array, we can destructure it: <pre>[key, value]</pre>",
       "moreInfo": "",
       "size": 0
     }

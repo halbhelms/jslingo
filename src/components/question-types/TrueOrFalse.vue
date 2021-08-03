@@ -46,10 +46,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5334,
+      "id": 5341,
       "type": "TrueOrFalse",
-      "given": "let high = -Infinity<br>let low = Infinity<br><br>let workers = [<br>&nbsp;&nbsp;{ name: 'Sarah', salary: 102000},<br>&nbsp;&nbsp;{ name: 'Sam', salary: 97000},<br>&nbsp;&nbsp;{ name: 'Sally', salary: 52000},<br>&nbsp;&nbsp;{ name: 'Sari', salary: 82000},<br>]<br><br>workers.forEach( worker => {<br>&nbsp;&nbsp;if (worker.salary < low) low = worker.salary<br>&nbsp;&nbsp;if (worker.salary > high) high = worker.salary<br>})",
-      "question": "This code identifies the highest and lowest salaries",
+      "given": "let lineItem = {};<br><br>[lineItem.manufacturer, lineItem.product, lineItem.price, lineItem.availability] = &quot;Generic Industries|Widget|12.99|immediate&quot;.split('|')",
+      "question": "This code produces<br><pre>{ manufacturer: 'Generic Industries',<br>&nbsp;&nbsp;product: 'Widget',<br>&nbsp;&nbsp;price: '12.99',<br>&nbsp;&nbsp;availability: 'immediate' }</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -57,7 +57,7 @@ export default {
       "answer": true,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/destructuring-assignment#array-destructuring",
       "size": 0
     }
     ,

@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5332,
+      "id": 5342,
       "type": "MultipleChoice",
-      "given": "let workers = [<br>&nbsp;&nbsp;{ name: 'Sarah', salary: 102000},<br>&nbsp;&nbsp;{ name: 'Sam', salary: 97000},<br>&nbsp;&nbsp;{ name: 'Sally', salary: 52000},<br>&nbsp;&nbsp;{ name: 'Sari', salary: 82000},<br>]<br><br>let upgradedWorkers = workers.map( worker => {<br>&nbsp;&nbsp;worker.salary *= 1.1<br>&nbsp;&nbsp;return worker<br>})",
-      "question": "What does this code do?",
+      "given": "let first = &quot;Red Sox&quot;;<br>let second = &quot;Yankees&quot;;<br><br>[first, second] = [second, first]<br><br>log(first)",
+      "question": "Some evil-doer has hacked the universe so that the Red Sox are in first place and the Yankees in second. What will this code do?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["alters <pre>workers</pre> by raising their salaries by 10%", "creates a separate array with workers in <pre>workers</pre> having salaries raised by 10%","throws an exception &mdash; <pre>*=</pre> isn't a valid operator"],
-      "answer": 1,
+      "choices": ["Make all right with the world &mdash; Yankees are back in first place", "No hope for mankind &mdash; Red Sox remain in first place"],
+      "answer": 0,
       "answers": [""],
-      "explanation": "Yay, workers!",
-      "moreInfo": "",
+      "explanation": "To any Red Sox fans offended, well...you're Red Sox fans, right?",
+      "moreInfo": "https://javascript.info/destructuring-assignment#array-destructuring",
       "size": 0
     }
     ,
