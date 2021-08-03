@@ -47,17 +47,17 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 5331,
+      "id": 5267,
       "type": "ValidOrNot",
       "given": "",
-      "question": "function sorter(a,b) {<br>&nbsp;&nbsp;if (a > b) return Infinity<br>&nbsp;&nbsp;if (a > b) return -Infinity<br>&nbsp;&nbsp;return 0<br>}",
+      "question": "let high = -Infinity<br>let low = Infinity<br><br>let workers = [<br>&nbsp;&nbsp;{ name: 'Sarah', salary: 102000},<br>&nbsp;&nbsp;{ name: 'Sam', salary: 97000},<br>&nbsp;&nbsp;{ name: 'Sally', salary: 52000},<br>&nbsp;&nbsp;{ name: 'Sari', salary: 82000},<br>]<br><br>for (let worker of workers){<br>&nbsp;&nbsp;if (worker.salary < low) low = worker.salary<br>&nbsp;&nbsp;if (worker.salary > high) high = worker.salary<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [""],
-      "explanation": "Who knew?",
+      "explanation": "It would be equally valid to use a <pre>for/of</pre> loop",
       "moreInfo": "",
       "size": 0
     }

@@ -46,17 +46,17 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5264,
+      "id": 5334,
       "type": "TrueOrFalse",
-      "given": "let sum = 0<br>let workers = [<br>&nbsp;&nbsp;{ name: 'Sarah', salary: 102000},<br>&nbsp;&nbsp;{ name: 'Sam', salary: 97000},<br>&nbsp;&nbsp;{ name: 'Sally', salary: 52000},<br>&nbsp;&nbsp;{ name: 'Sari', salary: 82000},<br>]<br><br>// sum salaries<br>workers.forEach( worker => {<br>&nbsp;&nbsp;let sum = 0<br>&nbsp;&nbsp;sum += worker.salary<br>})<br><br>log(sum)",
-      "question": "Logs sum of workers salaries",
+      "given": "let high = -Infinity<br>let low = Infinity<br><br>let workers = [<br>&nbsp;&nbsp;{ name: 'Sarah', salary: 102000},<br>&nbsp;&nbsp;{ name: 'Sam', salary: 97000},<br>&nbsp;&nbsp;{ name: 'Sally', salary: 52000},<br>&nbsp;&nbsp;{ name: 'Sari', salary: 82000},<br>]<br><br>workers.forEach( worker => {<br>&nbsp;&nbsp;if (worker.salary < low) low = worker.salary<br>&nbsp;&nbsp;if (worker.salary > high) high = worker.salary<br>})",
+      "question": "This code identifies the highest and lowest salaries",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [""],
-      "explanation": "<pre>sum</pre> inside the function overrides <pre>sum</pre> outside the function so <pre>sum</pre> logged is equal to 0",
+      "explanation": "",
       "moreInfo": "",
       "size": 0
     }
