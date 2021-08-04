@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 6320,
+      "id": 6322,
       "type": "MultipleChoice",
-      "given": "function bark() {<br>&nbsp;&nbsp;console.log('Woof!')<br>}<br><br>bark.animal = 'dog'",
-      "question": "What happens when we do this?",
+      "given": "const person = { name: 'Lydia' }<br><br>function sayHi(age) {<br>&nbsp;&nbsp;return `${this.name} is ${age}`<br>}<br><br>console.log(sayHi.call(person, 21))<br>console.log(sayHi.bind(person, 21))",
+      "question": "What is the output?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Nothing, this is totally fine!", "SyntaxError. You cannot add properties to a function this way.", "'Woof' gets logged.", "ReferenceError"],
-      "answer": 0,
+      "choices": ["undefined is 21 Lydia is 21", "function function", "Lydia is 21 Lydia is 21", "Lydia is 21 function"],
+      "answer": 3,
       "answers": [""],
-      "explanation": "",
-      "moreInfo": "https://github.com/lydiahallie/javascript-questions#10-what-happens-when-we-do-this",
+      "explanation": "This is a tricky one. Click the link to see Lydia's explanation, then stay for all her questions: they're excellent",
+      "moreInfo": "https://github.com/lydiahallie/javascript-questions#33-whats-the-output",
       "size": 0
     }
     ,

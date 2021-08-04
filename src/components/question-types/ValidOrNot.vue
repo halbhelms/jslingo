@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 6321,
+      "id": 6323,
       "type": "ValidOrNot",
       "given": "",
-      "question": "function sayHi(a, b) {<br>&nbsp;&nbsp;console.log(a)<br>&nbsp;&nbsp;console.log(b)<br>}<br><br>let greeting = &quot;Tschuss&quot;<br>sayHi`${greeting}, friend`",
+      "question": "console.log((() => 'What am I?')())",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [""],
-      "explanation": "",
-      "moreInfo": "https://github.com/lydiahallie/javascript-questions#17-whats-the-output",
+      "explanation": "Admittedly, it looks <em>odd</em> but it's an example of an <em>immediately invoked function expression</em>, more commonly referred to as an <em>IIFE</em>",
+      "moreInfo": "",
       "size": 0
     }
     ,
