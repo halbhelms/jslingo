@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5342,
+      "id": 8247,
       "type": "MultipleChoice",
-      "given": "let first = &quot;Red Sox&quot;;<br>let second = &quot;Yankees&quot;;<br><br>[first, second] = [second, first]<br><br>log(first)",
-      "question": "Some evil-doer has hacked the universe so that the Red Sox are in first place and the Yankees in second. What will this code do?",
+      "given": "console.log(1)<br>setTimeout(function(){console.log(2)}, 500)<br>setTimeout(function(){console.log(3)}, 0)<br>console.log(4)",
+      "question": "What order will things be logged?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Make all right with the world &mdash; Yankees are back in first place", "No hope for mankind &mdash; Red Sox remain in first place"],
-      "answer": 0,
+      "choices": ["1, 2, 3, 4", "1, 2, 4, 3", "1, 3, 2, 4", "1, 3, 4, 2", "1, 4, 2, 3", "1, 4, 3, 2"],
+      "answer": 5,
       "answers": [""],
-      "explanation": "To any Red Sox fans offended, well...you're Red Sox fans, right?",
-      "moreInfo": "https://javascript.info/destructuring-assignment#array-destructuring",
+      "explanation": "",
+      "moreInfo": "",
       "size": 0
     }
     ,

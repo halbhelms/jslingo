@@ -47,17 +47,17 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 5335,
+      "id": 4373,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let mm = {<br>&nbsp;&nbsp;name: 'Mickey Mantle',<br>&nbsp;&nbsp;hr: 536,<br>&nbsp;&nbsp;ba: .298,<br>&nbsp;&nbsp;obp: .421,<br>&nbsp;&nbsp;slg: .557,<br>&nbsp;&nbsp;ops: .977<br>}<br><br>for (let [key, value] of Object.entries(mm)) {<br>&nbsp;&nbsp;log(key + ':' + value)<br>}",
+      "question": "let customer = {<br>&nbsp;&nbsp;name: 'Davis Securities',<br>&nbsp;&nbsp;address: {<br>&nbsp;&nbsp;&nbsp;&nbsp;street: '123 Mantle Ave',<br>&nbsp;&nbsp;&nbsp;&nbsp;city: 'Las Vegas',<br>&nbsp;&nbsp;&nbsp;&nbsp;state: 'NV',<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;since: '2012'<br>}<br><br>let map = new Map(Object.entries(customer))<br><br>let {name, since} = map",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [""],
-      "explanation": "Since <pre>Object.entries</pre> returns an array, we can destructure it: <pre>[key, value]</pre>",
+      "explanation": "",
       "moreInfo": "",
       "size": 0
     }

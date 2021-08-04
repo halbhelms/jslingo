@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5341,
+      "id": 8163,
       "type": "TrueOrFalse",
-      "given": "let lineItem = {};<br><br>[lineItem.manufacturer, lineItem.product, lineItem.price, lineItem.availability] = &quot;Generic Industries|Widget|12.99|immediate&quot;.split('|')",
-      "question": "This code produces<br><pre>{ manufacturer: 'Generic Industries',<br>&nbsp;&nbsp;product: 'Widget',<br>&nbsp;&nbsp;price: '12.99',<br>&nbsp;&nbsp;availability: 'immediate' }</pre>",
+      "given": "log(false == 0)",
+      "question": "This logs <em>false</em>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [""],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment#array-destructuring",
+      "explanation": "<pre>==</pre> casts <pre>0</pre> to a boolean",
+      "moreInfo": "",
       "size": 0
     }
     ,
