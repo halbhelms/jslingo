@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4374,
+      "id": 4253,
       "type": "MultipleChoice",
-      "given": "class GROUP_LICENSE {<br>&nbsp;&nbsp;static licenses = 10<br>&nbsp;&nbsp;static useLicense() {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (this.licenses > 0) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'License No. ' + this.licenses--<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'You are out of licenses'<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
-      "question": "This code...",
+      "given": "let checkingAccount = {<br>&nbsp;&nbsp;name: 'Your name',<br>&nbsp;&nbsp;number: 'Your account number'<br>}<br><br>let yourCheckingAccount = Object.assign({}, checkingAccount)",
+      "question": "What will this code do?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["will break as it's referencing <pre>this.licenses</pre>, which is a <pre>static</pre> property", "is fine. Leave the programmer alone. <pre>this</pre> refers to the class."],
+      "choices": ["same as <pre>let yourCheckingAccount = checkingAccount</pre>", "creates <pre>yourCheckingAccount</pre> with separate copies of properties", "throw an exception"],
       "answer": 1,
       "answers": [""],
-      "explanation": "",
-      "moreInfo": "",
+      "explanation": "Feel free to fill in details and email it to me for extra credit",
+      "moreInfo": "https://javascript.info/object-copy",
       "size": 0
     }
     ,

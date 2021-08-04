@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4373,
+      "id": 4254,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let customer = {<br>&nbsp;&nbsp;name: 'Davis Securities',<br>&nbsp;&nbsp;address: {<br>&nbsp;&nbsp;&nbsp;&nbsp;street: '123 Mantle Ave',<br>&nbsp;&nbsp;&nbsp;&nbsp;city: 'Las Vegas',<br>&nbsp;&nbsp;&nbsp;&nbsp;state: 'NV',<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;since: '2012'<br>}<br><br>let map = new Map(Object.entries(customer))<br><br>let {name, since} = map",
+      "question": "let interior = {<br>&nbsp;&nbsp;seating: 'leather',<br>&nbsp;&nbsp;dashboard: 'walnut'<br>}<br><br>let colors = {<br>&nbsp;&nbsp;interior: 'black',<br>&nbsp;&nbsp;exterior: 'white'<br>}<br><br>let engine = {<br>&nbsp;&nbsp;power: 'electric'<br>}<br><br>let car = Object.assign({}, interior, colors, engine)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://javascript.info/object-copy",
       "size": 0
     }
     ,

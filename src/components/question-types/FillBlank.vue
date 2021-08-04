@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5337,
+      "id": 4255,
       "type": "FillBlank",
-      "given": "Fill inthe blank to destructure an array argument sent to the function. Assign <pre>first</pre>, <pre>second</pre>, and <pre>third</pre> to the first three names in the array argument.",
+      "given": "Fill in the blank",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "function assignAwards(",
-      "q2": ") {<br>&nbsp;&nbsp;return ([<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: first,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;award: 500<br>&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: second,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;award: 250<br>&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: third,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;award: 100<br>&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;])<br>}<br><br>let players = ['Linda', 'Larry', 'Lakshmi', 'Liam', 'Lily', 'Lourdes']",
+      "q1": "let interior = {<br>&nbsp;&nbsp;seating: 'leather',<br>&nbsp;&nbsp;dashboard: 'walnut',<br>&nbsp;&nbsp;color: 'black'<br>}<br><br>let options = {<br>&nbsp;&nbsp;color: 'red',<br>&nbsp;&nbsp;navigationSystem: true<br>}<br><br>let engine = {<br>&nbsp;&nbsp;power: 'electric'<br>}<br><br>let car = Object.assign({}, interior, options, engine)<br><br>// The value of <pre>color</pre> is ",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["[first, second, third]"],
+      "answers": ["red"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/destructuring-assignment#array-destructuring",
-      "size": 23
+      "moreInfo": "https://javascript.info/object-copy",
+      "size": 0
     }
     ,
     }
