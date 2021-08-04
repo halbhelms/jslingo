@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 4253,
+      "id": 6320,
       "type": "MultipleChoice",
-      "given": "let checkingAccount = {<br>&nbsp;&nbsp;name: 'Your name',<br>&nbsp;&nbsp;number: 'Your account number'<br>}<br><br>let yourCheckingAccount = Object.assign({}, checkingAccount)",
-      "question": "What will this code do?",
+      "given": "function bark() {<br>&nbsp;&nbsp;console.log('Woof!')<br>}<br><br>bark.animal = 'dog'",
+      "question": "What happens when we do this?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["same as <pre>let yourCheckingAccount = checkingAccount</pre>", "creates <pre>yourCheckingAccount</pre> with separate copies of properties", "throw an exception"],
-      "answer": 1,
+      "choices": ["Nothing, this is totally fine!", "SyntaxError. You cannot add properties to a function this way.", "'Woof' gets logged.", "ReferenceError"],
+      "answer": 0,
       "answers": [""],
-      "explanation": "Feel free to fill in details and email it to me for extra credit",
-      "moreInfo": "https://javascript.info/object-copy",
+      "explanation": "",
+      "moreInfo": "https://github.com/lydiahallie/javascript-questions#10-what-happens-when-we-do-this",
       "size": 0
     }
     ,

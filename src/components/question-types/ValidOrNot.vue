@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4254,
+      "id": 6321,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let interior = {<br>&nbsp;&nbsp;seating: 'leather',<br>&nbsp;&nbsp;dashboard: 'walnut'<br>}<br><br>let colors = {<br>&nbsp;&nbsp;interior: 'black',<br>&nbsp;&nbsp;exterior: 'white'<br>}<br><br>let engine = {<br>&nbsp;&nbsp;power: 'electric'<br>}<br><br>let car = Object.assign({}, interior, colors, engine)",
+      "question": "function sayHi(a, b) {<br>&nbsp;&nbsp;console.log(a)<br>&nbsp;&nbsp;console.log(b)<br>}<br><br>let greeting = &quot;Tschuss&quot;<br>sayHi`${greeting}, friend`",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "https://javascript.info/object-copy",
+      "moreInfo": "https://github.com/lydiahallie/javascript-questions#17-whats-the-output",
       "size": 0
     }
     ,
