@@ -46,17 +46,17 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8163,
+      "id": 8328,
       "type": "TrueOrFalse",
-      "given": "log(false == 0)",
-      "question": "This logs <em>false</em>",
+      "given": "let first = &quot;Red Sox&quot;<br>let second = &quot;Yankees&quot;<br><br>[second, first] = [first, second]",
+      "question": "This code swaps places so that the Yankees are in first place (as it should be)",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [""],
-      "explanation": "<pre>==</pre> casts <pre>0</pre> to a boolean",
+      "explanation": "WHAT??? This is one of those rare cases where omitting semi-colons can bite you. When JS encounters the third line, it assumes it's a continuation of the second line.",
       "moreInfo": "",
       "size": 0
     }

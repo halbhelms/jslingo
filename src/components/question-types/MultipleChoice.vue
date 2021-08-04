@@ -50,15 +50,15 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8247,
+      "id": 4374,
       "type": "MultipleChoice",
-      "given": "console.log(1)<br>setTimeout(function(){console.log(2)}, 500)<br>setTimeout(function(){console.log(3)}, 0)<br>console.log(4)",
-      "question": "What order will things be logged?",
+      "given": "class GROUP_LICENSE {<br>&nbsp;&nbsp;static licenses = 10<br>&nbsp;&nbsp;static useLicense() {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (this.licenses > 0) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'License No. ' + this.licenses--<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'You are out of licenses'<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}",
+      "question": "This code...",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["1, 2, 3, 4", "1, 2, 4, 3", "1, 3, 2, 4", "1, 3, 4, 2", "1, 4, 2, 3", "1, 4, 3, 2"],
-      "answer": 5,
+      "choices": ["will break as it's referencing <pre>this.licenses</pre>, which is a <pre>static</pre> property", "is fine. Leave the programmer alone. <pre>this</pre> refers to the class."],
+      "answer": 1,
       "answers": [""],
       "explanation": "",
       "moreInfo": "",
@@ -89,9 +89,9 @@ export default {
 
    correctAnswer() {
      if (this.question.displayAsCode.includes('choices')) {
-       return `The correct answer is ${this.question.choices[this.question.answer]}`
+       return `The correct answer is: ${this.question.choices[this.question.answer]}`
      } else {
-       return `The correct answer is ${this.question.choices[this.question.answer]}`
+       return `The correct answer is: ${this.question.choices[this.question.answer]}`
      }
    },
 
