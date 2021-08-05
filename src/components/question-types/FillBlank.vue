@@ -162,10 +162,10 @@ img.more-info-icon {
   outline: 0;
 }
 
-pre {
+ .pre, pre {
   font-family: 'Fira Code';
   color: maroon;
   font-size: 1.3rem;
-}
+} 
 
 </style>

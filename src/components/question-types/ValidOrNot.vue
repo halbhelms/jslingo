@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 6323,
+      "id": 4379,
       "type": "ValidOrNot",
       "given": "",
-      "question": "console.log((() => 'What am I?')())",
+      "question": "let machine = {<br>&nbsp;&nbsp;power: 'electricity'<br>}<br><br>let auto = Object.create(machine,{<br>&nbsp;&nbsp;power: {value: 'gasoline'},<br>&nbsp;&nbsp;wheels: {value: 4}<br>})<br><br>let tesla = Object.create(auto, {<br>&nbsp;&nbsp;power: {value: 'electricity'}<br>})",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [""],
-      "explanation": "Admittedly, it looks <em>odd</em> but it's an example of an <em>immediately invoked function expression</em>, more commonly referred to as an <em>IIFE</em>",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/prototype-methods",
       "size": 0
     }
     ,

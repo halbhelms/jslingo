@@ -50,23 +50,25 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 6322,
+      "id": 4380,
       "type": "MultipleChoice",
-      "given": "const person = { name: 'Lydia' }<br><br>function sayHi(age) {<br>&nbsp;&nbsp;return `${this.name} is ${age}`<br>}<br><br>console.log(sayHi.call(person, 21))<br>console.log(sayHi.bind(person, 21))",
-      "question": "What is the output?",
+      "given": "let machine = {<br>&nbsp;&nbsp;power: 'electricity'<br>}<br><br>let auto = Object.create(machine,{<br>&nbsp;&nbsp;power: {value: 'gasoline'},<br>&nbsp;&nbsp;wheels: {value: 4}<br>})<br><br>let tesla = Object.create(auto, {<br>&nbsp;&nbsp;power: {value: 'electricity'}<br>})<br><br>log(tesla.power)<br>log(tesla.wheels)",
+      "question": "What's the output?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["undefined is 21 Lydia is 21", "function function", "Lydia is 21 Lydia is 21", "Lydia is 21 function"],
-      "answer": 3,
+      "choices": ["gasoline undefined", "electricity 4", "electricity undefined", "electricity null"],
+      "answer": 1,
       "answers": [""],
-      "explanation": "This is a tricky one. Click the link to see Lydia's explanation, then stay for all her questions: they're excellent",
-      "moreInfo": "https://github.com/lydiahallie/javascript-questions#33-whats-the-output",
+      "explanation": "",
+      "moreInfo": "",
       "size": 0
     }
     ,
     }
   },
+
+
 
   methods: {
     evaluateAnswer(answer) {
@@ -140,6 +142,12 @@ img.question-icon {
   position: relative;
   top: 24px;
   padding-right: 6px;
+}
+
+.pre {
+  background-color: whitesmoke;
+  padding: 4px;
+  margin-right: 18px;
 }
 
 .question-mark {
