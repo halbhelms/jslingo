@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8328,
+      "id": 5278,
       "type": "TrueOrFalse",
-      "given": "let first = &quot;Red Sox&quot;<br>let second = &quot;Yankees&quot;<br><br>[second, first] = [first, second]",
-      "question": "This code swaps places so that the Yankees are in first place (as it should be)",
+      "given": "const handValues = [<br>&nbsp;&nbsp;'High Card',<br>&nbsp;&nbsp;'Pair',<br>&nbsp;&nbsp;'Two Pair',<br>&nbsp;&nbsp;'Three of a Kind',<br>&nbsp;&nbsp;'Straight',<br>&nbsp;&nbsp;'Flush',<br>&nbsp;&nbsp;'Four of a Kind',<br>&nbsp;&nbsp;'Straight Flush'<br>]<br><br>let index = handValues.findIndex('Three of a Kind')",
+      "question": "<pre>index</pre> is equal to 3",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [""],
-      "explanation": "WHAT??? This is one of those rare cases where omitting semi-colons can bite you. When JS encounters the third line, it assumes it's a continuation of the second line.",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/array-methods#find-and-findindex",
       "size": 0
     }
     ,

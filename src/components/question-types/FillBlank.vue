@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 4255,
+      "id": 5280,
       "type": "FillBlank",
-      "given": "Fill in the blank",
+      "given": "Fill in the blank to find which index of <pre>handValues</pre>(if any) 'Flush' is",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let interior = {<br>&nbsp;&nbsp;seating: 'leather',<br>&nbsp;&nbsp;dashboard: 'walnut',<br>&nbsp;&nbsp;color: 'black'<br>}<br><br>let options = {<br>&nbsp;&nbsp;color: 'red',<br>&nbsp;&nbsp;navigationSystem: true<br>}<br><br>let engine = {<br>&nbsp;&nbsp;power: 'electric'<br>}<br><br>let car = Object.assign({}, interior, options, engine)<br><br>// The value of <pre>color</pre> is ",
+      "q1": "const handValues = [<br>&nbsp;&nbsp;'High Card',<br>&nbsp;&nbsp;'Pair',<br>&nbsp;&nbsp;'Two Pair',<br>&nbsp;&nbsp;'Three of a Kind',<br>&nbsp;&nbsp;'Straight',<br>&nbsp;&nbsp;'Flush',<br>&nbsp;&nbsp;'Four of a Kind',<br>&nbsp;&nbsp;'Straight Flush'<br>]<br>",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["red"],
+      "answers": ["handValues.indexOf('Flush')"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/object-copy",
-      "size": 0
+      "moreInfo": "https://javascript.info/array-methods#indexof-lastindexof-and-includes",
+      "size": 30
     }
     ,
     }
