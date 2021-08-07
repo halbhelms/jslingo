@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5280,
+      "id": 5137,
       "type": "FillBlank",
-      "given": "Fill in the blank to find which index of <pre>handValues</pre>(if any) 'Flush' is",
+      "given": "Fill in the blank to determine if <pre>cats</pre> is an array",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "const handValues = [<br>&nbsp;&nbsp;'High Card',<br>&nbsp;&nbsp;'Pair',<br>&nbsp;&nbsp;'Two Pair',<br>&nbsp;&nbsp;'Three of a Kind',<br>&nbsp;&nbsp;'Straight',<br>&nbsp;&nbsp;'Flush',<br>&nbsp;&nbsp;'Four of a Kind',<br>&nbsp;&nbsp;'Straight Flush'<br>]<br>",
+      "q1": "let cats = ['Amadeus', 'Cody', 'Waffle']<br>",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["handValues.indexOf('Flush')"],
+      "answers": ["Array.isArray(cats)"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#indexof-lastindexof-and-includes",
-      "size": 30
+      "moreInfo": "https://javascript.info/array-methods#array-isarray",
+      "size": 19
     }
     ,
     }
@@ -147,6 +147,12 @@ img.more-info-icon {
   margin-left: 1rem;
 }
 
+ .pre, pre {
+  font-family: 'Fira Code';
+  color: maroon;
+  font-size: 1.3rem;
+}
+
 .answer {
   /* width: 200px; */
   border: none;
@@ -161,11 +167,5 @@ img.more-info-icon {
 .answer:active, .answer:focus {
   outline: 0;
 }
-
- .pre, pre {
-  font-family: 'Fira Code';
-  color: maroon;
-  font-size: 1.3rem;
-} 
 
 </style>

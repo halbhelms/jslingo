@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5132,
+      "id": 5134,
       "type": "MultipleChoice",
-      "given": "let pips = [2,3,4,5,6,7,8,9,'Ten','Jack','Queen', 'King', 'Ace']",
-      "question": "What's wrong with this code?",
+      "given": "function Cow(name) {<br>&nbsp;&nbsp;this.name = 'Elsie'<br>}<br><br>let elsie = new Cow()<br>p(elsie.name)",
+      "question": "What's the output?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["You can't have mixed data types in the same array", "This should be a two-dimensional array with numbers in one dimension and strings in another.", "There's nothing wrong with the code."],
-      "answer": 2,
+      "choices": ["Elsie", "elsie", "undefined", "error"],
+      "answer": 0,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://bonsaiden.github.io/JavaScript-Garden/",
       "size": 0
     }
     ,
