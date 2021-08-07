@@ -50,17 +50,17 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8167,
+      "id": 8339,
       "type": "MultipleChoice",
-      "given": "for (let i=10; i>0; i--) p(i)<br>p(`The final value of i is ${i}`)",
-      "question": "Aside from the countdown, what's the output?",
+      "given": "let score = 88<br>let grade = null<br><br>switch(true) {<br>&nbsp;&nbsp;case score > 90:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'A'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;case score > 80:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'B'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;case score > 70:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'C'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'D'<br>}",
+      "question": "What is the value of <pre>grade</pre>?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["The final value of i is 10", "The final value of i is 1","The final value of i is 0", "i is undefined"],
-      "answer": 3,
+      "choices": ["A", "B", "C", "D", "error"],
+      "answer": 1,
       "answers": [""],
-      "explanation": "",
+      "explanation": "Might be surprising, but this is a way to do ranges within a switch statement",
       "moreInfo": "",
       "size": 0
     }

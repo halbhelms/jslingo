@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8166,
+      "id": 8251,
       "type": "TrueOrFalse",
-      "given": "let counter1 = 10<br>while (counter1 > 0) p(counter1--)",
-      "question": "This code will error out due to the absence of curly braces after the <pre>while</pre> condition",
+      "given": "let suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']<br><br>let pips = [2,3,4,5,6,7,8,9,'Ten', 'Jack', 'Queen', 'King', 'Ace', 'Joker']<br><br>pipsLoop: for (let i=0; i&lt;suits.length; i++) {<br>&nbsp;&nbsp;suitsLoop: for (let j=0; j&lt;pips.length; j++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (pips[j] == 'Joker') {continue pipsLoop}<br>&nbsp;&nbsp;&nbsp;&nbsp;p(`${pips[j]} of ${suits[i]}`)<br>&nbsp;&nbsp;}<br>}",
+      "question": "Ana wrote this code, wanting to not output the condition where the pip was a Joker. Did she succeed?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": false,
+      "answer": true,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "https://javascript.info/while-for",
+      "moreInfo": "https://javascript.info/while-for#labels-for-break-continue",
       "size": 0
     }
     ,

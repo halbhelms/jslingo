@@ -47,18 +47,18 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 8168,
+      "id": 8338,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let i = 10<br>for (; i>0; i--) p(i)",
+      "question": "let score = 88<br>let grade = null<br><br>switch(true) {<br>&nbsp;&nbsp;case score > 90:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'A'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;case score > 80:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'B'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;case score > 70:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'C'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'D'<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [""],
-      "explanation": "",
-      "moreInfo": "https://javascript.info/while-for#skipping-parts",
+      "explanation": "Might be surprising, but this is a way to do ranges within a switch statement",
+      "moreInfo": "",
       "size": 0
     }
     ,
