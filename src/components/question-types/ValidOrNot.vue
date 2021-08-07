@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 4379,
+      "id": 8168,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let machine = {<br>&nbsp;&nbsp;power: 'electricity'<br>}<br><br>let auto = Object.create(machine,{<br>&nbsp;&nbsp;power: {value: 'gasoline'},<br>&nbsp;&nbsp;wheels: {value: 4}<br>})<br><br>let tesla = Object.create(auto, {<br>&nbsp;&nbsp;power: {value: 'electricity'}<br>})",
+      "question": "let i = 10<br>for (; i>0; i--) p(i)",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "https://javascript.info/prototype-methods",
+      "moreInfo": "https://javascript.info/while-for#skipping-parts",
       "size": 0
     }
     ,
@@ -144,6 +144,12 @@ img.more-info-icon {
 
 .more-info {
   margin-top: -30px;
+}
+
+.pre {
+  background-color: whitesmoke;
+  padding: 4px;
+  margin-right: 18px;
 }
 
 .question {

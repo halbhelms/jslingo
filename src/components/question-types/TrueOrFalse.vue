@@ -12,7 +12,7 @@
       <button class="false" @click="evaluateAnswer(false)">False</button>
     </div>
     <!-- Scoring -->
-    <div class="result" v-if="answer=='yes'">&#x2705; YES! You are correct. The answer is {{ question.answer }}</div>
+    <div class="result" v-if="answer=='yes'">&#x2705; YES! The answer is {{ question.answer }}</div>
     <div class="result" v-if="answer=='no'">💣 Sorry, no. The correct answer is {{ question.answer }}</div>
     <!-- Explanation -->
     <div class="explanation" v-html="explanation" v-if="question.explanation"></div>
@@ -46,10 +46,10 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 5278,
+      "id": 8166,
       "type": "TrueOrFalse",
-      "given": "const handValues = [<br>&nbsp;&nbsp;'High Card',<br>&nbsp;&nbsp;'Pair',<br>&nbsp;&nbsp;'Two Pair',<br>&nbsp;&nbsp;'Three of a Kind',<br>&nbsp;&nbsp;'Straight',<br>&nbsp;&nbsp;'Flush',<br>&nbsp;&nbsp;'Four of a Kind',<br>&nbsp;&nbsp;'Straight Flush'<br>]<br><br>let index = handValues.findIndex('Three of a Kind')",
-      "question": "<pre>index</pre> is equal to 3",
+      "given": "let counter1 = 10<br>while (counter1 > 0) p(counter1--)",
+      "question": "This code will error out due to the absence of curly braces after the <pre>while</pre> condition",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
@@ -57,7 +57,7 @@ export default {
       "answer": false,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "https://javascript.info/array-methods#find-and-findindex",
+      "moreInfo": "https://javascript.info/while-for",
       "size": 0
     }
     ,

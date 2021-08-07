@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 5134,
+      "id": 8167,
       "type": "MultipleChoice",
-      "given": "function Cow(name) {<br>&nbsp;&nbsp;this.name = 'Elsie'<br>}<br><br>let elsie = new Cow()<br>p(elsie.name)",
-      "question": "What's the output?",
+      "given": "for (let i=10; i>0; i--) p(i)<br>p(`The final value of i is ${i}`)",
+      "question": "Aside from the countdown, what's the output?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Elsie", "elsie", "undefined", "error"],
-      "answer": 0,
+      "choices": ["The final value of i is 10", "The final value of i is 1","The final value of i is 0", "i is undefined"],
+      "answer": 3,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "https://bonsaiden.github.io/JavaScript-Garden/",
+      "moreInfo": "",
       "size": 0
     }
     ,
