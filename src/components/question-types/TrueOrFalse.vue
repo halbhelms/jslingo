@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 6246,
+      "id": 6250,
       "type": "TrueOrFalse",
-      "given": "let answer = 42<br><br>function fnc() {<br>&nbsp;&nbsp;let answer = 24<br>&nbsp;&nbsp;p(answer)<br>}<br><br>fnc()",
-      "question": "This code throws a <pre>DuplicateAssignment error</pre>",
+      "given": "function Book(title, author) {<br>&nbsp;&nbsp;this.title = title<br>&nbsp;&nbsp;this.author = author<br>&nbsp;&nbsp;this.getDetails = () => {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `${this.title} by ${this.author}`<br>&nbsp;&nbsp;}<br>}<br><br>let pfom = new Book('A Prayer for Owen Meany', 'John Irving')<br><br>p(pfom.getDetails())",
+      "question": "This code returns <pre>undefined</pre> values since arrow functions have no <pre>this</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": false,
       "answers": [""],
-      "explanation": "",
-      "moreInfo": "",
+      "explanation": "It's true that arrow functions have no <pre>this</pre>. They take the value of <pre>this</pre> from their parent &mdash; the Book, in this case.",
+      "moreInfo": "https://www.dofactory.com/javascript/function-objects",
       "size": 0
     }
     ,

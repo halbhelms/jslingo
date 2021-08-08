@@ -47,10 +47,10 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 6245,
+      "id": 6249,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let determineClass = () => {<br>&nbsp;&nbsp;let rnd = Math.random()<br>&nbsp;&nbsp;if (rnd > 0.5) return 'Excelsius'<br>&nbsp;&nbsp;return 'Demetrius'<br>}<br><br>function register(name, klass=determineClass()) {<br>&nbsp;&nbsp;return {<br>&nbsp;&nbsp;&nbsp;&nbsp;name, klass<br>&nbsp;&nbsp;}<br>}",
+      "question": "function Book(title, author) {<br>&nbsp;&nbsp;this.title = title<br>&nbsp;&nbsp;this.author = author<br>&nbsp;&nbsp;this.getDetails = () => {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `${this.title} by ${this.author}`<br>&nbsp;&nbsp;}<br>}<br><br>let pfom = new Book('A Prayer for Owen Meany', 'John Irving')<br><br>p(pfom.getDetails())",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
@@ -58,7 +58,7 @@ export default {
       "answer": true,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "",
+      "moreInfo": "https://www.dofactory.com/javascript/function-objects",
       "size": 0
     }
     ,

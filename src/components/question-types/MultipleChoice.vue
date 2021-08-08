@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 6327,
+      "id": 9233,
       "type": "MultipleChoice",
-      "given": "let assignSchool = () => {<br>&nbsp;&nbsp;if (Math.random() > 0.49) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.school = 'Demetrius'<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;this.school = 'Excelsius'<br>}<br><br>let student = {<br>&nbsp;&nbsp;name: 'Omar Little'<br>}<br><br>assignSchool.call(student)<br><br>p(student.school)",
+      "given": "// HTML<br>&lt;button id=&quot;button&quot;>Click me&lt;/button><br><br>// JS<br>document.getElementById('button').addEventListener('click', e => p('You clicked me'))<br><br>document.querySelector('button').addEventListener('click', e => p('You clicked me'))",
       "question": "What's the output?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["Demetrius", "Excelsius", "can't be determined", "undefined"],
-      "answer": 3,
+      "choices": ["You clicked me", "You clicked me You clicked me", "error"],
+      "answer": 1,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "https://javascript.info/arrow-functions#arrow-functions-have-no-this",
+      "moreInfo": "",
       "size": 0
     }
     ,
