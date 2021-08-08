@@ -47,17 +47,17 @@ export default {
       showMoreInfo: false,
 
       question:  {
-      "id": 8338,
+      "id": 6245,
       "type": "ValidOrNot",
       "given": "",
-      "question": "let score = 88<br>let grade = null<br><br>switch(true) {<br>&nbsp;&nbsp;case score > 90:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'A'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;case score > 80:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'B'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;case score > 70:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'C'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'D'<br>}",
+      "question": "let determineClass = () => {<br>&nbsp;&nbsp;let rnd = Math.random()<br>&nbsp;&nbsp;if (rnd > 0.5) return 'Excelsius'<br>&nbsp;&nbsp;return 'Demetrius'<br>}<br><br>function register(name, klass=determineClass()) {<br>&nbsp;&nbsp;return {<br>&nbsp;&nbsp;&nbsp;&nbsp;name, klass<br>&nbsp;&nbsp;}<br>}",
       "displayAsCode": ["question"],
       "q1": "",
       "q2": "",
       "choices": [],
       "answer": true,
       "answers": [""],
-      "explanation": "Might be surprising, but this is a way to do ranges within a switch statement",
+      "explanation": "",
       "moreInfo": "",
       "size": 0
     }

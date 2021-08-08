@@ -46,18 +46,18 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8251,
+      "id": 6246,
       "type": "TrueOrFalse",
-      "given": "let suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']<br><br>let pips = [2,3,4,5,6,7,8,9,'Ten', 'Jack', 'Queen', 'King', 'Ace', 'Joker']<br><br>pipsLoop: for (let i=0; i&lt;suits.length; i++) {<br>&nbsp;&nbsp;suitsLoop: for (let j=0; j&lt;pips.length; j++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (pips[j] == 'Joker') {continue pipsLoop}<br>&nbsp;&nbsp;&nbsp;&nbsp;p(`${pips[j]} of ${suits[i]}`)<br>&nbsp;&nbsp;}<br>}",
-      "question": "Ana wrote this code, wanting to not output the condition where the pip was a Joker. Did she succeed?",
+      "given": "let answer = 42<br><br>function fnc() {<br>&nbsp;&nbsp;let answer = 24<br>&nbsp;&nbsp;p(answer)<br>}<br><br>fnc()",
+      "question": "This code throws a <pre>DuplicateAssignment error</pre>",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
       "choices": [],
-      "answer": true,
+      "answer": false,
       "answers": [""],
       "explanation": "",
-      "moreInfo": "https://javascript.info/while-for#labels-for-break-continue",
+      "moreInfo": "",
       "size": 0
     }
     ,

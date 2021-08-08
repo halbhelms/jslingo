@@ -50,18 +50,18 @@ export default {
       showMoreInfo: false,
       
       question:  {
-      "id": 8339,
+      "id": 6327,
       "type": "MultipleChoice",
-      "given": "let score = 88<br>let grade = null<br><br>switch(true) {<br>&nbsp;&nbsp;case score > 90:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'A'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;case score > 80:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'B'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;case score > 70:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'C'<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;grade = 'D'<br>}",
-      "question": "What is the value of <pre>grade</pre>?",
+      "given": "let assignSchool = () => {<br>&nbsp;&nbsp;if (Math.random() > 0.49) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.school = 'Demetrius'<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;this.school = 'Excelsius'<br>}<br><br>let student = {<br>&nbsp;&nbsp;name: 'Omar Little'<br>}<br><br>assignSchool.call(student)<br><br>p(student.school)",
+      "question": "What's the output?",
       "displayAsCode": ["given"],
       "q1": "",
       "q2": "",
-      "choices": ["A", "B", "C", "D", "error"],
-      "answer": 1,
+      "choices": ["Demetrius", "Excelsius", "can't be determined", "undefined"],
+      "answer": 3,
       "answers": [""],
-      "explanation": "Might be surprising, but this is a way to do ranges within a switch statement",
-      "moreInfo": "",
+      "explanation": "",
+      "moreInfo": "https://javascript.info/arrow-functions#arrow-functions-have-no-this",
       "size": 0
     }
     ,
