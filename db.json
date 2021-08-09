@@ -13115,34 +13115,34 @@
       "size": 0
     },
     {
-      "id": ,
-      "type": "",
-      "given": "",
+      "id": 9339,
+      "type": "FillBlank",
+      "given": "Fill in the blank to place the <pre>h1</pre> before the existing div",
       "question": "",
-      "displayAsCode": [],
-      "q1": "",
+      "displayAsCode": ["q1","q2","answer"],
+      "q1": "// HTML<br>&lt;div id=&quot;firstdiv&quot;>I'm the first&lt;/div><br><br>// JS<br>let h1 = document.createElement('h1')<br>h1.appendChild(document.createTextNode('Not any more'))<br>let existingNode = document.querySelector('#firstdiv')<br>document.body.",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": [""],
+      "answers": ["insertBefore(h1, existingNode)"],
       "explanation": "",
       "moreInfo": "",
-      "size": 0
+      "size": 31
     },
     {
-      "id": ,
-      "type": "",
-      "given": "",
+      "id": 9234,
+      "type": "FillBlank",
+      "given": "What is the code to prevent the event from bubbling upward?",
       "question": "",
-      "displayAsCode": [],
-      "q1": "",
+      "displayAsCode": ["q1","q2","answer"],
+      "q1": "event.",
       "q2": "",
       "choices": [],
       "answer": "",
-      "answers": [""],
+      "answers": ["stopPropagation()"],
       "explanation": "",
       "moreInfo": "",
-      "size": 0
+      "size": 20
     },
     {
       "id": ,

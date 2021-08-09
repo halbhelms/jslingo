@@ -50,19 +50,19 @@ export default {
       showMoreInfo: false,
       
       question: {
-      "id": 8170,
+      "id": 9234,
       "type": "FillBlank",
-      "given": "Fill in the blank to skip to the next pet on a <pre>true</pre> condition",
+      "given": "What is the code to prevent the event from bubbling upward?",
       "question": "",
       "displayAsCode": ["q1","q2","answer"],
-      "q1": "let pets = ['dog', 'cat', 'hamster', 'cobra', 'parakeet']<br><br>for (let i=0; i<pets.length; i++) {<br>&nbsp;&nbsp;if (pets[i] == 'cobra') {",
-      "q2": "}<br>&nbsp;&nbsp;p(pets[i])<br>}",
+      "q1": "event.",
+      "q2": "",
       "choices": [],
       "answer": "",
-      "answers": ["continue"],
+      "answers": ["stopPropagation()"],
       "explanation": "",
-      "moreInfo": "https://javascript.info/while-for#breaking-the-loop",
-      "size": 8
+      "moreInfo": "",
+      "size": 20
     }
     ,
     }
